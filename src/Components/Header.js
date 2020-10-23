@@ -7,12 +7,20 @@ const Header = () => {
 		<Banner>
 			<Navigation>
 				<Logo
-					src='http://nebula.wsimg.com/68f9e11e6ab6c609cf41516b8d3c832b?AccessKeyId=5422A47C696F7C068295&disposition=0&alloworigin=1'
+					// src='http://nebula.wsimg.com/68f9e11e6ab6c609cf41516b8d3c832b?AccessKeyId=5422A47C696F7C068295&disposition=0&alloworigin=1'
+					src='logo.png'
 					alt='Con mi madre logo'
 				/>
 				<Nav />
 			</Navigation>
 			<Title>Service and Support To Empower Latinas</Title>
+			<Text>
+				<p>Help Increase the Number of Hispanic Girls</p>
+				<br />
+				<p>Enrolling & Completing College</p>
+				<br />
+				<p>& Post Secondary Education</p>
+			</Text>
 		</Banner>
 	);
 };
@@ -25,8 +33,9 @@ const Banner = styled.div`
 	background-repeat: no-repeat;
 	margin-top: -1rem;
 	background-color: #000000;
-	filter: grayscale(1);
+	// filter: grayscale(1);
 	color: #f7f9f9;
+	z-index: -1;
 `;
 
 const Navigation = styled.header`
@@ -36,9 +45,7 @@ const Navigation = styled.header`
 
 const Logo = styled.img`
 	height: 15vh;
-	filter: grayscale(0);
-	z-index: -1;
-	color: #f7f9f9;
+	z-index: 1;
 	padding: 3rem;
 `;
 
@@ -46,8 +53,18 @@ const Title = styled.h1`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 8.5rem;
-	font-weight: 500;
+	margin-top: 5rem;
+	font-weight: 300;
 	color: #f7f9f9;
-	font-size: 3rem;
+	font-size: 3.25rem;
+	line-height: normal;
+`;
+
+const Text = styled.div`
+	text-align: center;
+	font-weight: 400;
+	line-height: 0.0125;
+	font-size: 1.75rem;
+	color: #f7f9f9;
+	height: 25vh;
 `;
