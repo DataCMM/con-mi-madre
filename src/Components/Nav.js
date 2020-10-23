@@ -4,24 +4,28 @@ import styled from 'styled-components';
 
 const Nav = () => {
 	return (
-		<nav>
+		<Links>
 			<List>
-				<Link>About Us</Link>
-				<Link>Our Program</Link>
-				<Link>Our Supporters</Link>
-				<Link>Awards & Recognitions</Link>
-				<Link>News</Link>
-				<Link>Events</Link>
+				<Link to='/Landing'>Home</Link>
+				<Link to='/About'>About Us</Link>
+				<Link to='/Program'>Our Program</Link>
+				<Link to='/News'>News</Link>
+				<Link to='/Donate' id='donate'>
+					Donate
+				</Link>
 			</List>
-		</nav>
+		</Links>
 	);
 };
 
 export default Nav;
 
 const List = styled.ul`
-	height: 15vh;
 	display: flex;
 	justify-content: space-evenly;
 	padding-top: 3rem;
+`;
+
+const Links = styled.nav`
+	height: 2rem;
 `;

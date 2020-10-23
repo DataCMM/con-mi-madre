@@ -5,11 +5,14 @@ import styled from 'styled-components';
 const Header = () => {
 	return (
 		<Banner>
-			<Logo
-				src='http://nebula.wsimg.com/68f9e11e6ab6c609cf41516b8d3c832b?AccessKeyId=5422A47C696F7C068295&disposition=0&alloworigin=1'
-				alt='Con mi madre logo'
-			/>
-			<Nav />
+			<Navigation>
+				<Logo
+					src='http://nebula.wsimg.com/68f9e11e6ab6c609cf41516b8d3c832b?AccessKeyId=5422A47C696F7C068295&disposition=0&alloworigin=1'
+					alt='Con mi madre logo'
+				/>
+				<Nav />
+			</Navigation>
+			<Title>Service and Support To Empower Latinas</Title>
 		</Banner>
 	);
 };
@@ -24,12 +27,27 @@ const Banner = styled.div`
 	background-color: #000000;
 	filter: grayscale(1);
 	color: #f7f9f9;
+`;
+
+const Navigation = styled.header`
 	display: flex;
 	justify-content: space-around;
 `;
 
 const Logo = styled.img`
 	height: 15vh;
+	filter: grayscale(0);
+	z-index: -1;
 	color: #f7f9f9;
 	padding: 3rem;
+`;
+
+const Title = styled.h1`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8.5rem;
+	font-weight: 500;
+	color: #f7f9f9;
+	font-size: 3rem;
 `;

@@ -1,7 +1,14 @@
 a {
-	color: #ffffff;
+	color: #f7f9f9;
 	text-decoration: none;
 	font-size: 1.5rem;
 	font-weight: 200;
 	padding-right: 1.75rem;
+}
+
+#donate {
+	background-color: blue;
+	border-radius: 20%;
+	padding: 0.3rem;
+	color: white;
 }

@@ -1,6 +1,10 @@
 import React from 'react';
-import Landing from './Components/Landing';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Landing from './Components/Pages/Landing';
+import About from './Components/Pages/About';
+import Donate from './Components/Pages/Donate';
+import News from './Components/Pages/News';
+import Program from './Components/Pages/Program';
 import './App.css';
 
 function App() {
@@ -8,6 +12,18 @@ function App() {
 		<div className='App'>
 			<Router>
 				<Switch>
+					<Route path='/About'>
+						<About />
+					</Route>
+					<Route path='/Donate'>
+						<Donate />
+					</Route>
+					<Route path='/News'>
+						<News />
+					</Route>
+					<Route path='/Program'>
+						<Program />
+					</Route>
 					<Route path='/'>
 						<Landing />
 					</Route>
