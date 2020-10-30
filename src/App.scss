@@ -1,0 +1,43 @@
+a {
+	color: var(--grey);
+	text-decoration: none;
+	font-size: var(--heading-one);
+	font-weight: 200;
+	padding-right: 1.75rem;
+}
+
+#donate {
+	background-color: var(--green);
+	border-radius: 25px;
+	padding: 0.75rem;
+	color: var(--grey);
+	margin-top: -0.7rem;
+}
+
+#donate-today {
+	background-color: var(--green);
+	border-radius: 25px;
+	padding: 0.75rem;
+	color: var(--grey);
+}
+
+#impact-header {
+	margin-top: 0;
+}
+
+#grad {
+	background-position: left;
+	width: 736px;
+	overflow: hidden;
+}
+
+.mission-title {
+	color: var(--pink);
+	font-size: var(--heading-two);
+}
+
+.mission-content {
+	color: black;
+	font-size: var(--small-font-size);
+	font-weight: 500;
+}

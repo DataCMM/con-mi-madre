@@ -1,0 +1,49 @@
+:root {
+	--pink: #e90c8b;
+	--orange: #e45226;
+	--green: #c9dc5a;
+	--blue: #46a4ba;
+	--purple: #9f77f3;
+	--grey: #edf5e1;
+
+	/* Font Sizes */
+	--baseFontSize: 1rem;
+	--baseNavSize: 0.64rem;
+	--smallFontSize: 0.8rem;
+	--smallestFontSize: 0.512rem;
+
+	--xtra-big-heading: 3.052rem;
+	--xtra-heading: 2.441rem;
+	--heading-one: 1.953rem;
+	--heading-two: 1.563rem;
+	--heading-three: 1.25rem;
+	--heading-four: 0.64rem;
+
+	/* Fonts */
+	--headingFont: 'Poppins', sans-serif;
+	--bodyFont: 'Raleway', sans-serif;
+
+	/* Elevation */
+	--elevation-0: inset 0 7px 9px -7px rgba(0, 0, 0, 0.7);
+	--elevation-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	--elevation-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	--elevation-3: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+	--elevation-4: 0 14px 28px rgba(0, 0, 0, 0.25),
+		0 10px 10px rgba(0, 0, 0, 0.22);
+	--elevation-5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}

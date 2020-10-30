@@ -5,7 +5,7 @@ import About from './Components/Pages/About';
 import Donate from './Components/Pages/Donate';
 import News from './Components/Pages/News';
 import Program from './Components/Pages/Program';
-import './App.css';
+import './App.scss';
 
 function App() {
 	return (
