@@ -1,7 +1,11 @@
 import React from 'react';
 import Header from '../Header';
-import Graduate from '../../images/cmm/additional-services/Scholarship-opportunities.jpg';
+import Footer from '../Footer';
 
+import Graduate from '../../images/cmm/additional-services/Scholarship-opportunities.jpg';
+import Cap from '../../images/cap.png';
+
+import ReactPlayer from 'react-player';
 import styled from 'styled-components';
 
 const Landing = () => {
@@ -18,44 +22,74 @@ const Landing = () => {
 					</Subtitle>
 					<ThreeBoxes>
 						<ImageBox>
-							<img src='' alt='' />
-							<p>98% High School</p>
-							<p>Graduation Rate</p>
+							<img src={Cap} alt='' />
+							<ImpactLabels>98% High School</ImpactLabels>
+							<ImpactLabels>Graduation Rate</ImpactLabels>
 						</ImageBox>
-						{/* <hr /> */}
+
 						<ImageBox>
-							<p>79% College</p>
-							<p>Enrollment Rate</p>
+							<ImpactLabels>79% College</ImpactLabels>
+							<ImpactLabels>Enrollment Rate</ImpactLabels>
 						</ImageBox>
-						{/* <hr /> */}
+
 						<ImageBox>
-							<p>93% College</p>
-							<p>Retention Rate</p>
+							<ImpactLabels>93% College</ImpactLabels>
+							<ImpactLabels>Retention Rate</ImpactLabels>
 						</ImageBox>
 					</ThreeBoxes>
 				</ImpactBlueBG>
 				<MissionSection>
 					<ImpactWhiteBG>
 						<div>
-							<h3 className='mission-title'>OUR MISSION</h3>
-							<p className='mission-content'>
+							<h3 className='title'>OUR MISSION</h3>
+							<p className='content'>
 								Empower young Latinas and their mothers through the education
 								and support services that increase preparedness, participation,
 								and success in post-secondary education.
 							</p>
 						</div>
 						<div>
-							<h3 className='mission-title'>OUR VISION</h3>
-							<p className='mission-content'>
+							<h3 className='title'>OUR VISION</h3>
+							<p className='content'>
 								To see Latina students, equipped with knowledge and support,
 								rewrite the narrative of her family and community.
 							</p>
 						</div>
 					</ImpactWhiteBG>
-					<GradPic>
+					<Image>
 						<img id='grad' src={Graduate} alt='Female graduate' />
-					</GradPic>
+					</Image>
 				</MissionSection>
+				<MissionSection id='pillars'>
+					<Video className='video'>
+						<ReactPlayer url='https://www.youtube.com/watch?v=ajyPvDS-_kY' />
+					</Video>
+					<ImpactWhiteBG>
+						<h3 className='title'>OUR PILLARS</h3>
+						<h4 className='sub-title'>Parental Engagement</h4>
+						<p className='content'>
+							At CMM we believe that creating opportunities for parents to
+							engage in their child's education will lead to post-secondary
+							success.
+						</p>
+						<h4 className='sub-title'>Educate Holistically</h4>
+						<p className='content'>
+							We provide mothers and daughters the social-emotional skills they
+							need to become emotionally intelligent.
+						</p>
+						<h4 className='sub-title'>Empowerment</h4>
+						<p className='content'>
+							At CMM, we equip mothers and daughters with the knowledge and
+							advocacy skills to succeed in spite of systemic barriers.
+						</p>
+						<h4 className='sub-title'>Community-Centered</h4>
+						<p className='content'>
+							We unite with local organizations and individuals to better meet
+							the needs of the community.
+						</p>
+					</ImpactWhiteBG>
+				</MissionSection>
+				<Footer />
 			</Container>
 		</>
 	);
@@ -69,6 +103,7 @@ const Container = styled.main`
 
 const ImpactBlueBG = styled.div`
 	background-color: var(--blue);
+	margin-top: 5rem;
 `;
 
 const ImpactHeader = styled.div`
@@ -76,6 +111,11 @@ const ImpactHeader = styled.div`
 	color: var(--grey);
 	font-size: var(--heading-one);
 	letter-spacing: 0.3rem;
+`;
+
+const ImpactLabels = styled.p`
+	color: var(--grey);
+	font-size: var(--heading-three);
 `;
 
 const Subtitle = styled.div`
@@ -94,22 +134,28 @@ const ThreeBoxes = styled.div`
 const ImageBox = styled.div`
 	display: flex;
 	flex-direction: column;
-	color: var(--grey);
-	font-size: var(--heading-three);
 `;
 
 const MissionSection = styled.div`
 	display: flex;
+	justify-content: space-around;
+	margin: 5rem 0;
 `;
 
 const ImpactWhiteBG = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 40%;
+	width: 30%;
 	justify-content: center;
 	padding: 0 10rem;
 `;
 
-const GradPic = styled.div`
-	width: 30%;
+const Video = styled.div`
+	display: flex;
+	align-self: center;
+	margin-left: 5rem;
+`;
+const Image = styled.div`
+	display: flex;
+	align-self: center;
 `;

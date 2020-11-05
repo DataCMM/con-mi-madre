@@ -7,7 +7,7 @@ const About = () => {
 	return (
 		<div>
 			<Nav />
-			<h3>About Page</h3>
+			<h3>Our Team Page</h3>
 		</div>
 	);
 };

@@ -27,16 +27,25 @@ a {
 
 #grad {
 	background-position: left;
-	width: 736px;
+	width: 400px;
 	overflow: hidden;
 }
 
-.mission-title {
+#pillars {
+	background-color: var(--green);
+}
+
+.title {
 	color: var(--pink);
 	font-size: var(--heading-two);
 }
 
-.mission-content {
+.sub-title {
+	color: var(--orange);
+	font-size: var(--baseFontSize);
+}
+
+.content {
 	color: black;
 	font-size: var(--small-font-size);
 	font-weight: 500;
