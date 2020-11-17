@@ -23,9 +23,9 @@ export default Nav;
 const List = styled.ul`
 	display: flex;
 	justify-content: space-evenly;
-	padding-top: 3rem;
+	padding-top: 2rem;
 `;
 
 const Links = styled.nav`
-	height: 2rem;
+	height: 5vh;
 `;

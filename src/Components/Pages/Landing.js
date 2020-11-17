@@ -1,9 +1,12 @@
 import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
+import { Link } from 'react-router-dom';
 
 import Graduate from '../../images/cmm/additional-services/Scholarship-opportunities.jpg';
-import Cap from '../../images/cap.png';
+import BannerImage from '../../images/cmm/Donate-Banner.JPG';
+import { FcGraduationCap, FcDiploma1 } from 'react-icons/fc';
+import { FaUserGraduate } from 'react-icons/fa';
 
 import ReactPlayer from 'react-player';
 import styled from 'styled-components';
@@ -12,6 +15,17 @@ const Landing = () => {
 	return (
 		<>
 			<Header />
+			<Banner>
+				<div>
+					<Title>We are Mothers and Daughters</Title>
+					<Title>Raising Expectations</Title>
+					<Button>
+						<Link to='/Donate' id='donate-today'>
+							Donate Today
+						</Link>
+					</Button>
+				</div>
+			</Banner>
 			<Container>
 				<ImpactBlueBG>
 					<ImpactHeader>
@@ -22,17 +36,19 @@ const Landing = () => {
 					</Subtitle>
 					<ThreeBoxes>
 						<ImageBox>
-							<img src={Cap} alt='' />
+							<FcGraduationCap className='icon' />
 							<ImpactLabels>98% High School</ImpactLabels>
 							<ImpactLabels>Graduation Rate</ImpactLabels>
 						</ImageBox>
 
 						<ImageBox>
+							<FcDiploma1 className='icon' />
 							<ImpactLabels>79% College</ImpactLabels>
 							<ImpactLabels>Enrollment Rate</ImpactLabels>
 						</ImageBox>
 
 						<ImageBox>
+							<FaUserGraduate className='icon' />
 							<ImpactLabels>93% College</ImpactLabels>
 							<ImpactLabels>Retention Rate</ImpactLabels>
 						</ImageBox>
@@ -101,9 +117,32 @@ const Container = styled.main`
 	margin: 0 2rem;
 `;
 
+const Banner = styled.div`
+	height: 95vh;
+	background-image: url(${BannerImage});
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
+
+const Title = styled.h1`
+	font-weight: 700;
+	color: var(--grey);
+	letter-spacing: 1rem;
+	font-size: var(--xtra-big-heading);
+	text-align: center;
+`;
+
+const Button = styled.div`
+	text-align: center;
+`;
+
 const ImpactBlueBG = styled.div`
 	background-color: var(--blue);
-	margin-top: 5rem;
+	margin: 2rem;
+	box-shadow: 5px 5px 20px;
 `;
 
 const ImpactHeader = styled.div`
@@ -138,8 +177,9 @@ const ImageBox = styled.div`
 
 const MissionSection = styled.div`
 	display: flex;
+	margin: 2rem;
 	justify-content: space-around;
-	margin: 5rem 0;
+	padding: 5rem 0;
 `;
 
 const ImpactWhiteBG = styled.div`
@@ -154,8 +194,10 @@ const Video = styled.div`
 	display: flex;
 	align-self: center;
 	margin-left: 5rem;
+	box-shadow: 0 0 10px;
 `;
 const Image = styled.div`
 	display: flex;
 	align-self: center;
+	box-shadow: 5px 5px 20px;
 `;

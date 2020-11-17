@@ -1,5 +1,5 @@
 a {
-	color: var(--grey);
+	color: var(--orange);
 	text-decoration: none;
 	font-size: var(--heading-one);
 	font-weight: 200;
@@ -31,8 +31,14 @@ a {
 	overflow: hidden;
 }
 
+.icon {
+	height: 4rem;
+	width: 4rem;
+}
+
 #pillars {
 	background-color: var(--green);
+	box-shadow: 5px 5px 20px;
 }
 
 .title {
