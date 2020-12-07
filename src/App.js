@@ -12,7 +12,7 @@ import Awards from './Components/Pages/Awards';
 import Events from './Components/Pages/Events';
 import Partners from './Components/Pages/Partners';
 import Resources from './Components/Pages/Resources';
-import './App.scss';
+import Contact from './Components/Pages/Contact';
 
 function App() {
 	return (
@@ -21,6 +21,9 @@ function App() {
 				<Switch>
 					<Route path='/Resources'>
 						<Resources />
+					</Route>
+					<Route path='/Contact'>
+						<Contact />
 					</Route>
 					<Route path='/Partners'>
 						<Partners />

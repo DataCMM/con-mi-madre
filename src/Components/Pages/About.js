@@ -1,12 +1,10 @@
 import React from 'react';
-import Nav from '../Nav';
-
-import styled from 'styled-components';
+import Header from '../Header';
 
 const About = () => {
 	return (
 		<div>
-			<Nav />
+			<Header />
 			<h3>Our Team Page</h3>
 		</div>
 	);
