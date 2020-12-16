@@ -6,7 +6,7 @@ const Program = () => {
   return (
     <div>
       <Header />
-      <h3>Programming Structure Page</h3>
+      <h3 className="page-body">Programming Structure Page</h3>
       <Footer />
     </div>
   );

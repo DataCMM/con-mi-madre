@@ -6,7 +6,7 @@ const Awards = () => {
   return (
     <div>
       <Header />
-      <h1>Awards Page</h1>
+      <h1 className="page-body">Awards Page</h1>
       <Footer />
     </div>
   );

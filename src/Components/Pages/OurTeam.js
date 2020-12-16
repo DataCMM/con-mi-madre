@@ -6,7 +6,7 @@ const Team = () => {
   return (
     <div>
       <Header />
-      <h3>Our Team Page</h3>
+      <h3 className="page-body">Our Team Page</h3>
       <Footer />
     </div>
   );

@@ -6,7 +6,7 @@ const Donate = () => {
   return (
     <div>
       <Header />
-      <h3>Donate Page</h3>
+      <h3 className="page-body">Donate Page</h3>
       <Footer />
     </div>
   );

@@ -6,7 +6,7 @@ const Resources = () => {
   return (
     <div>
       <Header />
-      <h1>Resources Page</h1>
+      <h1 className="page-body">Resources Page</h1>
       <Footer />
     </div>
   );

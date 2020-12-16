@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div>
       <Header />
-      <h1>Additional Services Page</h1>
+      <h1 className="page-body">Additional Services Page</h1>
       <Footer />
     </div>
   );

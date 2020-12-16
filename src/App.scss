@@ -1,58 +1,62 @@
 a {
-	color: var(--orange);
-	text-decoration: none;
-	font-size: var(--heading-one);
-	font-weight: 200;
-	padding-right: 1.75rem;
+  color: var(--orange);
+  text-decoration: none;
+  font-size: var(--heading-one);
+  font-weight: 200;
+  padding-right: 1.75rem;
 }
 
 #donate {
-	background-color: var(--green);
-	border-radius: 25px;
-	padding: 0.75rem;
-	color: var(--grey);
-	margin-top: -0.7rem;
+  background-color: var(--green);
+  border-radius: 25px;
+  padding: 0.75rem;
+  color: var(--grey);
+  margin-top: -0.7rem;
 }
 
 #donate-today {
-	background-color: var(--green);
-	border-radius: 25px;
-	padding: 0.75rem;
-	color: var(--grey);
+  background-color: var(--green);
+  border-radius: 25px;
+  padding: 0.75rem;
+  color: var(--grey);
 }
 
 #impact-header {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 #grad {
-	background-position: left;
-	width: 400px;
-	overflow: hidden;
+  background-position: left;
+  width: 400px;
+  overflow: hidden;
 }
 
 .icon {
-	height: 4rem;
-	width: 4rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 #pillars {
-	background-color: var(--green);
-	box-shadow: 5px 5px 20px;
+  background-color: var(--green);
+  box-shadow: 5px 5px 20px;
 }
 
 .title {
-	color: var(--pink);
-	font-size: var(--heading-two);
+  color: var(--pink);
+  font-size: var(--heading-two);
 }
 
 .sub-title {
-	color: var(--orange);
-	font-size: var(--baseFontSize);
+  color: var(--orange);
+  font-size: var(--baseFontSize);
 }
 
 .content {
-	color: black;
-	font-size: var(--small-font-size);
-	font-weight: 500;
+  color: black;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+}
+.page-body {
+  background-color: var(--green);
+  height: 400px;
 }

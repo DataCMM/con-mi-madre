@@ -6,7 +6,7 @@ const Events = () => {
   return (
     <div>
       <Header />
-      <h1>Events Page</h1>
+      <h1 className="page-body">Events Page</h1>
       <Footer />
     </div>
   );

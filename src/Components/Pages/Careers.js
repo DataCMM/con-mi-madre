@@ -6,7 +6,7 @@ const Careers = () => {
   return (
     <div>
       <Header />
-      <h1>Careers Page</h1>
+      <h1 className="page-body">Careers Page</h1>
       <Footer />
     </div>
   );

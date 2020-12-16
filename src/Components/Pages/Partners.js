@@ -6,7 +6,7 @@ const Partners = () => {
   return (
     <div>
       <Header />
-      <h1>Our Partners Page</h1>
+      <h1 className="page-body">Our Partners Page</h1>
       <Footer />
     </div>
   );

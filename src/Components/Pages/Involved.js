@@ -6,7 +6,7 @@ const Involved = () => {
   return (
     <div>
       <Header />
-      <h1>Get Involved Page</h1>
+      <h1 className="page-body">Get Involved Page</h1>
       <Footer />
     </div>
   );
