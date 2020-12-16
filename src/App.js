@@ -1,18 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Landing from './Components/Pages/Landing';
-import About from './Components/Pages/About';
+import Purpose from './Components/Pages/About/Purpose';
 import Donate from './Components/Pages/Donate';
-import Team from './Components/Pages/OurTeam';
-import Program from './Components/Pages/Program';
-import Careers from './Components/Pages/Careers';
-import Services from './Components/Pages/Services';
-import Involved from './Components/Pages/Involved';
-import Awards from './Components/Pages/Awards';
-import Events from './Components/Pages/Events';
-import Partners from './Components/Pages/Partners';
-import Resources from './Components/Pages/Resources';
-import './App.scss';
+import Program from './Components/Pages/Program/ProgrammingStruncture';
+import Careers from './Components/Pages/About/Careers';
+import Services from './Components/Pages/Program/Services';
+import Involved from './Components/Pages/Program/Involved';
+import Awards from './Components/Pages/Community/Awards';
+import Events from './Components/Pages/Community/Events';
+import Partners from './Components/Pages/Community/Partners';
+import Resources from './Components/Pages/Participants/Resources';
+import Contact from './Components/Pages/About/Contact';
 
 function App() {
 	return (
@@ -21,6 +20,9 @@ function App() {
 				<Switch>
 					<Route path='/Resources'>
 						<Resources />
+					</Route>
+					<Route path='/Contact'>
+						<Contact />
 					</Route>
 					<Route path='/Partners'>
 						<Partners />
@@ -40,14 +42,11 @@ function App() {
 					<Route path='/Careers'>
 						<Careers />
 					</Route>
-					<Route path='/About'>
-						<About />
+					<Route path='/Purpose'>
+						<Purpose />
 					</Route>
 					<Route path='/Donate'>
 						<Donate />
-					</Route>
-					<Route path='/Team'>
-						<Team />
 					</Route>
 					<Route path='/Program'>
 						<Program />

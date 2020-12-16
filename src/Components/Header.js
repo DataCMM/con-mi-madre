@@ -1,24 +1,18 @@
 import React from 'react';
 
-import Nav from './Nav';
-import styled from 'styled-components';
-import CMMLogo from '../images/horizontal/color.png';
+import Nav from './Navigation/Nav';
+import CMMLogo from '../images/horizontal/color-and-white.png';
 
 const Header = () => {
 	return (
-		<MainHeader>
-			<Logo src={CMMLogo} alt='Con mi madre logo' />
-			<Nav />
-		</MainHeader>
+		<div className='flex h-48 w-full'>
+			<div className='flex w-3/4 items-center justify-end pr-8'>
+				<Nav />
+			</div>
+			<div className='h-full min-w-48 w-1/2 bg-opacity-0 md:w-1/4 flex flex-none'>
+				<img src={CMMLogo} alt='Con mi madre logo' />
+			</div>
+		</div>
 	);
 };
 export default Header;
-
-const MainHeader = styled.header`
-	display: flex;
-	justify-content: space-around;
-`;
-
-const Logo = styled.img`
-	height: 10rem;
-`;

@@ -1,39 +1,19 @@
 import React from "react";
 import Logo from "../images/horizontal/color.png";
 
-import styled from "styled-components";
-
 const Footer = () => {
   return (
-    <Container>
-      <Image src={Logo} alt="Con Mi Madre Logo" />
-      <Content>
-        <Details>4175 Freidrich Ln #200, Austin, TX 78744</Details>
-        <Details> | </Details>
-        <Details>(512) 467-4483</Details>
-        <Details> | </Details>
-        <Details>info@conmimadre.com</Details>
-      </Content>
-    </Container>
+    <div className="bg-gray-200 w-full flex flex-col text-center md:flex-row">
+      <div className="w-3/4 m-auto h-auto md:w-1/3">
+        <img src={Logo} alt="Con Mi Madre Logo" />
+      </div>
+      <div className="text-blue-500 text-lg pb-4 md:flex md:flex-col md:w-2/3 md:items-center md:justify-center">
+        <h3>4175 Freidrich Ln #200, Austin, TX 78744</h3>
+        <h3>(512) 467-4483</h3>
+        <h3>info@conmimadre.com</h3>
+      </div>
+    </div>
   );
 };
 
 export default Footer;
-
-const Container = styled.div`
-  display: flex;
-  justify-content: space-around;
-`;
-
-const Details = styled.p`
-  margin-left: 1.5rem;
-`;
-
-const Content = styled.div`
-  display: flex;
-  align-self: center;
-`;
-
-const Image = styled.img`
-  height: 10rem;
-`;
