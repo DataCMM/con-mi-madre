@@ -9,7 +9,9 @@ const Footer = () => {
       <Image src={Logo} alt="Con Mi Madre Logo" />
       <Content>
         <Details>4175 Freidrich Ln #200, Austin, TX 78744</Details>
+        <Details> | </Details>
         <Details>(512) 467-4483</Details>
+        <Details> | </Details>
         <Details>info@conmimadre.com</Details>
       </Content>
     </Container>
