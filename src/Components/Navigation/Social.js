@@ -8,7 +8,7 @@ import { FiMenu } from 'react-icons/fi';
 const Social = () => {
 	return (
 		<div className='h-12 w-screen flex justify-between bg-gray-200 font-medium'>
-			<div className='flex space-x-2 p-4 tracking-widest md:text-2xl'>
+			<div className='flex space-x-2 p-2 tracking-widest md:text-2xl'>
 				<h1 className='text-blue-500'>CON</h1>
 				<h1 className='text-blue-500'>Mi</h1>
 				<div className='flex'>
@@ -20,11 +20,11 @@ const Social = () => {
 				</div>
 			</div>
 			<div className='hidden md:inline-flex space-x-8 text-2xl text-blue-500'>
-				<div className='flex space-x-6 pb-4 pt-4'>
+				<div className='flex space-x-6 p-2'>
 					<Link to='/Landing'>HOME</Link>
 					<Link to='Contact'>CONTACT US</Link>
 				</div>
-				<div className='flex space-x-8 pt-6 pr-6'>
+				<div className='flex space-x-8 p-4 pr-6'>
 					<Link to='/facebook'>
 						<FaFacebookSquare />
 					</Link>
@@ -36,7 +36,7 @@ const Social = () => {
 					</Link>
 				</div>
 			</div>
-			<div className='p-4 md:hidden'>
+			<div className='p-4 mr-4 md:hidden'>
 				<FiMenu />
 			</div>
 		</div>

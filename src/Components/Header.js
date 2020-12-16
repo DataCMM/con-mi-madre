@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Nav from './Nav';
+import Nav from './Navigation/Nav';
 import CMMLogo from '../images/horizontal/color-and-white.png';
 
 const Header = () => {
