@@ -50,7 +50,6 @@ const Landing = () => {
 						<h3 className='text-3xl'>98% High School</h3>
 						<h3 className='text-3xl'>Graduation Rate</h3>
 					</div>
-
 					<div className='text-center pt-5'>
 						<FcDiploma1 className='h-40 w-full' />
 						<h3 className='text-3xl'>79% College</h3>
