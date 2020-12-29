@@ -8,6 +8,7 @@ import Graduate from "../../images/cmm/additional-services/Scholarship-opportuni
 import BannerImage from "../../images/cmm/Donate-Banner.jpg";
 import { FcGraduationCap, FcDiploma1 } from "react-icons/fc";
 import { FaUserGraduate } from "react-icons/fa";
+import "../../App.scss";
 
 import ReactPlayer from "react-player";
 
@@ -25,8 +26,10 @@ const Landing = () => {
           <Header />
         </div>
         <div className="flex flex-col text-gray-500 text-2xl font-bold tracking-widest pt-40 text-center sm:text-xl md:text-4xl lg:text-5xl lg:pt-40">
-          <h1>We are Mothers and Daughters</h1>
-          <h1 className=" pb-8">Raising Expectations</h1>
+          <h1 id="title1">We are Mothers and Daughters</h1>
+          <h1 className="pb-8" id="title2">
+            Raising Expectations
+          </h1>
           <button>
             <Link
               className="text-white text-xl p-2 rounded shadow-xl text-center bg-green-400 md:text-xl lg:text-4xl "
