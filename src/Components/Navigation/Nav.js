@@ -4,30 +4,30 @@ import { FaChevronDown } from "react-icons/fa";
 
 const Nav = () => {
   return (
-    <div className="flex space-x-6 text-gray-500 text-base hidden md:contents lg:text-lg xl:text-lg">
+    <div className="flex space-x-6 text-gray-500 text-base hidden md:contents text-md lg:text-md xl:text-lg">
       <div className="flex flex-row items-center inline-block hover:text-green-400">
-        <Link to="/About" className="lg:pr-2 xl:pr-2">
+        <Link to="/About" className="md:pr-2">
           About Us
         </Link>
-        <FaChevronDown className="lg:text-s xl:text-sm" />
+        <FaChevronDown className="md:text-xs xl:text-sm" />
       </div>
       <div className="flex flex-row items-center inline-block hover:text-green-400">
-        <Link to="/Program" className="lg:pr-2 xl:pr-2">
+        <Link to="/Program" className="md:pr-2">
           Our Program
         </Link>
-        <FaChevronDown className="lg:text-s xl:text-sm" />
+        <FaChevronDown className="md:text-xs xl:text-sm" />
       </div>
       <div className="flex flex-row items-center inline-block hover:text-green-400">
-        <Link to="/Community" className="lg:pr-2 xl:pr-2">
+        <Link to="/Community" className="md:pr-2">
           Our Community
         </Link>
-        <FaChevronDown className="lg:text-s xl:text-sm" />
+        <FaChevronDown className="md:text-xs xl:text-sm" />
       </div>
       <div className="flex flex-row items-center inline-block hover:text-green-400">
-        <Link to="/Participant" className="lg:pr-2 xl:pr-2">
+        <Link to="/Participant" className="md:pr-2">
           Participant Corner
         </Link>
-        <FaChevronDown className="lg:text-s xl:text-sm" />
+        <FaChevronDown className="md:text-xs xl:text-sm" />
       </div>
       <Link
         to="/Donate"
