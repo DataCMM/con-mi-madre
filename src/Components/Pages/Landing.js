@@ -25,8 +25,8 @@ const Landing = () => {
         <div>
           <Header />
         </div>
-        <div className="flex flex-col text-gray-500 text-2xl font-bold tracking-widest pt-40 text-center sm:text-xl md:text-4xl lg:text-5xl lg:pt-40">
-          <h1 id="title1">We are Mothers and Daughters</h1>
+        <div className="flex flex-col text-gray-500 text-2xl font-bold tracking-widest text-center sm:text-xl md:text-4xl lg:text-5xl lg:pt-20">
+          <div id="title1">We are Mothers and Daughters</div>
           <h1 className="pb-8" id="title2">
             Raising Expectations
           </h1>
