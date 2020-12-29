@@ -21,17 +21,21 @@ const Social = () => {
 			</div> */}
       <div className="hidden md:inline-flex space-x-8 text-2xl text-blue-500">
         <div className="flex space-x-6 p-2">
-          <Link to="/Landing">HOME</Link>
-          <Link to="Contact">CONTACT US</Link>
+          <Link className="hover:text-pink-500" to="/Landing">
+            HOME
+          </Link>
+          <Link className="hover:text-pink-500" to="Contact">
+            CONTACT US
+          </Link>
         </div>
         <div className="flex space-x-8 p-4 pr-6">
-          <Link to="/facebook">
+          <Link className="hover:text-pink-500" to="/facebook">
             <FaFacebookSquare />
           </Link>
-          <Link to="/instagram">
+          <Link className="hover:text-pink-500" to="/instagram">
             <FaInstagram />
           </Link>
-          <Link to="/twitter">
+          <Link className="hover:text-pink-500" to="/twitter">
             <FaTwitterSquare />
           </Link>
         </div>

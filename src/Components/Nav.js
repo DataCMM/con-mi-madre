@@ -6,16 +6,16 @@ const Nav = () => {
   return (
     <Links>
       <List>
-        <Link to="/Landing" className="nav-button">
+        <Link to="/Landing" className="hover:text-green-400">
           Home
         </Link>
-        <Link to="/About" className="nav-button">
+        <Link to="/About" className="hover:text-green-400">
           About Us
         </Link>
-        <Link to="/Program" className="nav-button">
+        <Link to="/Program" className="hover:text-green-400">
           Our Program
         </Link>
-        <Link to="/News" className="nav-button">
+        <Link to="/News" className="hover:text-green-400">
           News
         </Link>
         <Link to="/Donate" id="donate">
