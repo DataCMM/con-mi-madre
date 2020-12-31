@@ -8,6 +8,7 @@ import Graduate from "../../images/cmm/additional-services/Scholarship-opportuni
 import BannerImage from "../../images/cmm/Donate-Banner.jpg";
 import { FcGraduationCap, FcDiploma1 } from "react-icons/fc";
 import { FaUserGraduate } from "react-icons/fa";
+import "./pages.css";
 
 import ReactPlayer from "react-player";
 
@@ -42,7 +43,7 @@ const Landing = () => {
       </div>
       <br />
       {/* Our Impact Section */}
-      <div className="bg-blue-500 text-gray-500 p-6 shadow-xl m-auto w-11/12 h-auto flex flex-col w-full">
+      <div className="bg-blue-500 text-gray-500 shadow-xl -mt-6 m-auto w-11/12 h-auto flex flex-col w-full">
         <div className="flex flex-col text-center pb-10 pt-10">
           <h3 className="text-3xl">OUR IMPACT</h3>
           <p className="text-2xl">
