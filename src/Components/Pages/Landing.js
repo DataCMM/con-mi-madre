@@ -8,7 +8,6 @@ import Graduate from "../../images/cmm/additional-services/Scholarship-opportuni
 import BannerImage from "../../images/cmm/Donate-Banner.jpg";
 import { FcGraduationCap, FcDiploma1 } from "react-icons/fc";
 import { FaUserGraduate } from "react-icons/fa";
-import "../../App.scss";
 
 import ReactPlayer from "react-player";
 
