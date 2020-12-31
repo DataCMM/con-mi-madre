@@ -19,7 +19,7 @@ const Landing = () => {
         style={{
           backgroundImage: `url(${BannerImage})`,
         }}
-        className="flex flex-col w-full h-screen bg-center bg-cover bg-fixed bg-no-repeat"
+        className="flex flex-col w-full h-screen bg-center bg-cover bg-fixed bg-no-repeat md:h-54"
       >
         <span className="z-0 w-full h-full absolute opacity-50 bg-black" />
         <div>
