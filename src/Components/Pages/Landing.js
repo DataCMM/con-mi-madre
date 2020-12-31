@@ -20,7 +20,7 @@ const Landing = () => {
         style={{
           backgroundImage: `url(${BannerImage})`,
         }}
-        className="flex flex-col w-full h-screen bg-center bg-cover bg-no-repeat"
+        className="flex flex-col w-full h-screen bg-center bg-cover bg-fixed bg-no-repeat"
       >
         <div>
           <Header />
