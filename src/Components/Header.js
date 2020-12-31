@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="flex h-150 w-full">
       <div className="h-full bg-opacity-0 md:w-1/4 flex flex-none">
-        <img src={CMMLogo} alt="Con mi madre logo" />
+        <img src={CMMLogo} alt="Con mi madre logo" className="z-10" />
       </div>
       <div className="flex w-3/4 items-center justify-end pr-8">
         <Nav />

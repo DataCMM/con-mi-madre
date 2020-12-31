@@ -22,10 +22,11 @@ const Landing = () => {
         }}
         className="flex flex-col w-full h-screen bg-center bg-cover bg-fixed bg-no-repeat"
       >
+        <span className="z-0 w-full h-full absolute opacity-50 bg-black" />
         <div>
           <Header />
         </div>
-        <div className="flex flex-col text-gray-500 text-2xl font-bold tracking-widest text-center sm:text-xl md:text-4xl lg:text-5xl lg:pt-20">
+        <div className="z-10 flex flex-col text-gray-500 text-2xl font-bold tracking-widest text-center sm:text-xl md:text-4xl lg:text-5xl lg:pt-20">
           <div id="title1">We are Mothers and Daughters</div>
           <h1 className="pb-8" id="title2">
             Raising Expectations
