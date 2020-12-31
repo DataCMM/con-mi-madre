@@ -2,13 +2,16 @@ import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 
-const Donate = () => {
+// import styled from 'styled-components';
+
+const About = () => {
   return (
     <div>
       <Header />
-      <h3 className="page-body">Donate Page</h3>
+      <h3 className="page-body">Our Team Page</h3>
       <Footer />
     </div>
   );
 };
-export default Donate;
+
+export default About;
