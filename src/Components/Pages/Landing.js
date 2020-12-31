@@ -1,8 +1,8 @@
 import React from "react";
-import Social from "../Navigation/Social";
 import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
+// import CMMLogo from "../images/horizontal/color-and-white.png";
 
 import Graduate from "../../images/cmm/additional-services/Scholarship-opportunities.jpg";
 import BannerImage from "../../images/cmm/Donate-Banner.jpg";
@@ -15,7 +15,7 @@ import ReactPlayer from "react-player";
 const Landing = () => {
   return (
     <>
-      <Social />
+      <Header />
       <div
         style={{
           backgroundImage: `url(${BannerImage})`,
@@ -24,7 +24,10 @@ const Landing = () => {
       >
         <span className="z-0 w-full h-full absolute opacity-50 bg-black" />
         <div>
-          <Header />
+          {/* <Header /> */}
+          {/* <div className="h-full bg-opacity-0 md:w-1/4 flex flex-none">
+        <img src={CMMLogo} alt="Con mi madre logo" className="z-10" />
+      </div> */}
         </div>
         <div className="z-10 flex flex-col text-gray-500 text-2xl font-bold tracking-widest text-center sm:text-xl md:text-4xl lg:text-5xl lg:pt-20">
           <div id="title1">We are Mothers and Daughters</div>
