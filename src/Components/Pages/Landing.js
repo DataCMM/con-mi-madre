@@ -70,8 +70,8 @@ const Landing = () => {
         </div>
       </div>
       {/* Our Mission Section */}
-      <div className="flex flex-col gap-6 p-6 bg-gray-500 md:flex-row">
-        <div className="space-y-2">
+      <div className="flex flex-col gap-6 p-6 bg-gray-500 md:flex-row justify-between">
+        <div className="space-y-2 w-1/2">
           <div>
             <h3 className="text-2xl text-pink-500">Our Mission</h3>
             <p className="content">
@@ -93,8 +93,12 @@ const Landing = () => {
         </div>
       </div>
       {/* Our Pillars Section */}
-      <div className="bg-blue-500 text-base text-gray-500 flex flex-col p-6 pt-6 gap-6 md:flex-row">
-        <div className="pb-4 md:w-1/3">
+      <div className="bg-blue-500 text-base text-gray-500 flex flex-col p-6 pt-6 gap-6 md:flex-row justify-between">
+        <div className="w-auto h-auto flex items-center md:w-1/2 pr-3">
+          <ReactPlayer url="https://www.youtube.com/watch?v=ajyPvDS-_kY" />
+          {/* <h3>*** Video player will be here ***</h3> */}
+        </div>
+        <div className="pb-4 md:w-1/2">
           <h3 className="text-yellow-500">OUR PILLARS</h3>
           <h4 className="text-2xl">Parental Engagement</h4>
           <p>
@@ -116,10 +120,6 @@ const Landing = () => {
             We unite with local organizations and individuals to better meet the
             needs of the community.
           </p>
-        </div>
-        <div className="w-auto h-auto flex items-center md:w-2/3">
-          <ReactPlayer url="https://www.youtube.com/watch?v=ajyPvDS-_kY" />
-          {/* <h3>*** Video player will be here ***</h3> */}
         </div>
       </div>
       <Footer />
