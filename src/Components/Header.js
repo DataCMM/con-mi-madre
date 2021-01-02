@@ -11,7 +11,7 @@ const Header = () => {
       <div className="h-13 w-screen relative flex flex-wrap items-center text-center justify-between navbar-expand-lg bg-gray-200 font-medium pl-2 pr-2">
         <div className="hidden md:w-full md:flex md:flex-wrap md:items-center md:justify-between md:text-xl md:text-blue-500">
           <div className="flex space-x-6 p-2 md: justify-start">
-            <Link className="hover:text-pink-500" to="/Landing">
+            <Link className="hover:text-pink-500" to="/">
               HOME
             </Link>
             <Link className="hover:text-pink-500" to="Contact">

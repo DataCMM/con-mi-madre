@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
+
 import { Link } from "react-router-dom";
 // import CMMLogo from "../images/horizontal/color-and-white.png";
 
@@ -15,7 +14,6 @@ import ReactPlayer from "react-player";
 const Landing = () => {
   return (
     <>
-      <Header />
       <div
         style={{
           backgroundImage: `url(${BannerImage})`,
@@ -125,7 +123,6 @@ const Landing = () => {
           </p>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
