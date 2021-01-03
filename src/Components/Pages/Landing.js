@@ -1,8 +1,7 @@
 import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
+
 import { Link } from "react-router-dom";
-// import CMMLogo from "../images/horizontal/color-and-white.png";
+import CMMLogo from "../../images/horizontal/color-and-white.png";
 
 import Graduate from "../../images/cmm/additional-services/Scholarship-opportunities.jpg";
 import BannerImage from "../../images/cmm/Donate-Banner.jpg";
@@ -15,21 +14,24 @@ import ReactPlayer from "react-player";
 const Landing = () => {
   return (
     <>
-      <Header />
       <div
         style={{
           backgroundImage: `url(${BannerImage})`,
         }}
-        className="flex flex-col w-full h-screen bg-center bg-cover bg-fixed bg-no-repeat md:h-54"
+        className="flex flex-col w-full h-screen bg-center bg-cover bg-fixed bg-no-repeat md:h-70"
       >
         <span className="z-0 w-full h-full absolute opacity-50 bg-black" />
         <div>
-          {/* <Header /> */}
-          {/* <div className="h-full bg-opacity-0 md:w-1/4 flex flex-none">
-        <img src={CMMLogo} alt="Con mi madre logo" className="z-10" />
-      </div> */}
+          <div className="h-1/4 bg-opacity-0 md:w-1/2 flex flex-none">
+            <img
+              style={{ maxWidth: "65%" }}
+              src={CMMLogo}
+              alt="Con mi madre logo"
+              className="z-10"
+            />
+          </div>
         </div>
-        <div className="z-10 flex flex-col text-gray-500 text-2xl font-bold tracking-widest text-center sm:text-xl md:text-4xl lg:text-5xl lg:pt-20">
+        <div className="z-10 flex flex-col text-gray-500 text-2xl font-bold tracking-widest text-center sm:text-xl md:text-4xl lg:text-5xl lg:pt-10">
           <div id="title1">We are Mothers and Daughters</div>
           <h1 className="pb-8" id="title2">
             Raising Expectations
@@ -125,7 +127,6 @@ const Landing = () => {
           </p>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

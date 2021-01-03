@@ -1,5 +1,7 @@
 import React from "react";
 import Logo from "../images/horizontal/color.png";
+import { Link } from "react-router-dom";
+import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,6 +13,17 @@ const Footer = () => {
         <h3>4175 Freidrich Ln #200, Austin, TX 78744</h3>
         <h3>(512) 467-4483</h3>
         <h3>info@conmimadre.com</h3>
+        <div className="flex md:flex-row justify-end text-center space-x-8 p-4 pr-6">
+          <Link className="hover:text-pink-500" to="/facebook">
+            <FaFacebookSquare className="md:text-3xl" />
+          </Link>
+          <Link className="hover:text-pink-500" to="/instagram">
+            <FaInstagram className="md:text-3xl" />
+          </Link>
+          <Link className="hover:text-pink-500" to="/twitter">
+            <FaTwitterSquare className="md:text-3xl" />
+          </Link>
+        </div>
       </div>
     </div>
   );
