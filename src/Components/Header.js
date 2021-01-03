@@ -18,7 +18,6 @@ const Header = () => {
             Contact Us
           </Link>
         </div>
-
         <div className="flex items-center hover:text-pink-500">
           <Link to="/About" className="md:pr-2">
             About Us
