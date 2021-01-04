@@ -22,7 +22,7 @@ const Landing = () => {
       >
         <span className="z-0 w-full h-full absolute opacity-50 bg-black" />
 
-        <div className="flex flex-none self-end pl-12 h-1/4 w-3/4 md:w-1/2 md:h-1/2 bg-opacity-0 lg:h-1/4 lg:w-1/3">
+        <div className="flex flex-none self-start pl-2 h-1/4 w-3/4 md: -mt-10 md:w-1/2 md:h-1/2 bg-opacity-0 lg:h-1/3 lg:w-1/3">
           <img
             // style={{ maxWidth: "65%" }}
             src={CMMLogo}
