@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import { FaChevronDown } from "react-icons/fa";
-import { FiMenu } from "react-icons/fi";
+
+import Dropdown from "../Components/Dropdown";
 
 const Header = () => {
   return (
-    <div className="h-16 w-full flex justify-between items-center text-blue-500 bg-gray-200 pl-10 pr-10">
+    <div className="h-16 pl-5 pr-5 w-full flex justify-between items-center text-blue-500 bg-gray-200 md:pl-10 md:pr-10">
       <div className="hidden md:contents font-medium text-sm lg:text-base">
         {/* ####copy#### <div className="h-16 w-full relative md:flex md:justify-between md:items-center md:navbar-expand-lg md:text-blue-500 bg-gray-200 font-medium pl-10 pr-10"> */}
         <div>
@@ -50,8 +52,28 @@ const Header = () => {
         </Link>
       </div>
       {/* Mobile Header */}
-      <div className="-ml-4 md:hidden">
-        <FiMenu />
+      <div className="md:hidden w-full flex justify-between">
+        <Dropdown color="white" />
+        <div className="flex space-x-6">
+          <div>
+            <Link to="/" className="hover:text-pink-500">
+              Home
+            </Link>
+          </div>
+          <div>
+            <Link to="/Contact" className="hover:text-pink-500">
+              Contact Us
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/Donate"
+              className="text-white p-2 pl-4 pr-4 rounded shadow-xl text-center text-gray-500 bg-pink-500 hover:text-pink-500 hover:bg-green-400"
+            >
+              Donate
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
