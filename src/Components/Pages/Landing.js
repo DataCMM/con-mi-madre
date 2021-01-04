@@ -76,7 +76,7 @@ const Landing = () => {
       </div>
       {/* Our Mission Section */}
       <div className="flex flex-col gap-6 p-6 bg-gray-500 md:flex-row justify-between">
-        <div className="space-y-2 w-1/2">
+        <div className="space-y-2 md:w-1/2">
           <div>
             <h3 className="text-2xl text-pink-500">Our Mission</h3>
             <p className="content">
@@ -93,12 +93,12 @@ const Landing = () => {
             </p>
           </div>
         </div>
-        <div className="w-1/2 flex justify-center">
+        <div className="md:w-1/2 flex justify-center">
           <img id="grad" src={Graduate} alt="Female graduate" />
         </div>
       </div>
       {/* Our Pillars Section */}
-      <div className="bg-blue-500 text-base text-gray-500 flex flex-col p-6 pt-6 gap-6 md:flex-row justify-between">
+      <div className="bg-blue-500 text-base text-gray-500 flex flex-col flex-col-reverse p-6 pt-6 gap-6 md:flex-row justify-between">
         <div className="w-auto h-auto flex items-center md:w-1/2 pr-3">
           <ReactPlayer url="https://www.youtube.com/watch?v=ajyPvDS-_kY" />
           {/* <h3>*** Video player will be here ***</h3> */}
