@@ -75,6 +75,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
+
       {/* Our Mission Section */}
       <div className="flex flex-col gap-6 p-6 bg-gray-500 md:flex-row justify-between">
         <div className="space-y-2 md:w-1/2">
@@ -98,6 +99,7 @@ const Landing = () => {
           <img id="grad" src={Graduate} alt="Female graduate" />
         </div>
       </div>
+
       {/* Our Pillars Section */}
       <div className="bg-blue-500 text-base text-gray-500 flex flex-col flex-col-reverse p-6 pt-6 gap-6 md:flex-row justify-between">
         <div className="w-auto h-auto flex items-center md:w-1/2 pr-3">
