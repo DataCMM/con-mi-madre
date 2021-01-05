@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import CMMLogo from "../../images/horizontal/color-and-white.png";
 
 import Graduate from "../../images/cmm/additional-services/Scholarship-opportunities.jpg";
-import BannerImage from "../../images/cmm/Donate-Banner.jpg";
+import BannerImage from "../../images/cmm/Donate-Banner.JPG";
 import { FcGraduationCap, FcDiploma1 } from "react-icons/fc";
 import { FaUserGraduate } from "react-icons/fa";
 import "./pages.css";
