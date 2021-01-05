@@ -47,6 +47,7 @@ const Landing = () => {
         </div>
       </div>
       <br />
+
       {/* Our Impact Section */}
       <div className="bg-blue-500 text-gray-500 shadow-xl -mt-6 m-auto w-11/12 h-auto flex flex-col w-full">
         <div className="flex flex-col text-center pb-10 pt-10">
