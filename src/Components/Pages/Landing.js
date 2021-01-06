@@ -5,8 +5,9 @@ import CMMLogo from "../../images/stacked/no-text-color-and-white.png";
 
 import Graduate from "../../images/cmm/additional-services/Scholarship-opportunities.jpg";
 import BannerImage from "../../images/cmm/Donate-Banner.JPG";
-import { FcGraduationCap, FcDiploma1 } from "react-icons/fc";
-import { FaUserGraduate } from "react-icons/fa";
+import { FcGraduationCap } from "react-icons/fc";
+import { FaUniversity } from "react-icons/fa";
+import { BsGraphUp } from "react-icons/bs";
 import "./pages.css";
 
 import ReactPlayer from "react-player";
@@ -18,11 +19,11 @@ const Landing = () => {
         style={{
           backgroundImage: `url(${BannerImage})`,
         }}
-        className="flex flex-col justify-between w-full h-screen bg-center bg-cover bg-fixed bg-no-repeat md:h-70"
+        className="flex flex-col justify-between w-full h-screen bg-center bg-cover bg-fixed bg-no-repeat md:h-screen"
       >
         <span className="z-0 w-full h-full absolute opacity-50 bg-black" />
 
-        <div className="flex flex-none self-center pt-20 h-1/2 w-1/2 md:self-start md:mt-10 md:ml-10 md:h-1/5 md:w-1/5 bg-opacity-0">
+        <div className="flex flex-none self-center mt-20 h-1/2 w-1/2 md:mt-10 md:self-start md:ml-12 sm:h-1/3 sm:w-1/3 md:h-1/6 md:w-1/6 bg-opacity-0">
           <img
             // style={{ maxWidth: "65%" }}
             src={CMMLogo}
@@ -31,14 +32,14 @@ const Landing = () => {
           />
         </div>
 
-        <div className="z-10 flex flex-col pb-48 pt-20 text-gray-500 text-2xl font-bold tracking-widest text-center sm:text-xl md:text-4xl md:pt-20 lg:text-5xl lg:pt-10">
+        <div className="z-10 flex flex-col pb-48 pt-20 text-gray-500 text-2xl font-bold tracking-widest text-center sm:text-xl md:text-4xl md:pt-40 lg:text-5xl lg:pt-20">
           <div id="title1">We are Mothers and Daughters</div>
           <h1 className="pb-8" id="title2">
             Raising Expectations
           </h1>
-          <button>
+          <button className="lg:mt-6">
             <Link
-              className="text-white text-xl p-2 rounded shadow-xl text-center bg-green-400 md:text-xl lg:text-4xl hover:text-green-400 hover:bg-white"
+              className="text-white text-xl p-3  rounded shadow-xl font-black text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
               to="/Donate"
             >
               Donate Today
@@ -63,13 +64,13 @@ const Landing = () => {
             <h3 className="text-3xl">Graduation Rate</h3>
           </div>
           <div className="text-center pt-5">
-            <FcDiploma1 className="h-40 w-full" />
+            <BsGraphUp className="h-40 w-full text-gray-300" />
             <h3 className="text-3xl">79% College</h3>
             <h3 className="text-3xl">Enrollment Rate</h3>
           </div>
 
-          <div className="text-center text-pink-500 pt-5">
-            <FaUserGraduate className="h-40 w-full" />
+          <div className="text-center text-gray-700 pt-5">
+            <FaUniversity className="h-40 w-full" />
             <h3 className="text-3xl  text-gray-500">93% College</h3>
             <h3 className="text-3xl text-gray-500">Retention Rate</h3>
           </div>
