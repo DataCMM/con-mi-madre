@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import CMMLogo from "../../images/horizontal/color-and-white.png";
+import CMMLogo from "../../images/stacked/color-and-white.png";
 
 import Graduate from "../../images/cmm/additional-services/Scholarship-opportunities.jpg";
 import BannerImage from "../../images/cmm/Donate-Banner.jpg";
@@ -22,7 +22,7 @@ const Landing = () => {
       >
         <span className="z-0 w-full h-full absolute opacity-50 bg-black" />
 
-        <div className="flex flex-none self-start pl-2 h-1/4 w-3/4 md:-mt-8 md:-ml-5 md:w-1/2 md:h-1/2 bg-opacity-0 lg:h-1/3 lg:w-1/3">
+        <div className="flex flex-none self-start pl-2 h-1/4 w-3/4 md:-mt-8 md:-ml-10 md:w-1/2 md:h-1/2 bg-opacity-0 lg:h-2/6 lg:w-2/6">
           <img
             // style={{ maxWidth: "65%" }}
             src={CMMLogo}
