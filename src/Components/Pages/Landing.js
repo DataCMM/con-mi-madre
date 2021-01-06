@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import CMMLogo from "../../images/stacked/color-and-white.png";
 
 import Graduate from "../../images/cmm/additional-services/Scholarship-opportunities.jpg";
-import BannerImage from "../../images/cmm/Donate-Banner.jpg";
+import BannerImage from "../../images/cmm/Donate-Banner.JPG";
 import { FcGraduationCap, FcDiploma1 } from "react-icons/fc";
 import { FaUserGraduate } from "react-icons/fa";
 import "./pages.css";
@@ -22,7 +22,7 @@ const Landing = () => {
       >
         <span className="z-0 w-full h-full absolute opacity-50 bg-black" />
 
-        <div className="flex flex-none self-start pl-2 h-1/4 w-3/4 md:-mt-8 md:-ml-10 md:w-1/2 md:h-1/2 bg-opacity-0 lg:h-2/6 lg:w-2/6">
+        <div className="flex flex-none self-start pl-2 h-1/4 w-3/4 md:-mt-8 md:-ml-5 md:w-1/2 md:h-1/2 bg-opacity-0 lg:h-1/3 lg:w-1/3">
           <img
             // style={{ maxWidth: "65%" }}
             src={CMMLogo}
@@ -47,6 +47,7 @@ const Landing = () => {
         </div>
       </div>
       <br />
+
       {/* Our Impact Section */}
       <div className="bg-blue-500 text-gray-500 shadow-xl -mt-6 m-auto w-11/12 h-auto flex flex-col w-full">
         <div className="flex flex-col text-center pb-10 pt-10">
@@ -74,6 +75,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
+
       {/* Our Mission Section */}
       <div className="flex flex-col gap-6 p-6 bg-gray-500 md:flex-row justify-between">
         <div className="space-y-2 md:w-1/2">
@@ -97,6 +99,7 @@ const Landing = () => {
           <img id="grad" src={Graduate} alt="Female graduate" />
         </div>
       </div>
+
       {/* Our Pillars Section */}
       <div className="bg-blue-500 text-base text-gray-500 flex flex-col flex-col-reverse p-6 pt-6 gap-6 md:flex-row justify-between">
         <div className="w-auto h-auto flex items-center md:w-1/2 pr-3">
