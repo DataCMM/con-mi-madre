@@ -19,11 +19,11 @@ const Landing = () => {
         style={{
           backgroundImage: `url(${BannerImage})`,
         }}
-        className="flex flex-col justify-between w-full h-screen bg-center bg-cover bg-fixed bg-no-repeat md:h-70"
+        className="flex flex-col justify-between w-full h-screen bg-center bg-cover bg-fixed bg-no-repeat md:h-screen"
       >
         <span className="z-0 w-full h-full absolute opacity-50 bg-black" />
 
-        <div className="flex flex-none self-center mt-20 h-1/2 w-1/2 md:mt-10 md:self-start md:ml-10 sm:h-1/3 sm:w-1/3 md:h-1/5 md:w-1/5 bg-opacity-0">
+        <div className="flex flex-none self-center mt-20 h-1/2 w-1/2 md:mt-10 md:self-start md:ml-12 sm:h-1/3 sm:w-1/3 md:h-1/6 md:w-1/6 bg-opacity-0">
           <img
             // style={{ maxWidth: "65%" }}
             src={CMMLogo}
@@ -37,9 +37,9 @@ const Landing = () => {
           <h1 className="pb-8" id="title2">
             Raising Expectations
           </h1>
-          <button>
+          <button className="lg:mt-6">
             <Link
-              className="text-white text-xl p-3 rounded shadow-xl text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
+              className="text-white text-xl p-3  rounded shadow-xl text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
               to="/Donate"
             >
               Donate Today

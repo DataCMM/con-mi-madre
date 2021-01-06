@@ -8,7 +8,7 @@ import Dropdown from "../Components/Dropdown";
 const Header = () => {
   return (
     <div className="h-16 pl-5 pr-5 w-full flex justify-between items-center text-blue-500 bg-gray-200 md:pl-10 md:pr-10">
-      <div className="hidden md:contents font-medium text-sm lg:text-base">
+      <div className="hidden md:contents font-medium text-sm md:text-xs lg:text-sm lg:text-base">
         {/* ####copy#### <div className="h-16 w-full relative md:flex md:justify-between md:items-center md:navbar-expand-lg md:text-blue-500 bg-gray-200 font-medium pl-10 pr-10"> */}
         <div>
           <Link to="/" className="hover:text-pink-500">
