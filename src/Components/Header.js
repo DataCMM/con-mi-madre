@@ -46,7 +46,7 @@ const Header = () => {
         </div>
         <Link
           to="/Donate"
-          className="text-white p-2 pl-4 pr-4 rounded shadow-xl text-center text-gray-500 bg-pink-500 hover:text-pink-500 hover:bg-green-400"
+          className="text-white p-2 pl-4 pr-4 rounded shadow-xl text-center text-gray-500 bg-pink-500 hover:text-pink-500 hover:bg-gray-500"
         >
           Donate
         </Link>
