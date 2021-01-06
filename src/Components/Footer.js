@@ -25,13 +25,13 @@ const Footer = () => {
         </a>
         <div className="flex justify-center md:flex-row md:justify-end text-center space-x-8 p-4 pr-6">
           <Link className="hover:text-pink-500" to="/facebook">
-            <FaFacebookSquare className="md:text-3xl" />
+            <FaFacebookSquare className="text-3xl" />
           </Link>
           <Link className="hover:text-pink-500" to="/instagram">
-            <FaInstagram className="md:text-3xl" />
+            <FaInstagram className="text-3xl" />
           </Link>
           <Link className="hover:text-pink-500" to="/twitter">
-            <FaTwitterSquare className="md:text-3xl" />
+            <FaTwitterSquare className="text-3xl" />
           </Link>
         </div>
       </div>
