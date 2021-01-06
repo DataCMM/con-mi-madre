@@ -22,7 +22,7 @@ const Landing = () => {
       >
         <span className="z-0 w-full h-full absolute opacity-50 bg-black" />
 
-        <div className="flex flex-none self-center pt-20 h-1/2 w-1/2 md:self-start md:mt-10 md:ml-10 md:h-1/5 md:w-1/5 bg-opacity-0">
+        <div className="flex flex-none self-center mt-20 h-1/2 w-1/2 md:mt-10 md:self-start md:ml-10 sm:h-1/3 sm:w-1/3 md:h-1/5 md:w-1/5 bg-opacity-0">
           <img
             // style={{ maxWidth: "65%" }}
             src={CMMLogo}
@@ -31,7 +31,7 @@ const Landing = () => {
           />
         </div>
 
-        <div className="z-10 flex flex-col pb-48 pt-20 text-gray-500 text-2xl font-bold tracking-widest text-center sm:text-xl md:text-4xl md:pt-20 lg:text-5xl lg:pt-10">
+        <div className="z-10 flex flex-col pb-48 pt-20 text-gray-500 text-2xl font-bold tracking-widest text-center sm:text-xl md:text-4xl md:pt-40 lg:text-5xl lg:pt-20">
           <div id="title1">We are Mothers and Daughters</div>
           <h1 className="pb-8" id="title2">
             Raising Expectations
