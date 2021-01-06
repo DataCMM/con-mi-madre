@@ -11,12 +11,19 @@ const Footer = () => {
       </div>
       <div className="text-blue-500 text-lg pb-4 md:flex md:flex-col md:w-2/3 md:items-center md:justify-center">
         <h3>4175 Freidrich Ln #200, Austin, TX 78744</h3>
-        <a href="tel:+1-512-467-4483">
+        <a
+          href="tel:+1-512-467-4483"
+          className="hover:text-pink-500 hover:underline"
+        >
           <h3>(512) 467-4483</h3>
         </a>
-
-        <h3>info@conmimadre.com</h3>
-        <div className="flex md:flex-row justify-end text-center space-x-8 p-4 pr-6">
+        <a
+          href="info@conmimadre.com"
+          className="hover:text-pink-500 hover:underline"
+        >
+          <h3>info@conmimadre.com</h3>
+        </a>
+        <div className="flex justify-center md:flex-row md:justify-end text-center space-x-8 p-4 pr-6">
           <Link className="hover:text-pink-500" to="/facebook">
             <FaFacebookSquare className="md:text-3xl" />
           </Link>
