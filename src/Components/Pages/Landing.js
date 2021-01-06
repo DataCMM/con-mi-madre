@@ -39,7 +39,7 @@ const Landing = () => {
           </h1>
           <button className="lg:mt-6">
             <Link
-              className="text-white text-xl p-3  rounded shadow-xl text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
+              className="text-white text-xl p-3  rounded shadow-xl font-black text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
               to="/Donate"
             >
               Donate Today
