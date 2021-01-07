@@ -22,11 +22,11 @@ const Landing = () => {
           }}
           className="flex flex-col w-full h-full justify-between bg-cover bg-center bg-fixed bg-no-repeat"
         >
-          {/* <span
+          <span
             className="w-full h-full absolute opacity-50 bg-black bg-cover"
             id="overlay"
-          /> */}
-          <div className="sticky flex flex-none  self-center mt-16 h-1/2 w-1/2   sm:h-1/3 sm:w-1/3 md:h-1/6 md:w-1/6 bg-opacity-0">
+          />
+          <div className="sticky flex flex-none pl-10  self-center mt-16 h-1/2 w-1/2   sm:h-1/3 sm:w-1/3 md:self-start md:h-1/6 md:w-1/6 bg-opacity-0">
             <img
               // style={{ maxWidth: "65%" }}
               src={CMMLogo}
