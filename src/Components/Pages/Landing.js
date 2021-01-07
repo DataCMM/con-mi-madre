@@ -15,15 +15,18 @@ import ReactPlayer from "react-player";
 const Landing = () => {
   return (
     <>
-      <div id="banner" className="w-full h-screen">
+      <div id="banner" className="container">
         <div
           style={{
             backgroundImage: `url(${BannerImage})`,
           }}
-          className="flex flex-col justify-between bg-cover bg-fixed bg-no-repeat"
+          className="flex flex-col w-full h-full justify-between bg-cover bg-center bg-fixed bg-no-repeat"
         >
-          <span className="z-0 w-full h-full absolute opacity-50 bg-black" />
-          <div className="sticky flex flex-none  self-center pt-20 h-1/2 w-1/2 sm:-pb-20 md:pt-20 lg:pt-10 xl:pt-10 sm:h-1/3 sm:w-1/3 md:h-1/4 md:w-1/4 bg-opacity-0">
+          {/* <span
+            className="w-full h-full absolute opacity-50 bg-black bg-cover"
+            id="overlay"
+          /> */}
+          <div className="sticky flex flex-none  self-center mt-16 h-1/2 w-1/2   sm:h-1/3 sm:w-1/3 md:h-1/6 md:w-1/6 bg-opacity-0">
             <img
               // style={{ maxWidth: "65%" }}
               src={CMMLogo}
@@ -32,7 +35,7 @@ const Landing = () => {
             />
           </div>
 
-          <div className="sticky z-10 flex flex-col pb-48 pt-20 md:pt-0 text-gray-500 text-2xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:pt-10">
+          <div className="sticky z-10 flex flex-col mb-20 mt-24 pb-3 md:pt-0 text-gray-500 text-2xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-24">
             <div id="title1">We are Mothers and Daughters</div>
             <h1 className="pb-8" id="title2">
               Raising Expectations
