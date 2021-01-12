@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CMMLogo from "../../images/stacked/no-text-color-and-white.png";
 
-import Graduate from "../../images/cmm/additional-services/Scholarship-opportunities.jpg";
-import BannerImage from "../../images/cmm/Donate-Banner.JPG";
+import Graduate from "../../images/landing/GirlGrad.jpg";
+import BannerImage from "../../images/landing/Donate-Banner.JPG";
 import { FcGraduationCap } from "react-icons/fc";
 import { FaUniversity } from "react-icons/fa";
 import { BsGraphUp } from "react-icons/bs";
