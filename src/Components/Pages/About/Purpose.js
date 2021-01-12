@@ -1,8 +1,11 @@
 import React from "react";
+import Header from "../../Header";
+import Footer from "../../Footer";
 
 const Purpose = () => {
   return (
     <div>
+      <Header />
       <div className="bg-yellow-500 flex justify-start content-start w-full h-1/3 bg-center bg-cover bg-no-repeat">
         <div className="text-gray-500 text-2xl font-bold tracking-widest pt-40 sm:text-xl md:text-4xl lg:text-5xl lg:pt-40">
           <h1>Our Purpose</h1>
@@ -108,6 +111,7 @@ const Purpose = () => {
           information
         </p>
       </div>
+      <Footer />
     </div>
   );
 };
