@@ -108,7 +108,7 @@ const Landing = () => {
       {/* Our Pillars Section */}
       <div className="bg-blue-500 text-base text-gray-500 flex flex-col flex-col-reverse p-6 pt-6 gap-6 md:flex-row justify-between">
         <div className="w-auto h-auto flex items-center md:w-1/2 pr-3">
-          <ReactPlayer url="https://www.youtube.com/watch?v=ajyPvDS-_kY" />
+          <ReactPlayer url="../../images/landing/CMM.mp4" />
           {/* <h3>*** Video player will be here ***</h3> */}
         </div>
         <div className="pb-4 md:w-1/2">
