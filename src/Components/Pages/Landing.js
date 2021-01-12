@@ -26,10 +26,10 @@ const Landing = () => {
           className="flex flex-col w-screen min-h-screen justify-between bg-cover bg-center bg-fixed bg-no-repeat"
         >
           <span
-            className="w-full min-h-full absolute opacity-50 bg-black bg-cover"
+            className="w-full h-screen absolute opacity-50 bg-black bg-cover"
             id="overlay"
           />
-          <div className="sticky flex flex-none pl-10  self-center mt-16 h-1/2 w-1/2   sm:h-1/5 sm:w-1/5 sm:self-start md:h-1/6 md:w-1/6 bg-opacity-0">
+          <div className="sticky flex flex-none pl-10 pt-16  self-center h-1/2 w-1/2   sm:h-1/5 sm:w-1/5 sm:self-start md:h-1/6 md:w-1/6 bg-opacity-0">
             <img src={CMMLogo} alt="Con mi madre logo" className="z-10" />
           </div>
 
