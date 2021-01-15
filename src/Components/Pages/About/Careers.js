@@ -1,6 +1,8 @@
 import React from "react";
 
 import CareersBanner from "../../../images/careers/Careers-Banner.jpg";
+import Intern from "../../../images/careers/Careers-1.jpg";
+
 import Logo from "../../../images/stacked/text-only.png";
 
 const Careers = () => {
@@ -44,17 +46,23 @@ const Careers = () => {
       </div>
 
       {/*  Openings */}
-      <div className="flex flex-col text-center pb-10 pt-10 bg-gray-500">
+      <div className="flex flex-col text-center p-6 pb-10 pt-10 bg-gray-500">
         <h3 className="text-3xl text-pink-500">Current Openings</h3>
         <p className="text-2xl">There are no openings at this time</p>
       </div>
 
       {/* Internships */}
       <div className="bg-blue-500 text-gray-500 text-2xl shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h3 className="text-4xl underline">Internships</h3>
+        <div
+          style={{
+            backgroundImage: `url(${Intern})`,
+          }}
+          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+        ></div>
+        <h3 className="text-4xl">Internships</h3>
         <br />
         <div className="pb-6">
-          <h3 className="text-3xl">
+          <h3 className="text-3xl pb-2">
             Programming Intern (Central Texas & Fort Worth Chapter)
           </h3>
           <p className="text-2xl">
@@ -65,7 +73,7 @@ const Careers = () => {
           </p>
         </div>
         <div className="pb-6">
-          <h3 className="text-3xl">
+          <h3 className="text-3xl pb-2">
             Communications Intern (Central Texas or Fort Worth chapter)
           </h3>
           <p className="text-2xl">
@@ -75,7 +83,7 @@ const Careers = () => {
           </p>
         </div>
         <div className="pb-6">
-          <h3 className="text-3xl">
+          <h3 className="text-3xl pb-2">
             Development Intern (Central Texas chapter)
           </h3>
           <p className="text-2xl">
