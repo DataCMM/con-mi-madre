@@ -46,7 +46,7 @@ const Careers = () => {
       </div>
 
       {/*  Openings */}
-      <div className="flex flex-col text-center p-6 pb-10 pt-10 bg-gray-500">
+      <div className="text-center p-6 pb-10 pt-10 bg-gray-500">
         <h3 className="text-3xl text-pink-500">Current Openings</h3>
         <p className="text-2xl">There are no openings at this time</p>
       </div>
