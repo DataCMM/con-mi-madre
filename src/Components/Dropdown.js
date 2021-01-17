@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Popper from "popper.js";
 import { FiMenu } from "react-icons/fi";
 
 const Dropdown = ({ color }) => {
   // dropdown props
-  const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
+  const [dropdownPopoverShow, setDropdownPopoverShow] = useState(false);
   const btnDropdownRef = React.createRef();
   const popoverDropdownRef = React.createRef();
   const openDropdownPopover = () => {
@@ -51,8 +52,8 @@ const Dropdown = ({ color }) => {
               }
               style={{ minWidth: "12rem" }}
             >
-              <a
-                href="/Purpose"
+              <Link
+                to="/Purpose"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
@@ -60,9 +61,9 @@ const Dropdown = ({ color }) => {
                 onClick={(e) => e.preventDefault()}
               >
                 Our Purpose
-              </a>
-              <a
-                href="/Program"
+              </Link>
+              <Link
+                to="/Program"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
@@ -70,9 +71,9 @@ const Dropdown = ({ color }) => {
                 onClick={(e) => e.preventDefault()}
               >
                 Program
-              </a>
-              <a
-                href="/Services"
+              </Link>
+              <Link
+                to="/Services"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
@@ -80,9 +81,9 @@ const Dropdown = ({ color }) => {
                 onClick={(e) => e.preventDefault()}
               >
                 Services
-              </a>
-              <a
-                href="/Involved"
+              </Link>
+              <Link
+                to="/Involved"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
@@ -90,9 +91,9 @@ const Dropdown = ({ color }) => {
                 onClick={(e) => e.preventDefault()}
               >
                 Get Involved
-              </a>
-              <a
-                href="/Events"
+              </Link>
+              <Link
+                to="/Events"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
@@ -100,9 +101,9 @@ const Dropdown = ({ color }) => {
                 onClick={(e) => e.preventDefault()}
               >
                 Events
-              </a>
-              <a
-                href="/Awards"
+              </Link>
+              <Link
+                to="/Awards"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
@@ -110,9 +111,9 @@ const Dropdown = ({ color }) => {
                 onClick={(e) => e.preventDefault()}
               >
                 Awards
-              </a>
-              <a
-                href="/Partners"
+              </Link>
+              <Link
+                to="/Partners"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
@@ -120,9 +121,9 @@ const Dropdown = ({ color }) => {
                 onClick={(e) => e.preventDefault()}
               >
                 Our Partners
-              </a>
-              <a
-                href="/Careers"
+              </Link>
+              <Link
+                to="/Careers"
                 className={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
@@ -130,18 +131,7 @@ const Dropdown = ({ color }) => {
                 onClick={(e) => e.preventDefault()}
               >
                 Careers
-              </a>
-              <div className="h-0 my-2 border border-solid border-t-0 border-gray-100 opacity-25" />
-              <a
-                href="/Donate"
-                className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
-                  (color === "white" ? " text-green-400" : "text-white")
-                }
-                onClick={(e) => e.preventDefault()}
-              >
-                Donate
-              </a>
+              </Link>
             </div>
           </div>
         </div>
