@@ -28,25 +28,25 @@ const EventsGallery = () => {
           alt="2017 Corazon Awards"
           src={Event2017A}
         /> */}
-        <p className="legend">2019 Corazon Awards</p>
+        <p className="legend">2019 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2019B})` }}
         className="w-full h-48 bg-cover bg-center bg-no-repeat"
       >
-        <p className="legend">2019 Corazon Awards</p>
+        <p className="legend">2019 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2019C})` }}
         className="w-full h-48 bg-cover bg-center bg-no-repeat"
       >
-        <p className="legend">2019 Corazon Awards</p>
+        <p className="legend">2019 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2019D})` }}
         className="w-full h-48 bg-cover bg-center bg-no-repeat"
       >
-        <p className="legend">2019 Corazon Awards</p>
+        <p className="legend">2019 Corazón Awards</p>
       </div>
 
       {/* 2018 Awards */}
@@ -54,19 +54,19 @@ const EventsGallery = () => {
         style={{ backgroundImage: `url(${Event2018A})` }}
         className="w-full h-48 bg-cover bg-center bg-no-repeat"
       >
-        <p className="legend">2018 Corazon Awards</p>
+        <p className="legend">2018 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2018B})` }}
         className="w-full h-48 bg-cover bg-center bg-no-repeat"
       >
-        <p className="legend">2018 Corazon Awards</p>
+        <p className="legend">2018 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2018C})` }}
         className="w-full h-48 bg-cover bg-center bg-no-repeat"
       >
-        <p className="legend">2018 Corazon Awards</p>
+        <p className="legend">2018 Corazón Awards</p>
       </div>
 
       {/* 2017 Awards */}
@@ -74,25 +74,25 @@ const EventsGallery = () => {
         style={{ backgroundImage: `url(${Event2017A})` }}
         className="w-full h-48 bg-cover bg-center bg-no-repeat"
       >
-        <p className="legend">2017 Corazon Awards</p>
+        <p className="legend">2017 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2017B})` }}
         className="w-full h-48 bg-cover bg-center bg-no-repeat"
       >
-        <p className="legend">2017 Corazon Awards</p>
+        <p className="legend">2017 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2017C})` }}
         className="w-full h-48 bg-cover bg-center bg-no-repeat"
       >
-        <p className="legend">2017 Corazon Awards</p>
+        <p className="legend">2017 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2017D})` }}
         className="w-full h-48 bg-cover bg-center bg-no-repeat"
       >
-        <p className="legend">2017 Corazon Awards</p>
+        <p className="legend">2017 Corazón Awards</p>
       </div>
     </Carousel>
   );

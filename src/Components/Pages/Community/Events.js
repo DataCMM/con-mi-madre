@@ -43,8 +43,25 @@ const Services = () => {
 
       {/* Image Gallery */}
       <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl pt-6">
-        <h3 className="text-3xl pb-6 text-center">Corazon Awards</h3>
+        <h3 className="text-3xl pb-6 text-center">Corazón Awards</h3>
         <EventsGallery />
+      </div>
+
+      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
+        <h3 className="text-3xl pb-6">
+          Con Mi MADRE Annual Corazón Awards - 2021
+        </h3>
+        <p>
+          Information coming soon! Please follow us on social media to be
+          notified about this year’s event!
+        </p>
+      </div>
+      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
+        <h3 className="text-3xl pb-6">Past Annual Corazón Honorees</h3>
+        <p>
+          Information coming soon! Please follow us on social media to be
+          notified about this year’s event!
+        </p>
       </div>
     </>
   );
