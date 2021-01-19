@@ -27,7 +27,7 @@ const Services = () => {
             <img src={Logo} alt="Con mi madre logo" className="z-10" />
           </div>
 
-          <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
+          <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-2xl font-medium tracking-widest text-center">
             <div id="title1">Additional Services</div>
           </div>
         </div>
