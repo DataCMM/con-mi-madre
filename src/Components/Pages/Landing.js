@@ -83,8 +83,8 @@ const Landing = () => {
       </div>
 
       {/* Our Mission Section */}
-      <div className="flex flex-col gap-6 p-6 bg-gray-500 md:flex-row justify-between">
-        <div className="space-y-2 md:w-1/2">
+      <div className="flex flex-col gap-6 p-6 bg-gray-500 md:flex-row">
+        <div className="pt-20  flex flex-col pl-14 md:w-1/2 md:space-y-20">
           <div>
             <h3 className="text-2xl text-pink-500">Our Mission</h3>
             <p className="content">
@@ -101,7 +101,7 @@ const Landing = () => {
             </p>
           </div>
         </div>
-        <div className="md:w-1/2 flex justify-center">
+        <div className="h-60 w-1/3 flex justify-center">
           <img id="grad" src={Graduate} alt="Female graduate" />
         </div>
       </div>
