@@ -7,12 +7,12 @@ import Logo from "../../../images/stacked/text-only.png";
 const Careers = () => {
   return (
     <>
-      {/* <div id="careers-banner">
+      <div className="relative" id="careers-banner">
         <div
           style={{
             backgroundImage: `url(${CareersBanner})`,
           }}
-          className="w-full xs:h-48 bg-cover bg-fixed bg-center bg-no-repeat lg:h-full"
+          className="relative w-full xs:h-48 bg-cover bg-fixed bg-center bg-no-repeat lg:h-full"
         >
           <span
             className="w-full xs:h-48 absolute opacity-50 bg-black bg-cover lg:h-full"
@@ -28,7 +28,10 @@ const Careers = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
+
+      {/*try two */}
+
       {/* <div className="career-banner">
         <div className="career-bn-img">
           <img
@@ -53,18 +56,22 @@ const Careers = () => {
           </div>
         </div>
       </div> */}
-      <div classname="relative" id="careers-banner">
+
+      {/*try three */}
+
+      {/* <div classname="container" id="careers-banner">
         <div
           className="absolute bg-fixed bg-center bg-cover w-full  h-full"
           style={{
             backgroundImage: `url(${CareersBanner})`,
           }}
+          alt="mother and daughter smiling"
         >
           <span className="w-full h-full absolute opacity-50 bg-black" />
         </div>
-        <div class="container relative">
+        <div class="container">
           <div className="flex flex-col space-y-24">
-            <div className="sticky pt-4 pl-4 h-14 w-1/2">
+            <div className="sticky pt-4 pl-4 h-8 w-2/6">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
 
@@ -73,7 +80,7 @@ const Careers = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Careers Blue Content */}
       <div>
