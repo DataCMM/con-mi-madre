@@ -1,5 +1,4 @@
 import React from "react";
-
 import CareersBanner from "../../../images/careers/Careers-Banner.jpg";
 import Intern from "../../../images/careers/Careers-1.jpg";
 
@@ -8,41 +7,97 @@ import Logo from "../../../images/stacked/text-only.png";
 const Careers = () => {
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${CareersBanner})`,
-        }}
-        className="w-full h-48 lg:min-h bg-cover bg-center bg-no-repeat"
-      >
-        <span
-          className="w-full h-48 absolute opacity-50 bg-black bg-cover"
-          id="overlay"
-        />
-        <div className="flex flex-col space-y-24">
-          <div className="sticky pt-4 pl-4 h-14 w-1/2">
-            <img src={Logo} alt="Con mi madre logo" className="z-10" />
-          </div>
+      {/* <div className="relative" id="careers-banner"> */}
+      {/* <div
+          style={{
+            backgroundImage: `url(${CareersBanner})`,
+          }}
+          className="relative w-full xs:h-48 bg-cover bg-fixed bg-center bg-no-repeat lg:h-full"
+        >
+          <span
+            className="w-full xs:h-48 absolute opacity-50 bg-black bg-cover lg:h-full"
+            id="overlay"
+          />
+          <div className="flex flex-col space-y-24">
+            <div className="sticky pt-4 pl-4 h-14 w-1/2">
+              <img src={Logo} alt="Con mi madre logo" className="z-10" />
+            </div>
 
-          <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
-            <div id="title1">Careers</div>
+            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
+              <div id="title1">Careers</div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+      {/*try two */}
+      {/*
+      <div className="career-banner">
+        <div className="career-bn-img">
+          <img
+            src={CareersBanner}
+            alt="Two adult women hugging"
+            className="w-full xs:h-48 bg-cover bg-fixed bg-center bg-no-repeat lg:h-full"
+          />
+          <span
+            className="w-full xs:h-48 absolute opacity-50 bg-black bg-cover lg:h-full"
+            id="career-bn-overlay"
+          />
+        </div>
+        <div className="career-bn-logo-text">
+          <div className="flex flex-col space-y-24">
+            <div className="sticky pt-4 pl-4 h-14 w-1/2">
+              <img src={Logo} alt="Con mi madre logo" className="z-10" />
+            </div>
+
+            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
+              <div id="title1">Careers</div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+      {/*try three */}
+
+      <div classname="container" id="careers-banner">
+        <div
+          className="absolute bg-fixed bg-center bg-cover w-full  h-full"
+          style={{
+            backgroundImage: `url(${CareersBanner})`,
+          }}
+          alt="mother and daughter smiling"
+        >
+          <span className="w-full h-full absolute opacity-50 bg-black" />
+        </div>
+        <div class="container">
+          <div className="flex flex-col space-y-24">
+            <div className="sticky pt-4 pl-4 h-8 w-2/6">
+              <img src={Logo} alt="Con mi madre logo" className="z-10" />
+            </div>
+
+            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
+              <div id="title1">Careers</div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Careers Blue Content */}
-      <div className="bg-blue-500 text-gray-500 text-2xl shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <p>
-          Con Mi MADRE is looking for passionate, self-starters who want to
-          contribute to building our Nation's future Latina leaders and educated
-          workforce. With our five-pillars, unique curriculum and over 20 years
-          working with young Latinas and their mothers, we believe we have what
-          it takes to achieve our vision!
-        </p>
-        <br />
-        <p>
-          Please look at our current openings for opportunities to join our
-          familia!
-        </p>
+      <div>
+        <div className="bg-blue-500 text-gray-500 text-2xl shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
+          <p>
+            Con Mi MADRE is looking for passionate, self-starters who want to
+            contribute to building our Nation's future Latina leaders and
+            educated workforce. With our five-pillars, unique curriculum and
+            over 20 years working with young Latinas and their mothers, we
+            believe we have what it takes to achieve our vision!
+          </p>
+          <br />
+          <p>
+            Please look at our current openings for opportunities to join our
+            familia!
+          </p>
+        </div>
       </div>
 
       {/*  Openings */}

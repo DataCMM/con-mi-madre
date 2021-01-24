@@ -23,10 +23,10 @@ const OurTeam = () => {
         style={{
           backgroundImage: `url(${Banner})`,
         }}
-        className="w-full h-48 lg:h-screen bg-cover bg-center bg-no-repeat"
+        className="w-full h-48 lg:h-64 bg-cover bg-center bg-no-repeat"
       >
         <span
-          className="w-full h-48 lg:h-screen absolute opacity-50 bg-black bg-cover"
+          className="w-full h-48 lg:h-64 absolute opacity-50 bg-black bg-cover"
           id="overlay"
         />
         <div className="flex flex-col space-y-24">
