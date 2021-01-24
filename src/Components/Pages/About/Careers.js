@@ -7,8 +7,8 @@ import Logo from "../../../images/stacked/text-only.png";
 const Careers = () => {
   return (
     <>
-      <div className="relative" id="careers-banner">
-        <div
+      {/* <div className="relative" id="careers-banner"> */}
+      {/* <div
           style={{
             backgroundImage: `url(${CareersBanner})`,
           }}
@@ -28,11 +28,11 @@ const Careers = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/*try two */}
-
-      {/* <div className="career-banner">
+      {/* 
+      <div className="career-banner">
         <div className="career-bn-img">
           <img
             src={CareersBanner}
@@ -59,7 +59,7 @@ const Careers = () => {
 
       {/*try three */}
 
-      {/* <div classname="container" id="careers-banner">
+      <div classname="container" id="careers-banner">
         <div
           className="absolute bg-fixed bg-center bg-cover w-full  h-full"
           style={{
@@ -80,7 +80,7 @@ const Careers = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Careers Blue Content */}
       <div>
