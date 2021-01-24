@@ -12,7 +12,7 @@ const Careers = () => {
         style={{
           backgroundImage: `url(${CareersBanner})`,
         }}
-        className="w-full h-48 bg-cover bg-center bg-no-repeat"
+        className="w-full h-48 lg:min-h bg-cover bg-center bg-no-repeat"
       >
         <span
           className="w-full h-48 absolute opacity-50 bg-black bg-cover"
