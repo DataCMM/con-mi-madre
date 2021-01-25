@@ -12,7 +12,7 @@ const Purpose = () => {
         style={{
           backgroundImage: `url(${PurposeBanner})`,
         }}
-        className="w-full h-48 bg-cover bg-center bg-no-repeat"
+        className="w-full h-48 bg-purpose-banner bg-cover bg-center bg-no-repeat"
       >
         <span
           className="w-full h-48 absolute opacity-50 bg-black bg-cover"
