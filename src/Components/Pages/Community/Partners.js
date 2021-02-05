@@ -4,6 +4,7 @@ import Banner from "../../../images/events/EventsBanner.jpg";
 import Logo from "../../../images/stacked/text-only.png";
 
 import CorporateGallery from "./CorporateGallery";
+import "./community.css";
 
 const Partners = () => {
   return (
@@ -28,7 +29,6 @@ const Partners = () => {
           </div>
         </div>
       </div>
-
       <CorporateGallery />
     </>
   );
