@@ -1,0 +1,21 @@
+.slideshow {
+  position: relative;
+  overflow: hidden;
+}
+.images-1 {
+  background: url("../../../images/coroporate-partners/Single_Corporate.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  animation: slideshow 10s linear infinite;
+}
+@keyframes slideshow {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200%;
+  }
+}

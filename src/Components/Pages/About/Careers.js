@@ -31,7 +31,7 @@ const Careers = () => {
       </div> */}
 
       {/*try two */}
-      {/* 
+      {/*
       <div className="career-banner">
         <div className="career-bn-img">
           <img

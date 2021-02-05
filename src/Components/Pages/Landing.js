@@ -18,12 +18,12 @@ import ReactPlayer from "react-player";
 const Landing = () => {
   return (
     <>
-      <div id="banner" className="container">
+      <div className="h-screen w-screen" id="banner">
         <div
           style={{
             backgroundImage: `url(${BannerImage})`,
           }}
-          className="w-screen min-h-screen bg-cover bg-center bg-fixed bg-no-repeat"
+          className="w-full h-full bg-cover bg-center bg-fixed bg-no-repeat"
         >
           <span
             className="w-full h-screen absolute opacity-50 bg-black bg-cover"
@@ -32,7 +32,11 @@ const Landing = () => {
           {/* Banner contents  */}
           <div className="flex flex-col space-y-12">
             <div className="sticky flex flex-none p-10 self-center h-36 w-auto  sm:h-1/4 sm:w-1/4 sm:self-start md:h-1/6 md:w-1/6 md:pl-10 bg-opacity-0">
-              <img src={CMMLogo} alt="Con mi madre logo" className="z-10" />
+              <img
+                src={CMMLogo}
+                alt="Con mi madre logo"
+                className="z-10 w-full h-full"
+              />
             </div>
 
             <div className="sticky z-10 flex flex-col md:mt-24 md:pb-3 md:pt-0 text-gray-500 text-2xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-24">
