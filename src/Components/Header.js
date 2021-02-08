@@ -23,14 +23,14 @@ const Header = () => {
         </div>
         <div className="dropdown inline-block relative hover:text-pink-500">
           <div className="inline-flex items-center">
-            <div className="cursor-pointer md:pr-2">About Us</div>
+            <div className="cursor-pointer md:pr-2 py-2 px-4 ">About Us</div>
             <FaChevronDown className="md:text-xs xl:text-sm" />
           </div>
           <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
                 to="/Careers"
-                className="block whitespace-no-wrap py-2 px-4 pr-4 "
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Careers
               </Link>
@@ -38,7 +38,7 @@ const Header = () => {
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
                 to="/Contact"
-                className="block whitespace-no-wrap py-2 px-4 pr-4 "
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Contact
               </Link>
@@ -46,7 +46,7 @@ const Header = () => {
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
                 to="/OurTeam"
-                className="block whitespace-no-wrap py-2 px-4 pr-4 "
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Our Team
               </Link>
@@ -54,7 +54,7 @@ const Header = () => {
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
                 to="/Purpose"
-                className="block whitespace-no-wrap py-2 px-4 pr-4 "
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Purpose
               </Link>
