@@ -22,27 +22,19 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex items-center hover:text-pink-500">
-          <Link to="/OurTeam" className="md:pr-2">
-            About Us
-          </Link>
+          <div className="cursor-pointer md:pr-2">About Us</div>
           <FaChevronDown className="md:text-xs xl:text-sm" />
         </div>
         <div className="flex flex-row items-center hover:text-pink-500">
-          <Link to="/Program" className="md:pr-2">
-            Services
-          </Link>
+          <div className="cursor-pointer md:pr-2">Services</div>
           <FaChevronDown className="md:text-xs xl:text-sm" />
         </div>
         <div className="flex flex-row items-center hover:text-pink-500">
-          <Link to="/Events" className="md:pr-2">
-            Our Community
-          </Link>
+          <div className="cursor-pointer md:pr-2">Our Community</div>
           <FaChevronDown className="md:text-xs xl:text-sm" />
         </div>
         <div className="flex flex-row items-center hover:text-pink-500">
-          <Link to="/Participant" className="md:pr-2">
-            Participant Corner
-          </Link>
+          <div className="cursor-pointer md:pr-2">Participant Corner</div>
           <FaChevronDown className="md:text-xs xl:text-sm" />
         </div>
         <Link
