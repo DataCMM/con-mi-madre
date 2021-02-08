@@ -8,27 +8,28 @@ import Logo from "../../../images/stacked/text-only.png";
 const Purpose = () => {
   return (
     <div>
-      <div
-        style={{
-          backgroundImage: `url(${PurposeBanner})`,
-        }}
-        className="w-full h-48 bg-purpose-banner bg-cover bg-center bg-no-repeat"
-      >
-        <span
-          className="w-full h-48 absolute opacity-50 bg-black bg-cover"
-          id="overlay"
-        />
-        <div className="flex flex-col space-y-24">
-          <div className="sticky pt-4 pl-4 h-14 w-1/2">
-            <img src={Logo} alt="Con mi madre logo" className="z-10" />
-          </div>
+      <div id="purpose-banner">
+        <div
+          style={{
+            backgroundImage: `url(${PurposeBanner})`,
+          }}
+          className="w-full h-screen bg-purpose-banner bg-cover bg-center bg-no-repeat"
+        >
+          <span
+            className="w-full h-screen absolute opacity-50 bg-black bg-cover"
+            id="overlay"
+          />
+          <div className="flex flex-col space-y-24">
+            <div className="sticky pt-4 pl-4 h-14 w-1/2">
+              <img src={Logo} alt="Con mi madre logo" className="z-10" />
+            </div>
 
-          <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
-            <div id="title1">Our Purpose</div>
+            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
+              <div id="title1">Our Purpose</div>
+            </div>
           </div>
         </div>
       </div>
-
       {/* Future Section */}
       <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
         <h3 className="text-3xl pb-6">Latinas Are The Future</h3>

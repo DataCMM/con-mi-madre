@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "purpose-banner": "url('./images/purpose/OurPurpose1.jpg')",
+        "purpose-banner": "url('/images/purpose/OurPurpose1.jpg')",
       }),
     },
   },

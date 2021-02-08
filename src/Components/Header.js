@@ -21,28 +21,56 @@ const Header = () => {
             Contact Us
           </Link>
         </div>
-        <div className="flex items-center hover:text-pink-500">
-          <Link to="/OurTeam" className="md:pr-2">
-            About Us
-          </Link>
+        <div className="dropdown inline-block relative hover:text-pink-500">
+          <div className="inline-flex items-center">
+            <div className="cursor-pointer md:pr-2">About Us</div>
+            <FaChevronDown className="md:text-xs xl:text-sm" />
+          </div>
+          <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/Careers"
+                className="block whitespace-no-wrap py-2 px-4 pr-4 "
+              >
+                Careers
+              </Link>
+            </li>
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/Contact"
+                className="block whitespace-no-wrap py-2 px-4 pr-4 "
+              >
+                Contact
+              </Link>
+            </li>
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/OurTeam"
+                className="block whitespace-no-wrap py-2 px-4 pr-4 "
+              >
+                Our Team
+              </Link>
+            </li>
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/Purpose"
+                className="block whitespace-no-wrap py-2 px-4 pr-4 "
+              >
+                Purpose
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="flex flex-row items-center hover:text-pink-500">
+          <div className="cursor-pointer md:pr-2">Services</div>
           <FaChevronDown className="md:text-xs xl:text-sm" />
         </div>
         <div className="flex flex-row items-center hover:text-pink-500">
-          <Link to="/Program" className="md:pr-2">
-            Services
-          </Link>
+          <div className="cursor-pointer md:pr-2">Our Community</div>
           <FaChevronDown className="md:text-xs xl:text-sm" />
         </div>
         <div className="flex flex-row items-center hover:text-pink-500">
-          <Link to="/Events" className="md:pr-2">
-            Our Community
-          </Link>
-          <FaChevronDown className="md:text-xs xl:text-sm" />
-        </div>
-        <div className="flex flex-row items-center hover:text-pink-500">
-          <Link to="/Participant" className="md:pr-2">
-            Participant Corner
-          </Link>
+          <div className="cursor-pointer md:pr-2">Participant Corner</div>
           <FaChevronDown className="md:text-xs xl:text-sm" />
         </div>
         <Link
