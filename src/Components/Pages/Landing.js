@@ -18,7 +18,7 @@ import ReactPlayer from "react-player";
 const Landing = () => {
   return (
     <>
-      <div className="w-screen h-screen object-contain" id="banner">
+      <div className="w-full h-screen object-contain" id="banner">
         <div
           style={{
             backgroundImage: `url(${BannerImage})`,
