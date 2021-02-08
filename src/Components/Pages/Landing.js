@@ -18,15 +18,15 @@ import ReactPlayer from "react-player";
 const Landing = () => {
   return (
     <>
-      <div className="h-screen w-screen" id="banner">
+      <div className="w-screen h-screen object-contain" id="banner">
         <div
           style={{
             backgroundImage: `url(${BannerImage})`,
           }}
-          className="w-full h-screen bg-contain bg-center bg-fixed bg-no-repeat"
+          className="w-full h-full bg-cover bg-center bg-fixed bg-no-repeat"
         >
           <span
-            className="w-full h-screen absolute opacity-50 bg-black bg-cover"
+            className="w-full h-full absolute opacity-50 bg-black bg-cover"
             id="overlay"
           />
           {/* Banner contents  */}
