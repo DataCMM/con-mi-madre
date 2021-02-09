@@ -105,14 +105,14 @@ const Landing = () => {
             </p>
           </div>
         </div>
-        <div className="h-full w-full">
-          <img
-            id="grad"
-            // className="w-full h-full"
-            src={Graduate}
-            alt="Female graduate"
-          />
-        </div>
+        {/* <div className="h-full w-full"> */}
+        <img
+          id="grad"
+          className="w-full h-full"
+          src={Graduate}
+          alt="Female graduate"
+        />
+        {/* </div> */}
       </div>
 
       {/* Our Pillars Section */}
