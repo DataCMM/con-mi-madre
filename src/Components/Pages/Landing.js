@@ -105,8 +105,13 @@ const Landing = () => {
             </p>
           </div>
         </div>
-        <div className="h-60 w-1/3 flex justify-center">
-          <img id="grad" src={Graduate} alt="Female graduate" />
+        <div className="h-full w-full">
+          <img
+            id="grad"
+            // className="w-full h-full"
+            src={Graduate}
+            alt="Female graduate"
+          />
         </div>
       </div>
 
