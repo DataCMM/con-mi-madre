@@ -11,3 +11,23 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+#mothers::first-letter {
+  color: rgb(233, 13, 139);
+  font-size: 3.5rem;
+}
+#and::first-letter {
+  color: rgb(234, 109, 73);
+  font-size: 3.5rem;
+}
+#daughters::first-letter {
+  color: rgb(200, 220, 90);
+  font-size: 3.5rem;
+}
+#raising::first-letter {
+  color: rgb(75, 165, 182);
+  font-size: 3.5rem;
+}
+#expectations::first-letter {
+  color: rgb(147, 129, 186);
+  font-size: 3.5rem;
+}
