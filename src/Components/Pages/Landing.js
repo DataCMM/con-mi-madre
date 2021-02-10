@@ -44,7 +44,8 @@ const Landing = () => {
                 id="title1"
                 className="flex flex-row justify-center items-center inline-block"
               >
-                <div>We are&nbsp;</div>
+                <div>We&nbsp;</div>
+                <div>are&nbsp;</div>
                 <div id="mothers">Mothers&nbsp;</div>
                 <div id="and">and&nbsp;</div>
                 <div id="daughters">Daughters</div>
