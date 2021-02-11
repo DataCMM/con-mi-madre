@@ -18,57 +18,45 @@ import ReactPlayer from "react-player";
 const Landing = () => {
   return (
     <>
-      <div className="w-full h-screen object-contain" id="banner">
-        <div
-          style={{
-            backgroundImage: `url(${BannerImage})`,
-          }}
-          className="w-full h-full bg-cover bg-center bg-fixed bg-no-repeat"
-        >
-          <span
-            className="w-full h-full absolute opacity-50 bg-black bg-cover"
-            id="overlay"
-          />
-          {/* Banner contents  */}
-          <div className="">
-            <div className="sticky flex flex-none p-10 self-center h-36 w-auto  sm:h-1/4 sm:w-1/4 sm:self-start md:h-1/6 md:w-1/6 md:pl-10 bg-opacity-0">
-              <img
-                src={CMMLogo}
-                alt="Con mi madre logo"
-                className="z-10 w-full h-full"
-              />
-            </div>
+      {/* <div className="w-full h-screen object-contain" id="banner"> */}
+      {/* <div> */}
+      <div
+        style={{
+          backgroundImage: `url(${BannerImage})`,
+        }}
+        className="w-full h-full bg-cover bg-center bg-fixed bg-no-repeat"
+      >
+        <span
+          className="w-full h-full absolute opacity-50 bg-black bg-cover"
+          id="overlay"
+        />
+        {/* Banner contents  */}
+        <div className="flex flex-col space-y-12">
+          <div className="sticky flex flex-none p-10 self-center h-36 w-auto  sm:h-1/4 sm:w-1/4 sm:self-start md:h-1/6 md:w-1/6 md:pl-10 bg-opacity-0">
+            <img
+              src={CMMLogo}
+              alt="Con mi madre logo"
+              className="z-10 w-full h-full"
+            />
+          </div>
 
-            <div className="sticky z-10 flex flex-col md:mt-24 md:pb-3 md:pt-0 text-gray-500 text-2xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-16">
-              <div
-                id="title1"
-                className="flex flex-row justify-center items-center inline-block"
+          <div className="sticky z-10 flex flex-col md:mt-24 md:pb-3 md:pt-0 text-gray-500 text-2xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-24">
+            <div id="title1">We are Mothers and Daughters</div>
+            <h1 className="pb-8" id="title2">
+              Raising Expectations
+            </h1>
+            <button className="pt-8 lg:pt-6">
+              <Link
+                className="text-white text-xl p-4  rounded shadow-xl font-black text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
+                to="/Donate"
               >
-                <div>We&nbsp;</div>
-                <div>are&nbsp;</div>
-                <div id="mothers">Mothers&nbsp;</div>
-                <div id="and">and&nbsp;</div>
-                <div id="daughters">Daughters</div>
-              </div>
-              <h1
-                className="pb-8 flex flex-row justify-center items-center inline-block"
-                id="title2"
-              >
-                <div id="raising">Raising&nbsp;</div>
-                <div id="expectations">Expectations</div>
-              </h1>
-              <button className="pt-10 lg:pt-6">
-                <Link
-                  className="text-white text-xl p-4  rounded shadow-xl font-black text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
-                  to="/Donate"
-                >
-                  Donate Today
-                </Link>
-              </button>
-            </div>
+                Donate Today
+              </Link>
+            </button>
           </div>
         </div>
       </div>
+      {/* </div> */}
       <br />
 
       {/* Our Impact Section */}
@@ -118,9 +106,20 @@ const Landing = () => {
             </p>
           </div>
         </div>
+<<<<<<< HEAD
         <div className="h-60 w-1/2 flex justify-center lg:pl-10">
           <img id="grad" src={Graduate} alt="Female graduate" />
         </div>
+=======
+        {/* <div className="w-4/5"> */}
+        <img
+          id="grad"
+          className="w-3/5 h-full m-auto"
+          src={Graduate}
+          alt="Female graduate"
+        />
+        {/* </div> */}
+>>>>>>> bcf6984785695e969fc2ef0228721ca53f762560
       </div>
 
       {/* Our Pillars Section */}
