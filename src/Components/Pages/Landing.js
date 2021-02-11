@@ -107,6 +107,7 @@ const Landing = () => {
           </div>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div className="h-60 w-1/2 flex justify-center lg:pl-10">
           <img id="grad" src={Graduate} alt="Female graduate" />
         </div>
@@ -120,6 +121,12 @@ const Landing = () => {
         />
         {/* </div> */}
 >>>>>>> bcf6984785695e969fc2ef0228721ca53f762560
+=======
+
+        <div className="h-60 w-1/2 flex justify-center lg:pl-10">
+          <img id="grad" src={Graduate} alt="Female graduate" />
+        </div>
+>>>>>>> d49de794146ff4774561f93525e730717282cd91
       </div>
 
       {/* Our Pillars Section */}
