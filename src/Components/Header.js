@@ -12,12 +12,12 @@ const Header = () => {
       <div className="hidden md:contents font-medium text-sm md:text-xs lg:text-sm lg:text-base">
         {/* ####copy#### <div className="h-16 w-full relative md:flex md:justify-between md:items-center md:navbar-expand-lg md:text-blue-500 bg-gray-200 font-medium pl-10 pr-10"> */}
         <div>
-          <Link to="/" className="hover:text-pink-500">
+          <Link to="/" className="font-bold hover:text-pink-500">
             Home
           </Link>
         </div>
         <div>
-          <Link to="/Contact" className="hover:text-pink-500">
+          <Link to="/Contact" className="font-bold hover:text-pink-500">
             Contact Us
           </Link>
         </div>
@@ -61,17 +61,97 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-row items-center hover:text-pink-500">
-          <div className="cursor-pointer md:pr-2">Services</div>
-          <FaChevronDown className="md:text-xs xl:text-sm" />
+        <div className="dropdown inline-block relative hover:text-pink-500">
+          <div className="inline-flex items-center">
+            <div className="cursor-pointer md:pr-2 py-2 px-4 ">Our Program</div>
+            <FaChevronDown className="md:text-xs xl:text-sm" />
+          </div>
+          <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/ProgrammingStructure"
+                className="block whitespace-no-wrap py-2 px-4 pr-4"
+              >
+                Programming Structure
+              </Link>
+            </li>
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/Services"
+                className="block whitespace-no-wrap py-2 px-4 pr-4"
+              >
+                Additional Services
+              </Link>
+            </li>
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/Involved"
+                className="block whitespace-no-wrap py-2 px-4 pr-4"
+              >
+                Get Involved
+              </Link>
+            </li>
+          </ul>
         </div>
-        <div className="flex flex-row items-center hover:text-pink-500">
-          <div className="cursor-pointer md:pr-2">Our Community</div>
-          <FaChevronDown className="md:text-xs xl:text-sm" />
+        <div className="dropdown inline-block relative hover:text-pink-500">
+          <div className="inline-flex items-center">
+            <div className="cursor-pointer md:pr-2 py-2 px-4 ">
+              Our Community
+            </div>
+            <FaChevronDown className="md:text-xs xl:text-sm" />
+          </div>
+          <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/Awards"
+                className="block whitespace-no-wrap py-2 px-4 pr-4"
+              >
+                Awards & Recognition
+              </Link>
+            </li>
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/Events"
+                className="block whitespace-no-wrap py-2 px-4 pr-4"
+              >
+                Events
+              </Link>
+            </li>
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/Partners"
+                className="block whitespace-no-wrap py-2 px-4 pr-4"
+              >
+                Our Partners
+              </Link>
+            </li>
+          </ul>
         </div>
-        <div className="flex flex-row items-center hover:text-pink-500">
-          <div className="cursor-pointer md:pr-2">Participant Corner</div>
-          <FaChevronDown className="md:text-xs xl:text-sm" />
+        <div className="dropdown inline-block relative hover:text-pink-500">
+          <div className="inline-flex items-center">
+            <div className="cursor-pointer md:pr-2 py-2 px-4 ">
+              Participant Corner
+            </div>
+            <FaChevronDown className="md:text-xs xl:text-sm" />
+          </div>
+          <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/Resources"
+                className="block whitespace-no-wrap py-2 px-4 pr-4"
+              >
+                Resources
+              </Link>
+            </li>
+            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+              <Link
+                to="/ProgrammingEvents"
+                className="block whitespace-no-wrap py-2 px-4 pr-4"
+              >
+                Programming Events
+              </Link>
+            </li>
+          </ul>
         </div>
         <Link
           to="/Donate"

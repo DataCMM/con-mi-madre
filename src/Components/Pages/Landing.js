@@ -24,10 +24,10 @@ const Landing = () => {
         style={{
           backgroundImage: `url(${BannerImage})`,
         }}
-        className="w-full h-full bg-cover bg-center bg-fixed bg-no-repeat"
+        className="w-full h-screen bg-cover bg-center bg-fixed bg-no-repeat"
       >
         <span
-          className="w-full h-full absolute opacity-50 bg-black bg-cover"
+          className="w-full h-screen absolute opacity-50 bg-black bg-cover"
           id="overlay"
         />
         {/* Banner contents  */}
@@ -88,8 +88,8 @@ const Landing = () => {
       </div>
 
       {/* Our Mission Section */}
-      <div className="flex flex-col gap-6 p-6 bg-gray-500 md:flex-row">
-        <div className="pt-20  flex flex-col pl-14 md:w-1/2 md:space-y-20">
+      <div className="flex lg:pl-10 flex-col gap-6 p-6 bg-gray-500 md:flex-row">
+        <div className="flex flex-col justify-center pl-14 md:w-1/2 md:space-y-20">
           <div>
             <h3 className="text-2xl text-pink-500">Our Mission</h3>
             <p className="content">
@@ -106,6 +106,7 @@ const Landing = () => {
             </p>
           </div>
         </div>
+
         {/* <div className="w-4/5"> */}
         <img
           id="grad"
@@ -113,7 +114,6 @@ const Landing = () => {
           src={Graduate}
           alt="Female graduate"
         />
-        {/* </div> */}
       </div>
 
       {/* Our Pillars Section */}
