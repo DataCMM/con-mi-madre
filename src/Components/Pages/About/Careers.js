@@ -59,7 +59,7 @@ const Careers = () => {
 
       {/*try three */}
 
-      <div classname="container" id="careers-banner">
+      <div classname="h-36" id="careers-banner">
         <div
           className="absolute bg-fixed bg-center bg-cover w-full  h-full"
           style={{

@@ -8,15 +8,15 @@ import Logo from "../../../images/stacked/text-only.png";
 const Purpose = () => {
   return (
     <div>
-      <div id="purpose-banner">
+      <div className="h-36 sm:h-full w-full" id="purpose-banner">
         <div
           style={{
             backgroundImage: `url(${PurposeBanner})`,
           }}
-          className="w-full h-screen bg-purpose-banner bg-cover bg-center bg-no-repeat"
+          className="w-full h-full bg-purpose-banner bg-cover bg-center bg-no-repeat"
         >
           <span
-            className="w-full h-screen absolute opacity-50 bg-black bg-cover"
+            className="h-auto w-full absolute opacity-50 bg-black bg-cover"
             id="overlay"
           />
           <div className="flex flex-col space-y-24">
@@ -24,7 +24,7 @@ const Purpose = () => {
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
 
-            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
+            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-4xl font-medium tracking-widest text-center">
               <div id="title1">Our Purpose</div>
             </div>
           </div>
