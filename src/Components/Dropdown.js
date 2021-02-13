@@ -58,7 +58,7 @@ const Dropdown = ({ color }) => {
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
                 }
-                onClick={(e) => e.preventDefault()}
+                // onClick={(e) => e.preventDefault()}
               >
                 Our Purpose
               </Link>
@@ -68,7 +68,7 @@ const Dropdown = ({ color }) => {
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
                 }
-                onClick={(e) => e.preventDefault()}
+                // onClick={(e) => e.preventDefault()}
               >
                 Program
               </Link>
@@ -78,7 +78,7 @@ const Dropdown = ({ color }) => {
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
                 }
-                onClick={(e) => e.preventDefault()}
+                // onClick={(e) => e.preventDefault()}
               >
                 Services
               </Link>
@@ -88,7 +88,7 @@ const Dropdown = ({ color }) => {
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
                 }
-                onClick={(e) => e.preventDefault()}
+                // onClick={(e) => e.preventDefault()}
               >
                 Get Involved
               </Link>
@@ -98,7 +98,7 @@ const Dropdown = ({ color }) => {
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
                 }
-                onClick={(e) => e.preventDefault()}
+                // onClick={(e) => e.preventDefault()}
               >
                 Events
               </Link>
@@ -108,7 +108,7 @@ const Dropdown = ({ color }) => {
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
                 }
-                onClick={(e) => e.preventDefault()}
+                // onClick={(e) => e.preventDefault()}
               >
                 Awards
               </Link>
@@ -118,7 +118,7 @@ const Dropdown = ({ color }) => {
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
                 }
-                onClick={(e) => e.preventDefault()}
+                // onClick={(e) => e.preventDefault()}
               >
                 Our Partners
               </Link>
@@ -128,7 +128,7 @@ const Dropdown = ({ color }) => {
                   "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
                   (color === "white" ? " text-pink-700" : "text-white")
                 }
-                onClick={(e) => e.preventDefault()}
+                // onClick={(e) => e.preventDefault()}
               >
                 Careers
               </Link>
