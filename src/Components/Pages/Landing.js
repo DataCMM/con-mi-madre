@@ -24,7 +24,7 @@ const Landing = () => {
         style={{
           backgroundImage: `url(${BannerImage})`,
         }}
-        className="w-full h-full bg-cover bg-center bg-no-repeat"
+        className="w-full h-full relative bg-fixed bg-cover bg-center bg-no-repeat"
       >
         <span
           className="w-full h-full absolute opacity-50 bg-black bg-cover"
@@ -41,9 +41,25 @@ const Landing = () => {
           </div>
 
           <div className="sticky z-10 flex flex-col md:mt-24 md:pb-3 md:pt-0 text-gray-500 text-2xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-24">
-            <div id="title1">We are Mothers and Daughters</div>
+            {/* <div id="title1">We are Mothers and Daughters</div>
             <h1 className="pb-8" id="title2">
               Raising Expectations
+            </h1> */}
+            <div
+              id="title1"
+              className="flex flex-row justify-center items-center inline-block"
+            >
+              <div>We are&nbsp;</div>
+              <div id="mothers">Mothers&nbsp;</div>
+              <div id="and">and&nbsp;</div>
+              <div id="daughters">Daughters</div>
+            </div>
+            <h1
+              className="pb-8 flex flex-row justify-center items-center inline-block"
+              id="title2"
+            >
+              <div id="raising">Raising&nbsp;</div>
+              <div id="expectations">Expectations</div>
             </h1>
             <button className="pt-8 lg:pt-6">
               <Link

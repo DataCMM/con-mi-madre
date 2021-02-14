@@ -29,7 +29,7 @@ const Router = () => {
       <Route path="/Partners" component={Partners} />
       <Route path="/ProgrammingEvents" component={ProgrammingEvents} />
       <Route path="/Resources" component={Resources} />
-      <Route path="/GetInvolved" component={Involved} />
+      <Route path="/Involved" component={Involved} />
       <Route path="/ProgrammingStructure" component={ProgrammingStructure} />
       <Route path="/Services" component={Services} />
     </Switch>
