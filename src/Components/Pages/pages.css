@@ -45,6 +45,7 @@
     font-size: 3rem;
   }
   #expectations::first-letter {
+    color: rgb(147, 129, 186);
     font-size: 3rem;
   }
 }
