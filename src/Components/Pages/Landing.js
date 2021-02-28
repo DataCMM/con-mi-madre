@@ -18,8 +18,7 @@ import ReactPlayer from "react-player";
 const Landing = () => {
   return (
     <>
-      {/* <div className="w-full h-screen object-contain" id="banner"> */}
-      {/* <div> */}
+      {/* <div className="w-full h-full"> */}
       <div
         style={{
           backgroundImage: `url(${BannerImage})`,
@@ -31,8 +30,8 @@ const Landing = () => {
           id="overlay"
         />
         {/* Banner contents  */}
-        <div className="flex flex-col space-y-12">
-          <div className="sticky flex flex-none p-10 self-center h-36 w-auto  sm:h-1/4 sm:w-1/4 sm:self-start md:h-1/6 md:w-1/6 md:pl-10 bg-opacity-0">
+        <div className="flex flex-col">
+          <div className="flex flex-none pt-10 pb-24 pl-10 pr-10 m-auto h-36 w-auto  sm:h-1/4 sm:w-1/4 sm:self-start md:h-1/6 md:w-1/6 md:pl-10 bg-opacity-0">
             <img
               src={CMMLogo}
               alt="Con mi madre logo"
@@ -40,11 +39,15 @@ const Landing = () => {
             />
           </div>
 
-          <div className="sticky z-10 flex flex-col md:mt-24 md:pb-3 md:pt-0 text-gray-500 text-2xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-24">
-            {/* <div id="title1">We are Mothers and Daughters</div>
-            <h1 className="pb-8" id="title2">
-              Raising Expectations
-            </h1> */}
+          <div className="sticky z-10 flex flex-col md:mt-24 md:pb-3 md:pt-0 text-gray-500 text-xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-24">
+            {/* <div
+              id="title1"
+              className="flex flex-row justify-center items-center inline-block"
+            >
+              <h1 id="title1">We are Mothers and Daughters</h1>
+              <h1 id="title1">Raising Expectations</h1>
+            </div> */}
+
             <div
               id="title1"
               className="flex flex-row justify-center items-center inline-block"
@@ -56,15 +59,15 @@ const Landing = () => {
               <div id="daughters">Daughters</div>
             </div>
             <h1
-              className="pb-8 flex flex-row justify-center items-center inline-block"
+              className="pb-2 flex flex-row justify-center items-center inline-block"
               id="title2"
             >
               <div id="raising">Raising&nbsp;</div>
               <div id="expectations">Expectations</div>
             </h1>
-            <button className="pt-8 lg:pt-6">
+            <button className="p-10 w-auto h-auto">
               <Link
-                className="text-white text-xl p-4  rounded shadow-xl font-black text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
+                className="text-white text-xl p-4 rounded font-black text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
                 to="/Donate"
               >
                 Donate Today
@@ -72,8 +75,8 @@ const Landing = () => {
             </button>
           </div>
         </div>
+        {/* </div> */}
       </div>
-      {/* </div> */}
       <br />
 
       {/* Our Impact Section */}
