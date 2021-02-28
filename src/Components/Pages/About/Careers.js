@@ -59,7 +59,7 @@ const Careers = () => {
 
       {/*try three */}
 
-      <div classname="h-36" id="careers-banner">
+      {/* <div classname="h-36" id="careers-banner">
         <div
           className="absolute bg-fixed bg-center bg-cover w-full  h-full"
           style={{
@@ -80,8 +80,30 @@ const Careers = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <div>
+        <div
+          style={{
+            backgroundImage: `url(${CareersBanner})`,
+          }}
+          className="w-full h-screen relative  bg-cover bg-center bg-no-repeat"
+        >
+          <span
+            className="w-full h-screen absolute opacity-50 bg-black bg-cover"
+            id="career-overlay"
+          />
 
+          <div className="sticky flex flex-col justify-between h-screen">
+            <div className="sticky pt-4 pl-4 pr-4 xs:h-5 md:h-16 md:w-1/3">
+              <img src={Logo} alt="Con mi madre logo" className="z-10" />
+            </div>
+
+            <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-gray-500 text-4xl font-medium tracking-widest text-center">
+              <div id="title1">Careers</div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Careers Blue Content */}
       <div>
         <div className="bg-blue-500 text-gray-500 text-2xl shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
