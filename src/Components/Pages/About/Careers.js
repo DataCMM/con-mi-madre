@@ -86,10 +86,10 @@ const Careers = () => {
           style={{
             backgroundImage: `url(${CareersBanner})`,
           }}
-          className="w-full h-screen relative  bg-cover bg-center bg-no-repeat"
+          className="w-full xs:h-40 md:h-full relative  bg-cover bg-center bg-no-repeat"
         >
           <span
-            className="w-full h-screen absolute opacity-50 bg-black bg-cover"
+            className="w-full xs:h-40 md:h-full absolute opacity-50 bg-black bg-cover"
             id="career-overlay"
           />
 
