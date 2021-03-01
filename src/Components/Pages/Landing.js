@@ -18,58 +18,58 @@ import ReactPlayer from "react-player";
 const Landing = () => {
   return (
     <>
-      {/* <div className="w-full h-full"> */}
-      <div
-        style={{
-          backgroundImage: `url(${BannerImage})`,
-        }}
-        className="w-full h-full relative bg-fixed bg-cover bg-center bg-no-repeat"
-      >
-        <span
-          className="w-full h-full absolute opacity-50 bg-black bg-cover"
-          id="overlay"
-        />
-        {/* Banner contents  */}
-        <div className="flex flex-col">
-          <div className="flex flex-none pt-10 pb-24 pl-10 pr-10 h-36 w-auto xs:self-center md:h-1/4 md:w-1/4 md:self-start md:pl-10 bg-opacity-0">
-            <img
-              src={CMMLogo}
-              alt="Con mi madre logo"
-              className="z-20 w-full h-full"
-            />
-          </div>
-
-          <div className="sticky z-10 flex flex-col md:mt-24 md:pb-3 md:pt-0 text-gray-500 text-xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-24">
-            <div
-              id="title1"
-              className="flex flex-row justify-center items-center inline-block"
-            >
-              <div className="hidden md:contents">
-                <div>We&nbsp;</div>
-                <div>Are&nbsp;</div>
-              </div>
-              <div id="mothers">Mothers&nbsp;</div>
-              <div id="and">and&nbsp;</div>
-              <div id="daughters">Daughters</div>
+      <div className="w-full h-full">
+        <div
+          style={{
+            backgroundImage: `url(${BannerImage})`,
+          }}
+          className="w-full h-full relative bg-fixed bg-cover bg-center bg-no-repeat"
+        >
+          <span
+            className="w-full h-full absolute opacity-50 bg-black bg-cover"
+            id="overlay"
+          />
+          {/* Banner contents  */}
+          <div className="flex flex-col">
+            <div className="flex flex-none pt-10 pb-24 pl-10 pr-10 h-36 w-auto xs:self-center md:h-1/4 md:w-1/4 md:self-start md:pl-10 bg-opacity-0">
+              <img
+                src={CMMLogo}
+                alt="Con mi madre logo"
+                className="z-20 w-full h-full"
+              />
             </div>
-            <h1
-              className="pb-2 flex flex-row justify-center items-center inline-block"
-              id="title2"
-            >
-              <div id="raising">Raising&nbsp;</div>
-              <div id="expectations">Expectations</div>
-            </h1>
-            <button className="p-10 w-auto h-auto">
-              <Link
-                className="text-white text-xl p-4 rounded font-black text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
-                to="/Donate"
+
+            <div className="sticky z-10 flex flex-col md:mt-24 md:pb-3 md:pt-0 text-gray-500 text-xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-24">
+              <div
+                id="title1"
+                className="flex flex-row justify-center items-center inline-block"
               >
-                Donate Today
-              </Link>
-            </button>
+                <div className="hidden md:contents">
+                  <div>We&nbsp;</div>
+                  <div>Are&nbsp;</div>
+                </div>
+                <div id="mothers">Mothers&nbsp;</div>
+                <div id="and">and&nbsp;</div>
+                <div id="daughters">Daughters</div>
+              </div>
+              <h1
+                className="pb-2 flex flex-row justify-center items-center inline-block"
+                id="title2"
+              >
+                <div id="raising">Raising&nbsp;</div>
+                <div id="expectations">Expectations</div>
+              </h1>
+              <button className="p-10 w-auto h-auto">
+                <Link
+                  className="text-white text-xl p-4 rounded font-black text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
+                  to="/Donate"
+                >
+                  Donate Today
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
-        {/* </div> */}
       </div>
       <br />
 
