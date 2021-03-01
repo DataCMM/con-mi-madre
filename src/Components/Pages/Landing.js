@@ -134,9 +134,9 @@ const Landing = () => {
       <div className="bg-blue-500 text-base text-gray-500 flex flex-col flex-col-reverse p-6 pt-6 gap-6 md:flex-row justify-between">
         <div className="w-auto h-auto flex items-center md:w-1/2 pr-3">
           <ReactPlayer
-            className="w-auto h-auto"
             controls={true}
             url="videos/CMM.mp4"
+            className="bg-black"
           />
         </div>
         <div className="pb-4 md:w-1/2">
