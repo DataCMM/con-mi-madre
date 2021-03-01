@@ -31,29 +31,23 @@ const Landing = () => {
         />
         {/* Banner contents  */}
         <div className="flex flex-col">
-          <div className="flex flex-none pt-10 pb-24 pl-10 pr-10 m-auto h-36 w-auto  sm:h-1/4 sm:w-1/4 sm:self-start md:h-1/6 md:w-1/6 md:pl-10 bg-opacity-0">
+          <div className="flex flex-none pt-10 pb-24 pl-10 pr-10 h-36 w-auto xs:self-center md:h-1/4 md:w-1/4 md:self-start md:pl-10 bg-opacity-0">
             <img
               src={CMMLogo}
               alt="Con mi madre logo"
-              className="z-10 w-full h-full"
+              className="z-20 w-full h-full"
             />
           </div>
 
           <div className="sticky z-10 flex flex-col md:mt-24 md:pb-3 md:pt-0 text-gray-500 text-xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-24">
-            {/* <div
-              id="title1"
-              className="flex flex-row justify-center items-center inline-block"
-            >
-              <h1 id="title1">We are Mothers and Daughters</h1>
-              <h1 id="title1">Raising Expectations</h1>
-            </div> */}
-
             <div
               id="title1"
               className="flex flex-row justify-center items-center inline-block"
             >
-              <div>We&nbsp;</div>
-              <div>Are&nbsp;</div>
+              <div className="hidden md:contents">
+                <div>We&nbsp;</div>
+                <div>Are&nbsp;</div>
+              </div>
               <div id="mothers">Mothers&nbsp;</div>
               <div id="and">and&nbsp;</div>
               <div id="daughters">Daughters</div>
