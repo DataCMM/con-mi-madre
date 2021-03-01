@@ -1,7 +1,7 @@
 import React from "react";
 
 // import { Link } from "react-router-dom";
-import CMMLogo from "../../images/stacked/no-text-color-and-white.png";
+import Logo from "../../images/stacked/text-only.png";
 import BannerImage from "../../images/landing/Donate-Banner.JPG";
 
 const Donate = () => {
@@ -22,7 +22,7 @@ const Donate = () => {
           <div className="flex flex-col space-y-12">
             <div className="sticky flex flex-none p-10 self-center h-36 w-auto  sm:h-1/4 sm:w-1/4 sm:self-start md:h-1/6 md:w-1/6 md:pl-10 bg-opacity-0">
               <img
-                src={CMMLogo}
+                src={Logo}
                 alt="Con mi madre logo"
                 className="z-10 w-full h-full"
               />

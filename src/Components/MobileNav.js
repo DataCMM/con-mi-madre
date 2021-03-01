@@ -1,34 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { FaChevronDown } from "react-icons/fa";
+// import Dropdown from "../Components/Dropdown";
 
-import MobileNav from "./MobileNav";
+import { FaChevronDown } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 import "./Pages/pages.css";
 
-const Header = () => {
+const MobileNav = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  const dropdown = () => {
+    return setShowNav(!showNav);
+  };
+
   return (
-    <div className="h-16 pl-5 pr-5 w-full flex justify-between items-center text-blue-500 bg-gray-200 md:pl-10 md:pr-10">
-      <div className="hidden md:contents font-medium text-sm md:text-xs lg:text-sm lg:text-base">
-        {/* ####copy#### <div className="h-16 w-full relative md:flex md:justify-between md:items-center md:navbar-expand-lg md:text-blue-500 bg-gray-200 font-medium pl-10 pr-10"> */}
-        <div>
-          <Link to="/" className="font-bold hover:text-pink-500">
-            Home
-          </Link>
-        </div>
-        <div>
-          <Link to="/Contact" className="font-bold hover:text-pink-500">
-            Contact Us
-          </Link>
-        </div>
-        <div className="dropdown inline-block relative hover:text-pink-500">
+    <div>
+      <GiHamburgerMenu onClick={dropdown} className="relative w-5 h-5" />
+      {showNav && (
+        <div className="flex flex-col dropdown block absolute bg-gray-400 hover:text-pink-500 z-10">
           <div className="inline-flex items-center">
-            <div className="cursor-pointer md:pr-2 py-2 px-4 ">About Us</div>
-            <FaChevronDown className="md:text-xs xl:text-sm" />
+            <div className="cursor-pointer py-2 px-5 ">About Us</div>
+            <FaChevronDown className="pr-3 text-lg" />
           </div>
           <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
+                onClick={dropdown}
                 to="/Careers"
                 className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
@@ -60,17 +58,17 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-        </div>
-        <div className="dropdown inline-block relative hover:text-pink-500">
+          {/* Our Program */}
           <div className="inline-flex items-center">
-            <div className="cursor-pointer md:pr-2 py-2 px-4 ">Our Program</div>
-            <FaChevronDown className="md:text-xs xl:text-sm" />
+            <div className="cursor-pointer py-2 px-5 ">Our Program</div>
+            <FaChevronDown className="pr-3 text-lg" />
           </div>
           <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
+                onClick={dropdown}
                 to="/ProgrammingStructure"
-                className="block whitespace-no-wrap py-2 px-4 pr-4"
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Programming Structure
               </Link>
@@ -78,7 +76,7 @@ const Header = () => {
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
                 to="/Services"
-                className="block whitespace-no-wrap py-2 px-4 pr-4"
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Additional Services
               </Link>
@@ -86,25 +84,23 @@ const Header = () => {
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
                 to="/Involved"
-                className="block whitespace-no-wrap py-2 px-4 pr-4"
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Get Involved
               </Link>
             </li>
           </ul>
-        </div>
-        <div className="dropdown inline-block relative hover:text-pink-500">
+          {/* Our Community */}
           <div className="inline-flex items-center">
-            <div className="cursor-pointer md:pr-2 py-2 px-4 ">
-              Our Community
-            </div>
-            <FaChevronDown className="md:text-xs xl:text-sm" />
+            <div className="cursor-pointer py-2 px-5 ">Our Community</div>
+            <FaChevronDown className="pr-3 text-lg" />
           </div>
           <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
+                onClick={dropdown}
                 to="/Awards"
-                className="block whitespace-no-wrap py-2 px-4 pr-4"
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Awards & Recognition
               </Link>
@@ -112,7 +108,7 @@ const Header = () => {
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
                 to="/Events"
-                className="block whitespace-no-wrap py-2 px-4 pr-4"
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Events
               </Link>
@@ -120,25 +116,23 @@ const Header = () => {
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
                 to="/Partners"
-                className="block whitespace-no-wrap py-2 px-4 pr-4"
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Our Partners
               </Link>
             </li>
           </ul>
-        </div>
-        <div className="dropdown inline-block relative hover:text-pink-500">
+          {/* Participant Corner */}
           <div className="inline-flex items-center">
-            <div className="cursor-pointer md:pr-2 py-2 px-4 ">
-              Participant Corner
-            </div>
-            <FaChevronDown className="md:text-xs xl:text-sm" />
+            <div className="cursor-pointer py-2 px-5 ">Participant Corner</div>
+            <FaChevronDown className="pr-3 text-lg" />
           </div>
           <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
+                onClick={dropdown}
                 to="/Resources"
-                className="block whitespace-no-wrap py-2 px-4 pr-4"
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Resources
               </Link>
@@ -146,47 +140,16 @@ const Header = () => {
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
                 to="/ProgrammingEvents"
-                className="block whitespace-no-wrap py-2 px-4 pr-4"
+                className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
                 Programming Events
               </Link>
             </li>
           </ul>
         </div>
-        <Link
-          to="/Donate"
-          className="text-white text-lg p-2 pl-4 pr-4 rounded shadow-xl text-center font-black text-gray-500 bg-pink-500 hover:text-pink-500 hover:bg-white"
-          id="button-background"
-        >
-          Donate
-        </Link>
-      </div>
-      {/* Mobile Header */}
-      <div className="md:hidden w-full flex justify-between items-center text-center">
-        <MobileNav />
-        <div className="flex space-x-6">
-          <div>
-            <Link to="/" className="hover:text-pink-500">
-              Home
-            </Link>
-          </div>
-          <div>
-            <Link to="/Contact" className="hover:text-pink-500">
-              Contact Us
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/Donate"
-              className="p-2 pl-4 pr-4 rounded hover:shadow-2xl font-black text-center text-gray-500 bg-pink-500 hover:text-pink-500 hover:bg-white"
-            >
-              Donate
-            </Link>
-          </div>
-        </div>
-      </div>
+      )}
     </div>
   );
 };
 
-export default Header;
+export default MobileNav;

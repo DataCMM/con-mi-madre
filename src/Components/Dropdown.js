@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Popper from "popper.js";
 import { FiMenu } from "react-icons/fi";
+import { FaChevronDown } from "react-icons/fa";
+
+import "./Pages/pages.css";
 
 const Dropdown = ({ color }) => {
   // dropdown props
@@ -52,16 +55,19 @@ const Dropdown = ({ color }) => {
               }
               style={{ minWidth: "12rem" }}
             >
-              <Link
-                to="/Purpose"
-                className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
-                  (color === "white" ? " text-pink-700" : "text-white")
-                }
-                // onClick={(e) => e.preventDefault()}
-              >
-                Our Purpose
-              </Link>
+              <div>
+                <Link
+                  to="/Purpose"
+                  className={
+                    "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
+                    (color === "white" ? " text-pink-700" : "text-white")
+                  }
+                  // onClick={(e) => e.preventDefault()}
+                >
+                  Our Purpose
+                </Link>
+                <FaChevronDown className="md:text-xs xl:text-sm" />
+              </div>
               <Link
                 to="/Program"
                 className={
