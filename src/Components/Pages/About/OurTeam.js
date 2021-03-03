@@ -18,7 +18,7 @@ import Logo from "../../../images/stacked/text-only.png";
 
 const OurTeam = () => {
   return (
-    <div className="bg-blue-500">
+    <div>
       <div
         style={{
           backgroundImage: `url(${Banner})`,
@@ -41,25 +41,25 @@ const OurTeam = () => {
       </div>
 
       {/* Profiles with Images */}
-      <div className="p-3">
-        <div className="p-6">
+      <div>
+        <div>
           <div className="space-y-3">
-            <div
-              style={{
-                backgroundImage: `url(${Johanna})`,
-                borderWidth: "8px",
-                borderStyle: "ridge",
-                borderColor: "rgb(200,220,90)",
-              }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div>
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">Executive Director</h2>
+            <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
+              <div
+                style={{
+                  backgroundImage: `url(${Johanna})`,
+                  borderWidth: "8px",
+                  borderStyle: "ridge",
+                  borderColor: "rgb(200,220,90)",
+                }}
+                className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
+              ></div>
+              <h2 className="font-semibold pt-3">Executive Director</h2>
               <h3 className="font-bold text-2xl">
                 Johanna Moya Fabregas, Ph.D.
               </h3>
-              <p>she/her/ella</p>
-              <p className="pt-3 pb-3 font-light">
+              <p className="pb-3">she/her/ella</p>
+              <p className="p-3 pb-6 font-light">
                 Dr. Johanna Moya Fábregas received her undergraduate degree in
                 Latin American Studies and French from the University of
                 Wisconsin-Madison and her doctorate in History at Indiana
@@ -82,8 +82,8 @@ const OurTeam = () => {
           </div>
         </div>
 
-        <div className="pt-10 pb-10 p-6 text-lg">
-          <div className="space-y-3">
+        <div className="space-y-3">
+          <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
             <div
               style={{
                 backgroundImage: `url(${Marcie})`,
@@ -91,29 +91,26 @@ const OurTeam = () => {
                 borderStyle: "ridge",
                 borderColor: "rgb(200,220,90)",
               }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
+              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">Director of Finance</h2>
-              <h3 className="font-bold text-2xl">Marcie Cast</h3>
-              <p>she/her/ella</p>
-              <p className="pt-3 pb-3 font-light">
-                Marcie is a senior member of Con Mi MADRE’s leadership team and
-                is responsible for all accounting systems, processes, and
-                financial reporting. Additionally, she helps manage HR functions
-                and office operations. Marcie has a BBA in Accounting from Texas
-                State University and finds great joy in being a part of an
-                organization run by women whose mission involves empowering and
-                supporting other women. In her spare time, Marcie enjoys
-                spending time with her family, cooking/baking, and working on
-                craft projects.
-              </p>
-            </div>
+            <h2 className="pt-3 font-semibold">Director of Finance</h2>
+            <h3 className="font-bold text-2xl">Marcie Cast</h3>
+            <p className="pb-3">she/her/ella</p>
+            <p className="p-3 pb-6 font-light">
+              Marcie is a senior member of Con Mi MADRE’s leadership team and is
+              responsible for all accounting systems, processes, and financial
+              reporting. Additionally, she helps manage HR functions and office
+              operations. Marcie has a BBA in Accounting from Texas State
+              University and finds great joy in being a part of an organization
+              run by women whose mission involves empowering and supporting
+              other women. In her spare time, Marcie enjoys spending time with
+              her family, cooking/baking, and working on craft projects.
+            </p>
           </div>
         </div>
 
-        <div className="pt-10 pb-10 p-6 text-lg">
-          <div className="space-y-3">
+        <div className="space-y-3">
+          <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
             <div
               style={{
                 backgroundImage: `url(${Heaven})`,
@@ -121,28 +118,26 @@ const OurTeam = () => {
                 borderStyle: "ridge",
                 borderColor: "rgb(200,220,90)",
               }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
+              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">Development Manager</h2>
-              <h3 className="font-bold text-2xl">Heaven Guerrero Wilbanks</h3>
-              <p>she/her/ella</p>
-              <p className="pt-3 pb-3 font-light">
-                Heaven leads the fundraising and communication efforts for Con
-                Mi MADRE. She has an M.S. in Human Resource Management and a
-                B.S. in Business Administration from Texas State University.
-                Heaven believes education is the key to lifting marginalized
-                communities and loves working for an organization that actively
-                empowers women and girls through education. In her free time,
-                Heaven enjoys painting, playing board games, volunteering, and
-                spending time with her family.
-              </p>
-            </div>
+            <h2 className="pt-3 font-semibold">Development Manager</h2>
+            <h3 className="font-bold text-2xl">Heaven Guerrero Wilbanks</h3>
+            <p className="pb-3">she/her/ella</p>
+            <p className="p-3 pb-6 font-light">
+              Heaven leads the fundraising and communication efforts for Con Mi
+              MADRE. She has an M.S. in Human Resource Management and a B.S. in
+              Business Administration from Texas State University. Heaven
+              believes education is the key to lifting marginalized communities
+              and loves working for an organization that actively empowers women
+              and girls through education. In her free time, Heaven enjoys
+              painting, playing board games, volunteering, and spending time
+              with her family.
+            </p>
           </div>
         </div>
 
-        <div className="pt-10 pb-10 p-6 text-lg">
-          <div className="space-y-3">
+        <div className="space-y-3">
+          <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
             <div
               style={{
                 backgroundImage: `url(${Alicia})`,
@@ -150,28 +145,26 @@ const OurTeam = () => {
                 borderStyle: "ridge",
                 borderColor: "rgb(200,220,90)",
               }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
+              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">Data Manager</h2>
-              <h3 className="font-bold text-2xl">Alicia Guerrero</h3>
-              <p>she/her/ella</p>
-              <p className="pt-3 pb-3 font-light">
-                Alicia oversees data management protocols and leads the analysis
-                and reporting for Con Mi MADRE. She has a BA in Art/Education
-                from St. Edward’s University and a M.Ed. in Educational Policy
-                and Planning from the University of Texas at Austin. Alicia is
-                passionate about using data and research to push for more equal
-                opportunities for marginalized students so they can achieve
-                success. During her free time, Alicia likes to work out, travel,
-                and make art.
-              </p>
-            </div>
+            <h2 className="pt-3 font-semibold">Data Manager</h2>
+            <h3 className="font-bold text-2xl">Alicia Guerrero</h3>
+            <p className="pb-3 ">she/her/ella</p>
+            <p className="p-3 pb-6 font-light">
+              Alicia oversees data management protocols and leads the analysis
+              and reporting for Con Mi MADRE. She has a BA in Art/Education from
+              St. Edward’s University and a M.Ed. in Educational Policy and
+              Planning from the University of Texas at Austin. Alicia is
+              passionate about using data and research to push for more equal
+              opportunities for marginalized students so they can achieve
+              success. During her free time, Alicia likes to work out, travel,
+              and make art.
+            </p>
           </div>
         </div>
 
-        <div className="pt-10 pb-10 p-6 text-lg">
-          <div className="space-y-3">
+        <div className="space-y-3">
+          <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
             <div
               style={{
                 backgroundImage: `url(${Valerie})`,
@@ -179,66 +172,67 @@ const OurTeam = () => {
                 borderStyle: "ridge",
                 borderColor: "rgb(200,220,90)",
               }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
+              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">Administrative Assistant</h2>
-              <h3 className="font-bold text-2xl">Valerie Villareal</h3>
-              <p>she/her/ella</p>
-              <p className="pt-3 pb-3 font-light">
-                Valerie is Con Mi MADRE’s Administrative Assistant providing
-                administrative support to ensure efficient operation of the
-                office. She supports managers and employees through a variety of
-                tasks related to organization and communication. Responsible for
-                confidential and time sensitive material and is familiar with a
-                variety of the field's concepts, practices and procedures.
-                Valerie has a Real Estate Brokerage Licensing Associate of
-                Applied Science Degree. Valerie loves being part of a mission
-                that empowers and uplifts young women to follow their dreams and
-                achieve their goals and feels blessed to be a part of such
-                tremendous growth and success. Valerie enjoys spending time with
-                her family, cooking and listening to music.
-              </p>
-            </div>
+            <h2 className="pt-3 font-semibold">Administrative Assistant</h2>
+            <h3 className="font-bold text-2xl">Valerie Villareal</h3>
+            <p className="pb-3">she/her/ella</p>
+            <p className="p-3 pb-6 font-light">
+              Valerie is Con Mi MADRE’s Administrative Assistant providing
+              administrative support to ensure efficient operation of the
+              office. She supports managers and employees through a variety of
+              tasks related to organization and communication. Responsible for
+              confidential and time sensitive material and is familiar with a
+              variety of the field's concepts, practices and procedures. Valerie
+              has a Real Estate Brokerage Licensing Associate of Applied Science
+              Degree. Valerie loves being part of a mission that empowers and
+              uplifts young women to follow their dreams and achieve their goals
+              and feels blessed to be a part of such tremendous growth and
+              success. Valerie enjoys spending time with her family, cooking and
+              listening to music.
+            </p>
           </div>
         </div>
-
-        <div className="pt-10 pb-10 p-6 text-lg">
-          <div className="space-y-3">
-            {/* <div
+        <div className="space-y-3">
+          {/* <div
               style={{
                 backgroundImage: `url(${Valerie})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div> */}
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">Central Texas Program Director</h2>
-              <h3 className="font-bold text-2xl">Coming Soon</h3>
-              {/* <p>Pronouns</p> */}
-              {/* <p className="pt-3 pb-3 font-light"></p> */}
-            </div>
+          <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
+            <h2 className="pt-3 font-semibold">
+              Central Texas Program Director
+            </h2>
+            <h3 className="font-bold text-2xl pb-3">Coming Soon</h3>
+            {/* <p pb-3>Pronouns</p> */}
+            {/* <p className="p-3 pb-6 font-light"></p> */}
           </div>
         </div>
 
-        <div className="pt-10 pb-10 p-6 text-lg">
-          <div className="space-y-3">
-            {/* <div
+        <div className="space-y-3">
+          {/* <div
               style={{
                 backgroundImage: `url(${Valerie})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div> */}
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">Fort Worth Program Director</h2>
-              <h3 className="font-bold text-2xl">Coming Soon</h3>
-              {/* <p>Pronouns</p> */}
-              {/* <p className="pt-3 pb-3 font-light"></p> */}
-            </div>
+          <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
+            <h2 className="pt-3 font-semibold">Fort Worth Program Director</h2>
+            <h3 className="font-bold text-2xl pb-3">Coming Soon</h3>
+            {/* <p>Pronouns</p> */}
+            {/* <p className="p-3 pb-6 font-light"></p> */}
           </div>
         </div>
 
-        <div className="pt-10 pb-10 p-6 text-lg">
-          <div className="space-y-3">
+        <div className="space-y-3">
+          <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
             <div
               style={{
                 backgroundImage: `url(${Mariana})`,
@@ -246,37 +240,34 @@ const OurTeam = () => {
                 borderStyle: "ridge",
                 borderColor: "rgb(200,220,90)",
               }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
+              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">
-                Central Texas Success Program Coordinator
-              </h2>
-              <h3 className="font-bold text-2xl">Mariana Zamora</h3>
-              <p>she/her/ella</p>
-              <p className="pt-3 pb-3 font-light">
-                Mariana Zamora is a Licensed Master Social Worker (LMSW) and
-                serves as Con Mi MADRE’s Success Program Coordinator, primarily
-                responsible for providing advising services to undergraduate
-                students to help them navigate the transition to college,
-                overcome first-generation student challenges, and plan for their
-                career. Before entering the professional field, Mariana was a
-                student at Texas State University where she earned her bachelor
-                and master's degree in social work. As a first-generation
-                college graduate with 7+ years of experience working in the
-                field of college access and student success, Mariana is
-                passionate about empowering others through education because she
-                understands the positive impact a post-secondary education can
-                make on breaking intergenerational cycles. In her free time,
-                Mariana enjoys floating the river, collecting artwork, and
-                spending time with family
-              </p>
-            </div>
+            <h2 className="pt-3 font-semibold">
+              Central Texas Success Program Coordinator
+            </h2>
+            <h3 className="font-bold text-2xl">Mariana Zamora</h3>
+            <p className="pb-3">she/her/ella</p>
+            <p className="p-3 pb-6 font-light">
+              Mariana Zamora is a Licensed Master Social Worker (LMSW) and
+              serves as Con Mi MADRE’s Success Program Coordinator, primarily
+              responsible for providing advising services to undergraduate
+              students to help them navigate the transition to college, overcome
+              first-generation student challenges, and plan for their career.
+              Before entering the professional field, Mariana was a student at
+              Texas State University where she earned her bachelor and master's
+              degree in social work. As a first-generation college graduate with
+              7+ years of experience working in the field of college access and
+              student success, Mariana is passionate about empowering others
+              through education because she understands the positive impact a
+              post-secondary education can make on breaking intergenerational
+              cycles. In her free time, Mariana enjoys floating the river,
+              collecting artwork, and spending time with family
+            </p>
           </div>
         </div>
 
-        <div className="pt-10 pb-10 p-6 text-lg">
-          <div className="space-y-3">
+        <div className="space-y-3">
+          <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
             <div
               style={{
                 backgroundImage: `url(${Lorena})`,
@@ -284,37 +275,34 @@ const OurTeam = () => {
                 borderStyle: "ridge",
                 borderColor: "rgb(200,220,90)",
               }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
+              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">
-                Central Texas Program Coordinator
-              </h2>
-              <h3 className="font-bold text-2xl">Lorena Sierra</h3>
-              <p>she/her/ella</p>
-              <p className="pt-3 pb-3 font-light">
-                Lorena Sierra is a Program Coordinator for the Central Texas
-                chapter. She facilitates group sessions with students at
-                selected Con Mi MADRE schools, developed the College Academies
-                Program for high school juniors and seniors, and works
-                one-on-one with students in the Individual Coaching/Mentoring
-                Program. Lorena obtained her bachelor's degree in social work
-                from St. Edward’s University and was recognized as Social Work
-                Student of the Year in 2016-2017. She is currently a master’s
-                student at The Steve Hicks School of Social Work and is a St.
-                David’s Foundation Bilingual Social Work Scholar. Lorena is a
-                proud first-generation Latina that believes in the power of
-                community, serving others, and the importance of empowering
-                families in their journeys to post-secondary education. In her
-                free time, Lorena enjoys connecting with friends and family,
-                dancing, and working out.
-              </p>
-            </div>
+            <h2 className="pt-3 font-semibold">
+              Central Texas Program Coordinator
+            </h2>
+            <h3 className="font-bold text-2xl">Lorena Sierra</h3>
+            <p className="pb-3">she/her/ella</p>
+            <p className="p-3 pb-6 font-light">
+              Lorena Sierra is a Program Coordinator for the Central Texas
+              chapter. She facilitates group sessions with students at selected
+              Con Mi MADRE schools, developed the College Academies Program for
+              high school juniors and seniors, and works one-on-one with
+              students in the Individual Coaching/Mentoring Program. Lorena
+              obtained her bachelor's degree in social work from St. Edward’s
+              University and was recognized as Social Work Student of the Year
+              in 2016-2017. She is currently a master’s student at The Steve
+              Hicks School of Social Work and is a St. David’s Foundation
+              Bilingual Social Work Scholar. Lorena is a proud first-generation
+              Latina that believes in the power of community, serving others,
+              and the importance of empowering families in their journeys to
+              post-secondary education. In her free time, Lorena enjoys
+              connecting with friends and family, dancing, and working out.
+            </p>
           </div>
         </div>
 
-        <div className="pt-10 pb-10 p-6 text-lg">
-          <div className="space-y-3">
+        <div className="space-y-3">
+          <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
             <div
               style={{
                 backgroundImage: `url(${Jessenia})`,
@@ -322,36 +310,34 @@ const OurTeam = () => {
                 borderStyle: "ridge",
                 borderColor: "rgb(200,220,90)",
               }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
+              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">
-                Central Texas Program Coordinator
-              </h2>
-              <h3 className="font-bold text-2xl">Jessenia Balderas</h3>
-              <p>she/her/ella</p>
-              <p className="pt-3 pb-3 font-light">
-                Jessenia Balderas is a Program Coordinator for the Central Texas
-                chapter. She facilitates group sessions with students at
-                selected Con Mi MADRE schools, while working and engaging
-                families participating in the program. Jessenia was the first in
-                her immediate family to attend college and graduated with her
-                Bachelors Degree in Social Work from the Steve Hicks School of
-                Social Work at The University of Texas at Austin. During her
-                undergraduate years Jessenia was a work-study student at Con Mi
-                MADRE. The organization not only solidified Jessenia’s choice to
-                become a Social Worker, but also helped foster her passion for
-                education and empowering the next generation of Latina leaders.
-                In her free time, Jessenia enjoys going on walks with her pup,
-                working out with her team, and spending quality time with
-                friends and family.
-              </p>
-            </div>
+            <h2 className="pt-3 font-semibold">
+              Central Texas Program Coordinator
+            </h2>
+            <h3 className="font-bold text-2xl">Jessenia Balderas</h3>
+            <p className="pb-3">she/her/ella</p>
+            <p className="p-3 pb-6 font-light">
+              Jessenia Balderas is a Program Coordinator for the Central Texas
+              chapter. She facilitates group sessions with students at selected
+              Con Mi MADRE schools, while working and engaging families
+              participating in the program. Jessenia was the first in her
+              immediate family to attend college and graduated with her
+              Bachelors Degree in Social Work from the Steve Hicks School of
+              Social Work at The University of Texas at Austin. During her
+              undergraduate years Jessenia was a work-study student at Con Mi
+              MADRE. The organization not only solidified Jessenia’s choice to
+              become a Social Worker, but also helped foster her passion for
+              education and empowering the next generation of Latina leaders. In
+              her free time, Jessenia enjoys going on walks with her pup,
+              working out with her team, and spending quality time with friends
+              and family.
+            </p>
           </div>
         </div>
 
-        <div className="pt-10 pb-10 p-6 text-lg">
-          <div className="space-y-3">
+        <div className="space-y-3">
+          <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
             <div
               style={{
                 backgroundImage: `url(${Iliana})`,
@@ -359,31 +345,31 @@ const OurTeam = () => {
                 borderStyle: "ridge",
                 borderColor: "rgb(200,220,90)",
               }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
+              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">Fort Worth Program Coordinator</h2>
-              <h3 className="font-bold text-2xl">Iliana Montoya</h3>
-              <p>she/her/ella</p>
-              <p className="pt-3 pb-3 font-light">
-                Iliana is a Program Coordinator in the Fort Worth Chapter of Con
-                Mi MADRE. She leads groups, engages not only with students but
-                also their families and staff at all 4 Con Mi MADRE Schools in
-                FWISD. She has had the opportunity to engage more in the
-                community while working for Con Mi MADRE. She has a bachelor's
-                in social work from Tarleton State University. Her passion began
-                with wanting to advocate for those individuals who do not have a
-                voice, and need someone to step up for them, especially in the
-                Latino/Hispanic community. Iliana enjoys exploring new
-                restaurants and food, taking pictures, going on road trips and
-                spending time with family.
-              </p>
-            </div>
+            <h2 className="pt-3 font-semibold">
+              Fort Worth Program Coordinator
+            </h2>
+            <h3 className="font-bold text-2xl">Iliana Montoya</h3>
+            <p className="pb-3">she/her/ella</p>
+            <p className="p-3 pb-6 font-light">
+              Iliana is a Program Coordinator in the Fort Worth Chapter of Con
+              Mi MADRE. She leads groups, engages not only with students but
+              also their families and staff at all 4 Con Mi MADRE Schools in
+              FWISD. She has had the opportunity to engage more in the community
+              while working for Con Mi MADRE. She has a bachelor's in social
+              work from Tarleton State University. Her passion began with
+              wanting to advocate for those individuals who do not have a voice,
+              and need someone to step up for them, especially in the
+              Latino/Hispanic community. Iliana enjoys exploring new restaurants
+              and food, taking pictures, going on road trips and spending time
+              with family.
+            </p>
           </div>
         </div>
 
-        <div className="pt-10 pb-10 p-6 text-lg">
-          <div className="space-y-3">
+        <div className="space-y-3">
+          <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
             <div
               style={{
                 backgroundImage: `url(${Carla})`,
@@ -391,29 +377,29 @@ const OurTeam = () => {
                 borderStyle: "ridge",
                 borderColor: "rgb(200,220,90)",
               }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
+              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-semibold">Fort Worth Program Coordinator</h2>
-              <h3 className="font-bold text-2xl">Carla Gonzales Vasquez</h3>
-              <p>she/her/ella</p>
-              <p className="pt-3 pb-3 font-light">
-                Carla is a Program Coordinator for the Fort Worth Con Mi MADRE
-                Chapter. Some of her duties include leading group sessions with
-                students at selected Con Mi MADRE FWISD Schools, while working
-                and engaging families participating in the program. Carla is a
-                first-generation student born and raised in Mexico and obtained
-                her master's degree in Social Work from Tarleton State
-                University. She enjoys working for an organization that empowers
-                young girls through education. During her free time Carla enjoys
-                cooking, spending time with friends and family, playing with her
-                birds and trying out new makeup trends.
-              </p>
-            </div>
+            <h2 className="pt-3 font-semibold">
+              Fort Worth Program Coordinator
+            </h2>
+            <h3 className="font-bold text-2xl">Carla Gonzales Vasquez</h3>
+            <p className="pb-3">she/her/ella</p>
+            <p className="p-3 pb-6 font-light">
+              Carla is a Program Coordinator for the Fort Worth Con Mi MADRE
+              Chapter. Some of her duties include leading group sessions with
+              students at selected Con Mi MADRE FWISD Schools, while working and
+              engaging families participating in the program. Carla is a
+              first-generation student born and raised in Mexico and obtained
+              her master's degree in Social Work from Tarleton State University.
+              She enjoys working for an organization that empowers young girls
+              through education. During her free time Carla enjoys cooking,
+              spending time with friends and family, playing with her birds and
+              trying out new makeup trends.
+            </p>
           </div>
         </div>
 
-        <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+        <div className="bg-green-500 text-xl m-auto text-center p-3 pb-6">
           <div>
             <h2 className="font-extrabold text-4xl">Board Of Directors</h2>
             <h3 className="font-bold text-2xl pt-3">Executive Committee</h3>
