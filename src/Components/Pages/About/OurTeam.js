@@ -18,7 +18,7 @@ import Logo from "../../../images/stacked/text-only.png";
 
 const OurTeam = () => {
   return (
-    <div>
+    <div className="bg-blue-500">
       <div
         style={{
           backgroundImage: `url(${Banner})`,
@@ -47,16 +47,19 @@ const OurTeam = () => {
             <div
               style={{
                 backgroundImage: `url(${Johanna})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">Executive Director</h2>
-              <h3 className="font-extrabold">Johanna Moya Fabregas, Ph.D.</h3>
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">Executive Director</h2>
+              <h3 className="font-bold text-2xl">
+                Johanna Moya Fabregas, Ph.D.
+              </h3>
               <p>she/her/ella</p>
-            </div>
-            <div>
-              <p>
+              <p className="pt-3 pb-3 font-light">
                 Dr. Johanna Moya Fábregas received her undergraduate degree in
                 Latin American Studies and French from the University of
                 Wisconsin-Madison and her doctorate in History at Indiana
@@ -84,16 +87,17 @@ const OurTeam = () => {
             <div
               style={{
                 backgroundImage: `url(${Marcie})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">Director of Finance</h2>
-              <h3 className="font-extrabold">Marcie Cast</h3>
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">Director of Finance</h2>
+              <h3 className="font-bold text-2xl">Marcie Cast</h3>
               <p>she/her/ella</p>
-            </div>
-            <div>
-              <p>
+              <p className="pt-3 pb-3 font-light">
                 Marcie is a senior member of Con Mi MADRE’s leadership team and
                 is responsible for all accounting systems, processes, and
                 financial reporting. Additionally, she helps manage HR functions
@@ -113,16 +117,17 @@ const OurTeam = () => {
             <div
               style={{
                 backgroundImage: `url(${Heaven})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">Development Manager</h2>
-              <h3 className="font-extrabold">Heaven Guerrero Wilbanks</h3>
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">Development Manager</h2>
+              <h3 className="font-bold text-2xl">Heaven Guerrero Wilbanks</h3>
               <p>she/her/ella</p>
-            </div>
-            <div>
-              <p>
+              <p className="pt-3 pb-3 font-light">
                 Heaven leads the fundraising and communication efforts for Con
                 Mi MADRE. She has an M.S. in Human Resource Management and a
                 B.S. in Business Administration from Texas State University.
@@ -141,16 +146,17 @@ const OurTeam = () => {
             <div
               style={{
                 backgroundImage: `url(${Alicia})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">Data Manager</h2>
-              <h3 className="font-extrabold">Alicia Guerrero</h3>
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">Data Manager</h2>
+              <h3 className="font-bold text-2xl">Alicia Guerrero</h3>
               <p>she/her/ella</p>
-            </div>
-            <div>
-              <p>
+              <p className="pt-3 pb-3 font-light">
                 Alicia oversees data management protocols and leads the analysis
                 and reporting for Con Mi MADRE. She has a BA in Art/Education
                 from St. Edward’s University and a M.Ed. in Educational Policy
@@ -169,16 +175,17 @@ const OurTeam = () => {
             <div
               style={{
                 backgroundImage: `url(${Valerie})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">Administrative Assistant</h2>
-              <h3 className="font-extrabold">Valerie Villareal</h3>
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">Administrative Assistant</h2>
+              <h3 className="font-bold text-2xl">Valerie Villareal</h3>
               <p>she/her/ella</p>
-            </div>
-            <div>
-              <p>
+              <p className="pt-3 pb-3 font-light">
                 Valerie is Con Mi MADRE’s Administrative Assistant providing
                 administrative support to ensure efficient operation of the
                 office. She supports managers and employees through a variety of
@@ -204,13 +211,11 @@ const OurTeam = () => {
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div> */}
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">Central Texas Program Director</h2>
-              <h3 className="font-extrabold">Coming Soon</h3>
-              <p>Pronouns</p>
-            </div>
-            <div>
-              <p>Coming Soon</p>
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">Central Texas Program Director</h2>
+              <h3 className="font-bold text-2xl">Coming Soon</h3>
+              {/* <p>Pronouns</p> */}
+              {/* <p className="pt-3 pb-3 font-light"></p> */}
             </div>
           </div>
         </div>
@@ -223,13 +228,11 @@ const OurTeam = () => {
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div> */}
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">Fort Worth Program Director</h2>
-              <h3 className="font-extrabold">Coming Soon</h3>
-              <p>Pronouns</p>
-            </div>
-            <div>
-              <p>Coming Soon</p>
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">Fort Worth Program Director</h2>
+              <h3 className="font-bold text-2xl">Coming Soon</h3>
+              {/* <p>Pronouns</p> */}
+              {/* <p className="pt-3 pb-3 font-light"></p> */}
             </div>
           </div>
         </div>
@@ -239,18 +242,19 @@ const OurTeam = () => {
             <div
               style={{
                 backgroundImage: `url(${Mariana})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">
                 Central Texas Success Program Coordinator
               </h2>
-              <h3 className="font-extrabold">Mariana Zamora</h3>
+              <h3 className="font-bold text-2xl">Mariana Zamora</h3>
               <p>she/her/ella</p>
-            </div>
-            <div>
-              <p>
+              <p className="pt-3 pb-3 font-light">
                 Mariana Zamora is a Licensed Master Social Worker (LMSW) and
                 serves as Con Mi MADRE’s Success Program Coordinator, primarily
                 responsible for providing advising services to undergraduate
@@ -276,16 +280,19 @@ const OurTeam = () => {
             <div
               style={{
                 backgroundImage: `url(${Lorena})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">Central Texas Program Coordinator</h2>
-              <h3 className="font-extrabold">Lorena Sierra</h3>
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">
+                Central Texas Program Coordinator
+              </h2>
+              <h3 className="font-bold text-2xl">Lorena Sierra</h3>
               <p>she/her/ella</p>
-            </div>
-            <div>
-              <p>
+              <p className="pt-3 pb-3 font-light">
                 Lorena Sierra is a Program Coordinator for the Central Texas
                 chapter. She facilitates group sessions with students at
                 selected Con Mi MADRE schools, developed the College Academies
@@ -311,16 +318,19 @@ const OurTeam = () => {
             <div
               style={{
                 backgroundImage: `url(${Jessenia})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">Central Texas Program Coordinator</h2>
-              <h3 className="font-extrabold">Jessenia Balderas</h3>
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">
+                Central Texas Program Coordinator
+              </h2>
+              <h3 className="font-bold text-2xl">Jessenia Balderas</h3>
               <p>she/her/ella</p>
-            </div>
-            <div>
-              <p>
+              <p className="pt-3 pb-3 font-light">
                 Jessenia Balderas is a Program Coordinator for the Central Texas
                 chapter. She facilitates group sessions with students at
                 selected Con Mi MADRE schools, while working and engaging
@@ -345,16 +355,17 @@ const OurTeam = () => {
             <div
               style={{
                 backgroundImage: `url(${Iliana})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">Fort Worth Program Coordinator</h2>
-              <h3 className="font-extrabold">Iliana Montoya</h3>
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">Fort Worth Program Coordinator</h2>
+              <h3 className="font-bold text-2xl">Iliana Montoya</h3>
               <p>she/her/ella</p>
-            </div>
-            <div>
-              <p>
+              <p className="pt-3 pb-3 font-light">
                 Iliana is a Program Coordinator in the Fort Worth Chapter of Con
                 Mi MADRE. She leads groups, engages not only with students but
                 also their families and staff at all 4 Con Mi MADRE Schools in
@@ -376,16 +387,17 @@ const OurTeam = () => {
             <div
               style={{
                 backgroundImage: `url(${Carla})`,
+                borderWidth: "8px",
+                borderStyle: "ridge",
+                borderColor: "rgb(200,220,90)",
               }}
               className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
             ></div>
-            <div className="bg-gray-500 text-xl m-auto text-center p-3">
-              <h2 className="font-bold">Fort Worth Program Coordinator</h2>
-              <h3 className="font-extrabold">Carla Gonzales Vasquez</h3>
+            <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
+              <h2 className="font-semibold">Fort Worth Program Coordinator</h2>
+              <h3 className="font-bold text-2xl">Carla Gonzales Vasquez</h3>
               <p>she/her/ella</p>
-            </div>
-            <div>
-              <p>
+              <p className="pt-3 pb-3 font-light">
                 Carla is a Program Coordinator for the Fort Worth Con Mi MADRE
                 Chapter. Some of her duties include leading group sessions with
                 students at selected Con Mi MADRE FWISD Schools, while working
@@ -401,10 +413,10 @@ const OurTeam = () => {
           </div>
         </div>
 
-        <div className="bg-gray-500 text-xl m-auto text-center p-3">
+        <div className="rounded bg-gray-500 text-xl m-auto text-center p-3">
           <div>
-            <h2 className="font-extrabold">Board Of Directors</h2>
-            <h3 className="font-bold">Executive Committee</h3>
+            <h2 className="font-extrabold text-4xl">Board Of Directors</h2>
+            <h3 className="font-bold text-2xl pt-3">Executive Committee</h3>
           </div>
 
           <div>
@@ -425,8 +437,10 @@ const OurTeam = () => {
             <h3>Orrick, Herrington, & Sutcliffe, Attorney</h3>
           </div>
 
-          <div>
-            <h2 className="font-bold">Addtional Board Members</h2>
+          <div className="pb-3">
+            <h2 className="font-bold text-2xl pt-3">
+              Additional Board Members
+            </h2>
 
             <div>
               <h2>Ashley Rae Aoshima </h2>
