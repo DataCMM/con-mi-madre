@@ -401,18 +401,20 @@ const OurTeam = () => {
 
         <div className="bg-green-500 text-xl m-auto text-center p-3 pb-6">
           <div>
-            <h2 className="font-extrabold text-4xl">Board Of Directors</h2>
-            <h3 className="font-bold text-2xl pt-3">Executive Committee</h3>
+            <h2 className="pt-3 font-extrabold text-4xl">Board Of Directors</h2>
+            <h3 className="font-bold text-2xl pt-3 pb-2">
+              Executive Committee
+            </h3>
           </div>
 
           <div>
             <h2>Veronica Rosas Fernandez - Chair</h2>
-            <h3>Elephant Labs, Inc., CFO, COO </h3>
+            <h3 className="pb-2">Elephant Labs, Inc., CFO, COO </h3>
           </div>
 
           <div>
             <h2>Lillian Gray - Secretary </h2>
-            <h3>
+            <h3 className="pb-2">
               Bank of America, Assistant Vice President, Community Relations
               Manager
             </h3>
@@ -420,21 +422,21 @@ const OurTeam = () => {
 
           <div>
             <h2>Justin Rosas – Member at Large </h2>
-            <h3>Orrick, Herrington, & Sutcliffe, Attorney</h3>
+            <h3 className="pb-3">Orrick, Herrington, & Sutcliffe, Attorney</h3>
           </div>
 
           <div className="pb-3">
-            <h2 className="font-bold text-2xl pt-3">
+            <h2 className="font-bold text-2xl pt-3 pb-2">
               Additional Board Members
             </h2>
 
             <div>
               <h2>Ashley Rae Aoshima </h2>
-              <h3>Wells Fargo, Branch Manager </h3>
+              <h3 className="pb-2">Wells Fargo, Branch Manager </h3>
             </div>
             <div>
               <h2>Anais Cruz </h2>
-              <h3>
+              <h3 className="pb-2">
                 Central Health, Program Manager-Communications & Community
                 Engagement
               </h3>
