@@ -41,7 +41,7 @@ const Program = () => {
       </div>
 
       {/* Preparedness */}
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
+      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-6 pt-6">
         <h3 className="text-3xl pb-6">Preparedness (6th - 10th Grades)</h3>
         <p className="pb-6">
           We start early to prepare students for academic, social, and emotional
@@ -49,12 +49,14 @@ const Program = () => {
           our coordinators deliver our social-emotional education curriculum to
           students at their campus.
         </p>
-        <div
-          style={{
-            backgroundImage: `url(${Structure1})`,
-          }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
-        ></div>
+        <div className="h-full w-full">
+          <div
+            style={{
+              backgroundImage: `url(${Structure1})`,
+            }}
+            className="intern-img bg-cover bg-top bg-no-repeat"
+          ></div>
+        </div>
         <p className="pt-6 pb-6">
           Increase college knowledge, self-esteem, communication and coping
           skills
