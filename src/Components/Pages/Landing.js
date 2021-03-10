@@ -23,7 +23,7 @@ const Landing = () => {
         style={{
           backgroundImage: `url(${BannerImage})`,
         }}
-        className="w-full max-h-full relative bg-fixed bg-cover bg-center bg-no-repeat"
+        className="w-full max-h-full relative bg-fixed bg-cover bg-top bg-no-repeat"
       >
         <span
           className="w-full h-full absolute opacity-50 bg-black bg-cover"
