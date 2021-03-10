@@ -12,59 +12,189 @@ import Lorena from "../../../images/team/9-LorenaSierra.jpg";
 import Jessenia from "../../../images/team/10-JesseniaBalderas.png";
 import Iliana from "../../../images/team/11-IlianaMontoya.jpg";
 import Carla from "../../../images/team/12-CarlaGonzalez.png";
-import Banner from "../../../images/team/OurTeamBanner.jpg";
+import TeamBanner from "../../../images/team/OurTeamBanner.jpg";
 
 import Logo from "../../../images/stacked/text-only.png";
 
 const OurTeam = () => {
   return (
     <>
-      <div
-        className="h-full w-full"
-        // style={{
-        //   height: "350px",
-        // }}
-      >
+      <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${Banner})`,
+            backgroundImage: `url(${TeamBanner})`,
           }}
-          className="w-full h-48 lg:h-64 relative bg-cover bg-center bg-no-repeat"
+          className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
           <span
-            className="w-full h-48 lg:h-64 absolute opacity-50 bg-black bg-cover"
-            id="overlay"
+            className="w-full h-full md:h-full absolute opacity-50 bg-black bg-cover"
+            id="career-overlay"
           />
-          <div className="flex flex-col space-y-24">
+
+          <div className="banner-text sticky flex flex-col justify-between">
             <div className="sticky pt-4 pl-4 h-14 w-1/2">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
 
-            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
+            <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-gray-500 text-4xl font-medium tracking-widest text-center">
               <div id="title1">Our Team</div>
             </div>
           </div>
         </div>
       </div>
       {/* Profiles with Images */}
-      <div>
+      <div className="grid xs:grid-cols-1 gap-4 md:grid-cols-2 md:gap-12 bg-blue-500 p-4 md:p-12">
+        <div className="rounded flex flex-col items-center md:flex-row md:justify-start md:items-start p-4 bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Johanna})`,
+            }}
+            className="flex w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Executive Director</h2>
+            <h3 className="font-semibold text-xl">
+              Johanna Moya Fabregas, Ph.D.
+            </h3>
+            <p className="pb-3 font-light">she/her/ella</p>
+          </div>
+        </div>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Marcie})`,
+            }}
+            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Director of Finance</h2>
+            <h3 className="font-semibold text-xl">Marcie Cast</h3>
+            <p className="pb-3 font-light">she/her/ella</p>
+          </div>
+        </div>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Heaven})`,
+            }}
+            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Development Manager</h2>
+            <h3 className="font-semibold text-xl">Heaven Guerrero Wilbanks</h3>
+            <p className="pb-3 font-light">she/her/ella</p>
+          </div>
+        </div>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Alicia})`,
+            }}
+            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Data Manager</h2>
+            <h3 className="font-semibold text-xl">Alicia Guerrero</h3>
+            <p className="pb-3 font-light">she/her/ella</p>
+          </div>
+        </div>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Valerie})`,
+            }}
+            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Administrative Assistant</h2>
+            <h3 className="font-semibold text-xl">Valerie Villareal</h3>
+            <p className="pb-3 font-light">she/her/ella</p>
+          </div>
+        </div>
+        <div className="rounded bg-gray-500 flex flex-col text-center justify-center">
+          <h2 className="pt-3 font-semibold text-xl">
+            Central Texas Program Director
+          </h2>
+          <h3 className="font-bold text-3xl pb-3">Coming Soon</h3>
+        </div>
+        <div className="rounded bg-gray-500 flex flex-col text-center justify-center">
+          {" "}
+          <h2 className="pt-3 font-semibold text-xl">
+            Fort Worth Program Director
+          </h2>
+          <h3 className="font-bold text-3xl pb-3">Coming Soon</h3>
+        </div>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Mariana})`,
+            }}
+            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Central Texas Success Program Coordinator</h2>
+            <h3 className="font-semibold text-xl">Mariana Zamora</h3>
+            <p className="pb-3 font-light">she/her/ella</p>
+          </div>
+        </div>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Lorena})`,
+            }}
+            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Central Texas Program Coordinator</h2>
+            <h3 className="font-semibold text-xl">Lorena Sierra</h3>
+            <p className="pb-3 font-light">she/her/ella</p>
+          </div>
+        </div>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Jessenia})`,
+            }}
+            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Central Texas Program Coordinator</h2>
+            <h3 className="font-semibold text-xl">Jessenia Balderas</h3>
+            <p className="pb-3 font-light">she/her/ella</p>
+          </div>
+        </div>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Iliana})`,
+            }}
+            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Fort Worth Program Coordinator</h2>
+            <h3 className="font-semibold text-xl">Iliana Montoya</h3>
+            <p className="pb-3 font-light">she/her/ella</p>
+          </div>
+        </div>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Carla})`,
+            }}
+            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Fort Worth Program Coordinator</h2>
+            <h3 className="font-semibold text-xl">Carla Gonzales Vasquez</h3>
+            <p className="pb-3 font-light">she/her/ella</p>
+          </div>
+        </div>
+      </div>
+      {/* <div>
         <div>
           <div className="space-y-3">
             <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
-              <div
-                style={{
-                  backgroundImage: `url(${Johanna})`,
-                  borderWidth: "8px",
-                  borderStyle: "ridge",
-                  borderColor: "rgb(200,220,90)",
-                }}
-                className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-              ></div>
-              <h2 className="font-semibold pt-3">Executive Director</h2>
-              <h3 className="font-bold text-2xl">
-                Johanna Moya Fabregas, Ph.D.
-              </h3>
-              <p className="pb-3">she/her/ella</p>
+            <h3 className="font-bold text-2xl">Johanna</h3>
               <p className="p-3 pb-6 font-light">
                 Dr. Johanna Moya Fábregas received her undergraduate degree in
                 Latin American Studies and French from the University of
@@ -90,17 +220,7 @@ const OurTeam = () => {
 
         <div className="space-y-3">
           <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
-            <div
-              style={{
-                backgroundImage: `url(${Marcie})`,
-                borderWidth: "8px",
-                borderStyle: "ridge",
-                borderColor: "rgb(200,220,90)",
-              }}
-              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div>
-            <h2 className="pt-3 font-semibold">Director of Finance</h2>
-            <h3 className="font-bold text-2xl">Marcie Cast</h3>
+            <h3 className="font-bold text-2xl">Marcie</h3>
             <p className="pb-3">she/her/ella</p>
             <p className="p-3 pb-6 font-light">
               Marcie is a senior member of Con Mi MADRE’s leadership team and is
@@ -117,18 +237,7 @@ const OurTeam = () => {
 
         <div className="space-y-3">
           <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
-            <div
-              style={{
-                backgroundImage: `url(${Heaven})`,
-                borderWidth: "8px",
-                borderStyle: "ridge",
-                borderColor: "rgb(200,220,90)",
-              }}
-              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div>
-            <h2 className="pt-3 font-semibold">Development Manager</h2>
             <h3 className="font-bold text-2xl">Heaven Guerrero Wilbanks</h3>
-            <p className="pb-3">she/her/ella</p>
             <p className="p-3 pb-6 font-light">
               Heaven leads the fundraising and communication efforts for Con Mi
               MADRE. She has an M.S. in Human Resource Management and a B.S. in
@@ -141,21 +250,9 @@ const OurTeam = () => {
             </p>
           </div>
         </div>
-
         <div className="space-y-3">
           <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
-            <div
-              style={{
-                backgroundImage: `url(${Alicia})`,
-                borderWidth: "8px",
-                borderStyle: "ridge",
-                borderColor: "rgb(200,220,90)",
-              }}
-              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div>
-            <h2 className="pt-3 font-semibold">Data Manager</h2>
             <h3 className="font-bold text-2xl">Alicia Guerrero</h3>
-            <p className="pb-3 ">she/her/ella</p>
             <p className="p-3 pb-6 font-light">
               Alicia oversees data management protocols and leads the analysis
               and reporting for Con Mi MADRE. She has a BA in Art/Education from
@@ -171,18 +268,7 @@ const OurTeam = () => {
 
         <div className="space-y-3">
           <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
-            <div
-              style={{
-                backgroundImage: `url(${Valerie})`,
-                borderWidth: "8px",
-                borderStyle: "ridge",
-                borderColor: "rgb(200,220,90)",
-              }}
-              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div>
-            <h2 className="pt-3 font-semibold">Administrative Assistant</h2>
             <h3 className="font-bold text-2xl">Valerie Villareal</h3>
-            <p className="pb-3">she/her/ella</p>
             <p className="p-3 pb-6 font-light">
               Valerie is Con Mi MADRE’s Administrative Assistant providing
               administrative support to ensure efficient operation of the
@@ -200,54 +286,31 @@ const OurTeam = () => {
           </div>
         </div>
         <div className="space-y-3">
-          {/* <div
-              style={{
-                backgroundImage: `url(${Valerie})`,
-                borderWidth: "8px",
-                borderStyle: "ridge",
-                borderColor: "rgb(200,220,90)",
-              }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div> */}
+     
           <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
             <h2 className="pt-3 font-semibold">
               Central Texas Program Director
             </h2>
             <h3 className="font-bold text-2xl pb-3">Coming Soon</h3>
-            {/* <p pb-3>Pronouns</p> */}
-            {/* <p className="p-3 pb-6 font-light"></p> */}
+            <p pb-3>Pronouns</p>
+            <p className="p-3 pb-6 font-light"></p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="space-y-3">
-          {/* <div
-              style={{
-                backgroundImage: `url(${Valerie})`,
-                borderWidth: "8px",
-                borderStyle: "ridge",
-                borderColor: "rgb(200,220,90)",
-              }}
-              className="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div> */}
+      {/* <div className="space-y-3">
+      ="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
+            ></div>
           <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
             <h2 className="pt-3 font-semibold">Fort Worth Program Director</h2>
             <h3 className="font-bold text-2xl pb-3">Coming Soon</h3>
-            {/* <p>Pronouns</p> */}
-            {/* <p className="p-3 pb-6 font-light"></p> */}
+            <p>Pronouns</p>
+            <p className="p-3 pb-6 font-light"></p>
           </div>
-        </div>
-
+        </div> */}
+      {/* 
         <div className="space-y-3">
           <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
-            <div
-              style={{
-                backgroundImage: `url(${Mariana})`,
-                borderWidth: "8px",
-                borderStyle: "ridge",
-                borderColor: "rgb(200,220,90)",
-              }}
-              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div>
+       
             <h2 className="pt-3 font-semibold">
               Central Texas Success Program Coordinator
             </h2>
@@ -270,19 +333,11 @@ const OurTeam = () => {
               collecting artwork, and spending time with family
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="space-y-3">
+      {/* <div className="space-y-3">
           <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
-            <div
-              style={{
-                backgroundImage: `url(${Lorena})`,
-                borderWidth: "8px",
-                borderStyle: "ridge",
-                borderColor: "rgb(200,220,90)",
-              }}
-              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div>
+      
             <h2 className="pt-3 font-semibold">
               Central Texas Program Coordinator
             </h2>
@@ -309,15 +364,7 @@ const OurTeam = () => {
 
         <div className="space-y-3">
           <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
-            <div
-              style={{
-                backgroundImage: `url(${Jessenia})`,
-                borderWidth: "8px",
-                borderStyle: "ridge",
-                borderColor: "rgb(200,220,90)",
-              }}
-              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div>
+       
             <h2 className="pt-3 font-semibold">
               Central Texas Program Coordinator
             </h2>
@@ -344,15 +391,6 @@ const OurTeam = () => {
 
         <div className="space-y-3">
           <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
-            <div
-              style={{
-                backgroundImage: `url(${Iliana})`,
-                borderWidth: "8px",
-                borderStyle: "ridge",
-                borderColor: "rgb(200,220,90)",
-              }}
-              className="pb-3 flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div>
             <h2 className="pt-3 font-semibold">
               Fort Worth Program Coordinator
             </h2>
@@ -403,59 +441,57 @@ const OurTeam = () => {
               trying out new makeup trends.
             </p>
           </div>
+        </div> */}
+
+      <div className="bg-green-500 text-xl m-auto text-center p-3 pb-6">
+        <div>
+          <h2 className="pt-3 font-extrabold text-4xl">Board Of Directors</h2>
+          <h3 className="font-bold text-2xl pt-3 pb-2">Executive Committee</h3>
         </div>
 
-        <div className="bg-green-500 text-xl m-auto text-center p-3 pb-6">
-          <div>
-            <h2 className="pt-3 font-extrabold text-4xl">Board Of Directors</h2>
-            <h3 className="font-bold text-2xl pt-3 pb-2">
-              Executive Committee
-            </h3>
-          </div>
+        <div>
+          <h2>Veronica Rosas Fernandez - Chair</h2>
+          <h3 className="pb-2">Elephant Labs, Inc., CFO, COO </h3>
+        </div>
+
+        <div>
+          <h2>Lillian Gray - Secretary </h2>
+          <h3 className="pb-2">
+            Bank of America, Assistant Vice President, Community Relations
+            Manager
+          </h3>
+        </div>
+
+        <div>
+          <h2>Justin Rosas – Member at Large </h2>
+          <h3 className="pb-3">Orrick, Herrington, & Sutcliffe, Attorney</h3>
+        </div>
+
+        <div className="pb-3">
+          <h2 className="font-bold text-2xl pt-3 pb-2">
+            Additional Board Members
+          </h2>
 
           <div>
-            <h2>Veronica Rosas Fernandez - Chair</h2>
-            <h3 className="pb-2">Elephant Labs, Inc., CFO, COO </h3>
+            <h2>Ashley Rae Aoshima </h2>
+            <h3 className="pb-2">Wells Fargo, Branch Manager </h3>
           </div>
-
           <div>
-            <h2>Lillian Gray - Secretary </h2>
+            <h2>Anais Cruz </h2>
             <h3 className="pb-2">
-              Bank of America, Assistant Vice President, Community Relations
-              Manager
+              Central Health, Program Manager-Communications & Community
+              Engagement
             </h3>
           </div>
-
           <div>
-            <h2>Justin Rosas – Member at Large </h2>
-            <h3 className="pb-3">Orrick, Herrington, & Sutcliffe, Attorney</h3>
-          </div>
-
-          <div className="pb-3">
-            <h2 className="font-bold text-2xl pt-3 pb-2">
-              Additional Board Members
-            </h2>
-
-            <div>
-              <h2>Ashley Rae Aoshima </h2>
-              <h3 className="pb-2">Wells Fargo, Branch Manager </h3>
-            </div>
-            <div>
-              <h2>Anais Cruz </h2>
-              <h3 className="pb-2">
-                Central Health, Program Manager-Communications & Community
-                Engagement
-              </h3>
-            </div>
-            <div>
-              <h2>Leticia Mendoza </h2>
-              <h3>
-                Texas Disposal Systems, Director of Marketing and Communications
-              </h3>
-            </div>
+            <h2>Leticia Mendoza </h2>
+            <h3>
+              Texas Disposal Systems, Director of Marketing and Communications
+            </h3>
           </div>
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 };

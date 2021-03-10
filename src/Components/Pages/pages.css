@@ -81,6 +81,9 @@
   .banner-text {
     height: 350px;
   }
+  .intern-img {
+    height: 350px;
+  }
 }
 @media (min-width: 651px) {
   .banner-image {
@@ -89,12 +92,18 @@
   .banner-text {
     height: 700px;
   }
+  .intern-img {
+    height: 700px;
+  }
 }
 @media (min-width: 1054px) {
   .banner-image {
     height: 550px;
   }
   .banner-text {
+    height: 550px;
+  }
+  .intern-img {
     height: 550px;
   }
 }
