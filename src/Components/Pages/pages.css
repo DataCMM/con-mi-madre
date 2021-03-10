@@ -92,9 +92,9 @@
 }
 @media (min-width: 1054px) {
   .banner-image {
-    height: 700px;
+    height: 500px;
   }
   .banner-text {
-    height: 700px;
+    height: 500px;
   }
 }
