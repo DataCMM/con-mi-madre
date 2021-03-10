@@ -12,7 +12,7 @@ const Careers = () => {
           style={{
             backgroundImage: `url(${CareersBanner})`,
           }}
-          className="w-full h-full md:h-full relative  bg-cover bg-top-center bg-no-repeat"
+          className="w-full h-full relative  bg-cover bg-center bg-no-repeat lg:bg-top"
         >
           <span
             className="w-full h-full md:h-full absolute opacity-50 bg-black bg-cover"
@@ -20,7 +20,8 @@ const Careers = () => {
           />
 
           <div className="banner-text sticky flex flex-col justify-between">
-            <div className="sticky pt-4 pl-4 pr-4 xs:h-5 md:h-16 md:w-1/3">
+            {/* <div className="flex flex-col space-y-24"> */}
+            <div className="sticky pt-4 pl-4 pr-4 h-14 w-1/2">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
 
