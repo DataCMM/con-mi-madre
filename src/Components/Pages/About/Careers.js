@@ -7,16 +7,10 @@ import Logo from "../../../images/stacked/text-only.png";
 const Careers = () => {
   return (
     <>
-      <div
-        className="w-full h-full"
-        style={{
-          height: "350px",
-        }}
-      >
+      <div className="banner-image w-full h-full">
         <div
           style={{
             backgroundImage: `url(${CareersBanner})`,
-            // height: "600px",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top-center bg-no-repeat"
         >
@@ -25,7 +19,7 @@ const Careers = () => {
             id="career-overlay"
           />
 
-          <div className="sticky flex flex-col justify-between h-screen">
+          <div className="banner-text sticky flex flex-col justify-between">
             <div className="sticky pt-4 pl-4 pr-4 xs:h-5 md:h-16 md:w-1/3">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>

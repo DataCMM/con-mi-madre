@@ -69,3 +69,32 @@
     font-size: 5rem;
   }
 }
+/* 'sm': {'min': '640px', 'max': '767px'},
+      'md': {'min': '768px', 'max': '1023px'},
+      'lg': {'min': '1024px', 'max': '1279px'},
+      'xl': {'min': '1280px', 'max': '1535px'},
+      '2xl': {'min': '1536px'}, */
+@media (max-width: 650px) {
+  .banner-image {
+    height: 350px;
+  }
+  .banner-text {
+    height: 350px;
+  }
+}
+@media (min-width: 651px) {
+  .banner-image {
+    height: 700px;
+  }
+  .banner-text {
+    height: 700px;
+  }
+}
+@media (min-width: 1054px) {
+  .banner-image {
+    height: 700px;
+  }
+  .banner-text {
+    height: 700px;
+  }
+}
