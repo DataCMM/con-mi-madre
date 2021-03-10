@@ -70,10 +70,10 @@ const Careers = () => {
         <h3 className="text-4xl font-semibold pt-6">Internships</h3>
         <br />
         <div className="pb-6">
-          <h3 className="text-3xl pb-2">
+          <h3 className="text-3xl font-semibold pb-2">
             Programming Intern (Central Texas & Fort Worth Chapter)
           </h3>
-          <p className="text-2xl">
+          <p className="text-2xl font-light">
             Con Mi MADRE offers opportunities for current social work students
             to help with the implementation and execution of programming
             services. Interested students must reach out to their School of
@@ -81,20 +81,20 @@ const Careers = () => {
           </p>
         </div>
         <div className="pb-6">
-          <h3 className="text-3xl pb-2">
+          <h3 className="text-3xl font-semibold pb-2">
             Communications Intern (Central Texas or Fort Worth chapter)
           </h3>
-          <p className="text-2xl">
+          <p className="text-2xl font-light">
             Con Mi MADRE is seeking a creative and dynamic student to assist in
             marketing and communications efforts (part-time). Click here for
             more information
           </p>
         </div>
         <div className="pb-6">
-          <h3 className="text-3xl pb-2">
+          <h3 className="text-3xl font-semibold pb-2">
             Development Intern (Central Texas chapter)
           </h3>
-          <p className="text-2xl">
+          <p className="text-2xl font-light">
             Con Mi MADRE is seeking an organized and passionate student to
             assist with fundraising, grants, and events (part-time). Click here
             for more information

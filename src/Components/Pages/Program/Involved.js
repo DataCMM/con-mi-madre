@@ -9,34 +9,6 @@ import Logo from "../../../images/stacked/text-only.png";
 const Involved = () => {
   return (
     <>
-      {/* <div
-        className="w-full h-full"
-        // styled={{
-        //   height: "700px",
-        // }}
-      >
-        <div
-          style={{
-            backgroundImage: `url(${Banner})`,
-            height: "300px",
-          }}
-          className="w-full h-full relative bg-cover bg-center bg-no-repeat"
-        >
-          <span
-            className="w-full h-full absolute opacity-50 bg-black bg-cover"
-            id="overlay"
-          />
-          <div className="flex flex-col space-y-24">
-            <div className="sticky pt-4 pl-4 h-14 w-1/2">
-              <img src={Logo} alt="Con mi madre logo" className="z-10" />
-            </div>
-
-            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
-              <div id="title1">Get Involved</div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="banner-image w-full h-full">
         <div
           style={{
