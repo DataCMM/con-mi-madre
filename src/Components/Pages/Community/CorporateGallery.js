@@ -18,13 +18,8 @@ import "./community.css";
 
 const CorporateGallery = () => {
   return (
-    <div className="pt-6 pb-6">
-      <h2 className="text-center text-blue-500 text-2xl pb-4">
-        Corporate Partners
-      </h2>
-      <div className="slideshow h-56 bg-center w-full">
-        <div className="images-1"></div>
-      </div>
+    <div className="slideshow h-48 bg-center bg-no-repeat w-full">
+      <div className="images-1"></div>
     </div>
   );
 };

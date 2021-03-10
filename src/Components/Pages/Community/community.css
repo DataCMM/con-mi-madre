@@ -5,6 +5,8 @@
 .images-1 {
   background: url("../../../images/coroporate-partners/Single_Corporate.png");
   position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
   left: 0;
   top: 0;
   height: 100%;
@@ -18,4 +20,13 @@
   100% {
     left: -200%;
   }
+}
+
+/* .legend {
+  background: rgb(0, 0, 0, 0.65);
+} */
+
+.carousel .slide .legend {
+  background: rgb(0, 0, 0, 0.65);
+  opacity: 0.85;
 }

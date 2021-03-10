@@ -8,11 +8,10 @@ import Logo from "../../../images/stacked/text-only.png";
 const Purpose = () => {
   return (
     <div>
-      <div className="h-36 w-full" id="purpose-banner">
+      <div className="h-48 w-full" id="purpose-banner">
         <div
           style={{
             backgroundImage: `url(${PurposeBanner})`,
-            bottom: "20",
           }}
           className="w-full h-full relative bg-cover bg-center bg-no-repeat"
         >

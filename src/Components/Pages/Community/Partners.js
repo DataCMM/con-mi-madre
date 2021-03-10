@@ -4,6 +4,7 @@ import Banner from "../../../images/events/EventsBanner.jpg";
 import Logo from "../../../images/stacked/text-only.png";
 
 import CorporateGallery from "./CorporateGallery";
+import SchoolsGallery from "./Schools";
 import "./community.css";
 
 const Partners = () => {
@@ -13,10 +14,10 @@ const Partners = () => {
         style={{
           backgroundImage: `url(${Banner})`,
         }}
-        className="w-full h-48 bg-cover bg-center bg-no-repeat"
+        className="w-full h-48 md:h-full bg-cover bg-center bg-no-repeat"
       >
         <span
-          className="w-full h-48 absolute opacity-50 bg-black bg-cover"
+          className="w-full h-48 md:h-full absolute opacity-50 bg-black bg-cover"
           id="overlay"
         />
         <div className="flex flex-col space-y-24">
@@ -29,7 +30,11 @@ const Partners = () => {
           </div>
         </div>
       </div>
+      <div className="text-center text-gray-500 bg-blue-500 text-2xl">
+        Corporate Partners
+      </div>
       <CorporateGallery />
+      <SchoolsGallery />
     </>
   );
 };

@@ -18,28 +18,34 @@ import Logo from "../../../images/stacked/text-only.png";
 
 const OurTeam = () => {
   return (
-    <div>
+    <>
       <div
-        style={{
-          backgroundImage: `url(${Banner})`,
-        }}
-        className="w-full h-48 lg:h-64 bg-cover bg-center bg-no-repeat"
+        className="h-full w-full"
+        // style={{
+        //   height: "350px",
+        // }}
       >
-        <span
-          className="w-full h-48 lg:h-64 absolute opacity-50 bg-black bg-cover"
-          id="overlay"
-        />
-        <div className="flex flex-col space-y-24">
-          <div className="sticky pt-4 pl-4 h-14 w-1/2">
-            <img src={Logo} alt="Con mi madre logo" className="z-10" />
-          </div>
+        <div
+          style={{
+            backgroundImage: `url(${Banner})`,
+          }}
+          className="w-full h-48 lg:h-64 relative bg-cover bg-center bg-no-repeat"
+        >
+          <span
+            className="w-full h-48 lg:h-64 absolute opacity-50 bg-black bg-cover"
+            id="overlay"
+          />
+          <div className="flex flex-col space-y-24">
+            <div className="sticky pt-4 pl-4 h-14 w-1/2">
+              <img src={Logo} alt="Con mi madre logo" className="z-10" />
+            </div>
 
-          <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
-            <div id="title1">Our Team</div>
+            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
+              <div id="title1">Our Team</div>
+            </div>
           </div>
         </div>
       </div>
-
       {/* Profiles with Images */}
       <div>
         <div>
@@ -450,7 +456,7 @@ const OurTeam = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
