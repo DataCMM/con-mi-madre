@@ -1,8 +1,6 @@
 import React from "react";
-
 import PurposeBanner from "../../../images/purpose/OurPurpose1.jpg";
 import Participants from "../../../images/purpose/OurPurpose2.jpg";
-
 import Logo from "../../../images/stacked/text-only.png";
 
 const Purpose = () => {
@@ -59,12 +57,14 @@ const Purpose = () => {
             Mi MADRE, becoming a freestanding and independent 501(c)(3)
             nonprofit organization.
           </p>
-          <div
-            style={{
-              backgroundImage: `url(${Participants})`,
-            }}
-            className="w-full h-40 bg-cover bg-center bg-no-repeat"
-          ></div>
+          <div className="w-full h-full">
+            <div
+              style={{
+                backgroundImage: `url(${Participants})`,
+              }}
+              className="intern-img bg-cover bg-top bg-no-repeat"
+            ></div>
+          </div>
           <p>
             From inception, Con Mi MADRE’s focus has been on helping young
             Latinas graduate from high school, enroll in college, and
