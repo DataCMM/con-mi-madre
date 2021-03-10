@@ -12,14 +12,14 @@ import Lorena from "../../../images/team/9-LorenaSierra.jpg";
 import Jessenia from "../../../images/team/10-JesseniaBalderas.png";
 import Iliana from "../../../images/team/11-IlianaMontoya.jpg";
 import Carla from "../../../images/team/12-CarlaGonzalez.png";
-import Banner from "../../../images/team/OurTeamBanner.jpg";
+import TeamBanner from "../../../images/team/OurTeamBanner.jpg";
 
 import Logo from "../../../images/stacked/text-only.png";
 
 const OurTeam = () => {
   return (
     <>
-      <div
+      {/* <div
         className="h-full w-full"
         // style={{
         //   height: "350px",
@@ -41,6 +41,29 @@ const OurTeam = () => {
             </div>
 
             <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
+              <div id="title1">Our Team</div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <div className="banner-image w-full h-full">
+        <div
+          style={{
+            backgroundImage: `url(${TeamBanner})`,
+          }}
+          className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
+        >
+          <span
+            className="w-full h-full md:h-full absolute opacity-50 bg-black bg-cover"
+            id="career-overlay"
+          />
+
+          <div className="banner-text sticky flex flex-col justify-between">
+            <div className="sticky pt-4 pl-4 h-14 w-1/2">
+              <img src={Logo} alt="Con mi madre logo" className="z-10" />
+            </div>
+
+            <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-gray-500 text-4xl font-medium tracking-widest text-center">
               <div id="title1">Our Team</div>
             </div>
           </div>
