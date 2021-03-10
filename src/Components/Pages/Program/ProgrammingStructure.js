@@ -7,7 +7,7 @@ import Structure8 from "../../../images/programming-structure/Leadership-summit-
 import Structure4 from "../../../images/programming-structure/Parent-Program-image.jpg";
 import Structure2 from "../../../images/programming-structure/Participation-image.jpg";
 import Structure1 from "../../../images/programming-structure/Preparedness-image.jpg";
-import Banner from "../../../images/programming-structure/Programing-Structure-Banner.jpg";
+import StructureBanner from "../../../images/programming-structure/Programing-Structure-Banner.jpg";
 import Structure3 from "../../../images/programming-structure/Structure-3.jpg";
 import Structure9 from "../../../images/programming-structure/Volunteering-image.jpg";
 
@@ -16,7 +16,7 @@ import Logo from "../../../images/stacked/text-only.png";
 const Program = () => {
   return (
     <>
-      <div
+      {/* <div
         style={{
           backgroundImage: `url(${Banner})`,
         }}
@@ -33,6 +33,29 @@ const Program = () => {
 
           <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-2xl font-medium tracking-widest text-center">
             <div id="title1">Programming Structure</div>
+          </div>
+        </div>
+      </div> */}
+      <div className="banner-image w-full h-full">
+        <div
+          style={{
+            backgroundImage: `url(${StructureBanner})`,
+          }}
+          className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
+        >
+          <span
+            className="w-full h-full md:h-full absolute opacity-50 bg-black bg-cover"
+            id="career-overlay"
+          />
+
+          <div className="banner-text sticky flex flex-col justify-between">
+            <div className="sticky pt-4 pl-4 h-14 w-1/2">
+              <img src={Logo} alt="Con mi madre logo" className="z-10" />
+            </div>
+
+            <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-gray-500 text-4xl font-medium tracking-widest text-center">
+              <div id="title1">Program Structure</div>
+            </div>
           </div>
         </div>
       </div>
