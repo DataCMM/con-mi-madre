@@ -7,89 +7,21 @@ import Logo from "../../../images/stacked/text-only.png";
 const Careers = () => {
   return (
     <>
-      {/* <div className="relative" id="careers-banner"> */}
-      {/* <div
-          style={{
-            backgroundImage: `url(${CareersBanner})`,
-          }}
-          className="relative w-full xs:h-48 bg-cover bg-fixed bg-center bg-no-repeat lg:h-full"
-        >
-          <span
-            className="w-full xs:h-48 absolute opacity-50 bg-black bg-cover lg:h-full"
-            id="overlay"
-          />
-          <div className="flex flex-col space-y-24">
-            <div className="sticky pt-4 pl-4 h-14 w-1/2">
-              <img src={Logo} alt="Con mi madre logo" className="z-10" />
-            </div>
-
-            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
-              <div id="title1">Careers</div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/*try two */}
-      {/*
-      <div className="career-banner">
-        <div className="career-bn-img">
-          <img
-            src={CareersBanner}
-            alt="Two adult women hugging"
-            className="w-full xs:h-48 bg-cover bg-fixed bg-center bg-no-repeat lg:h-full"
-          />
-          <span
-            className="w-full xs:h-48 absolute opacity-50 bg-black bg-cover lg:h-full"
-            id="career-bn-overlay"
-          />
-        </div>
-        <div className="career-bn-logo-text">
-          <div className="flex flex-col space-y-24">
-            <div className="sticky pt-4 pl-4 h-14 w-1/2">
-              <img src={Logo} alt="Con mi madre logo" className="z-10" />
-            </div>
-
-            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
-              <div id="title1">Careers</div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/*try three */}
-
-      {/* <div classname="h-36" id="careers-banner">
-        <div
-          className="absolute bg-fixed bg-center bg-cover w-full  h-full"
-          style={{
-            backgroundImage: `url(${CareersBanner})`,
-          }}
-          alt="mother and daughter smiling"
-        >
-          <span className="w-full h-full absolute opacity-50 bg-black" />
-        </div>
-        <div class="container">
-          <div className="flex flex-col space-y-24">
-            <div className="sticky pt-4 pl-4 h-8 w-2/6">
-              <img src={Logo} alt="Con mi madre logo" className="z-10" />
-            </div>
-
-            <div className="sticky z-10 flex self-end pr-4 text-gray-500 text-3xl font-medium tracking-widest text-center">
-              <div id="title1">Careers</div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      <div>
+      <div
+        className="w-full h-full"
+        style={{
+          height: "350px",
+        }}
+      >
         <div
           style={{
             backgroundImage: `url(${CareersBanner})`,
+            // height: "600px",
           }}
-          className="w-full xs:h-40 md:h-full relative  bg-cover bg-center bg-no-repeat"
+          className="w-full h-full md:h-full relative  bg-cover bg-top-center bg-no-repeat"
         >
           <span
-            className="w-full xs:h-40 md:h-full absolute opacity-50 bg-black bg-cover"
+            className="w-full h-full md:h-full absolute opacity-50 bg-black bg-cover"
             id="career-overlay"
           />
 
@@ -182,4 +114,3 @@ const Careers = () => {
 };
 
 export default Careers;
-
