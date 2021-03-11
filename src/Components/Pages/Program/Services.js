@@ -51,7 +51,7 @@ const Services = () => {
           style={{
             backgroundImage: `url(${Services1})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-top bg-no-repeat"
         ></div>
       </div>
 
@@ -70,7 +70,7 @@ const Services = () => {
           style={{
             backgroundImage: `url(${Services2})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-top bg-no-repeat"
         ></div>
       </div>
 
@@ -81,7 +81,7 @@ const Services = () => {
           style={{
             backgroundImage: `url(${Services3})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-top bg-no-repeat"
         ></div>
       </div>
       {/* Scholarship Opportunities */}
@@ -91,7 +91,7 @@ const Services = () => {
           style={{
             backgroundImage: `url(${Services4})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-top bg-no-repeat"
         ></div>
       </div>
 
@@ -102,7 +102,7 @@ const Services = () => {
           style={{
             backgroundImage: `url(${Services5})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-top bg-no-repeat"
         ></div>
       </div>
     </>
