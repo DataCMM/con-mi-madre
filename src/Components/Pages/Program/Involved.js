@@ -63,7 +63,7 @@ const Involved = () => {
           style={{
             backgroundImage: `url(${Involved1})`,
           }}
-          className="w-full h-48 pt-6 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-right-top bg-no-repeat"
         ></div>
 
         {/* <div className="bg-blue-500 text-gray-500 text-2xl h-auto w-full text-center p-6 pb-10 pt-10"> */}
