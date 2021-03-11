@@ -42,7 +42,9 @@ const Program = () => {
 
       {/* Preparedness */}
       <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-6 pt-6">
-        <h3 className="text-3xl pb-6">Preparedness (6th - 10th Grades)</h3>
+        <h3 className="text-3xl font-semibold pb-3">
+          Preparedness (6th - 10th Grades)
+        </h3>
         <p className="pb-6">
           We start early to prepare students for academic, social, and emotional
           success. We host 12 group meetings throughout the school year where
@@ -67,7 +69,7 @@ const Program = () => {
 
       {/* Participation */}
       <div className="text-center p-6 pb-10 pt-10 bg-gray-500">
-        <h3 className="text-3xl pb-3 text-pink-500">
+        <h3 className="text-3xl font-semibold pb-3 text-black">
           Participation (11th & 12th Grades)
         </h3>
         <p className="text-2xl pb-6">
@@ -82,14 +84,14 @@ const Program = () => {
           style={{
             backgroundImage: `url(${Structure2})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
       </div>
 
       {/* Success */}
       <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h3 className="text-3xl pb-3">
-          Success <br /> (Undergraduate Students)
+        <h3 className="text-3xl font-semibold pb-3">
+          Success (Undergraduate Students)
         </h3>
         <p className="text-2xl pb-6">
           We continue to help Latinas reach their goal of a postsecondary degree
@@ -103,12 +105,14 @@ const Program = () => {
           style={{
             backgroundImage: `url(${Structure3})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
       </div>
       {/* Parent Program */}
       <div className="text-center p-6 pb-10 pt-10 bg-gray-500">
-        <h3 className="text-3xl text-pink-500">Parent Program</h3>
+        <h3 className="text-3xl font-semibold pb-3 text-black">
+          Parent Program
+        </h3>
         <p className="text-2xl pb-6">
           Guardians who currently have their child in a Con Mi MADRE program are
           encouraged to participate in the Parent Program. Parents can receive
@@ -122,32 +126,38 @@ const Program = () => {
           style={{
             backgroundImage: `url(${Structure4})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
       </div>
 
       {/* Additional Opportunities */}
       <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h3 className="text-3xl pb-6">Additional Opportunities</h3>
+        <h3 className="text-3xl pb-6 text-4xl font-bold">
+          Additional Opportunities
+        </h3>
+        <h3 className="text-3xl pt-6 pb-6 text-gray-500 font-semibold">
+          Conferences
+        </h3>
         <div
           style={{
             backgroundImage: `url(${Structure5})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
-        <h3 className="text-3xl pt-6 pb-6 text-pink-500">Conferences</h3>
-        <p className="text-2xl pb-6">
+        <p className="text-2xl pt-6 pb-6">
           Con Mi MADRE hosts a Balanced Living Conference every year for all
           participants. This conference, led by passionate speakers from the
           community, equips participants with the tools and strategies to
           achieve emotional, physical, and financial wellbeing.{" "}
         </p>
-        <h3 className="text-3xl pb-6 text-pink-500">College & Career Fair</h3>
+        <h3 className="text-3xl pt-6 pb-6 text-gray-500 font-semibold">
+          College & Career Fair
+        </h3>
         <div
           style={{
             backgroundImage: `url(${Structure6})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
         <p className="text-2xl pt-6 pb-6">
           Students from 6th-12th grades and their mothers are invited to attend
@@ -156,12 +166,14 @@ const Program = () => {
           military representatives and meet with professionals to explore future
           career options. The event is hosted in the Spring semester.
         </p>
-        <h3 className="text-3xl pb-6 text-pink-500">College Visits</h3>
+        <h3 className="text-3xl pt-6 pb-6 text-gray-500 font-semibold">
+          College Visits
+        </h3>
         <div
           style={{
             backgroundImage: `url(${Structure7})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
         <p className="text-2xl pt-6 pb-6">
           Con Mi MADRE arranges College Visits two times per year for all
@@ -170,12 +182,14 @@ const Program = () => {
           to make a decision about where to attend, they are able to make an
           informed decision about the school that will meet the student’s needs.
         </p>
-        <h3 className="text-3xl pb-6 text-pink-500">Leadership Summit</h3>
+        <h3 className="text-3xl pt-6 pb-6 text-gray-500 font-semibold">
+          Leadership Summit
+        </h3>
         <div
           style={{
             backgroundImage: `url(${Structure8})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
         <p className="text-2xl pt-6 pb-6">
           Con Mi MADRE invites a distinguished group of students and their
@@ -183,12 +197,14 @@ const Program = () => {
           from influential leaders, and they leave the summit with applicable
           tools and resources to become future leaders.
         </p>
-        <h3 className="text-3xl pb-6 text-pink-500">Volunteering</h3>
+        <h3 className="text-3xl pt-6 pb-6 text-gray-500 font-semibold">
+          Volunteering
+        </h3>
         <div
           style={{
             backgroundImage: `url(${Structure9})`,
           }}
-          className="w-full h-48 bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
         <p className="text-2xl pt-6 pb-6">
           Con Mi MADRE offers multiple volunteering opportunities for mothers
