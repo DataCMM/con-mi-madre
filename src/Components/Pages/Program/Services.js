@@ -38,8 +38,8 @@ const Services = () => {
 
       {/* Academies Blue Content */}
       <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h3 className="text-3xl pb-6">College Academies</h3>
-        <p>
+        <h3 className="text-3xl font-semibold pb-6">College Academies</h3>
+        <p className="pb-6">
           Con Mi MADRE high school juniors and seniors and their parents are
           invited to participate in College Academies. These are a series of
           workshops that aim to prepare participants to be college ready,
@@ -51,16 +51,16 @@ const Services = () => {
           style={{
             backgroundImage: `url(${Services1})`,
           }}
-          className="intern-img bg-cover bg-top bg-no-repeat"
+          className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
         ></div>
       </div>
 
       {/*  Coaching */}
       <div className="text-center p-6 pb-10 pt-10 bg-gray-500">
-        <h3 className="text-3xl text-pink-500">
+        <h3 className="text-3xl text-black font-semibold pb-6">
           Individual Coaching/Mentoring
         </h3>
-        <p className="text-2xl">
+        <p className="text-2xl pb-6">
           Con Mi MADRE offers Individual Coaching or Mentoring to any
           participant who is seeking help with mental health or academics.
           Individuals meet with a Con Mi MADRE social worker during multiple
@@ -70,39 +70,41 @@ const Services = () => {
           style={{
             backgroundImage: `url(${Services2})`,
           }}
-          className="intern-img bg-cover bg-top bg-no-repeat"
+          className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
         ></div>
       </div>
 
       {/* Con Mi Hermana */}
       <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h3 className="text-3xl">Con Mi Hermana</h3>
+        <h3 className="text-3xl font-semibold pb-6">Con Mi Hermana</h3>
         <div
           style={{
             backgroundImage: `url(${Services3})`,
           }}
-          className="intern-img bg-cover bg-top bg-no-repeat"
+          className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
         ></div>
       </div>
       {/* Scholarship Opportunities */}
       <div className="text-center p-6 pb-10 pt-10 bg-gray-500">
-        <h3 className="text-3xl text-pink-500">Scholarship Opportunities</h3>
+        <h3 className="text-3xl text-black font-semibold pb-6">
+          Scholarship Opportunities
+        </h3>
         <div
           style={{
             backgroundImage: `url(${Services4})`,
           }}
-          className="intern-img bg-cover bg-top bg-no-repeat"
+          className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
         ></div>
       </div>
 
       {/* Testimonials */}
       <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h3 className="text-3xl">Testimonials</h3>
+        <h3 className="text-3xl font-semibold pb-6">Testimonials</h3>
         <div
           style={{
             backgroundImage: `url(${Services5})`,
           }}
-          className="intern-img bg-cover bg-top bg-no-repeat"
+          className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
         ></div>
       </div>
     </>
