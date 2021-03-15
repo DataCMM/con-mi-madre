@@ -33,7 +33,7 @@ const Partners = () => {
           </div>
         </div>
       </div>
-      <div className="text-center text-gray-500 bg-blue-500 text-2xl">
+      <div className="text-center text-gray-500 bg-blue-500 text-4xl font-semibold">
         Corporate Partners
       </div>
       <CorporateGallery />

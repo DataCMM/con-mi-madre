@@ -176,7 +176,7 @@ const Services = () => {
         <p className="font-light">The Honorable Orlinda Naranjo</p>
         <p className="font-light">The Honorable Elizabeth Ames Jones</p>
         <p className="font-light">Dr. Tracy Eilers</p>
-        <p className="font-light">Sonya Band</p>
+        <p className="font-light pb-10">Sonya Band</p>
       </div>
     </div>
   );
