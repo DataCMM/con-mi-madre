@@ -76,34 +76,43 @@
       '2xl': {'min': '1536px'}, */
 @media (max-width: 650px) {
   .banner-image {
-    height: 350px;
+    height: 22rem;
   }
   .banner-text {
-    height: 350px;
+    height: 22rem;
   }
   .intern-img {
-    height: 350px;
+    height: 22rem;
+  }
+  .gallery-img {
+    height: 22rem;
   }
 }
 @media (min-width: 651px) {
   .banner-image {
-    height: 700px;
+    height: 43.75rem;
   }
   .banner-text {
-    height: 700px;
+    height: 43.75rem;
   }
   .intern-img {
-    height: 700px;
+    height: 43.75rem;
+  }
+  .gallery-img {
+    height: 43.75rem;
   }
 }
 @media (min-width: 1054px) {
   .banner-image {
-    height: 550px;
+    height: 34.5rem;
   }
   .banner-text {
-    height: 550px;
+    height: 34.5rem;
   }
   .intern-img {
-    height: 550px;
+    height: 34.5rem;
+  }
+  .gallery-img {
+    height: 38.5rem;
   }
 }

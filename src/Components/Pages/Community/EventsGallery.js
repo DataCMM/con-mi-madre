@@ -21,25 +21,25 @@ const EventsGallery = () => {
       {/* 2019 Awards */}
       <div
         style={{ backgroundImage: `url(${Event2019A})` }}
-        className="intern-img md:h-full bg-center bg-no-repeat"
+        className="gallery-img bg-cover bg-top bg-no-repeat"
       >
         <p className="legend">2019 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2019B})` }}
-        className="w-full h-48 md:h-screen bg-cover bg-center bg-no-repeat"
+        className="gallery-img bg-cover bg-topbg-no-repeat"
       >
         <p className="legend">2019 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2019C})` }}
-        className="w-full h-48 md:h-screen bg-cover bg-center-top bg-no-repeat"
+        className="gallery-img bg-cover bg-top bg-no-repeat"
       >
         <p className="legend">2019 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2019D})` }}
-        className="w-full h-48 md:h-screen bg-cover bg-center bg-no-repeat"
+        className="gallery-img bg-cover bg-topbg-no-repeat"
       >
         <p className="legend">2019 Corazón Awards</p>
       </div>
@@ -47,19 +47,19 @@ const EventsGallery = () => {
       {/* 2018 Awards */}
       <div
         style={{ backgroundImage: `url(${Event2018A})` }}
-        className="w-full h-48 md:h-screen bg-cover bg-center bg-no-repeat"
+        className="gallery-img bg-cover bg-top bg-no-repeat"
       >
         <p className="legend">2018 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2018B})` }}
-        className="w-full h-48 md:h-screen bg-cover bg-center bg-no-repeat"
+        className="gallery-img bg-cover bg-top bg-no-repeat"
       >
         <p className="legend">2018 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2018C})` }}
-        className="w-full h-48 md:h-screen bg-cover bg-center bg-no-repeat"
+        className="gallery-img bg-cover bg-top bg-no-repeat"
       >
         <p className="legend">2018 Corazón Awards</p>
       </div>
@@ -67,25 +67,25 @@ const EventsGallery = () => {
       {/* 2017 Awards */}
       <div
         style={{ backgroundImage: `url(${Event2017A})` }}
-        className="w-full h-48 md:h-screen bg-cover bg-center-top bg-no-repeat"
+        className="gallery-img bg-cover bg-top bg-no-repeat"
       >
         <p className="legend">2017 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2017B})` }}
-        className="w-full h-48 md:h-screen bg-cover bg-center-top bg-no-repeat"
+        className="gallery-img bg-cover bg-top bg-no-repeat"
       >
         <p className="legend">2017 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2017C})` }}
-        className="w-full h-48 md:h-screen bg-cover bg-center-top bg-no-repeat"
+        className="gallery-img bg-cover bg-top bg-no-repeat"
       >
         <p className="legend">2017 Corazón Awards</p>
       </div>
       <div
         style={{ backgroundImage: `url(${Event2017D})` }}
-        className="w-full h-48 md:h-screen bg-cover bg-center-top bg-no-repeat"
+        className="gallery-img bg-cover bg-top bg-no-repeat"
       >
         <p className="legend">2017 Corazón Awards</p>
       </div>
