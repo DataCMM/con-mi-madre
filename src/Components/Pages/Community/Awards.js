@@ -113,7 +113,7 @@ const Awards = () => {
         style={{
           backgroundImage: `url(${Awards2})`,
         }}
-        className="w-full h-48 bg-cover bg-top bg-no-repeat"
+        className="intern-img bg-cover bg-top bg-no-repeat"
       ></div>
       <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
         <h3 className="text-3xl pb-6">
