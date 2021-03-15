@@ -21,7 +21,7 @@ const Header = () => {
             Contact Us
           </Link>
         </div>
-        <div className="dropdown inline-block relative hover:text-pink-500">
+        <div className="dropdown z-20 inline-block relative hover:text-pink-500">
           <div className="inline-flex items-center">
             <div className="cursor-pointer md:pr-2 py-2 px-4 ">About Us</div>
             <FaChevronDown className="md:text-xs xl:text-sm" />
@@ -61,7 +61,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="dropdown inline-block relative hover:text-pink-500">
+        <div className="dropdown z-20 inline-block relative hover:text-pink-500">
           <div className="inline-flex items-center">
             <div className="cursor-pointer md:pr-2 py-2 px-4 ">Our Program</div>
             <FaChevronDown className="md:text-xs xl:text-sm" />
@@ -93,7 +93,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="dropdown inline-block relative hover:text-pink-500">
+        <div className="dropdown z-20 inline-block relative hover:text-pink-500">
           <div className="inline-flex items-center">
             <div className="cursor-pointer md:pr-2 py-2 px-4 ">
               Our Community
@@ -127,7 +127,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="dropdown inline-block relative hover:text-pink-500">
+        <div className="dropdown z-20 inline-block relative hover:text-pink-500">
           <div className="inline-flex items-center">
             <div className="cursor-pointer md:pr-2 py-2 px-4 ">
               Participant Corner
