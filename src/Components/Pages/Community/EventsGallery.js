@@ -21,7 +21,7 @@ const EventsGallery = () => {
       {/* 2019 Awards */}
       <div
         style={{ backgroundImage: `url(${Event2019A})` }}
-        className="h-48 w-full md:h-full bg-cover bg-center bg-no-repeat"
+        className="intern-img md:h-full bg-center bg-no-repeat"
       >
         <p className="legend">2019 Corazón Awards</p>
       </div>
