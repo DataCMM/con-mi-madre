@@ -43,7 +43,7 @@ const OurTeam = () => {
         </div>
       </div>
       {/* Profiles with Images */}
-      <div className="grid xs:grid-cols-1 gap-4 md:grid-cols-2 md:gap-12 bg-gray-500 p-4 md:p-12">
+      <div className="grid xs:grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-12 lg:gap-8 bg-gray-500 p-4 md:p-12">
         <div className="rounded flex flex-col items-center md:flex-row md:justify-start md:items-start p-4 bg-gray-500">
           <div
             style={{
@@ -56,7 +56,13 @@ const OurTeam = () => {
             <h3 className="font-semibold text-xl">
               Johanna Moya Fabregas, Ph.D.
             </h3>
-            <p className="pb-3 font-light">she/her/ella</p>
+            <p className="pb-4 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:johanna@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Johanna
+            </a>
           </div>
         </div>
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
@@ -69,7 +75,13 @@ const OurTeam = () => {
           <div className="flex flex-col text-center md:text-left md:pl-5">
             <h2 className="pt-3">Director of Finance</h2>
             <h3 className="font-semibold text-xl">Marcie Cast</h3>
-            <p className="pb-3 font-light">she/her/ella</p>
+            <p className="pb-4 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:marcie@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Marcie
+            </a>
           </div>
         </div>
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
@@ -82,7 +94,13 @@ const OurTeam = () => {
           <div className="flex flex-col text-center md:text-left md:pl-5">
             <h2 className="pt-3">Development Manager</h2>
             <h3 className="font-semibold text-xl">Heaven Guerrero Wilbanks</h3>
-            <p className="pb-3 font-light">she/her/ella</p>
+            <p className="pb-4 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:heaven@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Heaven
+            </a>
           </div>
         </div>
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
@@ -95,7 +113,13 @@ const OurTeam = () => {
           <div className="flex flex-col text-center md:text-left md:pl-5">
             <h2 className="pt-3">Data Manager</h2>
             <h3 className="font-semibold text-xl">Alicia Guerrero</h3>
-            <p className="pb-3 font-light">she/her/ella</p>
+            <p className="pb-4 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:alicia@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Alicia
+            </a>
           </div>
         </div>
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
@@ -108,7 +132,13 @@ const OurTeam = () => {
           <div className="flex flex-col text-center md:text-left md:pl-5">
             <h2 className="pt-3">Administrative Assistant</h2>
             <h3 className="font-semibold text-xl">Valerie Villareal</h3>
-            <p className="pb-3 font-light">she/her/ella</p>
+            <p className="pb-4 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:valerie@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Valerie
+            </a>
           </div>
         </div>
         <div className="rounded border-2 border-blue-500 bg-gray-500 flex flex-col text-center justify-center">
@@ -133,7 +163,13 @@ const OurTeam = () => {
           <div className="flex flex-col text-center md:text-left md:pl-5">
             <h2 className="pt-3">Central Texas Success Program Coordinator</h2>
             <h3 className="font-semibold text-xl">Mariana Zamora</h3>
-            <p className="pb-3 font-light">she/her/ella</p>
+            <p className="pb-4 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:mariana@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Mariana
+            </a>
           </div>
         </div>
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
@@ -146,7 +182,13 @@ const OurTeam = () => {
           <div className="flex flex-col text-center md:text-left md:pl-5">
             <h2 className="pt-3">Central Texas Program Coordinator</h2>
             <h3 className="font-semibold text-xl">Lorena Sierra</h3>
-            <p className="pb-3 font-light">she/her/ella</p>
+            <p className="pb-4 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:lorena@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Lorena
+            </a>
           </div>
         </div>
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
@@ -160,6 +202,12 @@ const OurTeam = () => {
             <h2 className="pt-3">Central Texas Program Coordinator</h2>
             <h3 className="font-semibold text-xl">Jessenia Balderas</h3>
             <p className="pb-3 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:jessenia@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Jessenia
+            </a>
           </div>
         </div>
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
@@ -172,7 +220,13 @@ const OurTeam = () => {
           <div className="flex flex-col text-center md:text-left md:pl-5">
             <h2 className="pt-3">Fort Worth Program Coordinator</h2>
             <h3 className="font-semibold text-xl">Iliana Montoya</h3>
-            <p className="pb-3 font-light">she/her/ella</p>
+            <p className="pb-4 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:iliana@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Iliana
+            </a>
           </div>
         </div>
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
@@ -185,7 +239,13 @@ const OurTeam = () => {
           <div className="flex flex-col text-center md:text-left md:pl-5">
             <h2 className="pt-3">Fort Worth Program Coordinator</h2>
             <h3 className="font-semibold text-xl">Carla Gonzales Vasquez</h3>
-            <p className="pb-3 font-light">she/her/ella</p>
+            <p className="pb-4 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:carla@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Carla
+            </a>
           </div>
         </div>
       </div>
