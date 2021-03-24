@@ -29,18 +29,10 @@ const Header = () => {
           <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
-                to="/Careers"
+                to="/Purpose"
                 className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
-                Careers
-              </Link>
-            </li>
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                to="/Contact"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Contact
+                Purpose
               </Link>
             </li>
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
@@ -53,10 +45,10 @@ const Header = () => {
             </li>
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
-                to="/Purpose"
+                to="/Careers"
                 className="block whitespace-no-wrap py-2 px-4 pr-16"
               >
-                Purpose
+                Careers
               </Link>
             </li>
           </ul>
