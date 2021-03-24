@@ -43,7 +43,7 @@ const OurTeam = () => {
         </div>
       </div>
       {/* Profiles with Images */}
-      <div className="grid xs:grid-cols-1 gap-4 md:grid-cols-2 md:gap-12 bg-blue-500 p-4 md:p-12">
+      <div className="grid xs:grid-cols-1 gap-4 md:grid-cols-2 md:gap-12 bg-gray-500 p-4 md:p-12">
         <div className="rounded flex flex-col items-center md:flex-row md:justify-start md:items-start p-4 bg-gray-500">
           <div
             style={{
@@ -111,14 +111,13 @@ const OurTeam = () => {
             <p className="pb-3 font-light">she/her/ella</p>
           </div>
         </div>
-        <div className="rounded bg-gray-500 flex flex-col text-center justify-center">
+        <div className="rounded border-2 border-blue-500 bg-gray-500 flex flex-col text-center justify-center">
           <h2 className="pt-3 font-semibold text-xl">
             Central Texas Program Director
           </h2>
           <h3 className="font-bold text-3xl pb-3">Coming Soon</h3>
         </div>
-        <div className="rounded bg-gray-500 flex flex-col text-center justify-center">
-          {" "}
+        <div className="rounded border-2 border-blue-500 bg-gray-500 flex flex-col text-center justify-center">
           <h2 className="pt-3 font-semibold text-xl">
             Fort Worth Program Director
           </h2>

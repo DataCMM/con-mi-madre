@@ -21,7 +21,7 @@ const Footer = () => {
           href="info@conmimadre.com"
           className="hover:text-pink-500 hover:underline"
         >
-          <h3>info@conmimadre.com</h3>
+          <h3>info@conmimadre.org</h3>
         </a>
         <div className="flex justify-center md:flex-row md:justify-end text-center space-x-8 p-4 pr-6">
           <Link className="hover:text-pink-500" to="/facebook">

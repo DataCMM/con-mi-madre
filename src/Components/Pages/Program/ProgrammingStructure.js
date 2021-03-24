@@ -126,7 +126,7 @@ const Program = () => {
           style={{
             backgroundImage: `url(${Structure4})`,
           }}
-          className="intern-img bg-cover bg-center bg-no-repeat"
+          className="intern-img bg-cover bg-top bg-no-repeat"
         ></div>
       </div>
 
