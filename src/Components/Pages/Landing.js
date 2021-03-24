@@ -39,7 +39,7 @@ const Landing = () => {
             />
           </div>
 
-          <div className="sticky z-10 flex flex-col md:mt-24 md:pb-3 md:pt-0 text-gray-500 text-xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-24">
+          <div className="home-banner-title sticky z-10 flex flex-col md:pb-3  text-gray-500 text-xl font-bold tracking-widest text-center  sm:text-xl md:text-4xl  lg:mt-24">
             <div
               id="title1"
               className="flex flex-row justify-center items-center inline-block"

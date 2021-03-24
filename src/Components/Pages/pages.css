@@ -11,6 +11,9 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+.home-banner-title {
+  margin-top: -1rem;
+}
 #mothers::first-letter {
   color: rgb(233, 13, 139);
   font-size: 2.25rem;
