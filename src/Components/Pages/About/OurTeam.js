@@ -1,17 +1,17 @@
 import React from "react";
 
-import Johanna from "../../../images/team/1-JohannaMoyaFabregas.jpg";
-import Marcie from "../../../images/team/2-MarcieCast.jpg";
-import Heaven from "../../../images/team/3-HeavenGuerreroWilbanks.png";
-import Alicia from "../../../images/team/4-AliciaGuerrero.png";
-import Valerie from "../../../images/team/5-ValerieVillareal.png";
-// import Vanessa from "../../../images/team/6-VanessaGonzales.jpeg";
-// import Isabella from "../../../images/team/7-IsabellaVasquez.jpg";
-import Mariana from "../../../images/team/8-MarianaZamora.jpg";
-import Lorena from "../../../images/team/9-LorenaSierra.jpg";
-import Jessenia from "../../../images/team/10-JesseniaBalderas.png";
-import Iliana from "../../../images/team/11-IlianaMontoya.jpg";
-import Carla from "../../../images/team/12-CarlaGonzalez.png";
+import Johanna from "../../../images/team/JohannaHeadshot.jpg";
+import Marcie from "../../../images/team/MarcieHeadshot.jpg";
+import Heaven from "../../../images/team/HeavenHeadshot.jpg";
+import Alicia from "../../../images/team/AliciaHeadshot.jpg";
+import Valerie from "../../../images/team/ValerieHeadshot.jpg";
+import Vanessa from "../../../images/team/VanessaHeadshot.jpg";
+import Isabella from "../../../images/team/IsabellaHeadshot.jpg";
+// import Mariana from "../../../images/team/MarianaHeadshot.jpg";
+// import Lorena from "../../../images/team/LorenaHeadshot.jpg";
+import Jessenia from "../../../images/team/JesseniaHeadshot.jpg";
+import Iliana from "../../../images/team/IlianaHeadshot.jpg";
+import Carla from "../../../images/team/CarlaHeadshot.jpg";
 import TeamBanner from "../../../images/team/OurTeamBanner.jpg";
 
 import Logo from "../../../images/stacked/text-only.png";
@@ -141,19 +141,45 @@ const OurTeam = () => {
             </a>
           </div>
         </div>
-        <div className="rounded border-2 border-blue-500 bg-gray-500 flex flex-col text-center justify-center">
-          <h2 className="pt-3 font-semibold text-xl">
-            Central Texas Program Director
-          </h2>
-          <h3 className="font-bold text-3xl pb-3">Coming Soon</h3>
-        </div>
-        <div className="rounded border-2 border-blue-500 bg-gray-500 flex flex-col text-center justify-center">
-          <h2 className="pt-3 font-semibold text-xl">
-            Fort Worth Program Director
-          </h2>
-          <h3 className="font-bold text-3xl pb-3">Coming Soon</h3>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Vanessa})`,
+            }}
+            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Central Texas Program Director</h2>
+            <h3 className="font-semibold text-xl">Vanessa Gonzales</h3>
+            <p className="pb-4 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:vanessa@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Vanessa
+            </a>
+          </div>
         </div>
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
+              backgroundImage: `url(${Isabella})`,
+            }}
+            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex flex-col text-center md:text-left md:pl-5">
+            <h2 className="pt-3">Fort Worth Program Director</h2>
+            <h3 className="font-semibold text-xl">Isabella Vasquez</h3>
+            <p className="pb-4 font-light">she/her/ella</p>
+            <a
+              className="semi-bold text-lg hover:text-pink-500"
+              href="mailto:isabella@conmimadre.org?subject=Mail%20from%20website"
+            >
+              Email Isabella
+            </a>
+          </div>
+        </div>
+        {/* <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
               backgroundImage: `url(${Mariana})`,
@@ -171,8 +197,8 @@ const OurTeam = () => {
               Email Mariana
             </a>
           </div>
-        </div>
-        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+        </div> */}
+        {/* <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
               backgroundImage: `url(${Lorena})`,
@@ -190,7 +216,7 @@ const OurTeam = () => {
               Email Lorena
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
