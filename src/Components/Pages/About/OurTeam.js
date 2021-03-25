@@ -43,26 +43,30 @@ const OurTeam = () => {
         </div>
       </div>
       {/* Profiles with Images */}
-      <div className="grid xs:grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-12 lg:gap-8 bg-gray-500 p-4 md:p-12">
-        <div className="rounded flex flex-col items-center md:flex-row md:justify-start md:items-start p-4 bg-gray-500">
+      <div className="grid xs:grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-12 lg:gap-4 bg-gray-500 p-4 md:p-12">
+        <div className="rounded h-full flex flex-col items-center md:flex-row md:justify-start md:items-start p-4 bg-gray-500">
           <div
             style={{
               backgroundImage: `url(${Johanna})`,
             }}
-            className="flex w-48 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
           ></div>
-          <div className="flex flex-col text-center md:text-left md:pl-5">
-            <h2 className="pt-3">Executive Director</h2>
-            <h3 className="font-semibold text-xl">
-              Johanna Moya Fabregas, Ph.D.
-            </h3>
-            <p className="pb-4 font-light">she/her/ella</p>
-            <a
-              className="semi-bold text-lg hover:text-pink-500"
-              href="mailto:johanna@conmimadre.org?subject=Mail%20from%20website"
-            >
-              Email Johanna
-            </a>
+          <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
+            <div>
+              <h2 className="">Executive Director</h2>
+              <h3 className="font-semibold text-xl">
+                Johanna Moya Fabregas, Ph.D.
+              </h3>
+              <p className="pb-4 font-light">she/her/ella</p>
+            </div>
+            <div>
+              <a
+                className="semi-bold text-lg hover:text-pink-500"
+                href="mailto:johanna@conmimadre.org?subject=Mail%20from%20website"
+              >
+                Email Johanna
+              </a>
+            </div>
           </div>
         </div>
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
@@ -70,10 +74,10 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Marcie})`,
             }}
-            className="flex w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="flex md:w-1/2 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
           ></div>
-          <div className="flex flex-col text-center md:text-left md:pl-5">
-            <h2 className="pt-3">Director of Finance</h2>
+          <div className="flex md:w-1/2 flex-col text-center md:text-left md:pl-5">
+            <h2 className="">Director of Finance</h2>
             <h3 className="font-semibold text-xl">Marcie Cast</h3>
             <p className="pb-4 font-light">she/her/ella</p>
             <a
@@ -89,10 +93,10 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Heaven})`,
             }}
-            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="flex  md:w-1/2 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
           ></div>
-          <div className="flex flex-col text-center md:text-left md:pl-5">
-            <h2 className="pt-3">Development Manager</h2>
+          <div className="flex md:w-1/2 flex-col text-center md:text-left md:pl-5">
+            <h2 className="">Development Manager</h2>
             <h3 className="font-semibold text-xl">Heaven Guerrero Wilbanks</h3>
             <p className="pb-4 font-light">she/her/ella</p>
             <a
@@ -108,9 +112,9 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Alicia})`,
             }}
-            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="flex  md:w-1/2 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
           ></div>
-          <div className="flex flex-col text-center md:text-left md:pl-5">
+          <div className="flex md:w-1/2 flex-col text-center md:text-left md:pl-5">
             <h2 className="pt-3">Data Manager</h2>
             <h3 className="font-semibold text-xl">Alicia Guerrero</h3>
             <p className="pb-4 font-light">she/her/ella</p>
