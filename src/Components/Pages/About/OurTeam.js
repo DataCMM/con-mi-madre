@@ -49,7 +49,7 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Johanna})`,
             }}
-            className="flex w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="flex w-48 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
           ></div>
           <div className="flex flex-col text-center md:text-left md:pl-5">
             <h2 className="pt-3">Executive Director</h2>
@@ -70,7 +70,7 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Marcie})`,
             }}
-            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="flex w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
           ></div>
           <div className="flex flex-col text-center md:text-left md:pl-5">
             <h2 className="pt-3">Director of Finance</h2>
