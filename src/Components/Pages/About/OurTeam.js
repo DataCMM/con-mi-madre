@@ -49,22 +49,22 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Johanna})`,
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
-              <h2 className="">Executive Director</h2>
-              <h3 className="font-semibold text-xl">
+              <h2 className="text-sm pt-4 md:pt-0">Executive Director</h2>
+              <h3 className="font-semibold text-md">
                 Johanna Moya Fabregas, Ph.D.
               </h3>
-              <p className="pb-4 font-light">she/her/ella</p>
+              <p className="pb-4 text-sm font-light">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="semi-bold text-lg hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500">
                 Johanna's Bio
               </a>
               <a
-                className="pt-1 semi-bold text-lg hover:text-pink-500"
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:johanna@conmimadre.org?subject=Mail%20from%20website"
               >
                 Email Johanna
@@ -77,20 +77,20 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Marcie})`,
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
-              <h2 className="">Director of Finance</h2>
-              <h3 className="font-semibold text-xl">Marcie Cast</h3>
-              <p className="pb-4 font-light">she/her/ella</p>
+              <h2 className="text-sm">Director of Finance</h2>
+              <h3 className="font-semibold text-md">Marcie Cast</h3>
+              <p className="pb-4 text-sm font-light">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="semi-bold text-lg hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500">
                 Marcie's Bio
               </a>
               <a
-                className="pt-2 semi-bold text-lg hover:text-pink-500"
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:marcie@conmimadre.org?subject=Mail%20from%20website"
               >
                 Email Marcie
@@ -103,22 +103,22 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Heaven})`,
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
-              <h2 className="">Development Manager</h2>
-              <h3 className="font-semibold text-xl">
+              <h2 className="text-sm">Development Manager</h2>
+              <h3 className="font-semibold text-md">
                 Heaven Guerrero Wilbanks
               </h3>
-              <p className="pb-4 font-light">she/her/ella</p>
+              <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="semi-bold text-lg hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500">
                 Heaven's Bio
               </a>
               <a
-                className="pt-2 semi-bold text-lg hover:text-pink-500"
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:heaven@conmimadre.org?subject=Mail%20from%20website"
               >
                 Email Heaven
@@ -131,20 +131,20 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Alicia})`,
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
-              <h2 className="">Data Manager</h2>
-              <h3 className="font-semibold text-xl">Alicia Guerrero</h3>
-              <p className="pb-4 font-light">she/her/ella</p>
+              <h2 className="text-sm">Data Manager</h2>
+              <h3 className="font-semibold text-md">Alicia Guerrero</h3>
+              <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="semi-bold text-lg hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500">
                 Alicia's Bio
               </a>
               <a
-                className="pt-2 semi-bold text-lg hover:text-pink-500"
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:alicia@conmimadre.org?subject=Mail%20from%20website"
               >
                 Email Alicia
@@ -157,20 +157,20 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Valerie})`,
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
-              <h2 className="">Administrative Assistant</h2>
-              <h3 className="font-semibold text-xl">Valerie Villareal</h3>
-              <p className="pb-4 font-light">she/her/ella</p>
+              <h2 className="text-sm">Administrative Assistant</h2>
+              <h3 className="font-semibold text-md">Valerie Villareal</h3>
+              <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="semi-bold text-lg hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500">
                 Valerie's Bio
               </a>
               <a
-                className="pt-2 semi-bold text-lg hover:text-pink-500"
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:valerie@conmimadre.org?subject=Mail%20from%20website"
               >
                 Email Valerie
@@ -183,20 +183,20 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Vanessa})`,
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
-              <h2 className="">Central Texas Program Director</h2>
-              <h3 className="font-semibold text-xl">Vanessa Gonzales</h3>
-              <p className="pb-4 font-light">she/her/ella</p>
+              <h2 className="text-sm">Central Texas Program Director</h2>
+              <h3 className="font-semibold text-md">Vanessa Gonzales</h3>
+              <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="semi-bold text-lg hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500">
                 Vanessa's Bio
               </a>
               <a
-                className="pt-2 semi-bold text-lg hover:text-pink-500"
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:vanessa@conmimadre.org?subject=Mail%20from%20website"
               >
                 Email Vanessa
@@ -209,20 +209,20 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Isabella})`,
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
-              <h2 className="">Fort Worth Program Director</h2>
-              <h3 className="font-semibold text-xl">Isabella Vasquez</h3>
-              <p className="pb-4 font-light">she/her/ella</p>
+              <h2 className="text-sm">Fort Worth Program Director</h2>
+              <h3 className="font-semibold text-md">Isabella Vasquez</h3>
+              <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="semi-bold text-lg hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500">
                 Isabella's Bio
               </a>
               <a
-                className="pt-2 semi-bold text-lg hover:text-pink-500"
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:isabella@conmimadre.org?subject=Mail%20from%20website"
               >
                 Email Isabella
@@ -273,20 +273,20 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Jessenia})`,
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
-              <h2 className="">Central Texas Program Coordinator</h2>
-              <h3 className="font-semibold text-xl">Jessenia Balderas</h3>
-              <p className="pb-3 font-light">she/her/ella</p>
+              <h2 className="text-sm">Central Texas Program Coordinator</h2>
+              <h3 className="font-semibold text-md">Jessenia Balderas</h3>
+              <p className="pb-3 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="semi-bold text-lg hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500">
                 Jessenia's Bio
               </a>
               <a
-                className="pt-2 semi-bold text-lg hover:text-pink-500"
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:jessenia@conmimadre.org?subject=Mail%20from%20website"
               >
                 Email Jessenia
@@ -299,20 +299,20 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Iliana})`,
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
-              <h2 className="">Fort Worth Program Coordinator</h2>
-              <h3 className="font-semibold text-xl">Iliana Montoya</h3>
-              <p className="pb-4 font-light">she/her/ella</p>
+              <h2 className="text-sm">Fort Worth Program Coordinator</h2>
+              <h3 className="font-semibold text-md">Iliana Montoya</h3>
+              <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="semi-bold text-lg hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500">
                 Iliana's Bio
               </a>
               <a
-                className="pt-2 semi-bold text-lg hover:text-pink-500"
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:iliana@conmimadre.org?subject=Mail%20from%20website"
               >
                 Email Iliana
@@ -325,20 +325,20 @@ const OurTeam = () => {
             style={{
               backgroundImage: `url(${Carla})`,
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
-              <h2 className="">Fort Worth Program Coordinator</h2>
-              <h3 className="font-semibold text-xl">Carla Gonzales Vasquez</h3>
-              <p className="pb-4 font-light">she/her/ella</p>
+              <h2 className="text-sm">Fort Worth Program Coordinator</h2>
+              <h3 className="font-semibold text-md">Carla Gonzales Vasquez</h3>
+              <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="semi-bold text-lg hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500">
                 Carla's Bio
               </a>
               <a
-                className="pt-2 semi-bold text-lg hover:text-pink-500"
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:carla@conmimadre.org?subject=Mail%20from%20website"
               >
                 Email Carla
