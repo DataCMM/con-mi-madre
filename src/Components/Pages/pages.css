@@ -119,3 +119,6 @@
     height: 38.5rem;
   }
 }
+.team-member .member-info {
+  flex: 1;
+}
