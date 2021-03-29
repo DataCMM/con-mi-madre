@@ -60,7 +60,7 @@ const OurTeam = () => {
               <p className="pb-4 text-sm font-light">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500" href="">
                 Johanna's Bio
               </a>
               <a
@@ -86,7 +86,7 @@ const OurTeam = () => {
               <p className="pb-4 text-sm font-light">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500" href="">
                 Marcie's Bio
               </a>
               <a
@@ -114,7 +114,7 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500" href="">
                 Heaven's Bio
               </a>
               <a
@@ -140,7 +140,7 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500" href="">
                 Alicia's Bio
               </a>
               <a
@@ -166,7 +166,7 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500" href="">
                 Valerie's Bio
               </a>
               <a
@@ -192,7 +192,7 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500" href="">
                 Vanessa's Bio
               </a>
               <a
@@ -218,7 +218,7 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500" href="">
                 Isabella's Bio
               </a>
               <a
@@ -282,7 +282,7 @@ const OurTeam = () => {
               <p className="pb-3 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500" href="">
                 Jessenia's Bio
               </a>
               <a
@@ -308,7 +308,7 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500" href="">
                 Iliana's Bio
               </a>
               <a
@@ -334,7 +334,7 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500">
+              <a className="font-semibold text-sm hover:text-pink-500" href="">
                 Carla's Bio
               </a>
               <a
