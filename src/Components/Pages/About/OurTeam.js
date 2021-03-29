@@ -60,7 +60,10 @@ const OurTeam = () => {
               <p className="pb-4 text-sm font-light">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500" href="">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
                 Johanna's Bio
               </a>
               <a
@@ -86,7 +89,10 @@ const OurTeam = () => {
               <p className="pb-4 text-sm font-light">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500" href="">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
                 Marcie's Bio
               </a>
               <a
@@ -114,7 +120,10 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500" href="">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
                 Heaven's Bio
               </a>
               <a
@@ -140,7 +149,10 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500" href="">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
                 Alicia's Bio
               </a>
               <a
@@ -166,7 +178,10 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500" href="">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
                 Valerie's Bio
               </a>
               <a
@@ -192,7 +207,10 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500" href="">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
                 Vanessa's Bio
               </a>
               <a
@@ -218,7 +236,10 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500" href="">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
                 Isabella's Bio
               </a>
               <a
@@ -282,7 +303,10 @@ const OurTeam = () => {
               <p className="pb-3 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500" href="">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
                 Jessenia's Bio
               </a>
               <a
@@ -308,7 +332,10 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500" href="">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
                 Iliana's Bio
               </a>
               <a
@@ -334,7 +361,10 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a className="font-semibold text-sm hover:text-pink-500" href="">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
                 Carla's Bio
               </a>
               <a
