@@ -18,7 +18,7 @@ import Logo from "../../../images/stacked/text-only.png";
 
 const OurTeam = () => {
   return (
-    <>
+    <div>
       <div className="banner-image w-full h-full">
         <div
           style={{
@@ -649,7 +649,7 @@ const OurTeam = () => {
         </div>
       </div>
       {/* </div> */}
-    </>
+    </div>
   );
 };
 
