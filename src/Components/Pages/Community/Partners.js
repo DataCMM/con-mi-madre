@@ -3,8 +3,6 @@ import React from "react";
 import PartnersBanner from "../../../images/partners/OurPartnersBanner.jpg";
 import Logo from "../../../images/stacked/text-only.png";
 
-import CorporateGallery from "./CorporateGallery";
-import SchoolsGallery from "./Schools";
 import "./community.css";
 
 const Partners = () => {
@@ -36,8 +34,6 @@ const Partners = () => {
       <div className="text-center text-gray-500 bg-blue-500 text-4xl font-semibold">
         Corporate Partners
       </div>
-      <CorporateGallery />
-      <SchoolsGallery />
     </>
   );
 };
