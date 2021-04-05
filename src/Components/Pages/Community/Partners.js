@@ -119,28 +119,103 @@ const Partners = () => {
         <div className="text-center bg-green-500 text-4xl font-semibold">
           Foundations
         </div>
-        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-4 p-4 md:gap-8 lg:grid-cols-3 lg:p-8">
-          <a href="https://www.wellsfargo.com/" target="_blank">
+        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-4 p-4 mb-8 md:gap-12 lg:grid-cols-3 lg:p-8">
+          <a
+            href="https://www.austincf.org/community-impact/hispanic-impact-fund/"
+            target="_blank"
+          >
             <div
-              style={{ backgroundImage: `url(${WF})` }}
+              style={{ backgroundImage: `url(${HispanicImpact})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.unidosus.org/affiliates/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${Unidos})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
           <a href="https://www.wellsfargo.com/" target="_blank">
             <div
-              style={{ backgroundImage: `url(${WF})` }}
+              style={{ backgroundImage: `url(${Women})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
           <a href="https://www.wellsfargo.com/" target="_blank">
             <div
-              style={{ backgroundImage: `url(${WF})` }}
+              style={{ backgroundImage: `url(${Annie})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
           <a href="https://www.wellsfargo.com/" target="_blank">
             <div
-              style={{ backgroundImage: `url(${WF})` }}
+              style={{ backgroundImage: `url(${JLA})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.wellsfargo.com/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${UnitedWay})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.wellsfargo.com/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${Applied})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.wellsfargo.com/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${NTCF})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.wellsfargo.com/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${Tides})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.wellsfargo.com/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${Rohleder})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.wellsfargo.com/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${GAHCC})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.wellsfargo.com/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${Shield})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.wellsfargo.com/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${Powell})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.wellsfargo.com/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${Lola})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.wellsfargo.com/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${Ryan})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.wellsfargo.com/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${Long})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
