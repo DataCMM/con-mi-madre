@@ -27,6 +27,10 @@ import Powell from "../../../images/foundations/powellfoundation.png";
 import Lola from "../../../images/foundations/Lola-wright.png";
 import Ryan from "../../../images/foundations/Ryan-Foundation.png";
 import Long from "../../../images/foundations/TheLongFoundation.png";
+import AISD from "../../../images/school-partners/AISD_Logo_Color_horizontal.png";
+import FWISD from "../../../images/school-partners/FWISD.jpg";
+import Hays from "../../../images/school-partners/Hays-CISD-District-Logo-Small-Shadow.png";
+import Taylor from "../../../images/school-partners/TaylorISD-Logo.png";
 
 import "./community.css";
 
@@ -184,6 +188,15 @@ const Partners = () => {
             />
           </a>
           <a
+            href="https://www.longfoundation.org/content/nav_lf.html"
+            target="_blank"
+          >
+            <div
+              style={{ backgroundImage: `url(${Long})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a
             href="https://nebula.wsimg.com/231670c1cb9da8869a098df5d28671df?AccessKeyId=5422A47C696F7C068295&disposition=0&alloworigin=1"
             target="_blank"
           >
@@ -222,12 +235,32 @@ const Partners = () => {
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a
-            href="https://www.longfoundation.org/content/nav_lf.html"
-            target="_blank"
-          >
+        </div>
+        <div className="text-center bg-green-500 text-4xl font-semibold">
+          School Partnerships
+        </div>
+        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-4 p-4 mb-8 md:gap-8 lg:grid-cols-3 lg:p-8">
+          <a href="https://www.austinisd.org/" target="_blank">
             <div
-              style={{ backgroundImage: `url(${Long})` }}
+              style={{ backgroundImage: `url(${AISD})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.fwisd.org/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${FWISD})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.hayscisd.net/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${Hays})` }}
+              className="w-full h-48 bg-center bg-no-repeat bg-contain"
+            />
+          </a>
+          <a href="https://www.taylorisd.org/" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${Taylor})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
