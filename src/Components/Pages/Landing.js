@@ -18,12 +18,12 @@ import ReactPlayer from "react-player";
 const Landing = () => {
   return (
     <div>
-      <div className="w-full h-full object-contain">
+      <div className="w-full h-auto">
         <div
           style={{
             backgroundImage: `url(${BannerImage})`,
           }}
-          className="w-full max-h-full relative bg-fixed bg-cover bg-top bg-no-repeat"
+          className="w-full h-full relative bg-fixed bg-cover bg-top bg-no-repeat"
         >
           <span
             className="w-full h-full absolute opacity-50 bg-black bg-cover"
