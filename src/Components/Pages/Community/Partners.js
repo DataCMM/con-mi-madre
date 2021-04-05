@@ -4,7 +4,7 @@ import PartnersBanner from "../../../images/partners/OurPartnersBanner.jpg";
 import Logo from "../../../images/stacked/text-only.png";
 import SetonLogo from "../../../images/coroporate-partners/Acension-Seton.jpg";
 import BOA from "../../../images/coroporate-partners/Bank-of-America-New-logo.jpg";
-import Bumble from "../../../images/coroporate-partners/bumble.jpg";
+import Bumble from "../../../images/coroporate-partners/bumblelogo.png";
 import HEB from "../../../images/coroporate-partners/HEB_TOC_Star_Logo.jpg";
 import ABC from "../../../images/coroporate-partners/LOGO-ABC-BANK-5.jpg";
 import RBFCU from "../../../images/coroporate-partners/rbfcu.png";
