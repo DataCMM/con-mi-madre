@@ -135,85 +135,97 @@ const Partners = () => {
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a
+            href="https://www.austincf.org/community-impact/womens-fund/"
+            target="_blank"
+          >
             <div
               style={{ backgroundImage: `url(${Women})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a href="https://www.aecf.org/" target="_blank">
             <div
               style={{ backgroundImage: `url(${Annie})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a href="https://www.jlaustin.org/" target="_blank">
             <div
               style={{ backgroundImage: `url(${JLA})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a href="https://www.unitedwaytarrant.org/" target="_blank">
             <div
               style={{ backgroundImage: `url(${UnitedWay})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a
+            href="hthttps://www.appliedmaterials.com/company/corporate-responsibility/society"
+            target="_blank"
+          >
             <div
               style={{ backgroundImage: `url(${Applied})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a href="https://northtexascf.org/" target="_blank">
             <div
               style={{ backgroundImage: `url(${NTCF})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a href="https://www.tides.org/" target="_blank">
             <div
               style={{ backgroundImage: `url(${Tides})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a
+            href="https://nebula.wsimg.com/231670c1cb9da8869a098df5d28671df?AccessKeyId=5422A47C696F7C068295&disposition=0&alloworigin=1"
+            target="_blank"
+          >
             <div
               style={{ backgroundImage: `url(${Rohleder})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a href="https://www.gahcc.org/home/" target="_blank">
             <div
               style={{ backgroundImage: `url(${GAHCC})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a href="https://www.shield-ayresfoundation.org/" target="_blank">
             <div
               style={{ backgroundImage: `url(${Shield})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a href="https://www.powellfoundation.org/" target="_blank">
             <div
               style={{ backgroundImage: `url(${Powell})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a href="https://fdnweb.org/lolawright/" target="_blank">
             <div
               style={{ backgroundImage: `url(${Lola})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a href="https://www.ryanfoundation.com/" target="_blank">
             <div
               style={{ backgroundImage: `url(${Ryan})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a
+            href="https://www.longfoundation.org/content/nav_lf.html"
+            target="_blank"
+          >
             <div
               style={{ backgroundImage: `url(${Long})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
