@@ -65,55 +65,91 @@ const Partners = () => {
           Corporate Partners
         </div>
         <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-4 p-4 mb-8 md:gap-8 lg:grid-cols-3 lg:p-8">
-          <a href="https://healthcare.ascension.org/" target="_blank">
+          <a
+            href="https://healthcare.ascension.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${SetonLogo})` }}
               className="w-full h-48 bg-center bg-no-repeat  bg-contain"
             />
           </a>
-          <a href="https://www.bankofamerica.com/" target="_blank">
+          <a
+            href="https://www.bankofamerica.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${BOA})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://bumble.com/en/" target="_blank">
+          <a
+            href="https://bumble.com/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${Bumble})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.heb.com/" target="_blank">
+          <a
+            href="https://www.heb.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${HEB})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.theabcbank.com/" target="_blank">
+          <a
+            href="https://www.theabcbank.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${ABC})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.rbfcu.org/" target="_blank">
+          <a
+            href="https://www.rbfcu.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${RBFCU})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.texasdisposal.com/" target="_blank">
+          <a
+            href="https://www.texasdisposal.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${TDS})` }}
               className="w-full h-40 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.texascapitalbank.com/" target="_blank">
+          <a
+            href="https://www.texascapitalbank.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${TCB})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.wellsfargo.com/" target="_blank">
+          <a
+            href="https://www.wellsfargo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${WF})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
@@ -127,13 +163,18 @@ const Partners = () => {
           <a
             href="https://www.austincf.org/community-impact/hispanic-impact-fund/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <div
               style={{ backgroundImage: `url(${HispanicImpact})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.unidosus.org/affiliates/" target="_blank">
+          <a
+            href="https://www.unidosus.org/affiliates/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${Unidos})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
@@ -142,25 +183,38 @@ const Partners = () => {
           <a
             href="https://www.austincf.org/community-impact/womens-fund/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <div
               style={{ backgroundImage: `url(${Women})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.aecf.org/" target="_blank">
+          <a
+            href="https://www.aecf.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${Annie})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.jlaustin.org/" target="_blank">
+          <a
+            href="https://www.jlaustin.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${JLA})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.unitedwaytarrant.org/" target="_blank">
+          <a
+            href="https://www.unitedwaytarrant.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${UnitedWay})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
@@ -169,19 +223,28 @@ const Partners = () => {
           <a
             href="hthttps://www.appliedmaterials.com/company/corporate-responsibility/society"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <div
               style={{ backgroundImage: `url(${Applied})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://northtexascf.org/" target="_blank">
+          <a
+            href="https://northtexascf.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${NTCF})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.tides.org/" target="_blank">
+          <a
+            href="https://www.tides.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${Tides})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
@@ -190,6 +253,7 @@ const Partners = () => {
           <a
             href="https://www.longfoundation.org/content/nav_lf.html"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <div
               style={{ backgroundImage: `url(${Long})` }}
@@ -199,37 +263,58 @@ const Partners = () => {
           <a
             href="https://nebula.wsimg.com/231670c1cb9da8869a098df5d28671df?AccessKeyId=5422A47C696F7C068295&disposition=0&alloworigin=1"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <div
               style={{ backgroundImage: `url(${Rohleder})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.gahcc.org/home/" target="_blank">
+          <a
+            href="https://www.gahcc.org/home/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${GAHCC})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.shield-ayresfoundation.org/" target="_blank">
+          <a
+            href="https://www.shield-ayresfoundation.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${Shield})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.powellfoundation.org/" target="_blank">
+          <a
+            href="https://www.powellfoundation.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${Powell})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://fdnweb.org/lolawright/" target="_blank">
+          <a
+            href="https://fdnweb.org/lolawright/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${Lola})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.ryanfoundation.com/" target="_blank">
+          <a
+            href="https://www.ryanfoundation.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${Ryan})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
@@ -240,25 +325,41 @@ const Partners = () => {
           School Partnerships
         </div>
         <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-4 p-4 mb-8 md:gap-8 lg:grid-cols-3 lg:p-8">
-          <a href="https://www.austinisd.org/" target="_blank">
+          <a
+            href="https://www.austinisd.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${AISD})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.fwisd.org/" target="_blank">
+          <a
+            href="https://www.fwisd.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${FWISD})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.hayscisd.net/" target="_blank">
+          <a
+            href="https://www.hayscisd.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${Hays})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
-          <a href="https://www.taylorisd.org/" target="_blank">
+          <a
+            href="https://www.taylorisd.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               style={{ backgroundImage: `url(${Taylor})` }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
