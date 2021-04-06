@@ -64,7 +64,7 @@ const Partners = () => {
         <div className="text-center bg-green-500 text-4xl font-semibold">
           Corporate Partners
         </div>
-        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-4 p-4 mb-8 md:gap-8 lg:grid-cols-3 lg:p-8">
+        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 md:gap-12 p-4 mb-8 lg:grid-cols-3 lg:p-8">
           <a
             href="https://healthcare.ascension.org/"
             target="_blank"
@@ -159,7 +159,7 @@ const Partners = () => {
         <div className="text-center bg-green-500 text-4xl font-semibold">
           Foundations
         </div>
-        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-4 p-4 mb-8 md:gap-12 lg:grid-cols-3 lg:p-8">
+        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 lg:grid-cols-3 lg:p-8">
           <a
             href="https://www.austincf.org/community-impact/hispanic-impact-fund/"
             target="_blank"
@@ -324,7 +324,7 @@ const Partners = () => {
         <div className="text-center bg-green-500 text-4xl font-semibold">
           School Partnerships
         </div>
-        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-4 p-4 mb-8 md:gap-8 lg:grid-cols-3 lg:p-8">
+        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 lg:grid-cols-3 lg:p-8">
           <a
             href="https://www.austinisd.org/"
             target="_blank"
