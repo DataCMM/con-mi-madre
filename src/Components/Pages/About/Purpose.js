@@ -72,7 +72,7 @@ const Purpose = () => {
         <div className="flex flex-col justify-center lg:items-end lg:w-1/2 pt-3">
           <img
             id="participants"
-            className="w-full h-auto p-6"
+            className="w-full h-full p-6"
             src={Participants}
             alt="Program participants"
           />
