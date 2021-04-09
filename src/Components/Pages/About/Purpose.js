@@ -43,10 +43,10 @@ const Purpose = () => {
         </p>
       </div>
       {/* Our Future */}
-      <div className="flex lg:pl-10 flex-col gap-6 p-6 bg-gray-500 md:flex-row">
-        <div className="flex flex-col justify-center pl-14 md:w-1/2 md:space-y-10">
-          <h3 className="text-3xl font-semibold">Our History</h3>
-          <p className="font-light">
+      <div className="flex lg:pl-10 flex-col gap-6 p-6 bg-gray-500 lg:flex-row">
+        <div className="flex flex-col justify-center pl-14 lg:w-1/2">
+          <h3 className="text-3xl font-semibold pb-3">Our History</h3>
+          <p className="font-light pb-6">
             The drive behind the founding of Con Mi MADRE stemmed from a
             statistic that a Latina baby had less than a 1% chance of obtaining
             a college education. Initially named the Hispanic Mother-Daughter
@@ -57,7 +57,7 @@ const Purpose = () => {
             Mi MADRE, becoming a freestanding and independent 501(c)(3)
             nonprofit organization.
           </p>
-          <p className="font-light">
+          <p className="font-light pt-6 pb-3">
             From inception, Con Mi MADRE’s focus has been on helping young
             Latinas graduate from high school, enroll in college, and
             successfully earn a college degree. We believe and understand the
@@ -69,10 +69,10 @@ const Purpose = () => {
             diverse female leaders.
           </p>
         </div>
-        <div className="flex flex-col justify-center w-1/2">
+        <div className="flex flex-col justify-center lg:items-end lg:w-1/2 pt-3">
           <img
             id="participants"
-            className="w-4/5 h-auto m-auto"
+            className="w-full h-auto p-6"
             src={Participants}
             alt="Program participants"
           />
