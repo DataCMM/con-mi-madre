@@ -114,7 +114,7 @@ const Landing = () => {
           </div>
           <div>
             <h3 className="text-3xl font-semibold">Our Vision</h3>
-            <p className="content font-light">
+            <p className="content font-light pb-3">
               To see Latina students, equipped with knowledge and support,
               rewrite the narrative of her family and community.
             </p>
