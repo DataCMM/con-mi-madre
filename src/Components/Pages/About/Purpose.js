@@ -1,6 +1,6 @@
 import React from "react";
 import PurposeBanner from "../../../images/purpose/OurPurpose1.jpg";
-import Participants from "../../../images/purpose/OurPurpose2.jpg";
+import Participants from "../../../images/purpose/OurPurposePic.jpg";
 import Logo from "../../../images/stacked/text-only.png";
 
 const Purpose = () => {
@@ -30,23 +30,23 @@ const Purpose = () => {
         </div>
       </div>
       {/* Future Section */}
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h3 className="text-3xl pb-6">Latinas Are The Future</h3>
-        <p>
+      <div className="bg-blue-500 text-xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-6">
+        <h3 className="text-4xl font-semibold pb-3">Latinas Are The Future</h3>
+        <p className="font-light">
           In the next few years, the majority of all women in Texas will be
           Latina.
         </p>
-        <p>
+        <p className="font-light">
           Latinas are the most at risk for suffering from mental health issues
           due to social, economic, political, cultural, and environmental
           factors.
         </p>
       </div>
       {/* Our Future */}
-      <div className="text-center text-xl p-6 pb-10 pt-10 bg-gray-500">
-        <div className="space-y-6">
-          <h3 className="text-3xl pb-3 text-pink-500">Our History</h3>
-          <p>
+      <div className="flex lg:pl-10 flex-col gap-6 p-6 bg-gray-500 lg:flex-row">
+        <div className="flex flex-col justify-center pl-14 lg:w-1/2">
+          <h3 className="text-3xl font-semibold pb-3">Our History</h3>
+          <p className="font-light pb-6">
             The drive behind the founding of Con Mi MADRE stemmed from a
             statistic that a Latina baby had less than a 1% chance of obtaining
             a college education. Initially named the Hispanic Mother-Daughter
@@ -57,15 +57,7 @@ const Purpose = () => {
             Mi MADRE, becoming a freestanding and independent 501(c)(3)
             nonprofit organization.
           </p>
-          <div className="w-full h-full">
-            <div
-              style={{
-                backgroundImage: `url(${Participants})`,
-              }}
-              className="intern-img bg-cover bg-top bg-no-repeat"
-            ></div>
-          </div>
-          <p>
+          <p className="font-light pt-6 pb-3">
             From inception, Con Mi MADRE’s focus has been on helping young
             Latinas graduate from high school, enroll in college, and
             successfully earn a college degree. We believe and understand the
@@ -76,6 +68,14 @@ const Purpose = () => {
             nation’s educated workforce and the next generation of confident and
             diverse female leaders.
           </p>
+        </div>
+        <div className="flex flex-col justify-center lg:items-end lg:w-1/2 pt-3">
+          <img
+            id="participants"
+            className="w-full h-auto p-6"
+            src={Participants}
+            alt="Program participants"
+          />
         </div>
       </div>
       {/* Reports */}

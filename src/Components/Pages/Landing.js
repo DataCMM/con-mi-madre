@@ -76,8 +76,8 @@ const Landing = () => {
       {/* Our Impact Section */}
       <div className="bg-blue-500 text-gray-500 shadow-xl -mt-6 m-auto w-11/12 h-auto flex flex-col w-full">
         <div className="flex flex-col text-center pb-10 pt-10">
-          <h3 className="text-3xl">OUR IMPACT</h3>
-          <p className="text-2xl">
+          <h3 className="text-3xl font-semibold">OUR IMPACT</h3>
+          <p className="text-2xl font-light">
             Over 4,000 mother and daughters served since 1992
           </p>
         </div>
@@ -105,16 +105,16 @@ const Landing = () => {
       <div className="flex lg:pl-10 flex-col gap-6 p-6 bg-gray-500 md:flex-row">
         <div className="flex flex-col justify-center pl-14 md:w-1/2 md:space-y-20">
           <div>
-            <h3 className="text-2xl text-pink-500">Our Mission</h3>
-            <p className="content">
+            <h3 className="text-3xl font-semibold">Our Mission</h3>
+            <p className="content font-light">
               Empower young Latinas and their mothers through the education and
               support services that increase preparedness, participation, and
               success in post-secondary education.
             </p>
           </div>
           <div>
-            <h3 className="text-2xl text-pink-500">Our Vision</h3>
-            <p className="content">
+            <h3 className="text-3xl font-semibold">Our Vision</h3>
+            <p className="content font-light">
               To see Latina students, equipped with knowledge and support,
               rewrite the narrative of her family and community.
             </p>
@@ -140,24 +140,24 @@ const Landing = () => {
           />
         </div>
         <div className="pb-4 md:w-1/2">
-          <h3 className="text-yellow-500">OUR PILLARS</h3>
-          <h4 className="text-2xl">Parental Engagement</h4>
-          <p>
+          <h3 className="text-4xl font-semibold">OUR PILLARS</h3>
+          <h4 className="text-2xl font-semibold">Parental Engagement</h4>
+          <p className="font-light">
             At CMM we believe that creating opportunities for parents to engage
             in their child's education will lead to post-secondary success.
           </p>
-          <h4 className="text-2xl">Educate Holistically</h4>
-          <p>
+          <h4 className="text-2xl font-semibold">Educate Holistically</h4>
+          <p className="font-light">
             We provide mothers and daughters the social-emotional skills they
             need to become emotionally intelligent.
           </p>
-          <h4 className="text-2xl">Empowerment</h4>
-          <p>
+          <h4 className="text-2xl font-semibold">Empowerment</h4>
+          <p className="font-light">
             At CMM, we equip mothers and daughters with the knowledge and
             advocacy skills to succeed in spite of systemic barriers.
           </p>
           <h4 className="text-2xl">Community-Centered</h4>
-          <p>
+          <p className="font-light">
             We unite with local organizations and individuals to better meet the
             needs of the community.
           </p>
