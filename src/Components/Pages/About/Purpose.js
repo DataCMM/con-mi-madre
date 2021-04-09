@@ -2,6 +2,7 @@ import React from "react";
 import PurposeBanner from "../../../images/purpose/OurPurpose1.jpg";
 import Participants from "../../../images/purpose/OurPurposePic.jpg";
 import Logo from "../../../images/stacked/text-only.png";
+// import AnnualReport1 from "../About/AnnulReport2019to2020.pdf";
 
 const Purpose = () => {
   return (
@@ -79,15 +80,29 @@ const Purpose = () => {
         </div>
       </div>
       {/* Reports */}
-      <div className="bg-blue-500 space-y-3 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h2 className="text-3xl pb-3">Con Mi Madre Reports</h2>
+      <div className="bg-blue-500 space-y-3 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-6">
+        <h2 className="text-3xl pb-3 font-semibold">Con Mi Madre Reports</h2>
         <div>
-          <h3>Annual Reports :</h3>
-          <p>2019 - 2020 Annual Report</p>
+          <h3 className="text-xl font-semibold">Annual Reports :</h3>
+          <a
+            className="hover:text-pink-500 font-light"
+            href="/AnnualReport2019to2020.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2019 - 2020 Annual Report
+          </a>
         </div>
         <div>
-          <h3>Statements :</h3>
-          <p>Response To COVID-19</p>
+          <h3 className="text-xl font-semibold">Statements :</h3>
+          <a
+            className="hover:text-pink-500 font-light"
+            href="/ResponseToCovid.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Response To COVID-19
+          </a>
         </div>
       </div>
     </div>
