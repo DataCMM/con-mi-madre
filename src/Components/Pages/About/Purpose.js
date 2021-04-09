@@ -80,7 +80,7 @@ const Purpose = () => {
         </div>
       </div>
       {/* Reports */}
-      <div className="bg-blue-500 space-y-3 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-6">
+      <div className="bg-blue-500 space-y-3 text-lg text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-6">
         <h2 className="text-3xl pb-3 font-semibold">Con Mi Madre Reports</h2>
         <div>
           <h3 className="text-xl font-semibold">Annual Reports :</h3>
