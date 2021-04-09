@@ -30,8 +30,8 @@ const Purpose = () => {
         </div>
       </div>
       {/* Future Section */}
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h3 className="text-4xl font-semibold pb-6">Latinas Are The Future</h3>
+      <div className="bg-blue-500 text-xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-6">
+        <h3 className="text-4xl font-semibold pb-3">Latinas Are The Future</h3>
         <p className="font-light">
           In the next few years, the majority of all women in Texas will be
           Latina.
@@ -43,9 +43,9 @@ const Purpose = () => {
         </p>
       </div>
       {/* Our Future */}
-      {/* <div className="text-center text-xl p-6 pb-10 pt-10 bg-gray-500">
-        <div className="space-y-6">
-          <h3 className="text-3xl pb-3 font-semibold">Our History</h3>
+      <div className="flex lg:pl-10 flex-col gap-6 p-6 bg-gray-500 md:flex-row">
+        <div className="flex flex-col justify-center pl-14 md:w-1/2 md:space-y-10">
+          <h3 className="text-3xl font-semibold">Our History</h3>
           <p className="font-light">
             The drive behind the founding of Con Mi MADRE stemmed from a
             statistic that a Latina baby had less than a 1% chance of obtaining
@@ -57,15 +57,7 @@ const Purpose = () => {
             Mi MADRE, becoming a freestanding and independent 501(c)(3)
             nonprofit organization.
           </p>
-          <div className="w-full h-full">
-            <div
-              style={{
-                backgroundImage: `url(${Participants})`,
-              }}
-              className="intern-img bg-cover bg-top bg-no-repeat"
-            ></div>
-          </div>
-          <p>
+          <p className="font-light">
             From inception, Con Mi MADRE’s focus has been on helping young
             Latinas graduate from high school, enroll in college, and
             successfully earn a college degree. We believe and understand the
@@ -77,9 +69,16 @@ const Purpose = () => {
             diverse female leaders.
           </p>
         </div>
-      </div> */}
+        <div className="flex flex-col justify-center w-1/2">
+          <img
+            id="participants"
+            className="w-4/5 h-auto m-auto"
+            src={Participants}
+            alt="Program participants"
+          />
+        </div>
+      </div>
       {/* Reports */}
-      <div className="flex lg:pl-10 flex-col gap-6 p-6 bg-gray-500 md:flex-row"></div>
       <div className="bg-blue-500 space-y-3 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
         <h2 className="text-3xl pb-3">Con Mi Madre Reports</h2>
         <div>
