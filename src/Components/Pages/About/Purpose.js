@@ -1,8 +1,6 @@
 import React from "react";
-import PurposeBanner from "../../../images/purpose/OurPurpose1.jpg";
-import Participants from "../../../images/purpose/OurPurposePic.jpg";
+
 import Logo from "../../../images/stacked/text-only.png";
-// import AnnualReport1 from "../About/AnnulReport2019to2020.pdf";
 
 const Purpose = () => {
   return (
@@ -10,7 +8,7 @@ const Purpose = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${PurposeBanner})`,
+            backgroundImage: "url(images/purpose/OurPurpose1.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
@@ -74,7 +72,7 @@ const Purpose = () => {
           <img
             id="participants"
             className="w-full h-auto lg:p-4 xl:p-8"
-            src={Participants}
+            src="/images/purpose/OurPurposePic.jpg"
             alt="Program participants"
           />
         </div>
