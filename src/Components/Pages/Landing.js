@@ -3,10 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CMMLogo from "../../images/stacked/no-text-color-and-white.png";
 
-import Graduate from "../../images/landing/GirlGrad.jpg";
-import BannerImage from "../../images/landing/Donate-Banner.JPG";
-
-// import Video from "../../images/landing/CMM.mp4";
+// import BannerImage from "../../images/landing/Donate-Banner.JPG";
 
 import { FcGraduationCap } from "react-icons/fc";
 import { FaUniversity } from "react-icons/fa";
@@ -21,7 +18,9 @@ const Landing = () => {
       <div className="w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${BannerImage})`,
+            backgroundImage: `url(${
+              process.env.PUBLIC_URL + "/images/landing/Donate-Banner2.JPG"
+            })`,
           }}
           className="w-full h-full relative bg-cover bg-top bg-no-repeat"
         >
@@ -125,7 +124,7 @@ const Landing = () => {
         <img
           id="grad"
           className="w-3/5 h-full m-auto"
-          src={Graduate}
+          src="/images/landing/GirlGrad.jpg"
           alt="Female graduate"
         />
       </div>
