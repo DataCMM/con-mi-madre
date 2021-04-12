@@ -1,19 +1,5 @@
 import React from "react";
 
-import Johanna from "../../../images/team/JohannaHeadshot.jpg";
-import Marcie from "../../../images/team/MarcieHeadshot.jpg";
-import Heaven from "../../../images/team/HeavenHeadshot.jpg";
-import Alicia from "../../../images/team/AliciaHeadshot.jpg";
-import Valerie from "../../../images/team/ValerieHeadshot.jpg";
-import Vanessa from "../../../images/team/VanessaHeadshot.jpg";
-import Isabella from "../../../images/team/IsabellaHeadshot.jpg";
-// import Mariana from "../../../images/team/MarianaHeadshot.jpg";
-// import Lorena from "../../../images/team/LorenaHeadshot.jpg";
-import Jessenia from "../../../images/team/JesseniaHeadshot.jpg";
-import Iliana from "../../../images/team/IlianaHeadshot.jpg";
-import Carla from "../../../images/team/CarlaHeadshot.jpg";
-import TeamBanner from "../../../images/team/OurTeamBanner.jpg";
-
 import Logo from "../../../images/stacked/text-only.png";
 
 const OurTeam = () => {
@@ -22,7 +8,7 @@ const OurTeam = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${TeamBanner})`,
+            backgroundImage: "url(/images/team/OurTeamBanner.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
@@ -47,7 +33,7 @@ const OurTeam = () => {
         <div className="rounded h-full flex flex-col items-center md:flex-row md:justify-start md:items-start p-4 bg-gray-500">
           <div
             style={{
-              backgroundImage: `url(${Johanna})`,
+              backgroundImage: "url(/images/team/JohannaHeadshot.jpg)",
             }}
             className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
@@ -78,7 +64,7 @@ const OurTeam = () => {
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
-              backgroundImage: `url(${Marcie})`,
+              backgroundImage: "url(/images/team/MarcieHeadshot.jpg)",
             }}
             className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
@@ -107,7 +93,7 @@ const OurTeam = () => {
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
-              backgroundImage: `url(${Heaven})`,
+              backgroundImage: "url(/images/team/HeavenHeadshot.jpg)",
             }}
             className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
@@ -138,7 +124,7 @@ const OurTeam = () => {
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
-              backgroundImage: `url(${Alicia})`,
+              backgroundImage: "url(/images/team/AliciaHeadshot.jpg)",
             }}
             className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
@@ -167,7 +153,7 @@ const OurTeam = () => {
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
-              backgroundImage: `url(${Valerie})`,
+              backgroundImage: "url(/images/team/ValerieHeadshot.jpg)",
             }}
             className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
@@ -196,9 +182,9 @@ const OurTeam = () => {
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
-              backgroundImage: `url(${Vanessa})`,
+              backgroundImage: "url(/images/team/VanessaHeadshot.jpg)",
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
@@ -225,7 +211,7 @@ const OurTeam = () => {
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
-              backgroundImage: `url(${Isabella})`,
+              backgroundImage: "url(/images/team/IsabellaHeadshot.jpg)",
             }}
             className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
@@ -251,50 +237,12 @@ const OurTeam = () => {
             </div>
           </div>
         </div>
-        {/* <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
-          <div
-            style={{
-              backgroundImage: `url(${Mariana})`,
-            }}
-            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
-          ></div>
-          <div className="flex flex-col text-center md:text-left md:pl-5">
-            <h2 className="pt-3">Central Texas Success Program Coordinator</h2>
-            <h3 className="font-semibold text-xl">Mariana Zamora</h3>
-            <p className="pb-4 font-light">she/her/ella</p>
-            <a
-              className="semi-bold text-lg hover:text-pink-500"
-              href="mailto:mariana@conmimadre.org?subject=Mail%20from%20website"
-            >
-              Email Mariana
-            </a>
-          </div>
-        </div> */}
-        {/* <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
-          <div
-            style={{
-              backgroundImage: `url(${Lorena})`,
-            }}
-            className="flex  w-48 h-48  mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
-          ></div>
-          <div className="flex flex-col text-center md:text-left md:pl-5">
-            <h2 className="pt-3">Central Texas Program Coordinator</h2>
-            <h3 className="font-semibold text-xl">Lorena Sierra</h3>
-            <p className="pb-4 font-light">she/her/ella</p>
-            <a
-              className="semi-bold text-lg hover:text-pink-500"
-              href="mailto:lorena@conmimadre.org?subject=Mail%20from%20website"
-            >
-              Email Lorena
-            </a>
-          </div>
-        </div> */}
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
-              backgroundImage: `url(${Jessenia})`,
+              backgroundImage: "url(/images/team/JesseniaHeadshot.jpg)",
             }}
-            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
           ></div>
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
             <div>
@@ -321,7 +269,7 @@ const OurTeam = () => {
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
-              backgroundImage: `url(${Iliana})`,
+              backgroundImage: "url(/images/team/IlianaHeadshot.jpg)",
             }}
             className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
@@ -350,7 +298,7 @@ const OurTeam = () => {
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
-              backgroundImage: `url(${Carla})`,
+              backgroundImage: "url(/images/team/CarlaHeadshot.jpg)",
             }}
             className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           ></div>
