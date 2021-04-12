@@ -41,6 +41,7 @@ const Purpose = () => {
           factors.
         </p>
       </div>
+
       {/* Our Future */}
       <div className="flex lg:pl-10 flex-col-reverse gap-6 p-6 bg-gray-500 lg:flex-row">
         <div className="flex flex-col justify-center pl-14 lg:w-1/2">
