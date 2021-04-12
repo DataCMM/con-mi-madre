@@ -150,7 +150,7 @@ const Involved = () => {
             id="participants"
             className="w-full h-full lg:pl-12 lg:pr-0"
             src={InvolvedImg}
-            alt="Program participants"
+            alt="Volunteer in school gym signing up participants"
           />
         </div>
       </div>
