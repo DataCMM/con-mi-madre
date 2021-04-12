@@ -1,6 +1,4 @@
 import React from "react";
-import CareersBanner from "../../../images/careers/Careers-Banner.jpg";
-import Intern from "../../../images/careers/CareersInternImg.jpg";
 
 import Logo from "../../../images/stacked/text-only.png";
 
@@ -10,7 +8,7 @@ const Careers = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${CareersBanner})`,
+            backgroundImage: "url(/images/careers/Careers-Banner.jpg)",
           }}
           className="w-full h-full relative  bg-cover bg-center bg-no-repeat lg:bg-top"
         >
@@ -20,7 +18,6 @@ const Careers = () => {
           />
 
           <div className="banner-text sticky flex flex-col justify-between">
-            {/* <div className="flex flex-col space-y-24"> */}
             <div className="sticky pt-4 pl-4 pr-4 h-14 w-1/2">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
@@ -31,6 +28,7 @@ const Careers = () => {
           </div>
         </div>
       </div>
+
       {/* Careers Blue Content */}
       <div>
         <div className="bg-blue-500 text-gray-500 text-2xl shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
@@ -117,7 +115,7 @@ const Careers = () => {
           <img
             id="participants"
             className="w-full h-auto lg:pl-12 lg:pr-0"
-            src={Intern}
+            src="images/careers/CareersInternImg.jpg"
             alt="Program participants"
           />
         </div>
