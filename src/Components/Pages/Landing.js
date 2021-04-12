@@ -3,8 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CMMLogo from "../../images/stacked/no-text-color-and-white.png";
 
-// import BannerImage from "../../images/landing/Donate-Banner.JPG";
-
 import { FcGraduationCap } from "react-icons/fc";
 import { FaUniversity } from "react-icons/fa";
 import { BsGraphUp } from "react-icons/bs";
@@ -18,9 +16,7 @@ const Landing = () => {
       <div className="w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${
-              process.env.PUBLIC_URL + "/images/landing/Donate-Banner2.JPG"
-            })`,
+            backgroundImage: "url(/images/landing/Donate-Banner2.JPG)",
           }}
           className="w-full h-full relative bg-cover bg-top bg-no-repeat"
         >

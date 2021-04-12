@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 // import { Link } from "react-router-dom";
 import Logo from "../../images/stacked/text-only.png";
-import BannerImage from "../../images/landing/Donate-Banner.JPG";
 
 const Donate = () => {
   const [amount, setAmount] = useState(0);
@@ -17,7 +16,7 @@ const Donate = () => {
     <div className="h-screen w-full">
       <div
         style={{
-          backgroundImage: `url(${BannerImage})`,
+          backgroundImage: "url(/images/landing/Donate-Banner2.JPG)",
         }}
         className="w-full h-full relative bg-fixed bg-cover bg-center bg-no-repeat"
       >
