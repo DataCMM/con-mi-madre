@@ -122,7 +122,9 @@ const Involved = () => {
       </div>
       <div className="flex lg:p-10 flex-col-reverse gap-6 p-6 bg-gray-500 lg:flex-row">
         <div className="flex flex-col justify-center text-center lg:text-left pl-14 lg:w-1/2">
-          <h3 className="text-2xl font-semibold pb-3">Guest Speakers</h3>
+          <h3 className="text-2xl font-semibold pb-3 pt-6 lg:pt-0">
+            Guest Speakers
+          </h3>
           <p className="text-xl font-light pb-6">
             Speak at one of our conferences, Corazon gala, or other fundraising
             events.
