@@ -148,7 +148,7 @@ const Involved = () => {
         <div className="flex flex-col justify-center lg:items-end lg:w-1/2">
           <img
             id="participants"
-            className="w-full h-auto lg:pl-12 lg:pr-0"
+            className="w-full h-full lg:pl-12 lg:pr-0"
             src={InvolvedImg}
             alt="Program participants"
           />
