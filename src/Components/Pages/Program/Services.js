@@ -1,12 +1,5 @@
 import React from "react";
 
-import ServicesBanner from "../../../images/additional-services/Additional-Services-Banner.jpg";
-import Services1 from "../../../images/additional-services/services-1.jpg";
-import Services2 from "../../../images/additional-services/services-2.jpg";
-import Services3 from "../../../images/additional-services/services-3.jpg";
-import Services4 from "../../../images/additional-services/services-4.jpg";
-import Services5 from "../../../images/additional-services/services-5.JPG";
-
 import Logo from "../../../images/stacked/text-only.png";
 
 const Services = () => {
@@ -15,7 +8,8 @@ const Services = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${ServicesBanner})`,
+            backgroundImage:
+              "url(/images/additional-services/Additional-Services-Banner.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
@@ -49,7 +43,7 @@ const Services = () => {
         </p>
         <div
           style={{
-            backgroundImage: `url(${Services1})`,
+            backgroundImage: "url(/images/additional-services/services-1.jpg)",
           }}
           className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
         ></div>
@@ -68,7 +62,7 @@ const Services = () => {
         </p>
         <div
           style={{
-            backgroundImage: `url(${Services2})`,
+            backgroundImage: "url(/images/additional-services/services-2.jpg)",
           }}
           className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
         ></div>
@@ -79,7 +73,7 @@ const Services = () => {
         <h3 className="text-3xl font-semibold pb-6">Con Mi Hermana</h3>
         <div
           style={{
-            backgroundImage: `url(${Services3})`,
+            backgroundImage: "url(/images/additional-services/services-3.jpg)",
           }}
           className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
         ></div>
@@ -91,7 +85,7 @@ const Services = () => {
         </h3>
         <div
           style={{
-            backgroundImage: `url(${Services4})`,
+            backgroundImage: "url(/images/additional-services/services-4.jpg)",
           }}
           className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
         ></div>
@@ -102,7 +96,7 @@ const Services = () => {
         <h3 className="text-3xl font-semibold pb-6">Testimonials</h3>
         <div
           style={{
-            backgroundImage: `url(${Services5})`,
+            backgroundImage: "url(/images/additional-services/services-5.JPG)",
           }}
           className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
         ></div>
