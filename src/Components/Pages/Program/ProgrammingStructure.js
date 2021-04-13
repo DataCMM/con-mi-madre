@@ -1,16 +1,5 @@
 import React from "react";
 
-import Structure6 from "../../../images/programming-structure/College-and-Career-Fair-image.jpg";
-import Structure7 from "../../../images/programming-structure/College-Visits-image.jpg";
-import Structure5 from "../../../images/programming-structure/Conferences-image.jpg";
-import Structure8 from "../../../images/programming-structure/Leadership-summit-image.jpg";
-import Structure4 from "../../../images/programming-structure/Parent-Program-image.jpg";
-import Structure2 from "../../../images/programming-structure/Participation-image.jpg";
-import Structure1 from "../../../images/programming-structure/Preparedness-image.jpg";
-import StructureBanner from "../../../images/programming-structure/Programing-Structure-Banner.jpg";
-import Structure3 from "../../../images/programming-structure/Structure-3.jpg";
-import Structure9 from "../../../images/programming-structure/Volunteering-image.jpg";
-
 import Logo from "../../../images/stacked/text-only.png";
 
 const Program = () => {
@@ -19,7 +8,8 @@ const Program = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${StructureBanner})`,
+            backgroundImage:
+              "url(/images/programming-structure/Programing-Structure-Banner.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
@@ -54,7 +44,8 @@ const Program = () => {
         <div className="h-full w-full">
           <div
             style={{
-              backgroundImage: `url(${Structure1})`,
+              backgroundImage:
+                "url(/images/programming-structure/Preparedness-image.jpg)",
             }}
             className="intern-img bg-cover bg-top bg-no-repeat"
           ></div>
@@ -82,7 +73,8 @@ const Program = () => {
         </p>
         <div
           style={{
-            backgroundImage: `url(${Structure2})`,
+            backgroundImage:
+              "url(/images/programming-structure/Participation-image.jpg)",
           }}
           className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
@@ -103,7 +95,8 @@ const Program = () => {
         </p>
         <div
           style={{
-            backgroundImage: `url(${Structure3})`,
+            backgroundImage:
+              "url(/images/programming-structure/Structure-3.jpg)",
           }}
           className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
@@ -124,7 +117,8 @@ const Program = () => {
         </p>
         <div
           style={{
-            backgroundImage: `url(${Structure4})`,
+            backgroundImage:
+              "url(/images/programming-structure/Parent-Program-image.jpg)",
           }}
           className="intern-img bg-cover bg-top bg-no-repeat"
         ></div>
@@ -140,7 +134,8 @@ const Program = () => {
         </h3>
         <div
           style={{
-            backgroundImage: `url(${Structure5})`,
+            backgroundImage:
+              "url(/images/programming-structure/Conferences-image.jpg)",
           }}
           className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
@@ -155,7 +150,8 @@ const Program = () => {
         </h3>
         <div
           style={{
-            backgroundImage: `url(${Structure6})`,
+            backgroundImage:
+              "url(/images/programming-structure/College-and-Career-Fair-image.jpg)",
           }}
           className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
@@ -171,7 +167,8 @@ const Program = () => {
         </h3>
         <div
           style={{
-            backgroundImage: `url(${Structure7})`,
+            backgroundImage:
+              "url(/images/programming-structure/College-Visits-image.jpg)",
           }}
           className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
@@ -187,7 +184,8 @@ const Program = () => {
         </h3>
         <div
           style={{
-            backgroundImage: `url(${Structure8})`,
+            backgroundImage:
+              "url(/images/programming-structure/Leadership-summit-image.jpg)",
           }}
           className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
@@ -202,7 +200,8 @@ const Program = () => {
         </h3>
         <div
           style={{
-            backgroundImage: `url(${Structure9})`,
+            backgroundImage:
+              "url(/images/programming-structure/Volunteering-image.jpg)",
           }}
           className="intern-img bg-cover bg-center bg-no-repeat"
         ></div>
