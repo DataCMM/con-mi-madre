@@ -30,7 +30,7 @@ const Router = () => {
       <Route path="/ProgrammingEvents" component={ProgrammingEvents} />
       <Route path="/Resources" component={Resources} />
       <Route path="/Involved" component={Involved} />
-      <Route path="/ProgrammingStructure" component={ProgrammingStructure} />
+      <Route path="/ProgramStructure" component={ProgrammingStructure} />
       <Route path="/Services" component={Services} />
     </Switch>
   );

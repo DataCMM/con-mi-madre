@@ -61,10 +61,10 @@ const Header = () => {
           <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
-                to="/ProgrammingStructure"
+                to="/ProgramStructure"
                 className="block whitespace-no-wrap py-2 px-4 pr-4"
               >
-                Programming Structure
+                Program Structure
               </Link>
             </li>
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">

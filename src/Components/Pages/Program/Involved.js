@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import InvolvedBanner from "../../../images/involved/Get-Involved-Banner.jpg";
-import InvolvedImg from "../../../images/involved/GetInvolvedImg.jpg";
-
 import Logo from "../../../images/stacked/text-only.png";
 
 const Involved = () => {
@@ -12,7 +9,7 @@ const Involved = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${InvolvedBanner})`,
+            backgroundImage: "url(/images/involved/Get-Involved-Banner.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
@@ -54,56 +51,6 @@ const Involved = () => {
           </button>
         </div>
       </div>
-      {/* <div
-          style={{
-            backgroundImage: `url(${InvolvedImg})`,
-          }}
-          className="intern-img bg-cover bg-right-top bg-no-repeat"
-        ></div> */}
-
-      {/* <div className="bg-blue-500 text-gray-500 text-2xl h-auto w-full text-center p-6 pb-10 pt-10"> */}
-      {/* <div className="bg-blue-500 text-2xl text-gray-500 h-auto w-full text-center p-6 pb-10 pt-6">
-          <h3 className="text-3xl font-bold p-1 pb-4 border-blue-200 m-auto shadow-lg">
-            Interested in Volunteering with Con Mi MADRE?
-          </h3>
-          <p className="pt-6 pb-6">
-            Con Mi MADRE always has opportunities for individuals wishing to
-            contribute their time and talents to our mission! Please reach out
-            to info@conmimadre.org for more details.
-          </p>
-        </div> */}
-      {/* <div className="bg-blue-500 text-2xl text-gray-500 h-auto w-full text-center p-6 pb-10 pt-10">
-          <h3 className="text-3xl font-bold  shadow-xl pb-6">Guest Speakers</h3>
-          <p className="pb-6">
-            Speak at one of our conferences, Corazon gala, or other fundraising
-            events.
-          </p>
-        </div> */}
-      {/* <div className="bg-blue-500 text-2xl text-gray-500 h-auto w-full text-center p-6 pb-10 pt-10">
-          <h3 className="text-3xl pb-6 shadow-xl font-bold">
-            Conferences & Events
-          </h3>
-          <p className="pb-6">
-            Help with registration, event set-up and take-down, and other event
-            logistics.
-          </p>
-        </div> */}
-      {/* <div className="bg-blue-500 text-2xl text-gray-500 h-auto w-full text-center p-6 pb-10 pt-10">
-          <h3 className="text-3xl pb-6 shadow-xl font-bold">Fundraising</h3>
-          <p className="pb-6">
-            Team up with our leadership team to help fundraise for our
-            programming.
-          </p>
-        </div> */}
-      {/* <div className="bg-blue-500 text-2xl text-gray-500 h-auto w-full text-center p-6 pb-10 pt-10">
-          <h3 className="text-3xl pb-6 shadow-xl font-bold">
-            Mentor for Con Mi Hermana
-          </h3>
-          <p className="pb-6">
-            Mentor a 11th or 12th grade student, and help them reach their
-            goals.
-          </p>
-        </div> */}
       <div className="bg-gray-500 p-6 flex flex-col text-center">
         <h3 className="text-4xl font-semibold pb-6">
           Interested in Volunteering with Con Mi MADRE?
@@ -151,7 +98,7 @@ const Involved = () => {
           <img
             id="participants"
             className="w-full h-full lg:pl-12 lg:pr-0"
-            src={InvolvedImg}
+            src="/images/involved/GetInvolvedImg.jpg"
             alt="Volunteer in school gym signing up participants"
           />
         </div>
