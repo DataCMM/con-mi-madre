@@ -1,5 +1,5 @@
 import React from "react";
-import EventsBanner from "../../../images/events/EventsBanner.jpg";
+
 import EventsGallery from "./EventsGallery";
 import Logo from "../../../images/stacked/text-only.png";
 
@@ -9,7 +9,7 @@ const Services = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${EventsBanner})`,
+            backgroundImage: "url(/images/events/EventsBanner.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >

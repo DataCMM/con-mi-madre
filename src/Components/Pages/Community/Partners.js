@@ -1,37 +1,6 @@
 import React from "react";
 
-import PartnersBanner from "../../../images/partners/OurPartnersBanner.jpg";
 import Logo from "../../../images/stacked/text-only.png";
-import SetonLogo from "../../../images/corporate-partners/Acension-Seton.jpg";
-import BOA from "../../../images/corporate-partners/Bank-of-America-New-logo.jpg";
-import Bumble from "../../../images/corporate-partners/bumblelogo.png";
-import HEB from "../../../images/corporate-partners/HEB_TOC_Star_Logo.jpg";
-import ABC from "../../../images/corporate-partners/LOGO-ABC-BANK-5.jpg";
-import RBFCU from "../../../images/corporate-partners/rbfcu.png";
-import TDS from "../../../images/corporate-partners/TDSLogo.png";
-import TCB from "../../../images/corporate-partners/TCB.jpg";
-import WF from "../../../images/corporate-partners/WF.png";
-import HispanicImpact from "../../../images/foundations/hispanic-impact-fund.png";
-import Unidos from "../../../images/foundations/unidosusaffiliate.png";
-import Women from "../../../images/foundations/womens-fund.png";
-import Annie from "../../../images/foundations/annie-e-casey-foundation-logo.jpg";
-import JLA from "../../../images/foundations/JLA.jpg";
-import UnitedWay from "../../../images/foundations/uwtc.png";
-import Applied from "../../../images/foundations/appliedmaterials.png";
-import NTCF from "../../../images/foundations/NTCF.png";
-import Tides from "../../../images/foundations/Tides-Foundation.jpg";
-import Rohleder from "../../../images/foundations/Rohleder.png";
-import GAHCC from "../../../images/foundations/GAHCC-logo.png";
-import Shield from "../../../images/foundations/Shield-Ayres-Logo-.jpg";
-import Powell from "../../../images/foundations/powellfoundation.png";
-import Lola from "../../../images/foundations/Lola-wright.png";
-import Ryan from "../../../images/foundations/Ryan-Foundation.png";
-import Long from "../../../images/foundations/TheLongFoundation.png";
-import AISD from "../../../images/school-partners/AISD_Logo_Color_horizontal.png";
-import FWISD from "../../../images/school-partners/FWISD.jpg";
-import Hays from "../../../images/school-partners/Hays-CISD-District-Logo-Small-Shadow.png";
-import Taylor from "../../../images/school-partners/TaylorISD-Logo.png";
-
 import "./community.css";
 
 const Partners = () => {
@@ -40,7 +9,7 @@ const Partners = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${PartnersBanner})`,
+            backgroundImage: "url(/images/partners/OurPartnersBanner.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
@@ -71,7 +40,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${SetonLogo})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/corporate-partners/Acension-Seton.jpg)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat  bg-contain"
             />
           </a>
@@ -81,7 +53,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${BOA})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/corporate-partners/Bank-of-America-New-logo.jpg)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -91,7 +66,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Bumble})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/corporate-partners/bumblelogo.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -101,7 +79,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${HEB})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/corporate-partners/HEB_TOC_Star_Logo.jpg)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -111,7 +92,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${ABC})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/corporate-partners/LOGO-ABC-BANK-5.jpg)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -121,7 +105,9 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${RBFCU})` }}
+              style={{
+                backgroundImage: "url(/images/corporate-partners/rbfcu.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -131,7 +117,9 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${TDS})` }}
+              style={{
+                backgroundImage: "url(/images/corporate-partners/TDSLogo.png)",
+              }}
               className="w-full h-40 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -141,7 +129,9 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${TCB})` }}
+              style={{
+                backgroundImage: "url(/images/corporate-partners/TCB.jpg)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -151,7 +141,9 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${WF})` }}
+              style={{
+                backgroundImage: "url(/images/corporate-partners/WF.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -166,7 +158,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${HispanicImpact})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/foundations/hispanic-impact-fund.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -176,7 +171,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Unidos})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/foundations/unidosusaffiliate.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -186,7 +184,9 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Women})` }}
+              style={{
+                backgroundImage: "url(/images/foundations/womens-fund.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -196,7 +196,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Annie})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/foundations/annie-e-casey-foundation-logo.jpg)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -206,7 +209,7 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${JLA})` }}
+              style={{ backgroundImage: "url(/images/foundations/JLA.jpg)" }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -216,7 +219,7 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${UnitedWay})` }}
+              style={{ backgroundImage: "url(/images/foundations/uwtc.png)" }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -226,7 +229,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Applied})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/foundations/appliedmaterials.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -236,7 +242,7 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${NTCF})` }}
+              style={{ backgroundImage: "url(/images/foundations/NTCF.png)" }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -246,7 +252,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Tides})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/foundations/Tides-Foundation.jpg)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -256,7 +265,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Long})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/foundations/TheLongFoundation.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -266,7 +278,9 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Rohleder})` }}
+              style={{
+                backgroundImage: "url(/images/foundations/Rohleder.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -276,7 +290,9 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${GAHCC})` }}
+              style={{
+                backgroundImage: "url(/images/foundations/GAHCC-logo.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -286,7 +302,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Shield})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/foundations/Shield-Ayres-Logo-.jpg)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -296,7 +315,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Powell})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/foundations/powellfoundation.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -306,7 +328,9 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Lola})` }}
+              style={{
+                backgroundImage: "url(/images/foundations/Lola-wright.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -316,7 +340,9 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Ryan})` }}
+              style={{
+                backgroundImage: "url(/images/foundations/Ryan-Foundation.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -331,7 +357,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${AISD})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/school-partners/AISD_Logo_Color_horizontal.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -341,7 +370,9 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${FWISD})` }}
+              style={{
+                backgroundImage: "url(/images/school-partners/FWISD.jpg)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -351,7 +382,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Hays})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/school-partners/Hays-CISD-District-Logo-Small-Shadow.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
@@ -361,7 +395,10 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <div
-              style={{ backgroundImage: `url(${Taylor})` }}
+              style={{
+                backgroundImage:
+                  "url(/images/school-partners/TaylorISD-Logo.png)",
+              }}
               className="w-full h-48 bg-center bg-no-repeat bg-contain"
             />
           </a>
