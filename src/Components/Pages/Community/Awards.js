@@ -30,7 +30,7 @@ const Awards = () => {
       </div>
 
       {/* Awards Content */}
-      <div className="flex flex-col gap-6 p-8 bg-blue-500 text-gray-500 lg:flex-row">
+      <div className="flex flex-col gap-6 p-8  lg:p-12 bg-blue-500 text-gray-500 lg:flex-row">
         <div className="flex flex-col justify-center lg:items-end lg:w-1/2">
           <img
             className="w-full h-auto"
@@ -88,7 +88,7 @@ const Awards = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col-reverse gap-6 p-8 bg-gray-500 lg:flex-row">
+      <div className="flex flex-col-reverse gap-6 p-8 lg:p-12 bg-gray-500 lg:flex-row">
         <div className="flex flex-col justify-center text-center lg:text-left lg:pr-8 lg:w-1/2">
           <h3 className="text-xl font-semibold pb-2">
             Excelencia in Education
