@@ -44,7 +44,7 @@ const Purpose = () => {
 
       {/* Our Future */}
       <div className="flex lg:pl-10 flex-col-reverse gap-6 p-6 bg-gray-500 lg:flex-row">
-        <div className="flex flex-col justify-center pl-14 lg:w-1/2">
+        <div className="flex flex-col justify-center lg:w-1/2">
           <h3 className="text-3xl font-semibold pb-3">Our History</h3>
           <p className="font-light pb-6">
             The drive behind the founding of Con Mi MADRE stemmed from a
