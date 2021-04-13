@@ -18,7 +18,7 @@ const Landing = () => {
           style={{
             backgroundImage: "url(/images/landing/Donate-Banner2.JPG)",
           }}
-          className="w-full h-full relative bg-cover bg-top bg-no-repeat"
+          className="w-full h-full relative bg-fixed bg-cover bg-top bg-no-repeat"
         >
           <span
             className="w-full h-full absolute opacity-50 bg-black bg-cover"
