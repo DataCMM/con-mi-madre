@@ -1,9 +1,5 @@
 import React from "react";
 
-import AwardsBanner from "../../../images/awards/AwardsBanner.jpg";
-import Awards1 from "../../../images/awards/Awards-1.jpg";
-import Awards2 from "../../../images/awards/Awards-2.jpg";
-
 import Logo from "../../../images/stacked/text-only.png";
 
 const Awards = () => {
@@ -12,7 +8,7 @@ const Awards = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: `url(${AwardsBanner})`,
+            backgroundImage: "url(/images/awards/AwardsBanner.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
@@ -53,7 +49,7 @@ const Awards = () => {
       </div>
       <div
         style={{
-          backgroundImage: `url(${Awards1})`,
+          backgroundImage: "url(/images/awards/Awards-1.jpg)",
         }}
         className="intern-img bg-cover bg-center bg-no-repeat"
       ></div>
@@ -111,7 +107,7 @@ const Awards = () => {
       </div>
       <div
         style={{
-          backgroundImage: `url(${Awards2})`,
+          backgroundImage: "url(/images/awards/Awards-2.jpg)",
         }}
         className="intern-img bg-cover bg-top bg-no-repeat"
       ></div>
