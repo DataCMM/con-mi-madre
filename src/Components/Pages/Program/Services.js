@@ -69,8 +69,8 @@ const Services = () => {
         </div>
         <div className="flex flex-col bg-gray-500 items-center text-center">
           <img
-            src="/images/additional-services/ConMiHermano.png"
-            alt="Mentoring a participant"
+            src="/images/additional-services/ConHermano.jpg"
+            alt="Con Mi Hermano logo"
             className="h-auto w-4/5 bg-cover bg-center bg-white"
           />
           <div className="pr-6 pb-6 pl-6">
