@@ -1,6 +1,7 @@
 import React from "react";
 
 import Logo from "../../../images/stacked/text-only.png";
+import "./program.css";
 
 const Program = () => {
   return (
@@ -41,7 +42,7 @@ const Program = () => {
           <div className="pr-6 pb-6 pl-6">
             <h3 className="font-semibold text-2xl">Preparedness Program</h3>
             <h3 className="font-semibold text-2xl pb-3">(6th-10th Grades)</h3>
-            <p className="font-light text-lg">
+            <p className="font-light text-lg pl-6 pr-6">
               We start early to prepare students for academic, social, and
               emotional success. We host various group meetings throughout the
               school year where our coordinators deliver our social-emotional
@@ -62,7 +63,7 @@ const Program = () => {
             <h3 className="font-semibold text-2xl pb-3">
               (11th & 12th Grades)
             </h3>
-            <p className="font-light text-lg">
+            <p className="font-light text-lg pl-6 pr-6">
               Participants continue to receive social-emotional group meetings
               while also commencing the college application process with close
               guidance from a Con Mi Madre coordinator. The participation
@@ -74,7 +75,7 @@ const Program = () => {
         <div className="flex flex-col bg-gray-500  items-center text-center">
           <img
             src="/images/programming-structure/ProgramStructure3.jpg"
-            alt="Mentoring participants"
+            alt="Mother and daughter at graduation"
             className="h-auto w-4/5 bg-cover bg-center p-6"
           />
           <div className="pr-6 pb-6 pl-6">
@@ -82,7 +83,7 @@ const Program = () => {
             <h3 className="font-semibold text-2xl pb-3">
               (Undergraduate Students)
             </h3>
-            <p className="font-light text-lg">
+            <p className="font-light text-lg pl-6 pr-6">
               We continue to help Latinas reach their goal of a postsecondary
               degree by offering students supportive guidance and academic
               advising services. The Success Program offers multiple workshops

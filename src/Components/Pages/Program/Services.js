@@ -1,6 +1,7 @@
 import React from "react";
 
 import Logo from "../../../images/stacked/text-only.png";
+import { Carousel } from "react-responsive-carousel";
 
 const Services = () => {
   return (
@@ -29,77 +30,141 @@ const Services = () => {
           </div>
         </div>
       </div>
-
-      {/* Academies Blue Content */}
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h3 className="text-3xl font-semibold pb-6">College Academies</h3>
-        <p className="pb-6">
-          Con Mi MADRE high school juniors and seniors and their parents are
-          invited to participate in College Academies. These are a series of
-          workshops that aim to prepare participants to be college ready,
-          financially knowledgeable and aware, and emotionally intelligent and
-          accountable for their futures. These workshops dive in deeper on the
-          topics discussed during regular campus sessions.
-        </p>
-        <div
-          style={{
-            backgroundImage: "url(/images/additional-services/services-1.jpg)",
-          }}
-          className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
-        ></div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-gray-500 p-6">
+        <div className="flex flex-col bg-gray-500 items-center text-center">
+          <img
+            src="/images/additional-services/services-5.JPG"
+            alt="Daughter with mother and her wish to see her daughters in college"
+            className="h-auto w-4/5 bg-cover bg-center p-6"
+          />
+          <div className="pr-6 pb-6 pl-6">
+            <h3 className="font-semibold text-2xl pb-3">Parent Program</h3>
+            <p className="font-light text-lg pl-6 pr-6">
+              Guardians who currently have their child in a Con Mi MADRE program
+              are encouraged to participate in the Parent Program. Workshops and
+              networking opportunities are hosted throughout the year for
+              parents to acquire skills and become empowered to become involved
+              in their child’s educational journey.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col bg-gray-500 items-center text-center">
+          <img
+            src="/images/additional-services/Services2.JPG"
+            alt="Mentoring a participant"
+            className="h-auto w-4/5 bg-cover bg-center p-6"
+          />
+          <div className="pr-6 pb-6 pl-6">
+            <h3 className="font-semibold text-2xl pb-3">
+              Individual Coaching/Mentoring
+            </h3>
+            <p className="font-light text-lg pl-6 pr-6">
+              Con Mi MADRE offers Individual Coaching or Mentoring to any
+              participant who is seeking help with mental health or academics.
+              Individuals meet with a Con Mi MADRE coordinator during multiple
+              sessions to work through their situation and set goals and action
+              steps.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col bg-gray-500 items-center text-center">
+          <img
+            src="/images/additional-services/Services2.JPG"
+            alt="Mentoring a participant"
+            className="h-auto w-4/5 bg-cover bg-center p-6"
+          />
+          <div className="pr-6 pb-6 pl-6">
+            <h3 className="font-semibold text-2xl pb-3">Con Mi Hermano</h3>
+            <p className="font-light text-lg pl-6 pr-6">
+              Con Mi Hermano was created to provide mentoring services to the
+              brothers of our Con Mi MADRE families. The program’s purpose is to
+              empower and educate young men to realize their full potential by
+              enhancing confidence, knowledge, and positive behavior through
+              mentorship and meaningful interaction.
+            </p>
+          </div>
+        </div>
       </div>
-
-      {/*  Coaching */}
-      <div className="text-center p-6 pb-10 pt-10 bg-gray-500">
-        <h3 className="text-3xl text-black font-semibold pb-6">
-          Individual Coaching/Mentoring
-        </h3>
-        <p className="text-2xl pb-6">
-          Con Mi MADRE offers Individual Coaching or Mentoring to any
-          participant who is seeking help with mental health or academics.
-          Individuals meet with a Con Mi MADRE social worker during multiple
-          sessions to set goals and to ….
-        </p>
-        <div
-          style={{
-            backgroundImage: "url(/images/additional-services/services-2.jpg)",
-          }}
-          className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
-        ></div>
-      </div>
-
-      {/* Con Mi Hermana */}
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h3 className="text-3xl font-semibold pb-6">Con Mi Hermana</h3>
-        <div
-          style={{
-            backgroundImage: "url(/images/additional-services/services-3.jpg)",
-          }}
-          className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
-        ></div>
-      </div>
-      {/* Scholarship Opportunities */}
-      <div className="text-center p-6 pb-10 pt-10 bg-gray-500">
-        <h3 className="text-3xl text-black font-semibold pb-6">
-          Scholarship Opportunities
-        </h3>
-        <div
-          style={{
-            backgroundImage: "url(/images/additional-services/services-4.jpg)",
-          }}
-          className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
-        ></div>
-      </div>
-
-      {/* Testimonials */}
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
-        <h3 className="text-3xl font-semibold pb-6">Testimonials</h3>
-        <div
-          style={{
-            backgroundImage: "url(/images/additional-services/services-5.JPG)",
-          }}
-          className="intern-img mb-6 bg-cover bg-top bg-no-repeat"
-        ></div>
+      <div className="testimonial-carousel bg-blue-500 text-gray-500 pt-6 pr-6 pl-6 pb-3">
+        <h1 className="font-semibold text-4xl text-center">Testimonials</h1>
+        <Carousel
+          autoPlay
+          autoFocus
+          infiniteLoop
+          showIndicators={false}
+          showArrows={false}
+          showStatus={false}
+          stopOnHover
+          transitionTime={500}
+          interval={6500}
+          style={{ backgroundColor: "rgb(70,164,186)" }}
+        >
+          <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
+            <q className="font-light text-lg lg:text-2xl">
+              Con Mi MADRE has instilled within my mother and me a wonderful
+              sense of pride in our Latina culture. From campus visits and
+              Leadership Summits to workshops and scholarships, I not only
+              witnessed and received the powerful love and support of my Latinx
+              community, I learned the best ways to give back to it one day.
+            </q>
+            <br />
+            <br />
+            <cite className="font-light text-md lg:text-lg">
+              Con Mi MADRE Student, Class of 2020
+            </cite>
+          </div>
+          <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
+            <q className="font-light text-lg lg:text-2xl">
+              Being involved in Con Mi MADRE has helped my mother and I in so
+              many ways throughout the years. It created a closer bond between
+              us and helped me in my educational journey. It helped us be a part
+              of a beautiful community where women are empowering and supporting
+              each other.
+            </q>
+            <br />
+            <br />
+            <cite className="font-light text-md lg:text-lg">
+              Con Mi MADRE Student, Class of 2020
+            </cite>
+          </div>
+          <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
+            <q className="font-light text-lg lg:text-2xl">
+              Con Mi MADRE offers Hispanic and Latina women the confidence and
+              motivation and encouragement of 'si se puede': yes you can.
+            </q>
+            <br />
+            <br />
+            <cite className="font-light text-md lg:text-lg">
+              Con Mi MADRE Student
+            </cite>
+          </div>
+          <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
+            <q className="font-light text-lg lg:text-2xl">
+              I was in the program many years ago with my mother and now I get
+              to do it with my own daughter, these are memories I will cherish
+              forever.
+            </q>
+            <br />
+            <br />
+            <cite className="font-light text-md lg:text-lg">
+              Con Mi MADRE Parent
+            </cite>
+          </div>
+          <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
+            <q className="font-light text-lg lg:text-2xl">
+              As a mother, I really like that Con Mi MADRE works with our
+              daughters to ensure that they have a positive academic performance
+              and that they are already working with them for their future from
+              an early age. [Con Mi MADRE] instills the importance of attending
+              a University and achieving a career to be successful in life
+            </q>
+            <br />
+            <br />
+            <cite className="font-light text-md lg:text-lg">
+              Con Mi MADRE Parent
+            </cite>
+          </div>
+        </Carousel>
       </div>
     </>
   );
