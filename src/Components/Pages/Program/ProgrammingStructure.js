@@ -29,17 +29,16 @@ const Program = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-blue-500 text-gray-500 p-6">
-        <div className="flex flex-col bg-blue-500 text-gray-500 items-center text-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-gray-500 p-6">
+        <div className="flex flex-col bg-gray-500 items-center text-center">
           <img
             src="/images/programming-structure/ProgramStructure1.jpg"
             alt="Mentoring participants"
             className="h-auto w-4/5 bg-cover bg-center p-6"
           />
           <div className="pr-6 pb-6 pl-6">
-            <h3 className="font-semibold text-2xl pb-3">
-              Preparedness Program (6th-10th Grades)
-            </h3>
+            <h3 className="font-semibold text-2xl">Preparedness Program</h3>
+            <h3 className="font-semibold text-2xl pb-3">(6th-10th Grades)</h3>
             <p className="font-light text-lg">
               We start early to prepare students for academic, social, and
               emotional success. We host various group meetings throughout the
@@ -50,15 +49,16 @@ const Program = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col bg-blue-500 text-gray-500  items-center text-center">
+        <div className="flex flex-col bg-gray-500  items-center text-center">
           <img
             src="/images/programming-structure/ProgramStructure2.jpg"
             alt="Mentoring participants"
             className="h-auto w-4/5 bg-cover bg-center p-6"
           />
           <div className="pr-6 pb-6 pl-6">
+            <h3 className="font-semibold text-2xl">Participation Program</h3>
             <h3 className="font-semibold text-2xl pb-3">
-              Participation Program (11th & 12th Grades)
+              (11th & 12th Grades)
             </h3>
             <p className="font-light text-lg">
               Participants continue to receive social-emotional group meetings
@@ -69,15 +69,16 @@ const Program = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col bg-blue-500 text-gray-500  items-center text-center">
+        <div className="flex flex-col bg-gray-500  items-center text-center">
           <img
             src="/images/programming-structure/ProgramStructure3.jpg"
             alt="Mentoring participants"
             className="h-auto w-4/5 bg-cover bg-center p-6"
           />
           <div className="pr-6 pb-6 pl-6">
+            <h3 className="font-semibold text-2xl">Success Program</h3>
             <h3 className="font-semibold text-2xl pb-3">
-              Success Program (Undergraduate Students)
+              (Undergraduate Students)
             </h3>
             <p className="font-light text-lg">
               We continue to help Latinas reach their goal of a postsecondary
@@ -90,12 +91,12 @@ const Program = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-500 p-6">
-        <h3 className="font-semibold text-2xl">
+      <div className="bg-blue-500 text-gray-500 p-6">
+        <h3 className="font-semibold text-2xl xl:text-3xl pb-3 text-center">
           Programming Opportunities for Students and their Mothers Throughout
           the Year
         </h3>
-        <ul>
+        <ul className="list-disc font-light text-xl pl-12 md:pl-24 pb-6">
           <li>Balanced Living Conference</li>
           <li>College Visits</li>
           <li>College Fair</li>
