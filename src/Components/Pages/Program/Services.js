@@ -30,15 +30,15 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-gray-500 p-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-gray-500 p-6 pt-12">
         <div className="flex flex-col bg-gray-500 items-center text-center">
           <img
             src="/images/additional-services/services-5.JPG"
             alt="Daughter with mother and her wish to see her daughters in college"
-            className="h-auto w-4/5 bg-cover bg-center p-6"
+            className="h-auto w-4/5 bg-cover bg-center"
           />
           <div className="pr-6 pb-6 pl-6">
-            <h3 className="font-semibold text-2xl pb-3">Parent Program</h3>
+            <h3 className="font-semibold text-2xl pb-3 pt-6">Parent Program</h3>
             <p className="font-light text-lg pl-6 pr-6">
               Guardians who currently have their child in a Con Mi MADRE program
               are encouraged to participate in the Parent Program. Workshops and
@@ -52,10 +52,10 @@ const Services = () => {
           <img
             src="/images/additional-services/Services2.JPG"
             alt="Mentoring a participant"
-            className="h-auto w-4/5 bg-cover bg-center p-6"
+            className="h-auto w-4/5 bg-cover bg-center"
           />
           <div className="pr-6 pb-6 pl-6">
-            <h3 className="font-semibold text-2xl pb-3">
+            <h3 className="font-semibold text-2xl pb-3 pt-6">
               Individual Coaching/Mentoring
             </h3>
             <p className="font-light text-lg pl-6 pr-6">
@@ -69,12 +69,12 @@ const Services = () => {
         </div>
         <div className="flex flex-col bg-gray-500 items-center text-center">
           <img
-            src="/images/additional-services/Services2.JPG"
+            src="/images/additional-services/ConMiHermano.png"
             alt="Mentoring a participant"
-            className="h-auto w-4/5 bg-cover bg-center p-6"
+            className="h-auto w-4/5 bg-cover bg-center bg-white"
           />
           <div className="pr-6 pb-6 pl-6">
-            <h3 className="font-semibold text-2xl pb-3">Con Mi Hermano</h3>
+            <h3 className="font-semibold text-2xl pt-6 pb-3">Con Mi Hermano</h3>
             <p className="font-light text-lg pl-6 pr-6">
               Con Mi Hermano was created to provide mentoring services to the
               brothers of our Con Mi MADRE families. The program’s purpose is to

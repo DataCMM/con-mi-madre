@@ -29,18 +29,20 @@ const Program = () => {
           </div>
         </div>
       </div>
-      <h1 className="text-center font-semibold text-4xl lg:text-5xl pt-12 lg:pt-6 pl-6 pr-6 bg-gray-500">
+      <h1 className="text-center font-semibold text-4xl lg:text-5xl pt-12 pl-6 pr-6 bg-gray-500">
         Program Journey
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-gray-500 p-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-gray-500 p-6 pt-12">
         <div className="flex flex-col bg-gray-500 items-center text-center">
           <img
             src="/images/programming-structure/ProgramStructure1.jpg"
             alt="Mentoring participants"
-            className="h-auto w-4/5 bg-cover bg-center p-6"
+            className="h-auto w-4/5 bg-cover bg-center"
           />
           <div className="pr-6 pb-6 pl-6">
-            <h3 className="font-semibold text-2xl">Preparedness Program</h3>
+            <h3 className="font-semibold text-2xl pt-6">
+              Preparedness Program
+            </h3>
             <h3 className="font-semibold text-2xl pb-3">(6th-10th Grades)</h3>
             <p className="font-light text-lg pl-6 pr-6">
               We start early to prepare students for academic, social, and
@@ -56,10 +58,12 @@ const Program = () => {
           <img
             src="/images/programming-structure/ProgramStructure2.jpg"
             alt="Mentoring participants"
-            className="h-auto w-4/5 bg-cover bg-center p-6"
+            className="h-auto w-4/5 bg-cover bg-center"
           />
           <div className="pr-6 pb-6 pl-6">
-            <h3 className="font-semibold text-2xl">Participation Program</h3>
+            <h3 className="font-semibold text-2xl pt-6">
+              Participation Program
+            </h3>
             <h3 className="font-semibold text-2xl pb-3">
               (11th & 12th Grades)
             </h3>
@@ -76,10 +80,10 @@ const Program = () => {
           <img
             src="/images/programming-structure/ProgramStructure3.jpg"
             alt="Mother and daughter at graduation"
-            className="h-auto w-4/5 bg-cover bg-center p-6"
+            className="h-auto w-4/5 bg-cover bg-center"
           />
           <div className="pr-6 pb-6 pl-6">
-            <h3 className="font-semibold text-2xl">Success Program</h3>
+            <h3 className="font-semibold text-2xl pt-6">Success Program</h3>
             <h3 className="font-semibold text-2xl pb-3">
               (Undergraduate Students)
             </h3>
