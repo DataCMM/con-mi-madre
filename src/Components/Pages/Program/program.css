@@ -1,3 +1,8 @@
 .carousel .slide {
   background: rgb(70, 164, 186);
 }
+/* @media (max-height: 650px) {
+  .carousel .slide {
+    margin-bottom: -8rem;
+  }
+} */

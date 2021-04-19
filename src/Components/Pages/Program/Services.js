@@ -91,13 +91,13 @@ const Services = () => {
           autoPlay
           autoFocus
           infiniteLoop
+          dynamicHeight
           showIndicators={false}
           showArrows={false}
           showStatus={false}
           stopOnHover
           transitionTime={500}
-          interval={6500}
-          style={{ backgroundColor: "rgb(70,164,186)" }}
+          interval={6000}
         >
           <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
             <q className="font-light text-lg lg:text-2xl">
