@@ -96,6 +96,7 @@ const Services = () => {
           showStatus={false}
           stopOnHover
           transitionTime={500}
+          interval={6500}
           style={{ backgroundColor: "rgb(70,164,186)" }}
         >
           <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
