@@ -22,13 +22,15 @@ const Program = () => {
             <div className="sticky pt-4 pl-4 h-14 w-1/2">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
-
-            <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-gray-500 text-4xl font-medium tracking-widest text-center">
+            <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
               <div id="title1">Program Structure</div>
             </div>
           </div>
         </div>
       </div>
+      <h1 className="text-center font-semibold text-4xl lg:text-5xl pt-12 lg:pt-6 pl-6 pr-6 bg-gray-500">
+        Program Journey
+      </h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-gray-500 p-6">
         <div className="flex flex-col bg-gray-500 items-center text-center">
           <img

@@ -23,7 +23,7 @@ const Partners = () => {
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
 
-            <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-gray-500 text-4xl font-medium tracking-widest text-center">
+            <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
               <div id="title1">Our Partners</div>
             </div>
           </div>
