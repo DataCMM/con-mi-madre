@@ -130,7 +130,7 @@ const Services = () => {
           <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
             <q className="font-light text-lg lg:text-2xl">
               Con Mi MADRE offers Hispanic and Latina women the confidence and
-              motivation and encouragement of 'si se puede: yes you can.'
+              motivation and encouragement of 'si se puede': yes you can.
             </q>
             <br />
             <br />
