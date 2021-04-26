@@ -9,7 +9,7 @@ import Purpose from "./Components/Pages/About/Purpose";
 import Awards from "./Components/Pages/Community/Awards";
 import Events from "./Components/Pages/Community/Events";
 import Partners from "./Components/Pages/Community/Partners";
-import ProgrammingEvents from "./Components/Pages/Participants/ProgrammingEvents";
+import ProgramEvents from "./Components/Pages/Participants/ProgrammingEvents";
 import Resources from "./Components/Pages/Participants/Resources";
 import Involved from "./Components/Pages/Program/Involved";
 import ProgrammingStructure from "./Components/Pages/Program/ProgrammingStructure";
@@ -27,7 +27,7 @@ const Router = () => {
       <Route path="/Awards" component={Awards} />
       <Route path="/Events" component={Events} />
       <Route path="/Partners" component={Partners} />
-      <Route path="/ProgrammingEvents" component={ProgrammingEvents} />
+      <Route path="/ProgramEvents" component={ProgramEvents} />
       <Route path="/Resources" component={Resources} />
       <Route path="/Involved" component={Involved} />
       <Route path="/ProgramStructure" component={ProgrammingStructure} />
