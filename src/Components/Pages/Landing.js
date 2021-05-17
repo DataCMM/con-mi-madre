@@ -138,7 +138,7 @@ const Landing = () => {
           <h3 className="text-4xl font-semibold">OUR PILLARS</h3>
           <h4 className="text-2xl font-semibold">Parental Engagement</h4>
           <p className="font-light">
-            At CMM we believe that creating opportunities for parents to engage
+            At CMM, we believe that creating opportunities for parents to engage
             in their child's education will lead to post-secondary success.
           </p>
           <h4 className="text-2xl font-semibold">Educate Holistically</h4>

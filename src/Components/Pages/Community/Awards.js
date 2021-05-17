@@ -39,6 +39,8 @@ const Awards = () => {
           />
         </div>
         <div className="flex flex-col justify-center text-center lg:text-left lg:pl-8 lg:w-1/2">
+          <h3 className="text-xl font-semibold pb-2">Neighborhood Builders</h3>
+          <p className="text-md font-light pb-6">Bank of America, 2020</p>
           <h3 className="text-xl font-semibold">Austin Young Chamber</h3>
           <h3 className="text-lg font-bold pb-2">FAVE Local Non-Profit</h3>
           <p className="text-md font-light pb-6">
@@ -78,18 +80,18 @@ const Awards = () => {
           <p className="text-md font-light pb-6">
             Winner and Audience Choice Award, 2016
           </p>
-          <h3 className="text-xl font-semibold">
-            White House Initiative on Education
-          </h3>
-          <h3 className="text-lg font-bold pb-2">Commitment to Action Award</h3>
-          <p className="text-md font-light pb-6 lg:pb-0">
-            Excellence for Hispanics Highlighting Con Mi MADRE's work to build
-            and sustain the bilingual education pipeline, February 2016​
-          </p>
         </div>
       </div>
       <div className="flex flex-col-reverse gap-6 p-8 lg:p-12 bg-gray-500 lg:flex-row">
         <div className="flex flex-col justify-center text-center lg:text-left lg:pr-8 lg:w-1/2">
+          <h3 className="text-xl font-semibold">
+            White House Initiative on Education
+          </h3>
+          <h3 className="text-lg font-bold pb-2">Commitment to Action Award</h3>
+          <p className="text-md font-light pb-6">
+            Excellence for Hispanics Highlighting Con Mi MADRE's work to build
+            and sustain the bilingual education pipeline, February 2016​
+          </p>
           <h3 className="text-xl font-semibold pb-2">
             Excelencia in Education
           </h3>
@@ -151,6 +153,18 @@ const Awards = () => {
             alt="Con Mi Madre on Univision"
           />
         </div>
+      </div>
+      <div className="bg-green-500 p-6 text-center">
+        <h3 className="text-3xl font-semibold pb-2">Media Mentions</h3>
+        <a
+          href="https://belatina.com/con-mi-madre-latina-mothers-daughters/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="text-2xl font-light hover:text-pink-500 pb-2">
+            BE Latina, September 2020
+          </h2>
+        </a>
       </div>
     </>
   );

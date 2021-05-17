@@ -39,7 +39,7 @@ const ProgrammingEvents = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 p-12 text-center">
           <div>
-            <h1 className="text-2xl font-semibold pb-2">Fall/Otoño 2021</h1>
+            <h1 className="text-2xl font-semibold pb-2">Fall/Otoño </h1>
             <ul className="list-none">
               <li className="p-1 font-light">
                 Con Mi MADRE Orientation – September
@@ -54,9 +54,7 @@ const ProgrammingEvents = () => {
             </ul>
           </div>
           <div>
-            <h1 className="text-2xl font-semibold pb-2">
-              Spring/Primavera 2022
-            </h1>
+            <h1 className="text-2xl font-semibold pb-2">Spring/Primavera</h1>
             <ul className="list-none">
               <li className="p-1 font-light">Spring College Visit – January</li>
               <li className="p-1 font-light">

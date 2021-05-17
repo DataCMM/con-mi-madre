@@ -70,7 +70,7 @@ const Program = () => {
             <p className="font-light text-lg pl-6 pr-6">
               Participants continue to receive social-emotional group meetings
               while also commencing the college application process with close
-              guidance from a Con Mi Madre coordinator. The participation
+              guidance from a Con Mi MADRE coordinator. The participation
               program aims to make students college ready and emotionally
               intelligent.
             </p>

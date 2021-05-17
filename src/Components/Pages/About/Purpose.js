@@ -82,7 +82,7 @@ const Purpose = () => {
       <div className="bg-blue-500 space-y-3 text-lg text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-6">
         <h2 className="text-3xl pb-3 font-semibold">Con Mi Madre Reports</h2>
         <div>
-          <h3 className="text-xl font-semibold">Annual Reports :</h3>
+          <h3 className="text-xl font-semibold">Annual Reports:</h3>
           <a
             className="hover:text-pink-500 font-light"
             href="/AnnualReport2019to2020.pdf"
@@ -93,7 +93,7 @@ const Purpose = () => {
           </a>
         </div>
         <div>
-          <h3 className="text-xl font-semibold">Statements :</h3>
+          <h3 className="text-xl font-semibold">Statements:</h3>
           <a
             className="hover:text-pink-500 font-light"
             href="/ResponseToCovid.pdf"

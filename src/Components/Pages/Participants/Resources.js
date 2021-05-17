@@ -45,7 +45,7 @@ const Resources = () => {
         <br />
         <br />
         <cite className="text-xl lg:text-2xl">
-          Dr. Johanna Moya Fabregás, Executive Director{" "}
+          Dr. Johanna Moya Fábregas, Executive Director{" "}
         </cite>
       </div>
       <div className="bg-gray-500 p-12">

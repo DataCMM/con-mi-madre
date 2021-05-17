@@ -269,6 +269,35 @@ const OurTeam = () => {
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
+              backgroundImage: "url(/images/team/VictoriaHeadshot.jpg)",
+            }}
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
+            <div>
+              <h2 className="text-sm">Central Texas Program Coordinator</h2>
+              <h3 className="font-semibold text-md">Victoria Gonzales</h3>
+              <p className="pb-3 font-light text-sm">she/her/ella</p>
+            </div>
+            <div className="flex flex-col flex-wrap">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
+                Victoria's Bio
+              </a>
+              <a
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
+                href="mailto:victoria@conmimadre.org?subject=Mail%20from%20website"
+              >
+                Email Victoria
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
               backgroundImage: "url(/images/team/IlianaHeadshot.jpg)",
             }}
             className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
@@ -588,7 +617,18 @@ const OurTeam = () => {
           <h2>Veronica Rosas Fernandez - Chair</h2>
           <h3 className="pb-2">Elephant Labs, Inc., CFO, COO </h3>
         </div>
-
+        <div>
+          <h2>Denise Hernandez – Chair-Elect</h2>
+          <h3 className="pb-2">
+            Travis County District Attorney’s Office, Assistant District
+            Attorney
+          </h3>
+          <h3 className="pb-2">Hustle for the Cause, LLC, Co-Founder</h3>
+        </div>
+        <div>
+          <h2>Rosie Mendoza – Immediate Past Chair & Treasurer </h2>
+          <h3 className="pb-2">Fiesta Tortillas, Chief Finance Officer </h3>
+        </div>
         <div>
           <h2>Lillian Gray - Secretary </h2>
           <h3 className="pb-2">
@@ -599,7 +639,7 @@ const OurTeam = () => {
 
         <div>
           <h2>Justin Rosas – Member at Large </h2>
-          <h3 className="pb-3">Orrick, Herrington, & Sutcliffe, Attorney</h3>
+          <h3 className="pb-3">Karczewski|Bradshaw|Spalding Firm, Attorney </h3>
         </div>
 
         <div className="pb-3">
@@ -614,15 +654,28 @@ const OurTeam = () => {
           <div>
             <h2>Anais Cruz </h2>
             <h3 className="pb-2">
-              Central Health, Program Manager-Communications & Community
-              Engagement
+              Central Health, Communications & Community Engagement
             </h3>
+          </div>
+          <div>
+            <h2>Damian Pantoja</h2>
+            <h3 className="pb-2">
+              Del Valle ISD, Del Valle Board of Trustees - SMD 2
+            </h3>
+          </div>
+          <div>
+            <h2>Jackie Padgett</h2>
+            <h3 className="pb-2">Silicon Labs, Global Marketing Director</h3>
           </div>
           <div>
             <h2>Leticia Mendoza </h2>
             <h3>
               Texas Disposal Systems, Director of Marketing and Communications
             </h3>
+          </div>
+          <div>
+            <h2>Paul Tearson </h2>
+            <h3>Tearson Financial Group, Financial Advisor</h3>
           </div>
         </div>
       </div>
