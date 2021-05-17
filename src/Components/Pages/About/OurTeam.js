@@ -429,9 +429,6 @@ const OurTeam = () => {
             </p>
           </div>
         </div>
-
-        <div className="space-y-3">
-          <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
             <h3 className="font-bold text-2xl">Valerie Villareal</h3>
             <p className="p-3 pb-6 font-light">
               Valerie is Con Mi MADRE’s Administrative Assistant providing
