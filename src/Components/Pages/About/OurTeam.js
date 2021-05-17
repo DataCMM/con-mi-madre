@@ -588,7 +588,18 @@ const OurTeam = () => {
           <h2>Veronica Rosas Fernandez - Chair</h2>
           <h3 className="pb-2">Elephant Labs, Inc., CFO, COO </h3>
         </div>
-
+        <div>
+          <h2>Denise Hernandez – Chair-Elect</h2>
+          <h3 className="pb-2">
+            Travis County District Attorney’s Office, Assistant District
+            Attorney
+          </h3>
+          <h3 className="pb-2">Hustle for the Cause, LLC, Co-Founder</h3>
+        </div>
+        <div>
+          <h2>Rosie Mendoza – Immediate Past Chair & Treasurer </h2>
+          <h3 className="pb-2">Fiesta Tortillas, Chief Finance Officer </h3>
+        </div>
         <div>
           <h2>Lillian Gray - Secretary </h2>
           <h3 className="pb-2">
@@ -599,7 +610,7 @@ const OurTeam = () => {
 
         <div>
           <h2>Justin Rosas – Member at Large </h2>
-          <h3 className="pb-3">Orrick, Herrington, & Sutcliffe, Attorney</h3>
+          <h3 className="pb-3">Karczewski|Bradshaw|Spalding Firm, Attorney </h3>
         </div>
 
         <div className="pb-3">
@@ -614,15 +625,28 @@ const OurTeam = () => {
           <div>
             <h2>Anais Cruz </h2>
             <h3 className="pb-2">
-              Central Health, Program Manager-Communications & Community
-              Engagement
+              Central Health, Communications & Community Engagement
             </h3>
+          </div>
+          <div>
+            <h2>Damian Pantoja</h2>
+            <h3 className="pb-2">
+              Del Valle ISD, Del Valle Board of Trustees - SMD 2
+            </h3>
+          </div>
+          <div>
+            <h2>Jackie Padgett</h2>
+            <h3 className="pb-2">Silicon Labs, Global Marketing Director</h3>
           </div>
           <div>
             <h2>Leticia Mendoza </h2>
             <h3>
               Texas Disposal Systems, Director of Marketing and Communications
             </h3>
+          </div>
+          <div>
+            <h2>Paul Tearson </h2>
+            <h3>Tearson Financial Group, Financial Advisor</h3>
           </div>
         </div>
       </div>
