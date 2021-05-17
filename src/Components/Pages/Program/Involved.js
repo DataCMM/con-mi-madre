@@ -76,7 +76,7 @@ const Involved = () => {
             Guest Speakers
           </h3>
           <p className="text-xl font-light pb-6">
-            Speak at one of our conferences, Corazon gala, or other fundraising
+            Speak at one of our conferences, Corazón gala, or other fundraising
             events.
           </p>
           <h3 className="text-2xl font-semibold pb-3">Conferences & Events</h3>
@@ -88,13 +88,6 @@ const Involved = () => {
           <p className="text-xl font-light pb-6">
             Team up with our leadership team to help fundraise for our
             programming.
-          </p>
-          <h3 className="text-2xl font-semibold pb-3">
-            Mentor for Con Mi Hermana
-          </h3>
-          <p className="text-xl font-light pb-6">
-            Mentor a 11th or 12th grade student, and help them reach their
-            goals.
           </p>
         </div>
         <div className="flex flex-col justify-center lg:items-end lg:w-1/2">

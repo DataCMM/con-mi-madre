@@ -269,6 +269,35 @@ const OurTeam = () => {
         <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
           <div
             style={{
+              backgroundImage: "url(/images/team/VictoriaHeadshot.jpg)",
+            }}
+            className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
+            <div>
+              <h2 className="text-sm">Central Texas Program Coordinator</h2>
+              <h3 className="font-semibold text-md">Victoria Gonzales</h3>
+              <p className="pb-3 font-light text-sm">she/her/ella</p>
+            </div>
+            <div className="flex flex-col flex-wrap">
+              <a
+                className="font-semibold text-sm hover:text-pink-500"
+                href="https://conmimadre.netlify.app/OurTeam"
+              >
+                Victoria's Bio
+              </a>
+              <a
+                className="pt-2 font-semibold text-sm hover:text-pink-500"
+                href="mailto:victoria@conmimadre.org?subject=Mail%20from%20website"
+              >
+                Email Victoria
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="rounded flex flex-col items-center md:flex-row  md:justify-start p-4 md:items-start bg-gray-500">
+          <div
+            style={{
               backgroundImage: "url(/images/team/IlianaHeadshot.jpg)",
             }}
             className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"

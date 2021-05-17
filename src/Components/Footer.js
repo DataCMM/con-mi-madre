@@ -10,7 +10,7 @@ const Footer = () => {
         <img src={Logo} alt="Con Mi Madre Logo" />
       </div>
       <div className="text-blue-500 text-lg pb-4 md:flex md:flex-col md:w-2/3 md:items-center md:justify-center">
-        <h3>4175 Freidrich Ln #200, Austin, TX 78744</h3>
+        <h3>1825 Fortview Rd, Suite 114 | Austin TX, 78704</h3>
         <a
           href="tel:+1-512-467-4483"
           className="hover:text-pink-500 hover:underline"
