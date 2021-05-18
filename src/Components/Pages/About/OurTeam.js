@@ -8,7 +8,8 @@ const OurTeam = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: "url(/images/team/OurTeamBanner.jpg)",
+            backgroundImage:
+              "url(/images/program-events/ProgramEventsBanner.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
