@@ -1,8 +1,9 @@
-import React from "react";
-
+import React, { useState } from "react";
+import Popup from "reactjs-popup";
 import Logo from "../../../images/stacked/text-only.png";
 
 const OurTeam = () => {
+  // const [popUp, setPopUp] = useState(false);
   return (
     <div>
       <div className="banner-image w-full h-full">
@@ -47,12 +48,9 @@ const OurTeam = () => {
               <p className="pb-4 text-sm font-light">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
-              >
+              <button className="font-semibold text-sm bg-gray-500 hover:text-pink-500">
                 Johanna's Bio
-              </a>
+              </button>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:johanna@conmimadre.org?subject=Mail%20from%20website"
