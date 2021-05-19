@@ -1,14 +1,22 @@
-import React from "react";
-
+import React, { useState } from "react";
+import Popup from "reactjs-popup";
 import Logo from "../../../images/stacked/text-only.png";
+import "../pages.css";
 
 const OurTeam = () => {
+  const [open, setOpen] = useState(false);
+  const closeModal = () => setOpen(false);
+  const [marcieOpen, setMarcieOpen] = useState(false);
+  const closeMarcieModal = () => setMarcieOpen(false);
+  const [heavenOpen, setHeavenOpen] = useState(false);
+  const closeHeavenModal = () => setHeavenOpen(false);
   return (
     <div>
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: "url(/images/team/OurTeamBanner.jpg)",
+            backgroundImage:
+              "url(/images/program-events/ProgramEventsBanner.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
@@ -46,12 +54,44 @@ const OurTeam = () => {
               <p className="pb-4 text-sm font-light">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
+              <button
+                type="button"
+                className="button lg:text-left font-semibold text-sm bg-gray-500 hover:text-pink-500"
+                onClick={() => setOpen((open) => !open)}
               >
                 Johanna's Bio
-              </a>
+              </button>
+              <Popup
+                className="m-auto"
+                position="center center"
+                open={open}
+                closeOnDocumentClick
+                onClose={closeModal}
+              >
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3">
+                  <span className="close" onClick={closeModal}>
+                    &times;
+                  </span>
+                  Dr. Johanna Moya Fábregas received her undergraduate degree in
+                  Latin American Studies and French from the University of
+                  Wisconsin-Madison and her doctorate in History at Indiana
+                  University-Bloomington. The role of Executive Director at Con
+                  Mi MADRE brings together Dr. Moya Fábregas’ background and
+                  personal mission of empowering Latina students and their
+                  families by breaking down barriers to success. Her
+                  professional experience is anchored in higher education,
+                  leadership, and mentoring both in the United States and Puerto
+                  Rico, where she fulfilled the roles of professor, editor,
+                  project manager, and consultant. Education is one of the
+                  biggest values in her family, who moved to the United States
+                  in search of opportunities for their daughter. An immigrant
+                  herself, Johanna came to the United States at the age of 14
+                  after living in four Latin American countries, and her parents
+                  became the biggest advocates for her advanced education. She
+                  personally identifies with Con Mi MADRE's mission because she
+                  has lived it.
+                </div>
+              </Popup>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:johanna@conmimadre.org?subject=Mail%20from%20website"
@@ -75,12 +115,35 @@ const OurTeam = () => {
               <p className="pb-4 text-sm font-light">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
+              <button
+                type="button"
+                className="button lg:text-left font-semibold text-sm bg-gray-500 hover:text-pink-500"
+                onClick={() => setMarcieOpen((open) => !open)}
               >
                 Marcie's Bio
-              </a>
+              </button>
+              <Popup
+                className="m-auto"
+                position="center center"
+                open={marcieOpen}
+                closeOnDocumentClick
+                onClose={closeMarcieModal}
+              >
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3">
+                  <span className="close" onClick={closeMarcieModal}>
+                    &times;
+                  </span>
+                  Marcie is a senior member of Con Mi MADRE’s leadership team
+                  and is responsible for all accounting systems, processes, and
+                  financial reporting. Additionally, she helps manage HR
+                  functions and office operations. Marcie has a BBA in
+                  Accounting from Texas State University and finds great joy in
+                  being a part of an organization run by women whose mission
+                  involves empowering and supporting other women. In her spare
+                  time, Marcie enjoys spending time with her family,
+                  cooking/baking, and working on craft projects.
+                </div>
+              </Popup>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:marcie@conmimadre.org?subject=Mail%20from%20website"
@@ -106,12 +169,34 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
+              <button
+                type="button"
+                className="button lg:text-left font-semibold text-sm bg-gray-500 hover:text-pink-500"
+                onClick={() => setHeavenOpen((open) => !open)}
               >
                 Heaven's Bio
-              </a>
+              </button>
+              <Popup
+                className="m-auto"
+                position="center center"
+                open={heavenOpen}
+                closeOnDocumentClick
+                onClose={closeHeavenModal}
+              >
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3">
+                  <span className="close" onClick={closeHeavenModal}>
+                    &times;
+                  </span>
+                  Heaven leads the fundraising and communication efforts for Con
+                  Mi MADRE. She has an M.S. in Human Resource Management and a
+                  B.S. in Business Administration from Texas State University.
+                  Heaven believes education is the key to lifting marginalized
+                  communities and loves working for an organization that
+                  actively empowers women and girls through education. In her
+                  free time, Heaven enjoys painting, playing board games,
+                  volunteering, and spending time with her family.
+                </div>
+              </Popup>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:heaven@conmimadre.org?subject=Mail%20from%20website"

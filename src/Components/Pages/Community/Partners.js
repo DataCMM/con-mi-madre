@@ -9,9 +9,9 @@ const Partners = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: "url(/images/partners/OurPartnersBanner.jpg)",
+            backgroundImage: "url(/images/careers/Careers-Banner.jpg)",
           }}
-          className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
+          className="w-full h-full relative  bg-cover bg-center bg-no-repeat lg:bg-top"
         >
           <span
             className="w-full h-full md:h-full absolute opacity-50 bg-black bg-cover"
