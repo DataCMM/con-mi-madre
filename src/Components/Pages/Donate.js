@@ -13,55 +13,31 @@ const Donate = () => {
   console.log(amount);
 
   return (
-    <div className="h-screen w-full">
-      <div
-        style={{
-          backgroundImage: "url(/images/landing/Donate-Banner2.JPG)",
-        }}
-        className="w-full h-full relative bg-fixed bg-cover bg-center bg-no-repeat"
-      >
-        <span
-          className="w-full h-full absolute opacity-50 bg-black bg-cover"
-          id="overlay"
-        />
-        {/* Banner contents  */}
-        <div className="flex flex-col space-y-12">
-          <div className="sticky flex flex-none p-10 self-center h-36 w-auto  sm:h-1/4 sm:w-1/4 sm:self-start md:h-1/6 md:w-1/6 md:pl-10 bg-opacity-0">
-            <img
-              src={Logo}
-              alt="Con mi madre logo"
-              className="z-10 w-full h-full"
-            />
+    <>
+      <div className="banner-image w-full h-full">
+        <div
+          style={{
+            backgroundImage: "url(/images/program-events/OurPartnersBanner.jpg)",
+          }}
+          className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
+        >
+          <span
+            className="w-full h-full md:h-full absolute opacity-50 bg-black bg-cover"
+            id="career-overlay"
+          />
+
+          <div className="banner-text sticky flex flex-col justify-between">
+            <div className="sticky pt-4 pl-4 pr-4 h-14 w-1/2">
+              <img src={Logo} alt="Con mi madre logo" className="z-10" />
+            </div>
+
+            <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
+              <div id="title1">Donate</div>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col space-y-5 text-lg">
-          <button
-            onClick={() => setAmount(25)}
-            className="h-16 w-1/3 rounded z-10 bg-blue-500 text-gray-500 m-auto"
-          >
-            $25
-          </button>
-          <button className="h-16 w-1/3 rounded z-10 bg-blue-500 text-gray-500 m-auto">
-            $50
-          </button>
-          <button className="h-16 w-1/3 rounded z-10 bg-blue-500 text-gray-500 m-auto">
-            $100
-          </button>
-          <button className="h-16 w-1/3 rounded z-10 bg-blue-500 text-gray-500 m-auto">
-            $250
-          </button>
-          <button className="h-16 w-1/3 rounded z-10 bg-blue-500 text-gray-500 m-auto">
-            $500
-          </button>
-          <button className="h-16 w-1/3 rounded z-10 bg-blue-500 text-gray-500 m-auto">
-            $1000
-          </button>
-          <button className="h-16 w-1/2 rounded z-10 bg-blue-500 text-gray-500 m-auto">
-            Other Amount
-          </button>
-        </div>
       </div>
-    </div>
+    </>
   );
 };
 export default Donate;
