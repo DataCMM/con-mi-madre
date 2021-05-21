@@ -62,13 +62,13 @@ const OurTeam = () => {
                 Johanna's Bio
               </button>
               <Popup
-                className="m-auto"
-                position="center center"
+                className="my-popup-content"
+                // position="center center"
                 open={open}
                 closeOnDocumentClick
                 onClose={closeModal}
               >
-                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3">
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500">
                   <span className="close" onClick={closeModal}>
                     &times;
                   </span>
@@ -123,13 +123,14 @@ const OurTeam = () => {
                 Marcie's Bio
               </button>
               <Popup
-                className="m-auto"
+              // className="my-popup-content"
+                className="m-auto align-center"
                 position="center center"
                 open={marcieOpen}
                 closeOnDocumentClick
                 onClose={closeMarcieModal}
               >
-                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3">
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3 lg:m-auto">
                   <span className="close" onClick={closeMarcieModal}>
                     &times;
                   </span>
@@ -183,7 +184,7 @@ const OurTeam = () => {
                 closeOnDocumentClick
                 onClose={closeHeavenModal}
               >
-                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3">
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3 lg:m-auto">
                   <span className="close" onClick={closeHeavenModal}>
                     &times;
                   </span>
