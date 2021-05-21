@@ -49,7 +49,7 @@ const OurTeam = () => {
             <div>
               <h2 className="text-sm pt-4 md:pt-0">Executive Director</h2>
               <h3 className="font-semibold text-md">
-                Johanna Moya Fabregas, Ph.D.
+                Johanna Moya Fábregas, Ph.D.
               </h3>
               <p className="pb-4 text-sm font-light">she/her/ella</p>
             </div>

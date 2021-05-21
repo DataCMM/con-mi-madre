@@ -4,6 +4,11 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+    },
+    {
       name: 'name',
       title: 'Name',
       type: 'string',
@@ -16,6 +21,16 @@ export default {
         source: 'name',
         maxLength: 96,
       },
+    },
+    {
+      name: 'pronoun',
+      title: 'Pronoun',
+      type: 'string'
+    },
+    {
+      name: 'email',
+      title: 'email',
+      type: 'string'
     },
     {
       name: 'image',

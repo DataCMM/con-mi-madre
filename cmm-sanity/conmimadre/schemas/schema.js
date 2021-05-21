@@ -5,10 +5,16 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // We import object and document schemas
+import additionalBoardMembers from './additionalBoardMembers'
 import blockContent from './blockContent'
-import category from './category'
-import post from './post'
-import author from './author'
+import events from './events'
+import centralTexasStaff from './centralTexasStaff'
+import corporate_sponsors from './corporateSponsors'
+import executiveCommittee from './executiveCommittee'
+import fortWorthStaff from './fortWorthStaff'
+import foundations from './foundations'
+import schoolPartners from './schoolPartners'
+import adminStaff from './adminStaff'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -19,9 +25,15 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
-    post,
-    author,
-    category,
+    additionalBoardMembers,
+    adminStaff,
+    centralTexasStaff,
+    corporate_sponsors,
+    events,
+    executiveCommittee,
+    fortWorthStaff,
+    foundations,
+    schoolPartners,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
