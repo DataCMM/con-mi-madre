@@ -10,6 +10,22 @@ const OurTeam = () => {
   const closeMarcieModal = () => setMarcieOpen(false);
   const [heavenOpen, setHeavenOpen] = useState(false);
   const closeHeavenModal = () => setHeavenOpen(false);
+  const [aliciaOpen, setAliciaOpen] = useState(false);
+  const closeAliciaModal = () => setAliciaOpen(false);
+  const [valerieOpen, setValerieOpen] = useState(false);
+  const closeValerieModal = () => setValerieOpen(false);
+  const [vanessaOpen, setVanessaOpen] = useState(false);
+  const closeVanessaModal = () => setVanessaOpen(false);
+  const [isabellaOpen, setIsabellaOpen] = useState(false);
+  const closeIsabellaModal = () => setIsabellaOpen(false);
+  const [jesseniaOpen, setJesseniaOpen] = useState(false);
+  const closeJesseniaModal = () => setJesseniaOpen(false);
+  const [victoriaOpen, setVictoriaOpen] = useState(false);
+  const closeVictoriaModal = () => setVictoriaOpen(false);
+  const [ilianaOpen, setIlianaOpen] = useState(false);
+  const closeIlianaModal = () => setIlianaOpen(false);
+  const [carlaOpen, setCarlaOpen] = useState(false);
+  const closeCarlaModal = () => setCarlaOpen(false);
   return (
     <div>
       <div className="banner-image w-full h-full">
@@ -49,7 +65,7 @@ const OurTeam = () => {
             <div>
               <h2 className="text-sm pt-4 md:pt-0">Executive Director</h2>
               <h3 className="font-semibold text-md">
-                Johanna Moya Fabregas, Ph.D.
+                Johanna Moya Fábregas, Ph.D.
               </h3>
               <p className="pb-4 text-sm font-light">she/her/ella</p>
             </div>
@@ -123,7 +139,7 @@ const OurTeam = () => {
                 Marcie's Bio
               </button>
               <Popup
-              // className="my-popup-content"
+                // className="my-popup-content"
                 className="m-auto align-center"
                 position="center center"
                 open={marcieOpen}
@@ -221,12 +237,35 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
+              <button
+                type="button"
+                className="button lg:text-left font-semibold text-sm bg-gray-500 hover:text-pink-500"
+                onClick={() => setAliciaOpen((open) => !open)}
               >
                 Alicia's Bio
-              </a>
+              </button>
+              <Popup
+                // className="my-popup-content"
+                className="m-auto align-center"
+                position="center center"
+                open={aliciaOpen}
+                closeOnDocumentClick
+                onClose={closeAliciaModal}
+              >
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3 lg:m-auto">
+                  <span className="close" onClick={closeAliciaModal}>
+                    &times;
+                  </span>
+                  Alicia oversees data management protocols and leads the
+                  analysis and reporting for Con Mi MADRE. She has a BA in
+                  Art/Education from St. Edward’s University and a M.Ed. in
+                  Educational Policy and Planning from the University of Texas
+                  at Austin. Alicia is passionate about using data and research
+                  to push for more equal opportunities for marginalized students
+                  so they can achieve success. During her free time, Alicia
+                  likes to work out, travel, and make art.
+                </div>
+              </Popup>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:alicia@conmimadre.org?subject=Mail%20from%20website"
@@ -250,12 +289,39 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
+              <button
+                type="button"
+                className="button lg:text-left font-semibold text-sm bg-gray-500 hover:text-pink-500"
+                onClick={() => setValerieOpen((open) => !open)}
               >
                 Valerie's Bio
-              </a>
+              </button>
+              <Popup
+                // className="my-popup-content"
+                className="m-auto align-center"
+                position="center center"
+                open={valerieOpen}
+                closeOnDocumentClick
+                onClose={closeValerieModal}
+              >
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3 lg:m-auto">
+                  <span className="close" onClick={closeValerieModal}>
+                    &times;
+                  </span>
+                  Valerie is Con Mi MADRE’s Administrative Assistant providing
+                  administrative support to ensure efficient operation of the
+                  office. She supports managers and employees through a variety
+                  of tasks related to organization and communication.
+                  Responsible for confidential and time sensitive material and
+                  is familiar with a variety of the field's concepts, practices
+                  and procedures. Valerie has a Real Estate Brokerage Licensing
+                  Associate of Applied Science Degree. Valerie loves being part
+                  of a mission that empowers and uplifts young women to follow
+                  their dreams and achieve their goals and feels blessed to be a
+                  part of such tremendous growth and success. Valerie enjoys
+                  spending time with her family, cooking and listening to music.
+                </div>
+              </Popup>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:valerie@conmimadre.org?subject=Mail%20from%20website"
@@ -279,12 +345,41 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
+              <button
+                type="button"
+                className="button lg:text-left font-semibold text-sm bg-gray-500 hover:text-pink-500"
+                onClick={() => setVanessaOpen((open) => !open)}
               >
                 Vanessa's Bio
-              </a>
+              </button>
+              <Popup
+                // className="my-popup-content"
+                className="m-auto align-center"
+                position="center center"
+                open={vanessaOpen}
+                closeOnDocumentClick
+                onClose={closeVanessaModal}
+              >
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3 lg:m-auto">
+                  <span className="close" onClick={closeVanessaModal}>
+                    &times;
+                  </span>
+                  Vanessa Gonzales is the Program Director for the Central Texas
+                  Chapter at Con Mi Madre. She is responsible for coordinating,
+                  planning, and overseeing all activities related to providing
+                  services to female identifying adolescents and their mothers
+                  enrolled in the program. Additionally, she provides
+                  supervision for the programming team and interns. She received
+                  her undergrad in psychology at Texas A&M University-Corpus
+                  Christi and Master’s in social work at Texas State University.
+                  Vanessa is a proud first-generation college graduate with a
+                  strong passion for social justice. She sees the value in
+                  empowering others through education, breaking
+                  intergenerational cycles, and challenging social norms.
+                  Vanessa enjoys spending time with family, exercising, reading,
+                  podcasting, and exploring new places with her loved ones.
+                </div>
+              </Popup>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:vanessa@conmimadre.org?subject=Mail%20from%20website"
@@ -308,12 +403,37 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
+              <button
+                type="button"
+                className="button lg:text-left font-semibold text-sm bg-gray-500 hover:text-pink-500"
+                onClick={() => setIsabellaOpen((open) => !open)}
               >
                 Isabella's Bio
-              </a>
+              </button>
+              <Popup
+                // className="my-popup-content"
+                className="m-auto align-center"
+                position="center center"
+                open={isabellaOpen}
+                closeOnDocumentClick
+                onClose={closeIsabellaModal}
+              >
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3 lg:m-auto">
+                  <span className="close" onClick={closeIsabellaModal}>
+                    &times;
+                  </span>
+                  Isabella received her undergrad in psychology and Master’s in
+                  Social Work at Tarleton State University. She currently has
+                  her LMSW and is working towards her LCSW. She is the Program
+                  Director for the Fort Worth Chapter at Con Mi MADRE. Education
+                  has always been a passion for Isabella. She wants to work with
+                  mothers and daughters who are on the same path she was on
+                  years ago. Her hope is to make the experience exciting and
+                  easier while fostering the mother daughter relationship. In
+                  her free time, Isabella enjoys spending time with her family,
+                  going on hikes with her fur baby and DIY projects.
+                </div>
+              </Popup>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:isabella@conmimadre.org?subject=Mail%20from%20website"
@@ -337,12 +457,40 @@ const OurTeam = () => {
               <p className="pb-3 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
+              <button
+                type="button"
+                className="button lg:text-left font-semibold text-sm bg-gray-500 hover:text-pink-500"
+                onClick={() => setJesseniaOpen((open) => !open)}
               >
                 Jessenia's Bio
-              </a>
+              </button>
+              <Popup
+                className="m-auto"
+                position="center center"
+                open={jesseniaOpen}
+                closeOnDocumentClick
+                onClose={closeJesseniaModal}
+              >
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3 lg:m-auto">
+                  <span className="close" onClick={closeJesseniaModal}>
+                    &times;
+                  </span>
+                  Jessenia Balderas is a Program Coordinator for the Central
+                  Texas chapter. She facilitates group sessions with students at
+                  selected Con Mi MADRE schools, while working and engaging
+                  families participating in the program. Jessenia was the first
+                  in her immediate family to attend college and graduated with
+                  her Bachelors Degree in Social Work from the Steve Hicks
+                  School of Social Work at The University of Texas at Austin.
+                  During her undergraduate years Jessenia was a work-study
+                  student at Con Mi MADRE. The organization not only solidified
+                  Jessenia’s choice to become a Social Worker, but also helped
+                  foster her passion for education and empowering the next
+                  generation of Latina leaders. In her free time, Jessenia
+                  enjoys going on walks with her pup, working out with her team,
+                  and spending quality time with friends and family.
+                </div>
+              </Popup>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:jessenia@conmimadre.org?subject=Mail%20from%20website"
@@ -366,12 +514,40 @@ const OurTeam = () => {
               <p className="pb-3 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
+              <button
+                type="button"
+                className="button lg:text-left font-semibold text-sm bg-gray-500 hover:text-pink-500"
+                onClick={() => setVictoriaOpen((open) => !open)}
               >
                 Victoria's Bio
-              </a>
+              </button>
+              <Popup
+                className="m-auto"
+                position="center center"
+                open={victoriaOpen}
+                closeOnDocumentClick
+                onClose={closeVictoriaModal}
+              >
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3 lg:m-auto">
+                  <span className="close" onClick={closeVictoriaModal}>
+                    &times;
+                  </span>
+                  Victoria Gonzales is a Program Coordinator for the Central
+                  Texas Chapter at Con Mi MADRE. She engages with students and
+                  their families, facilitates groups with students from Con Mi
+                  MADRE schools, and assists with the College Academies and
+                  Success programs. She received her Bachelor’s in Social Work
+                  from Texas State University in 2020. During this time, she
+                  interned with Con Mi MADRE, and this is where her passion for
+                  working with her community grew. Victoria is the first to
+                  graduate from college in her family and strives to help other
+                  young Latinas do the same. Throughout her journey, she has
+                  realized the importance of empowering others and herself
+                  through cultural pride and continued education. In her free
+                  time, she enjoys spending time with family, getting outdoors,
+                  reading, and listening to podcasts.
+                </div>
+              </Popup>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:victoria@conmimadre.org?subject=Mail%20from%20website"
@@ -395,12 +571,37 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
+              <button
+                type="button"
+                className="button lg:text-left font-semibold text-sm bg-gray-500 hover:text-pink-500"
+                onClick={() => setIlianaOpen((open) => !open)}
               >
                 Iliana's Bio
-              </a>
+              </button>
+              <Popup
+                className="m-auto"
+                position="center center"
+                open={ilianaOpen}
+                closeOnDocumentClick
+                onClose={closeIlianaModal}
+              >
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3 lg:m-auto">
+                  <span className="close" onClick={closeIlianaModal}>
+                    &times;
+                  </span>
+                  Iliana is a Program Coordinator in the Fort Worth Chapter of
+                  Con Mi MADRE. She leads groups, engages not only with students
+                  but also their families and staff at all 4 Con Mi MADRE
+                  Schools in FWISD. She has had the opportunity to engage more
+                  in the community while working for Con Mi MADRE. She has a
+                  bachelor's in social work from Tarleton State University. Her
+                  passion began with wanting to advocate for those individuals
+                  who do not have a voice, and need someone to step up for them,
+                  especially in the Latino/Hispanic community. Iliana enjoys
+                  exploring new restaurants and food, taking pictures, going on
+                  road trips and spending time with family.
+                </div>
+              </Popup>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:iliana@conmimadre.org?subject=Mail%20from%20website"
@@ -424,12 +625,37 @@ const OurTeam = () => {
               <p className="pb-4 font-light text-sm">she/her/ella</p>
             </div>
             <div className="flex flex-col flex-wrap">
-              <a
-                className="font-semibold text-sm hover:text-pink-500"
-                href="https://conmimadre.netlify.app/OurTeam"
+              <button
+                type="button"
+                className="button lg:text-left font-semibold text-sm bg-gray-500 hover:text-pink-500"
+                onClick={() => setCarlaOpen((open) => !open)}
               >
                 Carla's Bio
-              </a>
+              </button>
+              <Popup
+                // className="my-popup-content"
+                className="m-auto align-center"
+                position="center center"
+                open={carlaOpen}
+                closeOnDocumentClick
+                onClose={closeCarlaModal}
+              >
+                <div className="rounded font-light font-0.5rem lg:font-0.75rem p-6 lg:m-6 bg-blue-500 text-gray-500 lg:w-1/3 lg:m-auto">
+                  <span className="close" onClick={closeCarlaModal}>
+                    &times;
+                  </span>
+                  Carla is a Program Coordinator for the Fort Worth Con Mi MADRE
+                  Chapter. Some of her duties include leading group sessions
+                  with students at selected Con Mi MADRE FWISD Schools, while
+                  working and engaging families participating in the program.
+                  Carla is a first-generation student born and raised in Mexico
+                  and obtained her master's degree in Social Work from Tarleton
+                  State University. She enjoys working for an organization that
+                  empowers young girls through education. During her free time
+                  Carla enjoys cooking, spending time with friends and family,
+                  playing with her birds and trying out new makeup trends.
+                </div>
+              </Popup>
               <a
                 className="pt-2 font-semibold text-sm hover:text-pink-500"
                 href="mailto:carla@conmimadre.org?subject=Mail%20from%20website"
@@ -440,120 +666,7 @@ const OurTeam = () => {
           </div>
         </div>
       </div>
-      {/* <div>
-        <div>
-          <div className="space-y-3">
-            <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
-            <h3 className="font-bold text-2xl">Johanna</h3>
-              <p className="p-3 pb-6 font-light">
-                Dr. Johanna Moya Fábregas received her undergraduate degree in
-                Latin American Studies and French from the University of
-                Wisconsin-Madison and her doctorate in History at Indiana
-                University-Bloomington. The role of Executive Director at Con Mi
-                MADRE brings together Dr. Moya Fábregas’ background and personal
-                mission of empowering Latina students and their families by
-                breaking down barriers to success. Her professional experience
-                is anchored in higher education, leadership, and mentoring both
-                in the United States and Puerto Rico, where she fulfilled the
-                roles of professor, editor, project manager, and consultant.
-                Education is one of the biggest values in her family, who moved
-                to the United States in search of opportunities for their
-                daughter. An immigrant herself, Johanna came to the United
-                States at the age of 14 after living in four Latin American
-                countries, and her parents became the biggest advocates for her
-                advanced education. She personally identifies with Con Mi
-                MADRE's mission because she has lived it.
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div className="space-y-3">
-          <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
-            <h3 className="font-bold text-2xl">Marcie</h3>
-            <p className="pb-3">she/her/ella</p>
-            <p className="p-3 pb-6 font-light">
-              Marcie is a senior member of Con Mi MADRE’s leadership team and is
-              responsible for all accounting systems, processes, and financial
-              reporting. Additionally, she helps manage HR functions and office
-              operations. Marcie has a BBA in Accounting from Texas State
-              University and finds great joy in being a part of an organization
-              run by women whose mission involves empowering and supporting
-              other women. In her spare time, Marcie enjoys spending time with
-              her family, cooking/baking, and working on craft projects.
-            </p>
-          </div>
-        </div>
-
-        <div className="space-y-3">
-          <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
-            <h3 className="font-bold text-2xl">Heaven Guerrero Wilbanks</h3>
-            <p className="p-3 pb-6 font-light">
-              Heaven leads the fundraising and communication efforts for Con Mi
-              MADRE. She has an M.S. in Human Resource Management and a B.S. in
-              Business Administration from Texas State University. Heaven
-              believes education is the key to lifting marginalized communities
-              and loves working for an organization that actively empowers women
-              and girls through education. In her free time, Heaven enjoys
-              painting, playing board games, volunteering, and spending time
-              with her family.
-            </p>
-          </div>
-        </div>
-        <div className="space-y-3">
-          <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
-            <h3 className="font-bold text-2xl">Alicia Guerrero</h3>
-            <p className="p-3 pb-6 font-light">
-              Alicia oversees data management protocols and leads the analysis
-              and reporting for Con Mi MADRE. She has a BA in Art/Education from
-              St. Edward’s University and a M.Ed. in Educational Policy and
-              Planning from the University of Texas at Austin. Alicia is
-              passionate about using data and research to push for more equal
-              opportunities for marginalized students so they can achieve
-              success. During her free time, Alicia likes to work out, travel,
-              and make art.
-            </p>
-          </div>
-        </div>
-            <h3 className="font-bold text-2xl">Valerie Villareal</h3>
-            <p className="p-3 pb-6 font-light">
-              Valerie is Con Mi MADRE’s Administrative Assistant providing
-              administrative support to ensure efficient operation of the
-              office. She supports managers and employees through a variety of
-              tasks related to organization and communication. Responsible for
-              confidential and time sensitive material and is familiar with a
-              variety of the field's concepts, practices and procedures. Valerie
-              has a Real Estate Brokerage Licensing Associate of Applied Science
-              Degree. Valerie loves being part of a mission that empowers and
-              uplifts young women to follow their dreams and achieve their goals
-              and feels blessed to be a part of such tremendous growth and
-              success. Valerie enjoys spending time with her family, cooking and
-              listening to music.
-            </p>
-          </div>
-        </div>
-        <div className="space-y-3">
-     
-          <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
-            <h2 className="pt-3 font-semibold">
-              Central Texas Program Director
-            </h2>
-            <h3 className="font-bold text-2xl pb-3">Coming Soon</h3>
-            <p pb-3>Pronouns</p>
-            <p className="p-3 pb-6 font-light"></p>
-          </div>
-        </div> */}
-
-      {/* <div className="space-y-3">
-      ="flex m-auto w-48 h-48  bg-cover bg-center bg-no-repeat"
-            ></div>
-          <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">
-            <h2 className="pt-3 font-semibold">Fort Worth Program Director</h2>
-            <h3 className="font-bold text-2xl pb-3">Coming Soon</h3>
-            <p>Pronouns</p>
-            <p className="p-3 pb-6 font-light"></p>
-          </div>
-        </div> */}
       {/* 
         <div className="space-y-3">
           <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
@@ -613,28 +726,8 @@ const OurTeam = () => {
           <div className="pt-6 bg-gray-500 text-xl m-auto text-center p-3">
        
             <h2 className="pt-3 font-semibold">
-              Central Texas Program Coordinator
-            </h2>
-            <h3 className="font-bold text-2xl">Jessenia Balderas</h3>
-            <p className="pb-3">she/her/ella</p>
-            <p className="p-3 pb-6 font-light">
-              Jessenia Balderas is a Program Coordinator for the Central Texas
-              chapter. She facilitates group sessions with students at selected
-              Con Mi MADRE schools, while working and engaging families
-              participating in the program. Jessenia was the first in her
-              immediate family to attend college and graduated with her
-              Bachelors Degree in Social Work from the Steve Hicks School of
-              Social Work at The University of Texas at Austin. During her
-              undergraduate years Jessenia was a work-study student at Con Mi
-              MADRE. The organization not only solidified Jessenia’s choice to
-              become a Social Worker, but also helped foster her passion for
-              education and empowering the next generation of Latina leaders. In
-              her free time, Jessenia enjoys going on walks with her pup,
-              working out with her team, and spending quality time with friends
-              and family.
-            </p>
-          </div>
-        </div>
+             
+          
 
         <div className="space-y-3">
           <div className="pt-6 bg-blue-500 text-gray-500 text-xl m-auto text-center p-3">

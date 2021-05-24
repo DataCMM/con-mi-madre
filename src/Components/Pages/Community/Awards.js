@@ -124,7 +124,7 @@ const Awards = () => {
             Austin Independent School District
           </h3>
           <p className="text-md font-light pb-6">
-            Latino Excellence in Advocacy Award, 20119
+            Latino Excellence in Advocacy Award, 2011
           </p>
           <h3 className="text-xl font-semibold pb-2">
             Greater Austin Hispanic Chamber of Commerce
