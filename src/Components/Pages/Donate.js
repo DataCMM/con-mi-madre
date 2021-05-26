@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 // import { Link } from "react-router-dom";
 import Logo from "../../images/stacked/text-only.png";
+import "./pages.css"
 
 const Donate = () => {
   const [amount, setAmount] = useState(0);
@@ -17,7 +18,7 @@ const Donate = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: "url(/images/program-events/OurPartnersBanner.jpg)",
+            backgroundImage: "url(/images/landing/Donate-Banner2.JPG)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
@@ -37,6 +38,18 @@ const Donate = () => {
           </div>
         </div>
       </div>
+        <div className="flex flex-col pt-10 pb-10 gap-6 md:grid-cols-2 lg:grid-cols-3 bg-gray-500 md:p-12">
+          <article className="w-3/4 m-auto text-center p-5 h-32 bg-blue-500 text-gray-500"><h3 className="pb-2">$50</h3><p>To buy school uniforms for scholars that need them.</p></article>
+          <article className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$150</h3><p>To purchase school supplies for every scholar to prevent the need to share.</p></article>
+          <article className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$250</h3><p>For personal protective equipment and cleaning supplies to keep everyone in the building safe.</p></article>
+          <article className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$500</h3><p>To purchase Chromebooks so that each scholar has a digital device to prevent educational gaps while learning at home</p></article>
+          <article className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$1000</h3><p>For a Mi-Fi hotspot for a scholar to connect to hybrid classroom instruction.</p></article>
+        </div>
+        <div className="text-center p-5">
+          <label className="pb-2">Enter Custom Amount</label>
+          <input className="text-center shadow-inner p-5  " placeholder="$0.00"/>
+          <button className="bg-blue-500 text-gray-500 p-5">Submit Custom Amount</button>
+        </div>
     </>
   );
 };
