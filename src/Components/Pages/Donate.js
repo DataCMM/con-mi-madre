@@ -5,13 +5,14 @@ import Logo from "../../images/stacked/text-only.png";
 import "./pages.css"
 
 const Donate = () => {
-  const [amount, setAmount] = useState(0);
+  // const [amount, setAmount] = useState(0);
 
   // const donation = (e) => {
   //   setAmount(e.target.value);
   // };
 
-  console.log(amount);
+
+  // console.log(amount);
 
   return (
     <>
@@ -39,11 +40,11 @@ const Donate = () => {
         </div>
       </div>
         <div className="flex flex-col pt-10 pb-10 gap-6 md:grid-cols-2 lg:grid-cols-3 bg-gray-500 md:p-12">
-          <article className="w-3/4 m-auto text-center p-5 h-32 bg-blue-500 text-gray-500"><h3 className="pb-2">$50</h3><p>To buy school uniforms for scholars that need them.</p></article>
-          <article className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$150</h3><p>To purchase school supplies for every scholar to prevent the need to share.</p></article>
-          <article className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$250</h3><p>For personal protective equipment and cleaning supplies to keep everyone in the building safe.</p></article>
-          <article className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$500</h3><p>To purchase Chromebooks so that each scholar has a digital device to prevent educational gaps while learning at home</p></article>
-          <article className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$1000</h3><p>For a Mi-Fi hotspot for a scholar to connect to hybrid classroom instruction.</p></article>
+          <button className="w-3/4 m-auto text-center p-5 h-32 bg-blue-500 text-gray-500"><h3 className="pb-2">$50</h3><p>To buy school uniforms for scholars that need them.</p></button>
+          <button className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$150</h3><p>To purchase school supplies for every scholar to prevent the need to share.</p></button>
+          <button className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$250</h3><p>For personal protective equipment and cleaning supplies to keep everyone in the buibuttonafe.</p></button>
+          <button className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$500</h3><p>To purchase Chromebooks so that each scholar has a digital device to prevent educatbuttonaps while learning at home</p></button>
+          <button className="w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500"><h3 className="pb-2">$1000</h3><p>For a Mi-Fi hotspot for a scholar to connect to hybrid classroom instruction.</p></button>
         </div>
         <div className="text-center p-5">
           <label className="pb-2">Enter Custom Amount</label>
