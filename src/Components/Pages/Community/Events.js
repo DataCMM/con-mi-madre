@@ -30,16 +30,48 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Image Gallery */}
-      <div className="bg-blue-500 text-2xl text-gray-500 pt-6">
-        <h3 className="text-4xl font-semibold pb-6 text-center">
-          Corazón Awards
+      <div className="bg-blue-500 text-gray-500 pt-6">
+        <h3 className="text-4xl font-semibold text-center">
+          Annual Corazón Awards
         </h3>
-        <EventsGallery />
+        <p className="current-awards text-center text-2xl font-light pb-6">
+          <a
+            href="https://conmimadre.z2systems.com/np/clients/conmimadre/event.jsp?event=8"
+            className="hover:text-pink-500 font-semibold text-3xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click here
+          </a>
+          &nbsp;for more details and to register for this year’s Corazón Awards.
+        </p>
+      </div>
+      <div className="past-awards bg-gray-500 text-center p-6">
+        <h3 className="text-4xl font-semibold  pb-6">Past Corazón Awards</h3>
+        <EventsGallery className="text-2xl text-gray-500 pb-6" />
+        <h3 className="text-4xl font-semibold pb-6">Past Honorees</h3>
+        <div className="con-mi-madre-award">
+          <u className="text-3xl font-semibold pb-3 text-pink-500">
+            The Con Mi MADRE Award
+          </u>
+          <p className="text-2xl font-light pb-3">
+            An educated successful Latina; an example of what we would like to
+            see as a product of our program; someone who is living out our
+            mission.
+          </p>
+          <a
+            href=""
+            className="hover:text-pink-500 text-2xl font-semibold pb-6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i>Past Honorees</i>
+          </a>
+        </div>
       </div>
 
       {/* 2021 Upcoming Event */}
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10">
+      {/* <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10">
         <h3 className="text-4xl font-semibold pb-6">
           Con Mi MADRE Annual Corazón Awards - 2021
         </h3>
@@ -47,10 +79,10 @@ const Services = () => {
           Information coming soon! Please follow us on social media to be
           notified about this year’s event!
         </p>
-      </div>
+      </div> */}
 
       {/* Past Awards Honorees */}
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
+      {/* <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
         <h3 className="text-4xl font-semibold pb-6">
           Past Annual Corazón Honorees
         </h3>
@@ -59,9 +91,9 @@ const Services = () => {
           An educated successful Latina; an example of what we would like to see
           as a product of our program; someone who is living out our mission
         </p>
-      </div>
+      </div> */}
 
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
+      {/* <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
         <h3 className="text-3xl font-semibold pb-6">The Corazón Award</h3>
         <p className="font-light">
           A leader in the community who has made significant contributions to
@@ -69,8 +101,8 @@ const Services = () => {
           their heart" into the success of Latina youth and this was outside
           their job requirements
         </p>
-      </div>
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
+      </div> */}
+      {/* <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
         <h3 className="text-3xl font-semibold pb-6">The Mariposa Award</h3>
         <p className="font-light">
           Someone closely associated with Con Mi MADRE (e.g., alum, previous
@@ -117,8 +149,8 @@ const Services = () => {
         <p className="font-light">The Junior League of Austin</p>
         <p className="font-light">Trellis Foundation</p>
         <p className="font-light">University of Texas School of Social Work</p>
-      </div>
-
+      </div> */}
+      {/* 
       <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
         <h3 className="text-3xl font-semibold pb-3">2017</h3>
         <p className="font-light">Council Member Delia Garza</p>
@@ -138,9 +170,9 @@ const Services = () => {
         <p className="font-light">Maria Del Rosario Castro</p>
         <p className="font-light">Nikki Graham</p>
         <p className="font-light">The Junior League of Austin</p>
-      </div>
+      </div> */}
 
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
+      {/* <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
         <h3 className="text-3xl font-semibold pb-3">2014</h3>
         <p className="font-light">Rudy Colmenero</p>
         <p className="font-light">Nora Comstock</p>
@@ -152,32 +184,32 @@ const Services = () => {
         <p className="font-light">Edna Butts</p>
         <p className="font-light">Victor Saenz</p>
         <p className="font-light">RGK Foundation</p>
-      </div>
+      </div> */}
 
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
+      {/* <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
         <h3 className="text-3xl font-semibold pb-3">2012</h3>
         <p className="font-light">Gigi Edwards Bryant</p>
         <p className="font-light">Laura Duran Villa</p>
         <p className="font-light">Silvia Martinez</p>
         <p className="font-light">MariBen Ramsey</p>
-      </div>
-
+      </div> */}
+      {/* 
       <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
         <h3 className="text-3xl font-semibold pb-3">2011</h3>
         <p className="font-light">Jeanna Goka</p>
         <p className="font-light">Rosie Mendoza</p>
         <p className="font-light">Diana Riojas</p>
         <p className="font-light">UTSSW Dean Barbara White /Kathy Armenta</p>
-      </div>
+      </div> */}
 
-      <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
+      {/* <div className="bg-blue-500 text-2xl text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-10">
         <h3 className="text-3xl font-semibold pb-3">2010</h3>
         <p className="font-light">Cookie Gregory Ruiz</p>
         <p className="font-light">The Honorable Orlinda Naranjo</p>
         <p className="font-light">The Honorable Elizabeth Ames Jones</p>
         <p className="font-light">Dr. Tracy Eilers</p>
         <p className="font-light pb-10">Sonya Band</p>
-      </div>
+      </div> */}
     </div>
   );
 };
