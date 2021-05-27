@@ -46,7 +46,7 @@ const Services = () => {
           &nbsp;for more details and to register for this year’s Corazón Awards.
         </p>
       </div>
-      <div className="past-awards bg-gray-500 text-center p-6">
+      <div className="past-awards bg-gray-500 text-center p-6 pb-12">
         <h3 className="text-4xl font-semibold  pb-6">Past Corazón Awards</h3>
         <EventsGallery className="text-2xl text-gray-500 pb-6" />
         <h3 className="text-4xl font-semibold pb-6">Past Honorees</h3>
@@ -61,7 +61,46 @@ const Services = () => {
           </p>
           <a
             href=""
-            className="hover:text-pink-500 text-2xl font-semibold pb-6"
+            className="hover:text-pink-500 text-2xl font-semibold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i>Past Honorees</i>
+          </a>
+        </div>
+        <div className="corazon-award pt-6">
+          <u className="text-3xl font-semibold pb-3 text-blue-500">
+            The Corazón Award
+          </u>
+          <p className="text-2xl font-light pb-3">
+            A leader in the community who has made significant contributions to
+            the education and empowerment of Latinas; someone who has "poured
+            their heart" into the success of Latina youth and this was outside
+            their job requirements.
+          </p>
+          <a
+            href=""
+            className="hover:text-pink-500 text-2xl font-semibold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i>Past Honorees</i>
+          </a>
+        </div>
+        <div className="mariposa-award pt-6">
+          <u className="text-3xl font-semibold pb-3 text-purple-500">
+            The Mariposa Award
+          </u>
+          <p className="text-2xl font-light pb-3">
+            Someone closely associated with Con Mi MADRE (e.g., alum, previous
+            employee) who has made significant contributions in their field AND
+            has brought recognition to Con Mi MADRE through those contributions.
+            This is someone whose efforts have helped CMM "spread its wings and
+            fly."
+          </p>
+          <a
+            href=""
+            className="hover:text-pink-500 text-2xl font-semibold"
             target="_blank"
             rel="noopener noreferrer"
           >
