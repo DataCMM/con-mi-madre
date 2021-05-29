@@ -5,6 +5,7 @@ import Logo from "../../images/stacked/text-only.png";
 
 const Donate = () => {
   const [amount, setAmount] = useState(0);
+  console.log(setAmount(amount));
 
   // const donation = (e) => {
   //   setAmount(e.target.value);
@@ -17,7 +18,8 @@ const Donate = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage: "url(/images/program-events/OurPartnersBanner.jpg)",
+            backgroundImage:
+              "url(/images/program-events/OurPartnersBanner.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
