@@ -19,8 +19,7 @@ const Donate = () => {
       <div className="banner-image w-full h-full">
         <div
           style={{
-            backgroundImage:
-              "url(/images/program-events/OurPartnersBanner.jpg)",
+            backgroundImage: "url(/images/donate-banner.jpg)",
           }}
           className="w-full h-full md:h-full relative  bg-cover bg-top bg-no-repeat"
         >
