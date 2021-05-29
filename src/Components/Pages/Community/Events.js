@@ -31,7 +31,7 @@ const Services = () => {
       </div>
 
       <div className="bg-blue-500 text-gray-500 pt-6">
-        <h3 className="text-4xl font-semibold text-center">
+        <h3 className="event-header text-4xl font-semibold text-center">
           Annual Corazón Awards
         </h3>
         <p className="current-awards text-center text-2xl font-light pb-6">
