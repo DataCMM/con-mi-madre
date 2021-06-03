@@ -60,7 +60,7 @@ const Services = () => {
             mission.
           </p>
           <a
-            href="https://conmimadre.netlify.app/events"
+            href="/conMiMadrePast.pdf"
             className="hover:text-pink-500 text-2xl font-semibold"
             target="_blank"
             rel="noopener noreferrer"
@@ -79,7 +79,7 @@ const Services = () => {
             their job requirements.
           </p>
           <a
-            href="https://conmimadre.netlify.app/events"
+            href="/corazonPast.pdf"
             className="hover:text-pink-500 text-2xl font-semibold"
             target="_blank"
             rel="noopener noreferrer"
@@ -99,7 +99,7 @@ const Services = () => {
             fly."
           </p>
           <a
-            href="https://conmimadre.netlify.app/events"
+            href="/mariposaPast.pdf"
             className="hover:text-pink-500 text-2xl font-semibold"
             target="_blank"
             rel="noopener noreferrer"
