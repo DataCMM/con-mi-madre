@@ -10,8 +10,8 @@ node_modules
 
 # production
 /build
-
 .env
+client.js
 
 # misc
 .DS_Store
