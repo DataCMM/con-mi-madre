@@ -78,8 +78,8 @@ const OurTeam = () => {
                 Johanna's Bio
               </button>
               <Popup
-                className="my-popup-content"
-                // position="center center"
+                className="m-auto align-center"
+                position="center center"
                 open={open}
                 closeOnDocumentClick
                 onClose={closeModal}
