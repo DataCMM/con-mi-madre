@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import CMMLogo from "../../images/stacked/no-text-color-and-white.png";
+// import CMMLogo from "../../images/stacked/no-text-color-and-white.png";
 
 import { FcGraduationCap } from "react-icons/fc";
 import { FaUniversity } from "react-icons/fa";
@@ -28,7 +28,7 @@ const Landing = () => {
           <div className="sticky flex flex-col">
             <div className="flex flex-none pt-10 pb-24 pl-10 pr-10 h-36 w-auto xs:self-center md:h-1/4 md:w-1/4 md:self-start md:pl-10 bg-opacity-0">
               <img
-                src={CMMLogo}
+                src="/images/stacked/no-text-color-and-white.png"
                 alt="Con mi madre logo"
                 className="z-20 w-full h-full"
               />
