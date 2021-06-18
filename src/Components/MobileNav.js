@@ -1,149 +1,189 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-// import Dropdown from "../Components/Dropdown";
-
 import { FaChevronDown } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./Pages/pages.css";
 
 const MobileNav = () => {
   const [showNav, setShowNav] = useState(false);
+  const [showAboutItem, setShowAboutItem] = useState(true);
+  const [showProgramItem, setShowProgramItem] = useState(true);
+  const [showCommunityItem, setShowCommunityItem] = useState(true);
+  const [showParticipantItem, setShowParticipantItem] = useState(true);
+
+  const showAboutItemList = () => {
+    return setShowAboutItem(!showAboutItem);
+  };
+
+  const showProgramItemList = () => {
+    return setShowProgramItem(!showProgramItem);
+  };
+
+  const showCommunityItemList = () => {
+    return setShowCommunityItem(!showCommunityItem);
+  };
+
+  const showParticipantItemList = () => {
+    return setShowParticipantItem(!showParticipantItem);
+  };
 
   const dropdown = () => {
     return setShowNav(!showNav);
   };
 
+  const handleClick = () => {
+    return setShowNav(false);
+  };
+
   return (
     <div>
-      <GiHamburgerMenu onClick={dropdown} className="relative w-5 h-5" />
+      <GiHamburgerMenu onClick={dropdown} className="relative z-20 w-5 h-5" />
       {showNav && (
-        <div className="flex flex-col dropdown block absolute bg-gray-400 hover:text-pink-500 z-10">
-          <div className="inline-flex items-center">
-            <div className="cursor-pointer py-2 px-5 ">About Us</div>
-            <FaChevronDown className="pr-3 text-lg" />
-          </div>
-          <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                onClick={dropdown}
-                to="/Careers"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Careers
+        <div className="z-20 inline-block absolute">
+          <ul className="mobile-nav-list fixed bg-gray-200 rounded pr-2 mt-1 pt-4 pb-3">
+            <li style={{ textAlign: "left" }}>
+              <Link to="/" className="pl-2" onClick={handleClick}>
+                Home
               </Link>
             </li>
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                to="/Contact"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Contact
-              </Link>
+            <li style={{ textAlign: "left" }}>
+              <div onClick={showAboutItemList}>
+                <div className="cursor-pointer inline-flex items-center">
+                  <div className="p-2">About Us</div>
+                  <FaChevronDown className="md:text-xs xl:text-sm" />
+                </div>
+              </div>
+              {!showAboutItem && (
+                <ul>
+                  <li>
+                    <Link
+                      to="/Purpose"
+                      className="block whitespace-no-wrap py-2 px-4 pr-4"
+                      onClick={handleClick}
+                    >
+                      Purpose
+                    </Link>
+                  </li>
+                  <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+                    <Link
+                      to="/OurTeam"
+                      className="block whitespace-no-wrap py-2 px-4 pr-4"
+                      onClick={handleClick}
+                    >
+                      Our Team
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                to="/OurTeam"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Our Team
-              </Link>
+            <li style={{ textAlign: "left" }}>
+              <div onClick={showProgramItemList}>
+                <div className="cursor-pointer inline-flex items-center">
+                  <div className="p-2">Our Program</div>
+                  <FaChevronDown className="md:text-xs xl:text-sm" />
+                </div>
+              </div>
+              {!showProgramItem && (
+                <ul>
+                  <li>
+                    <Link
+                      to="/ProgramStructure"
+                      className="block whitespace-no-wrap py-2 px-4 pr-4"
+                      onClick={handleClick}
+                    >
+                      Program Structure
+                    </Link>
+                  </li>
+                  <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+                    <Link
+                      to="/Services"
+                      className="block whitespace-no-wrap py-2 px-4 pr-4"
+                      onClick={handleClick}
+                    >
+                      Additional Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/Involved"
+                      className="block whitespace-no-wrap py-2 px-4 pr-4"
+                      onClick={handleClick}
+                    >
+                      Get Involved
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                to="/Purpose"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Purpose
-              </Link>
+            <li style={{ textAlign: "left" }}>
+              <div onClick={showCommunityItemList}>
+                <div className="cursor-pointer inline-flex items-center">
+                  <div className="p-2">Our Community</div>
+                  <FaChevronDown className="md:text-xs xl:text-sm" />
+                </div>
+              </div>
+              {!showCommunityItem && (
+                <ul>
+                  <li>
+                    <Link
+                      to="/Awards"
+                      className="block whitespace-no-wrap py-2 px-4 pr-4"
+                      onClick={handleClick}
+                    >
+                      Awards & Recognition
+                    </Link>
+                  </li>
+                  <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+                    <Link
+                      to="/Events"
+                      className="block whitespace-no-wrap py-2 px-4 pr-4"
+                      onClick={handleClick}
+                    >
+                      Events
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/Partners"
+                      className="block whitespace-no-wrap py-2 px-4 pr-4"
+                      onClick={handleClick}
+                    >
+                      Our Partners
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
-          </ul>
-          {/* Our Program */}
-          <div className="inline-flex items-center">
-            <div className="cursor-pointer py-2 px-5 ">Our Program</div>
-            <FaChevronDown className="pr-3 text-lg" />
-          </div>
-          <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                onClick={dropdown}
-                to="/ProgrammingStructure"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Programming Structure
-              </Link>
-            </li>
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                to="/Services"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Additional Services
-              </Link>
-            </li>
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                to="/Involved"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Get Involved
-              </Link>
-            </li>
-          </ul>
-          {/* Our Community */}
-          <div className="inline-flex items-center">
-            <div className="cursor-pointer py-2 px-5 ">Our Community</div>
-            <FaChevronDown className="pr-3 text-lg" />
-          </div>
-          <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                onClick={dropdown}
-                to="/Awards"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Awards & Recognition
-              </Link>
-            </li>
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                to="/Events"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Events
-              </Link>
-            </li>
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                to="/Partners"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Our Partners
-              </Link>
-            </li>
-          </ul>
-          {/* Participant Corner */}
-          <div className="inline-flex items-center">
-            <div className="cursor-pointer py-2 px-5 ">Participant Corner</div>
-            <FaChevronDown className="pr-3 text-lg" />
-          </div>
-          <ul className="dropdown-menu absolute hidden rounded text-blue-500 bg-gray-200 pt-3 pb-1 list-none z-10">
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                onClick={dropdown}
-                to="/Resources"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Resources
-              </Link>
-            </li>
-            <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
-              <Link
-                to="/ProgrammingEvents"
-                className="block whitespace-no-wrap py-2 px-4 pr-16"
-              >
-                Programming Events
-              </Link>
+            <li style={{ textAlign: "left" }}>
+              <div onClick={showParticipantItemList}>
+                <div className="cursor-pointer inline-flex items-center">
+                  <div className="p-2">Participant Corner</div>
+                  <FaChevronDown className="md:text-xs xl:text-sm" />
+                </div>
+              </div>
+              {!showParticipantItem && (
+                <ul>
+                  <li>
+                    <Link
+                      to="/Resources"
+                      className="block whitespace-no-wrap py-2 px-4 pr-4"
+                      onClick={handleClick}
+                    >
+                      Resources
+                    </Link>
+                  </li>
+                  <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
+                    <Link
+                      to="/ProgramEvents"
+                      className="block whitespace-no-wrap py-2 px-4 pr-4"
+                      onClick={handleClick}
+                    >
+                      Program Events
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
           </ul>
         </div>
