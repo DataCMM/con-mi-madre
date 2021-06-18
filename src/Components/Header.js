@@ -158,11 +158,6 @@ const Header = () => {
         <MobileNav />
         <div className="flex space-x-6">
           <div>
-            <Link to="/" className="hover:text-pink-500">
-              Home
-            </Link>
-          </div>
-          <div>
             <Link to="/Contact" className="hover:text-pink-500">
               Contact Us
             </Link>

@@ -90,13 +90,6 @@ const OurTeam = () => {
       </div>
       {/* Profiles with Images */}
       <div className="grid xs:grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 bg-gray-500 p-4 md:p-12">
-        {staff && staff
-        .sort((a,b)=> a.id - b.id)
-        .map((member, idx)=>(
-          <div key={idx} className="rounded h-full flex flex-col items-center md:flex-row md:justify-start md:items-start p-4 bg-gray-500">
-          <img
-            src={urlFor(member.image).url()}
-            alt={member.first_name.concat(member.last_name)} 
             className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
           />
           <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
