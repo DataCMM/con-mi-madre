@@ -8,10 +8,8 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import additionalBoardMembers from './additionalBoardMembers'
 import blockContent from './blockContent'
 import events from './events'
-import centralTexasStaff from './centralTexasStaff'
 import corporate_sponsors from './corporateSponsors'
 import executiveCommittee from './executiveCommittee'
-import fortWorthStaff from './fortWorthStaff'
 import foundations from './foundations'
 import schoolPartners from './schoolPartners'
 import adminStaff from './adminStaff'
@@ -27,11 +25,9 @@ export default createSchema({
     // in the studio.
     additionalBoardMembers,
     adminStaff,
-    centralTexasStaff,
     corporate_sponsors,
     events,
     executiveCommittee,
-    fortWorthStaff,
     foundations,
     schoolPartners,
     // When added to this list, object types can be used as

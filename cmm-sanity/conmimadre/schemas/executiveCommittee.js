@@ -14,6 +14,16 @@ export default {
         type: 'string',
       },
       {
+        name: 'company_1',
+        title: 'Company One',
+        type: 'string',
+      },
+      {
+        name: 'company_2',
+        title: 'Company Two',
+        type: 'string',
+      },
+      {
         name: 'slug',
         title: 'Slug',
         type: 'slug',

@@ -4,9 +4,19 @@ export default {
     type: 'document',
     fields: [
       {
-        name: 'name',
-        title: 'Name',
+        name: 'first_name',
+        title: 'First Name',
         type: 'string',
+      },
+      {
+        name: 'last_name',
+        title: 'Last Name',
+        type: 'string',
+      },
+      {
+        name: 'id',
+        title: 'ID',
+        type: 'number'
       },
       {
         name: 'title',

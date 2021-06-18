@@ -1,5 +1,5 @@
 export default {
-    name: 'school_sponsors',
+    name: 'school_partners',
     title: 'School Partners',
     type: 'document',
     fields: [
@@ -7,6 +7,11 @@ export default {
             name: 'name',
             title: 'Company Name',
             type: 'string'
+        },
+        {
+            name: 'url',
+            title: 'URL',
+            type: 'url'
         },
         {
             name: 'image',
