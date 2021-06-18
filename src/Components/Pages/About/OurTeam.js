@@ -120,7 +120,6 @@ const OurTeam = () => {
       </div>
       
       {/*  Executive Committee Members */}
-
       <div className="bg-green-500 text-xl m-auto text-center p-3 pb-6">
         <div>
           <h2 className="pt-3 font-extrabold text-4xl">Board Of Directors</h2>
