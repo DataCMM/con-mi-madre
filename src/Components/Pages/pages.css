@@ -119,7 +119,7 @@
     height: 38.5rem;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1350px) {
   .banner-image {
     height: 42rem;
   }
