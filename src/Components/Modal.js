@@ -5,7 +5,7 @@ export default function Modal({ member }) {
   return (
     <>
       <button
-        className="pt-2 xl:pt-12 font-semibold text-sm text-center md:text-left hover:text-pink-500 hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="pt-2 font-semibold text-sm text-center md:text-left hover:text-pink-500 hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
       >
