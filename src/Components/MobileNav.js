@@ -41,7 +41,7 @@ const MobileNav = () => {
       <GiHamburgerMenu onClick={dropdown} className="relative z-20 w-5 h-5" />
       {showNav && (
         <div className="z-20 inline-block absolute">
-          <ul className="mobile-nav-list fixed bg-gray-200 rounded pr-2 mt-1 pt-4 pb-3">
+          <ul className="mobile-nav-list absolute bg-gray-200 rounded pr-2 mt-1 pt-4 pb-3">
             <li style={{ textAlign: "left" }}>
               <Link to="/" className="pl-2" onClick={handleClick}>
                 Home
