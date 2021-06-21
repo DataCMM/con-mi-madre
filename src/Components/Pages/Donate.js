@@ -46,16 +46,15 @@ const Donate = () => {
           <button className="rounded w-3/4 m-auto text-center p-5 h-32 bg-blue-500 text-gray-500">
             <h3 className="md:pb-2 text-lg md:text-2xl font-semibold">$50</h3>
             <p className="text-sm md:text-lg font-light">
-              To buy school uniforms for scholars that need them.
+              Provides individual counseling services for at-risk students
             </p>
           </button>
         </div>
         <div className="p-6">
           <button className="rounded w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500">
-            <h3 className="md:pb-2 text-lg md:text-2xl font-semibold">$150</h3>
+            <h3 className="md:pb-2 text-lg md:text-2xl font-semibold">$100</h3>
             <p className="text-sm md:text-lg font-light">
-              To purchase school supplies for every scholar to prevent the need
-              to share.
+              Covers a student’s college application and entrance exam fees
             </p>
           </button>
         </div>
@@ -63,8 +62,8 @@ const Donate = () => {
           <button className="rounded w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500">
             <h3 className="md:pb-2 text-lg md:text-2xl font-semibold">$250</h3>
             <p className="text-sm md:text-lg font-light">
-              For personal protective equipment and cleaning supplies to keep
-              everyone in the building safe.
+              Gives a mother-daughter team the opportunity to attend a college
+              trip
             </p>
           </button>
         </div>
@@ -72,8 +71,8 @@ const Donate = () => {
           <button className="rounded w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500">
             <h3 className="md:pb-2 text-lg md:text-2xl font-semibold">$500</h3>
             <p className="text-sm md:text-lg font-light">
-              To purchase Chromebooks so that each scholar has a digital device
-              to prevent educational gaps while learning at home
+              Contributes to on-campus group meetings, conferences, and
+              leadership summit
             </p>
           </button>
         </div>
@@ -81,8 +80,7 @@ const Donate = () => {
           <button className="rounded w-3/4 m-auto text-center p-5 h-36 bg-blue-500 text-gray-500">
             <h3 className="md:pb-2 text-lg md:text-2xl font-semibold">$1000</h3>
             <p className="text-sm md:text-lg font-light">
-              For a Mi-Fi hotspot for a scholar to connect to hybrid classroom
-              instruction.
+              Funds an entire year of CMM programming for a mother-daughter team
             </p>
           </button>
         </div>
@@ -103,6 +101,9 @@ const Donate = () => {
               <h3 className="text-lg md:text-2xl font-light">Donate</h3>
             </button>
           </div>
+        </div>
+        <div className="pt-6 text-center text-xl font-semibold">
+          Checks delivered to our address are also acceptable
         </div>
       </div>
     </>

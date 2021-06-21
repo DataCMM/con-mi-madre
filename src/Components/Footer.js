@@ -1,6 +1,4 @@
 import React from "react";
-// import Logo from "../images/horizontal/color.png";
-import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from "react-icons/fa";
 
 const Footer = () => {
@@ -24,16 +22,40 @@ const Footer = () => {
           <h3>info@conmimadre.org</h3>
         </a>
         <div className="flex justify-center md:flex-row md:justify-end text-center space-x-8 p-4 pr-6">
-          <Link className="hover:text-pink-500" to="/facebook">
+          <a
+            className="hover:text-pink-500"
+            href="https://www.facebook.com/ConMiMADRE/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaFacebookSquare className="text-3xl" />
-          </Link>
-          <Link className="hover:text-pink-500" to="/instagram">
+          </a>
+          <a
+            className="hover:text-pink-500"
+            href="https://www.instagram.com/conmimadre/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram className="text-3xl" />
-          </Link>
-          <Link className="hover:text-pink-500" to="/twitter">
+          </a>
+          <a
+            className="hover:text-pink-500"
+            href="https://twitter.com/conmimadre?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaTwitterSquare className="text-3xl" />
-          </Link>
+          </a>
         </div>
+        <a
+          href="https://form.jotform.com/211546193475156 "
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="text-xl hover:text-pink-500 font-semibold">
+            Sign Up To Receive Our Monthly Newsletter!
+          </div>
+        </a>
       </div>
     </div>
   );
