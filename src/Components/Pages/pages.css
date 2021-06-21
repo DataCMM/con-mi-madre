@@ -119,6 +119,20 @@
     height: 38.5rem;
   }
 }
+@media (min-width: 1250px) {
+  .banner-image {
+    height: 42rem;
+  }
+  .banner-text {
+    height: 42rem;
+  }
+  .intern-img {
+    height: 40rem;
+  }
+  .gallery-img {
+    height: 45rem;
+  }
+}
 .team-member .member-info {
   flex: 1;
 }

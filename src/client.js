@@ -1,8 +1,8 @@
-import sanityClient from '@sanity/client'
+import sanityClient from "@sanity/client";
 
-export default sanityClient({
-    projectId: `${process.env.REACT_APP_PROJECT_ID}`,
-    dataset: `${process.env.REACT_APP_API_DATASET}`,
-    apiVersion: `2021-06-13`,
-    useCdn: `${process.env.REACT_APP_API_VERSION}`,
-})
+// const projectID = process.env.SANITY_STUDIO_PROJECT_ID;
+// const dataset = process.env.SANITY_STUDIO_API_DATASET;
+// const apiVersion = process.env.SANITY_STUDIO_API_VERSION;
+// const useCdn = process.env.SANITY_STUDIO_USE_CDN;
+
+export default sanityClient({});

@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Modal({member}) {
+export default function Modal({ member }) {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <>
       <button
-        className="pt-2 font-semibold text-sm text-center md:text-left hover:text-pink-500 hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="pt-2 xl:pt-12 font-semibold text-sm text-center md:text-left hover:text-pink-500 hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
       >
@@ -13,9 +13,7 @@ export default function Modal({member}) {
       </button>
       {showModal ? (
         <>
-          <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-          >
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
@@ -36,7 +34,7 @@ export default function Modal({member}) {
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
                   <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
-                   {member.bio}
+                    {member.bio}
                   </p>
                 </div>
                 {/*footer*/}
