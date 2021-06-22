@@ -1,8 +1,46 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import sanityClient from "../../../client"
 import Logo from "../../../images/stacked/text-only.png";
 
 const Purpose = () => {
+
+  const [ annualReports, setAnnualReports ] = useState([])
+  const [ statements, setStatements ] = useState([])
+
+  useEffect(()=>{
+    getReports()
+    getStatements()
+  },[])
+
+  async function getReports (){
+    const data = await sanityClient
+    .fetch(`*[_type == "annualReport"]{
+      name,
+      pdf{
+        asset->{
+          url
+        }
+      }
+    }`)
+    setAnnualReports(data)
+  }
+
+  async function getStatements (){
+    const data = await sanityClient
+    .fetch(`*[_type == "statements"]{
+      name,
+      pdf{
+        asset->{
+          url
+        }
+      }
+    }`)
+    setStatements(data)
+  }
+
+  console.log(annualReports)
+  console.log(statements)
+  
   return (
     <div>
       <div className="banner-image w-full h-full">
@@ -83,25 +121,32 @@ const Purpose = () => {
         <h2 className="text-3xl pb-3 font-semibold">Con Mi Madre Reports</h2>
         <div>
           <h3 className="text-xl font-semibold">Annual Reports:</h3>
+          {annualReports && annualReports.map((report, idx) => (
+
           <a
             className="hover:text-pink-500 font-light"
             href="/AnnualReport2019to2020.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            key={idx}
           >
-            2019 - 2020 Annual Report
+            {report.name}
           </a>
+          ))}
         </div>
         <div>
           <h3 className="text-xl font-semibold">Statements:</h3>
+          {statements && statements.map((statement, idx) => (
           <a
             className="hover:text-pink-500 font-light"
             href="/ResponseToCovid.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            key={idx}
           >
-            Response To COVID-19
+            {statement.name}
           </a>
+          ))}
         </div>
       </div>
     </div>
