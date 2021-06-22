@@ -33,7 +33,11 @@ const MobileNav = () => {
   };
 
   const handleClick = () => {
-    return setShowNav(false);
+    setShowNav(false);
+    setShowAboutItem(true);
+    setShowProgramItem(true);
+    setShowCommunityItem(true);
+    setShowParticipantItem(true);
   };
 
   return (
