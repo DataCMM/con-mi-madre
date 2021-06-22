@@ -1,8 +1,27 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import sanityClient from "../../../client"
 import Logo from "../../../images/stacked/text-only.png";
 
 const Careers = () => {
+
+  const [ internships, setInternships ] = useState([])
+
+  useEffect(()=>{
+    getInternships()
+  },[])
+
+  async function getInternships (){
+    const data = await sanityClient
+    .fetch(`*[_type == "internships"]{
+      title,
+      location,
+      description,
+      "pdfLink" : pdf.asset->url
+    }`)
+    setInternships(data)
+  }
+  console.log(internships)
+
   return (
     <>
       <div className="banner-image w-full h-full">
@@ -61,45 +80,28 @@ const Careers = () => {
           <h3 className="text-4xl text-center lg:text-left font-semibold pb-6">
             Internships
           </h3>
-          <h3 className="text-2xl font-semibold pb-3">
-            Programming Intern (Central Texas & Fort Worth Chapter)
-          </h3>
-          <p className="text-xl font-light pb-6">
-            Con Mi MADRE offers opportunities for current social work students
-            to help with the implementation and execution of programming
-            services. Interested students must reach out to their School of
-            Social Work Field Office to initiate this process.
-          </p>
-          <h3 className="text-2xl font-semibold pb-3">
-            Communications Intern (Central Texas or Fort Worth chapter)
-          </h3>
-          <p className="text-xl font-light pb-6">
-            Con Mi MADRE is seeking a creative and dynamic student to assist in
-            marketing and communications efforts (part-time).{" "}
-            <a
-              className="hover:text-pink-500 font-medium"
-              href="/CommunicationsIntern.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click here for more information
-            </a>
-          </p>
-          <h3 className="text-2xl font-semibold pb-3">
-            Development Intern (Central Texas chapter)
-          </h3>
-          <p className="text-xl font-light pb-6">
-            Con Mi MADRE is seeking an organized and passionate student to
-            assist with fundraising, grants, and events (part-time).{" "}
-            <a
-              className="hover:text-pink-500 font-medium"
-              href="/DevelopmentIntern.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click here for more information
-            </a>
-          </p>
+          {internships && internships.map((intern, idx)=> (
+            <article key={idx}>
+              <h3 className="text-2xl font-semibold pb-3">
+                {intern.title} - ({intern.location})
+              </h3>
+
+              <p className="text-xl font-light pb-6">
+              {intern.description}{" "}
+              {intern.pdfLink ? 
+                <a
+                  className="hover:text-pink-500 font-medium"
+                  href={`${intern.pdfLink}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Click here for more information
+                </a>
+                : null
+              }
+              </p>
+            </article>
+          ))}
           <p className="text-xl font-light pt-3 pb-3">
             For more information on any job or internship opening, please reach
             out to{" "}
