@@ -16,11 +16,7 @@ const Purpose = () => {
     const data = await sanityClient
     .fetch(`*[_type == "annualReport"]{
       name,
-      pdf{
-        asset->{
-          url
-        }
-      }
+      "pdfLink" : pdf.asset->url
     }`)
     setAnnualReports(data)
   }
@@ -29,11 +25,7 @@ const Purpose = () => {
     const data = await sanityClient
     .fetch(`*[_type == "statements"]{
       name,
-      pdf{
-        asset->{
-          url
-        }
-      }
+      "pdfLink" : pdf.asset->url
     }`)
     setStatements(data)
   }
@@ -125,7 +117,7 @@ const Purpose = () => {
             <>
               <a
                 className="hover:text-pink-500 font-light"
-                href="/AnnualReport2019to2020.pdf"
+                href={`${report.pdfLink}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 key={idx}
@@ -142,7 +134,7 @@ const Purpose = () => {
             <>
               <a
                 className="hover:text-pink-500 font-light"
-                href="/ResponseToCovid.pdf"
+                href={`${statement.pdfLink}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 key={idx}
