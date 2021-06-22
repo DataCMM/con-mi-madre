@@ -122,30 +122,35 @@ const Purpose = () => {
         <div>
           <h3 className="text-xl font-semibold">Annual Reports:</h3>
           {annualReports && annualReports.map((report, idx) => (
-
-          <a
-            className="hover:text-pink-500 font-light"
-            href="/AnnualReport2019to2020.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            key={idx}
-          >
-            {report.name}
-          </a>
+            <>
+              <a
+                className="hover:text-pink-500 font-light"
+                href="/AnnualReport2019to2020.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                key={idx}
+              >
+                {report.name}
+              </a>
+              <br />
+            </>
           ))}
         </div>
         <div>
           <h3 className="text-xl font-semibold">Statements:</h3>
           {statements && statements.map((statement, idx) => (
-          <a
-            className="hover:text-pink-500 font-light"
-            href="/ResponseToCovid.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            key={idx}
-          >
-            {statement.name}
-          </a>
+            <>
+              <a
+                className="hover:text-pink-500 font-light"
+                href="/ResponseToCovid.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                key={idx}
+              >
+                {statement.name}
+              </a>
+              <br />
+            </>
           ))}
         </div>
       </div>
