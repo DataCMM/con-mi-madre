@@ -44,10 +44,31 @@ const Involved = () => {
         </p>
         <div className="flex flex-col space-y-12 pb-12">
           <button className="p-2 lg:w-1/2 m-auto border-blue-500 rounded bg-gray-500 text-blue-500 shadow-2xl text-center hover:text-pink-500">
-            <Link to="/">Application for students 6th-12th grade</Link>
+            <a
+              href="https://form.jotform.com/210896228714158"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Application for students 6th-12th grade
+            </a>
           </button>
           <button className="p-2 lg:w-1/2 m-auto border-blue-500 rounded bg-gray-500 text-blue-500 shadow-2xl text-center hover:text-pink-500">
-            <Link to="/">Application for undergraduate students</Link>
+            <a
+              href="https://form.jotform.com/211154945942155"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Solicitud para estudiantes de 6 ° a 12 ° grado
+            </a>
+          </button>
+          <button className="p-2 lg:w-1/2 m-auto border-blue-500 rounded bg-gray-500 text-blue-500 shadow-2xl text-center hover:text-pink-500">
+            <a
+              href="https://form.jotform.com/211294879226161 "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Application for undergraduate students
+            </a>
           </button>
         </div>
       </div>

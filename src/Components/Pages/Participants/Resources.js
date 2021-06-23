@@ -50,20 +50,48 @@ const Resources = () => {
       </div>
       <div className="bg-gray-500 p-12">
         <div className="pb-6">
-          <h1 className="text-2xl font-semibold text-center">
-            Resources for Central Texas Families
-          </h1>
-          <h1 className="text-xl font-semibold text-center">
-            Recursos para Familias en el Centro de Tejas
-          </h1>
+          <a
+            className="hover:text-pink-500"
+            href="https://conmimadre.sharepoint.com/:w:/s/ConMiMADRE/programming/EbHwqx4MruJEvzO4BiWiEP8BDvYFBxEKT7_cC1zCbUZ5Ew?e=0SQl6L"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h1 className="text-2xl font-semibold text-center">
+              Resources for Central Texas Families
+            </h1>
+          </a>
+          <a
+            className="hover:text-pink-500"
+            href="https://conmimadre.sharepoint.com/:w:/s/ConMiMADRE/programming/ETCEM9ymjVlPhPUzZ4NH9qEB59Vi3z4oXbWPDaS4HzTb0w?e=5uHxD8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h1 className="text-xl font-semibold text-center">
+              Recursos para Familias en el Centro de Tejas
+            </h1>
+          </a>
         </div>
         <div>
-          <h1 className="text-2xl font-semibold text-center">
-            Resources for Fort Worth Families
-          </h1>
-          <h1 className="text-xl font-semibold text-center">
-            Recursos para Familias en Fort Worth
-          </h1>
+          <a
+            className="hover:text-pink-500"
+            href="https://conmimadre.sharepoint.com/:w:/s/ConMiMADRE/programming/EWisESy-eO9KozOgMpxP2bgB9wxryUdk0O4wK2yTvLmKzw?e=2AQYzy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h1 className="text-2xl font-semibold text-center">
+              Resources for Fort Worth Families
+            </h1>
+          </a>
+          <a
+            className="hover:text-pink-500"
+            href="https://conmimadre.sharepoint.com/:w:/s/ConMiMADRE/programming/EeVANQrPMlBMp25E7NrUKgUBsljHADgumaDd3O-9k-djeQ?e=XZXEpz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h1 className="text-xl font-semibold text-center">
+              Recursos para Familias en Fort Worth
+            </h1>
+          </a>
         </div>
       </div>
     </div>
