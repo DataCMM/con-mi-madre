@@ -15,6 +15,7 @@ import schoolPartners from './schoolPartners'
 import statements from './statements'
 import adminStaff from './adminStaff'
 import internships from './internships'
+import testimonials from './testimonials'
 
 
 export default createSchema({
@@ -30,5 +31,6 @@ export default createSchema({
     schoolPartners,
     statements,
     internships,
+    testimonials,
   ]),
 })
