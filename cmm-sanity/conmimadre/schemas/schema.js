@@ -16,7 +16,15 @@ import statements from './statements'
 import adminStaff from './adminStaff'
 import internships from './internships'
 import testimonials from './testimonials'
-
+import getInvolved from './getInvolved'
+import blueAwards from './blueAwardsBox'
+import whiteAwards from './whiteAwardsBox'
+import media from './media'
+import awardsImages from './awardsImages'
+import centralResources from './centralResources'
+import fortWorthResources from './fortWorthResources'
+import fallCalendar from './fallCalendar'
+import springCalendar from './springCalendar'
 
 export default createSchema({
   name: 'default',
@@ -32,5 +40,14 @@ export default createSchema({
     statements,
     internships,
     testimonials,
+    getInvolved,
+    blueAwards,
+    whiteAwards,
+    media,
+    awardsImages,
+    centralResources,
+    fortWorthResources,
+    fallCalendar,
+    springCalendar,
   ]),
 })

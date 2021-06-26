@@ -8,13 +8,13 @@ export default {
             title: 'Quote',
             type: 'array',
             of: [
-                    {
+                  {
                     title: 'Block',
                     type: 'block',
                     styles: [{title: 'Normal', value: 'normal'}],
                     lists: [],
-                    },
-            ],
+                  },
+                ],
         },
         {
             name: 'source',
