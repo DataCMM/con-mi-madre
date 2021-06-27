@@ -7,7 +7,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // We import object and document schemas
 import additionalBoardMembers from './additionalBoardMembers'
 import annualReport from './annualReport'
-import events from './events'
 import corporate_sponsors from './corporateSponsors'
 import executiveCommittee from './executiveCommittee'
 import foundations from './foundations'
@@ -20,11 +19,15 @@ import getInvolved from './getInvolved'
 import blueAwards from './blueAwardsBox'
 import whiteAwards from './whiteAwardsBox'
 import media from './media'
-import awardsImages from './awardsImages'
+import awardsCarousel from './awardsCarousel'
 import centralResources from './centralResources'
 import fortWorthResources from './fortWorthResources'
 import fallCalendar from './fallCalendar'
 import springCalendar from './springCalendar'
+import annualInvitation from './annualInvitation'
+import cmmAward from './cmmAward'
+import corazon from './corazon'
+import mariposa from './mariposa'
 
 export default createSchema({
   name: 'default',
@@ -33,7 +36,6 @@ export default createSchema({
     adminStaff,
     annualReport,
     corporate_sponsors,
-    events,
     executiveCommittee,
     foundations,
     schoolPartners,
@@ -44,10 +46,14 @@ export default createSchema({
     blueAwards,
     whiteAwards,
     media,
-    awardsImages,
+    awardsCarousel,
     centralResources,
     fortWorthResources,
     fallCalendar,
     springCalendar,
+    annualInvitation,
+    cmmAward,
+    corazon,
+    mariposa
   ]),
 })

@@ -1,6 +1,6 @@
 export default {
-    name: 'fortWorthResources',
-    title: 'Fort Worth Resources',
+    name: 'annualInvitation',
+    title: 'Annual Corazon Awards Invitation',
     type: 'document',
     fields: [
         {

@@ -9,9 +9,9 @@ export default {
             type: 'string'
         },
         {
-            name: 'pdf',
-            title: 'PDF',
-            type: 'file',
+            name: 'url',
+            title: 'URL',
+            type: 'url',
         }
     ]
 }

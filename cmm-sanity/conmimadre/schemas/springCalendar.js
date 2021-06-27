@@ -13,5 +13,10 @@ export default {
             title: 'Date/Month',
             type: 'string'
         },
+        {
+            name: 'id',
+            title: 'ID',
+            type: 'number',
+        },
     ]
 }
