@@ -21,8 +21,6 @@ const Services = () => {
     setTestimonials(data);
   }
 
-  console.log(testimonials)
-
   return (
     <>
       <div className="banner-image w-full h-full">
