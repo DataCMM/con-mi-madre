@@ -30,9 +30,6 @@ const Purpose = () => {
     setStatements(data)
   }
 
-  console.log(annualReports)
-  console.log(statements)
-  
   return (
     <div>
       <div className="banner-image w-full h-full">
@@ -114,35 +111,33 @@ const Purpose = () => {
         <div>
           <h3 className="text-xl font-semibold">Annual Reports:</h3>
           {annualReports && annualReports.map((report, idx) => (
-            <>
+            <div key={idx}>
               <a
                 className="hover:text-pink-500 font-light"
                 href={`${report.pdfLink}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                key={idx}
               >
                 {report.name}
               </a>
               <br />
-            </>
+            </div>
           ))}
         </div>
         <div>
           <h3 className="text-xl font-semibold">Statements:</h3>
           {statements && statements.map((statement, idx) => (
-            <>
+            <div key={idx}>
               <a
                 className="hover:text-pink-500 font-light"
                 href={`${statement.pdfLink}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                key={idx}
               >
                 {statement.name}
               </a>
               <br />
-            </>
+            </div>
           ))}
         </div>
       </div>

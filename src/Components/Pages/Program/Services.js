@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Logo from "../../../images/stacked/text-only.png";
 import { Carousel } from "react-responsive-carousel";
 
+import sanityClient from "../../../client";
+
 const Services = () => {
+
+  const [ testimonials, setTestimonials ] = useState([])
+
+  useEffect(() => {
+    getTestimonials()
+  }, []);
+  
+  async function getTestimonials() {
+    const data = await sanityClient.fetch(`*[_type == "testimonials"]{
+      "quote" : quote[0].children[0].text,
+      source
+    }`);
+    setTestimonials(data);
+  }
+
+  console.log(testimonials)
+
   return (
     <>
       <div className="banner-image w-full h-full">
@@ -92,15 +111,26 @@ const Services = () => {
           autoFocus
           infiniteLoop
           dynamicHeight
+          useKeyboardArrows
           showIndicators={false}
-          showArrows={false}
+          showArrows={true}
           showStatus={false}
+          showThumbs={false}
           stopOnHover
           transitionTime={500}
           interval={6000}
         >
-          <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
-            <q className="font-light text-lg lg:text-2xl">
+            {testimonials && testimonials.map((post,idx)=>(
+              <div key={idx} className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
+                <q className="font-light text-lg lg:text-2xl">{post.quote}</q>
+                <br />
+                <br />
+                <cite className="font-light text-md lg:text-lg">
+                  {post.source}
+                </cite>    
+              </div>
+            ))}
+            {/* <q className="font-light text-lg lg:text-2xl">
               Con Mi MADRE has instilled within my mother and me a wonderful
               sense of pride in our Latina culture. From campus visits and
               Leadership Summits to workshops and scholarships, I not only
@@ -162,8 +192,8 @@ const Services = () => {
             <br />
             <cite className="font-light text-md lg:text-lg">
               Con Mi MADRE Parent
-            </cite>
-          </div>
+            </cite> */}
+          {/* </div> */}
         </Carousel>
       </div>
     </>

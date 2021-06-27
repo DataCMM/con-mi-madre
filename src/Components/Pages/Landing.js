@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-// import CMMLogo from "../../images/stacked/no-text-color-and-white.png";
 
 import { FcGraduationCap } from "react-icons/fc";
 import { FaUniversity } from "react-icons/fa";

@@ -20,7 +20,6 @@ const Careers = () => {
     }`)
     setInternships(data)
   }
-  console.log(internships)
 
   return (
     <>

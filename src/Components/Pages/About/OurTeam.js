@@ -24,36 +24,36 @@ const OurTeam = () => {
   }, []);
   async function getStaff() {
     const data = await sanityClient.fetch(`*[_type == "adminStaff"]{
-first_name,
-last_name,
-title,
-pronoun,
-id,
-email,
-"bio" : bio[0].children[0].text,
-image{
-asset->{
-url
-}
-}
-}`);
+      first_name,
+      last_name,
+      title,
+      pronoun,
+      id,
+      email,
+      "bio" : bio[0].children[0].text,
+      image{
+        asset->{
+          url
+        }
+      }
+    }`);
     setStaff(data);
   }
 
   async function getCommittee() {
     const data = await sanityClient.fetch(`*[_type == "executiveCommittee"]{
-name,
-title,
-company_1,
-company_2
-}`);
+      name,
+      title,
+      company_1,
+      company_2
+    }`);
     setCommittee(data);
   }
   async function getBoard() {
     const data = await sanityClient.fetch(`*[_type == "additionalBoardMembers"]{
-name,
-title
-}`);
+      name,
+      title
+    }`);
     setBoard(data);
   }
 
@@ -96,7 +96,7 @@ title
                 <img
                   src={urlFor(member.image).url()}
                   alt={member.first_name.concat(member.last_name)}
-                  className="w-48 md:w-1/2 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
+                  className="w-48 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
                 />
                 <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
                   <div>
