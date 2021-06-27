@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Logo from "../../../images/stacked/text-only.png";
 
+import sanityClient from "../../../client";
+
 const Involved = () => {
+
+  const [ pdfs, setPdfs ] = useState([])
+
+  useEffect(() => {
+    getPdfs()
+  }, []);
+  
+  async function getPdfs() {
+    const data = await sanityClient.fetch(`*[_type == "getInvolved"]{
+      title,
+      url
+    }`);
+    setPdfs(data);
+  }
+
   return (
     <>
       <div className="banner-image w-full h-full">
@@ -41,35 +58,20 @@ const Involved = () => {
           offered to all female identifying students no matter race, ethnicity,
           income, or parenting situation!
         </p>
-        <div className="flex flex-col space-y-12 pb-12">
-          <button className="p-2 lg:w-1/2 m-auto border-blue-500 rounded bg-gray-500 text-blue-500 shadow-2xl text-center hover:text-pink-500">
-            <a
-              href="https://form.jotform.com/210896228714158"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Application for students 6th-12th grade
-            </a>
-          </button>
-          <button className="p-2 lg:w-1/2 m-auto border-blue-500 rounded bg-gray-500 text-blue-500 shadow-2xl text-center hover:text-pink-500">
-            <a
-              href="https://form.jotform.com/211154945942155"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Solicitud para estudiantes de 6 ° a 12 ° grado
-            </a>
-          </button>
-          <button className="p-2 lg:w-1/2 m-auto border-blue-500 rounded bg-gray-500 text-blue-500 shadow-2xl text-center hover:text-pink-500">
-            <a
-              href="https://form.jotform.com/211294879226161 "
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Application for undergraduate students
-            </a>
-          </button>
-        </div>
+        {pdfs && pdfs.map((pdf,idx)=>(
+          <div key={idx} className="flex flex-col space-y-12 pb-12">
+            <button className="p-2 lg:w-1/2 m-auto border-blue-500 rounded bg-gray-500 text-blue-500 shadow-2xl text-center hover:text-pink-500">
+              <a
+                href={pdf.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {pdf.title}
+              </a>
+            </button>
+          </div>  
+        ))}
+        {/* https://form.jotform.com/211294879226161  Application for Undergraduate not working */}
       </div>
       <div className="bg-gray-500 p-6 flex flex-col text-center">
         <h3 className="text-4xl font-semibold pb-6">
