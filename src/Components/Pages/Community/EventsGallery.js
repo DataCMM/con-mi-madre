@@ -1,14 +1,61 @@
 // https://www.npmjs.com/package/react-responsive-carousel
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
+import sanityClient from "../../../client";
+import imageUrlBuilder from "@sanity/image-url";
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source) {
+  return builder.image(source);
+}
+
 const EventsGallery = () => {
+  const [ photos, setPhotos ] = useState([])
+
+  useEffect(() => {
+    getPhotos()
+  },[])
+
+  async function getPhotos(){
+    const data = await sanityClient.fetch(`*[_type == "awardsImages"]{
+      id,
+      title,
+      image{
+        asset->{
+          url
+        }
+      }
+    }`);
+    setPhotos(data)
+  }
+
+  console.log(photos)
+
   return (
-    <Carousel autoPlay infiniteLoop useKeyboardArrows showIndicators={false}>
+    <Carousel 
+      autoPlay={true}
+      infiniteLoop
+      useKeyboardArrows 
+      showIndicators={false}
+      showThumbs={false}
+    >
+      {photos && photos
+      .sort((a, b) => a.id - b.id)
+      .map((pic, idx) => (
+        <div key={idx}>
+          <img
+          src= {urlFor(pic.image).url()}
+          className="gallery-img bg-cover bg-top bg-no-repeat"
+          alt={pic.title}
+          />
+          <p className="legend">{pic.title}</p>
+        </div>
+      ))}
       {/* 2019 Awards */}
-      <div
+      {/* <div
         style={{
           backgroundImage: "url(/images/events/2019/Corazon-2019-1.jpg)",
         }}
@@ -39,10 +86,10 @@ const EventsGallery = () => {
         className="gallery-img bg-cover bg-topbg-no-repeat"
       >
         <p className="legend">2019 Corazón Awards</p>
-      </div>
+      </div> */}
 
       {/* 2018 Awards */}
-      <div
+      {/* <div
         style={{
           backgroundImage: "url(/images/events/2018/Corazon-2018-1.jpg)",
         }}
@@ -65,10 +112,10 @@ const EventsGallery = () => {
         className="gallery-img bg-cover bg-top bg-no-repeat"
       >
         <p className="legend">2018 Corazón Awards</p>
-      </div>
+      </div> */}
 
       {/* 2017 Awards */}
-      <div
+      {/* <div
         style={{
           backgroundImage: "url(/images/events/2017/Corazon-2017-1.jpg)",
         }}
@@ -98,8 +145,8 @@ const EventsGallery = () => {
         }}
         className="gallery-img bg-cover bg-top bg-no-repeat"
       >
-        <p className="legend">2017 Corazón Awards</p>
-      </div>
+        <p className="legend">2017 Corazón Awards</p> 
+      </div>*/}
     </Carousel>
   );
 };
