@@ -1,8 +1,46 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Logo from "../../../images/stacked/text-only.png";
 
+import sanityClient from "../../../client";
+
 const ProgrammingEvents = () => {
+  const [ spring, setSpring ] = useState([])
+  const [ fall, setFall ] = useState([])
+  const [ eventNotification, setEventNotification ] = useState([])
+
+  useEffect(() => {
+    getSpring()
+    getFall()
+    getNotification()
+  }, []);
+  
+  async function getSpring() {
+    const data = await sanityClient.fetch(`*[_type == "springCalendar"]{
+      name,
+      date,
+      id
+    }`);
+    setSpring(data);
+  }
+
+  async function getFall() {
+    const data = await sanityClient.fetch(`*[_type == "fallCalendar"]{
+      name,
+      date,
+      id
+    }`);
+    setFall(data);
+  }
+
+  async function getNotification() {
+    const data = await sanityClient.fetch(`*[_type == "eventNotification"]{
+      title,
+      url
+    }`);
+    setEventNotification(data);
+  }
+
   return (
     <div>
       <div className="banner-image w-full h-full">
@@ -36,51 +74,54 @@ const ProgrammingEvents = () => {
             Calendario de Eventos Para Participantes
           </h1>
         </div>
-        <div>
+        <section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 p-12 text-center">
             <div>
-              <h1 className="text-2xl font-semibold pb-2">Fall/Otoño </h1>
-              <ul className="list-none">
-                <li className="p-1 font-light">
-                  Con Mi MADRE Orientation – September
-                </li>
-                <li className="p-1 font-light">Fall College Visit – October</li>
-                <li className="p-1 font-light">
-                  Balanced Living Conference – December
-                </li>
-                <li className="p-1 font-light">
-                  Con Mi MADRE Mother-Daughter Holiday Dinner – December
-                </li>
-              </ul>
+            <h1 className="text-2xl font-semibold pb-2">Fall/Otoño </h1>
+            { fall && fall
+              .sort((a, b) => a.id - b.id)
+              .map((event,idx)=>(
+                <div key={idx}>
+                  <ul className="list-none">
+                    <li className="p-1 font-light">
+                      {event.name} – {event.date}
+                    </li>
+                  </ul>
+                </div>
+              ))
+            }
             </div>
             <div>
               <h1 className="text-2xl font-semibold pb-2">Spring/Primavera</h1>
-              <ul className="list-none">
-                <li className="p-1 font-light">
-                  Spring College Visit – January
-                </li>
-                <li className="p-1 font-light">
-                  Con Mi MADRE Corazón Awards - April
-                </li>
-                <li className="p-1 font-light">
-                  Con Mi MADRE Graduation – June
-                </li>
-                <li className="p-1 font-light">National College Fair – June</li>
-                <li className="p-1 font-light">Leadership Summit – July</li>
-              </ul>
+              { spring && spring
+              .sort((a, b) => a.id - b.id)
+              .map((event,idx)=>(
+                <div key={idx}>
+                  <ul className="list-none">
+                    <li className="p-1 font-light">
+                      {event.name} – {event.date}
+                    </li>
+                  </ul>
+                </div>
+              ))
+            }
             </div>
           </div>
           <div className="text-center pb-6">
-            <a
-              className="text-xl hover:text-pink-500 m-auto font-semibold"
-              href="https://form.jotform.com/211546689542161"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Sign up to receive email alerts about upcoming events
-            </a>
+            { eventNotification && eventNotification.map((url, idx)=>(
+              <a
+                className="text-xl hover:text-pink-500 m-auto font-semibold"
+                href={url.url}
+                key={idx}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sign up to receive email alerts about upcoming events
+              </a>
+            ))}
           </div>
-        </div>
+        </section>
+
         <div className="bg-blue-500">
           <img
             src="/images/program-events/ProgramEventsImg.jpeg"
