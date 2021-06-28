@@ -80,7 +80,7 @@ const Services = () => {
         <h3 className="event-header text-4xl font-semibold text-center">
           Annual Corazón Awards
         </h3>
-        <p className="current-awards text-center text-2xl font-light pb-6">
+        <p className="current-awards text-center text-2xl font-light pb-6 pl-3 pr-3">
         { invitation && invitation.map((pdf, idx)=>(
             <a
               key={idx}
