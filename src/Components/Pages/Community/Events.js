@@ -1,9 +1,57 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import EventsGallery from "./EventsGallery";
 import Logo from "../../../images/stacked/text-only.png";
 
+import sanityClient from "../../../client";
+
 const Services = () => {
+
+  const [ invitation, setInvitation ] = useState([])
+  const [ corazon, setCorazon ] = useState([])
+  const [ cmm, setCMM ] = useState([])
+  const [ mariposa, setMariposa ] = useState([])
+
+  useEffect(() => {
+    getInvitation()
+    getCorazon()
+    getCMM()
+    getMariposa()
+  }, []);
+  
+  async function getInvitation() {
+    const data = await sanityClient.fetch(`*[_type == "annualInvitation"]{
+      title,
+      url
+    }`);
+    setInvitation(data);
+  }
+
+  async function getCorazon() { 
+    const data = await sanityClient.fetch(`*[_type == "corazonAward"]{
+      title,
+      "pdfLink" : pdf.asset->url
+    }`);
+    setCorazon(data);
+  }
+  
+  async function getCMM() {
+    const data = await sanityClient.fetch(`*[_type == "cmmAward"]{
+      title,
+      "pdfLink" : pdf.asset->url
+    }`);
+    setCMM(data);
+  }
+  async function getMariposa() {
+    const data = await sanityClient.fetch(`*[_type == "mariposaAward"]{
+      title,
+      "pdfLink" : pdf.asset->url
+    }`);
+    setMariposa(data);
+  }
+
+  console.log(cmm)
+
   return (
     <div className="bg-blue-500">
       <div className="banner-image w-full h-full">
@@ -35,21 +83,25 @@ const Services = () => {
           Annual Corazón Awards
         </h3>
         <p className="current-awards text-center text-2xl font-light pb-6">
-          <a
-            href="https://conmimadre.z2systems.com/np/clients/conmimadre/event.jsp?event=8"
-            className="hover:text-pink-500 font-semibold text-3xl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Click here
-          </a>
-          &nbsp;for more details and to register for this year’s Corazón Awards.
-        </p>
+        { invitation && invitation.map((pdf, idx)=>(
+            <a
+              key={idx}
+              href={pdf.url}
+              className="hover:text-pink-500 font-semibold text-3xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Click here
+            </a>
+        ))}
+            &nbsp;for more details and to register for this year’s Corazón Awards.
+          </p>
       </div>
       <div className="past-awards bg-gray-500 text-center p-6 pb-12">
         <h3 className="text-4xl font-semibold  pb-6">Past Corazón Awards</h3>
         <EventsGallery className="text-2xl text-gray-500 pb-6" />
         <h3 className="text-4xl font-semibold pb-6">Past Honorees</h3>
+
         <div className="con-mi-madre-award">
           <u className="text-3xl font-semibold pb-3 text-pink-500">
             The Con Mi MADRE Award
@@ -59,15 +111,19 @@ const Services = () => {
             see as a product of our program; someone who is living out our
             mission.
           </p>
-          <a
-            href="/conMiMadrePast.pdf"
-            className="hover:text-pink-500 text-2xl font-semibold"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i>Past Honorees</i>
-          </a>
+          { cmm && cmm.map((pdf,idx)=>(
+            <a
+              key={idx}
+              href={pdf.pdfLink}
+              className="hover:text-pink-500 text-2xl font-semibold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i>Past Honorees</i>
+            </a>
+          ))}
         </div>
+
         <div className="corazon-award pt-6">
           <u className="text-3xl font-semibold pb-3 text-blue-500">
             The Corazón Award
@@ -78,14 +134,17 @@ const Services = () => {
             their heart" into the success of Latina youth and this was outside
             their job requirements.
           </p>
-          <a
-            href="/corazonPast.pdf"
-            className="hover:text-pink-500 text-2xl font-semibold"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i>Past Honorees</i>
-          </a>
+          { corazon && corazon.map((pdf,idx)=> (
+            <a
+              key={idx}
+              href={pdf.pdfLink}
+              className="hover:text-pink-500 text-2xl font-semibold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i>Past Honorees</i>
+            </a>
+          ))}
         </div>
         <div className="mariposa-award pt-6">
           <u className="text-3xl font-semibold pb-3 text-purple-500">
@@ -98,14 +157,17 @@ const Services = () => {
             This is someone whose efforts have helped CMM "spread its wings and
             fly."
           </p>
-          <a
-            href="/mariposaPast.pdf"
-            className="hover:text-pink-500 text-2xl font-semibold"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i>Past Honorees</i>
-          </a>
+          { mariposa && mariposa.map((pdf,idx)=>(
+            <a
+              key={idx}
+              href={pdf.pdfLink}
+              className="hover:text-pink-500 text-2xl font-semibold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i>Past Honorees</i>
+            </a>
+          ))}
         </div>
       </div>
 
