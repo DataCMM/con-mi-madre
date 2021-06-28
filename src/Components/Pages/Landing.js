@@ -54,12 +54,12 @@ const Landing = () => {
                 <div id="expectations">Expectations</div>
               </h1>
               <button className="p-10 w-auto h-auto">
-                <Link
+                <a
                   className="text-white text-xl p-4 rounded font-black text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
-                  to="/Donate"
+                  href={"https://conmimadre.z2systems.com/np/clients/conmimadre/donation.jsp?campaign=19&"}
                 >
                   Donate Today
-                </Link>
+                </a>
               </button>
             </div>
           </div>

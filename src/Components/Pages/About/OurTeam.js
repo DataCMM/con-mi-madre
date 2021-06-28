@@ -96,7 +96,7 @@ const OurTeam = () => {
                 <img
                   src={urlFor(member.image).url()}
                   alt={member.first_name.concat(member.last_name)}
-                  className="w-48 h-48 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
+                  className="w-48 h-52 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
                 />
                 <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
                   <div>

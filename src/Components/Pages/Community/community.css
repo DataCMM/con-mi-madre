@@ -40,7 +40,7 @@
   opacity: 0.85;
 }
 
-@media (min-width: 1054px) {
+/* @media (min-width: 1054px) {
   .banner-image {
     height: 25.5rem;
   }
@@ -67,4 +67,4 @@
   .gallery-img {
     height: 45rem;
   }
-}
+} */

@@ -145,13 +145,13 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <Link
-          to="/Donate"
+        <a
+          href={"https://conmimadre.z2systems.com/np/clients/conmimadre/donation.jsp?campaign=19&"}
           className="text-white text-lg p-2 pl-4 pr-4 rounded shadow-xl text-center font-black text-gray-500 bg-pink-500 hover:text-pink-500 hover:bg-white"
           id="button-background"
         >
           Donate
-        </Link>
+        </a>
       </div>
       {/* Mobile Header */}
       <div className="md:hidden w-full flex justify-between items-center text-center">
