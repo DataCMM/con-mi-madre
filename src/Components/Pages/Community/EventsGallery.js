@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./community.css"
 import { Carousel } from "react-responsive-carousel";
 
 import sanityClient from "../../../client";
@@ -32,11 +33,9 @@ const EventsGallery = () => {
     setPhotos(data)
   }
 
-  console.log(photos)
-
   return (
     <Carousel 
-      autoPlay={true}
+      autoPlay
       infiniteLoop
       useKeyboardArrows 
       showIndicators={false}
@@ -45,7 +44,7 @@ const EventsGallery = () => {
       {photos && photos
       .sort((a, b) => a.id - b.id)
       .map((pic, idx) => (
-        <div key={idx}>
+        <div key={idx} className="lg:w-4/5 lg:m-auto xl:w-3/5">
           <img
           src= {urlFor(pic.image).url()}
           className="gallery-img bg-cover bg-top bg-no-repeat"

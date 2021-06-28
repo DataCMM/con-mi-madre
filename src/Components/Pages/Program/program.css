@@ -1,5 +1,6 @@
 .carousel .slide {
-  background: rgb(70, 164, 186);
+  /* background: rgb(169, 229, 243); */
+  background: #000;
 }
 .header {
   position: sticky;

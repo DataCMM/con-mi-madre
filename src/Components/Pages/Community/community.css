@@ -2,6 +2,16 @@
   position: relative;
   overflow: hidden;
 }
+
+.carousel .slide {
+  /* background: rgb(169, 229, 243); */
+  background: #000;
+}
+.header {
+  position: sticky;
+  top: 0;
+}
+
 .images-1 {
   position: absolute;
   background-position: center;
@@ -28,4 +38,33 @@
 .carousel .slide .legend {
   background: rgb(0, 0, 0, 0.65);
   opacity: 0.85;
+}
+
+@media (min-width: 1054px) {
+  .banner-image {
+    height: 25.5rem;
+  }
+  .banner-text {
+    height: 34.5rem;
+  }
+  .intern-img {
+    height: 34.5rem;
+  }
+  .gallery-img {
+    height: 38.5rem;
+  }
+}
+@media (min-width: 1350px) {
+  .banner-image {
+    height: 42rem;
+  }
+  .banner-text {
+    height: 42rem;
+  }
+  .intern-img {
+    height: 40rem;
+  }
+  .gallery-img {
+    height: 45rem;
+  }
 }
