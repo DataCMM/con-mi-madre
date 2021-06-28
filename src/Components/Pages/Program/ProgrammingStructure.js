@@ -98,12 +98,12 @@ const Program = () => {
           </div>
         </div>
       </div>
-      <div className="bg-blue-500 text-gray-500 p-6">
-        <h3 className="font-semibold text-2xl xl:text-3xl pb-3 text-center">
+      <div className="bg-blue-500 text-gray-500 p-6 lg:flex">
+        <h3 className="font-semibold text-2xl xl:text-3xl pb-3 text-center md:pl-10 lg:w-1/2 lg:pt-8">
           Programming Opportunities for Students and their Mothers Throughout
           the Year
         </h3>
-        <ul className="list-disc font-light text-xl pl-12 md:pl-24 pb-6">
+        <ul className="list-disc font-light text-xl pl-12 md:pl-24 pb-6 lg:grid lg:w-1/2 lg:justify-items-start lg:pl-48">
           <li>Balanced Living Conference</li>
           <li>College Visits</li>
           <li>College Fair</li>
