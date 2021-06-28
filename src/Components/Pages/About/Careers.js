@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from "react";
-import sanityClient from "../../../client"
+
 import Logo from "../../../images/stacked/text-only.png";
+
+import sanityClient from "../../../client"
 
 const Careers = () => {
 
   const [ internships, setInternships ] = useState([])
+  const [ currentOpenings, setCurrentOpenings ] = useState([])
 
   useEffect(()=>{
     getInternships()
+    getCurrentOpenings()
   },[])
 
   async function getInternships (){
@@ -19,6 +23,17 @@ const Careers = () => {
       "pdfLink" : pdf.asset->url
     }`)
     setInternships(data)
+  }
+
+  async function getCurrentOpenings (){
+    const data = await sanityClient
+    .fetch(`*[_type == "currentOpenings"]{
+      title,
+      location,
+      description,
+      "pdfLink" : pdf.asset->url
+    }`)
+    setCurrentOpenings(data)
   }
 
   return (
@@ -68,9 +83,34 @@ const Careers = () => {
       {/*  Openings */}
       <div className="text-center p-6 pb-10 pt-10 bg-gray-500">
         <h3 className="text-4xl font-semibold">Current Openings</h3>
-        <p className="text-2xl font-light">
-          There are no openings at this time
-        </p>
+        { currentOpenings && currentOpenings.map((job, idx)=> (
+            <article key={idx}>
+              <h3 className="text-2xl font-semibold pb-3">
+                {job.title} - ({job.location})
+              </h3>
+
+              <p className="text-xl font-light pb-6">
+              {job.description}{" "}
+              {job.pdfLink ? 
+                <a
+                  className="hover:text-pink-500 font-medium"
+                  href={`${job.pdfLink}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Click here for more information
+                </a>
+                : null
+              }
+              </p>
+            </article>
+        ))} 
+        {currentOpenings.length < 1 ? 
+            <p className="text-2xl font-light">
+                There are no openings at this time
+            </p>
+          : null
+        }
       </div>
 
       {/* Internships */}
@@ -101,6 +141,7 @@ const Careers = () => {
               </p>
             </article>
           ))}
+          
           <p className="text-xl font-light pt-3 pb-3">
             For more information on any job or internship opening, please reach
             out to{" "}

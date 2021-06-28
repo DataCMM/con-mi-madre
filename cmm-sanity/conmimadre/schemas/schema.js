@@ -29,6 +29,7 @@ import cmmAward from './cmmAward'
 import corazon from './corazon'
 import mariposa from './mariposa'
 import eventNotification from './eventNotification'
+import currentOpenings from './currentOpenings'
 
 export default createSchema({
   name: 'default',
@@ -56,6 +57,7 @@ export default createSchema({
     cmmAward,
     corazon,
     mariposa,
-    eventNotification
+    eventNotification,
+    currentOpenings,
   ]),
 })
