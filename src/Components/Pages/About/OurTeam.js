@@ -98,18 +98,18 @@ const OurTeam = () => {
                   alt={member.first_name.concat(member.last_name)}
                   className="w-48 h-52 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
                 />
-                <div className="flex md:w-1/2 md:h-48 flex-col text-center md:text-left md:justify-between md:pl-5">
+                <div className="flex md:w-1/2 h-full flex-col text-center md:text-left md:justify-between md:pl-5">
                   <div>
                     <h2 className="text-sm pt-4 md:pt-0">{member.title}</h2>
                     <h3 className="font-semibold text-md">
-                      {member.first_name.concat(member.last_name)}
+                      {member.first_name}{` `}{member.last_name}
                     </h3>
                     <p className="pb-4 text-sm font-light">{member.pronoun}</p>
                   </div>
                   <div className="flex flex-col flex-wrap">
                     <Modal member={member} />
                     <a
-                      className="pt-2 font-semibold text-sm hover:text-pink-500 hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                      className="pt-2 font-semibold text-sm hover:text-pink-500 outline-none focus:outline-none ease-linear transition-all duration-150"
                       href={member.email}
                     >
                       Email {member.first_name}
