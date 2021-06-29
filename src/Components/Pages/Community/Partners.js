@@ -64,7 +64,6 @@ const Partners = () => {
       setSchools(data)
     }  
 
-
   return (
     <div>
       <div className="banner-image w-full h-full">
@@ -94,7 +93,7 @@ const Partners = () => {
         <div className="text-center bg-green-500 text-4xl font-semibold">
           Corporate Partners
         </div>
-        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 md:gap-12 p-4 mb-8 lg:grid-cols-3 lg:p-12 lg:gap-4">
+        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 md:gap-12 p-4 mb-8 lg:grid-cols-3 lg:p-8">
           {corporate && corporate.map((partner, idx) => (
             <a
             href={partner.url}
