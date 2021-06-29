@@ -150,6 +150,7 @@ const Header = () => {
           className="text-white text-lg p-2 pl-4 pr-4 rounded shadow-xl text-center font-black text-gray-500 bg-pink-500 hover:text-pink-500 hover:bg-white"
           id="button-background"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Donate
         </a>
@@ -168,6 +169,7 @@ const Header = () => {
               href={"https://conmimadre.z2systems.com/np/clients/conmimadre/donation.jsp?campaign=19&"}
               className="p-2 pl-4 pr-4 rounded hover:shadow-2xl font-black text-center text-gray-500 bg-pink-500 hover:text-pink-500 hover:bg-white"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Donate
             </a>
