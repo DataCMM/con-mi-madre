@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 import { FcGraduationCap } from "react-icons/fc";
 import { FaUniversity } from "react-icons/fa";
 import { BsGraphUp } from "react-icons/bs";
@@ -57,6 +55,7 @@ const Landing = () => {
                 <a
                   className="text-white text-xl p-4 rounded font-black text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
                   href={"https://conmimadre.z2systems.com/np/clients/conmimadre/donation.jsp?campaign=19&"}
+                  target="_blank"
                 >
                   Donate Today
                 </a>
