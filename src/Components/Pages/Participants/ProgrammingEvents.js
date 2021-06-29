@@ -126,7 +126,7 @@ const ProgrammingEvents = () => {
           <img
             src="/images/program-events/ProgramEventsImg.jpeg"
             alt="girls in the program jumping"
-            className="h-auto bg-cover bg-center"
+            className="h-auto w-full bg-cover bg-center"
           />
         </div>
       </div>
