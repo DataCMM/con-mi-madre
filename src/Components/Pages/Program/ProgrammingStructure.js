@@ -1,7 +1,6 @@
 import React from "react";
 
 import Logo from "../../../images/stacked/text-only.png";
-import "./program.css";
 
 const Program = () => {
   return (

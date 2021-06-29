@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./program.css"
 
 import Logo from "../../../images/stacked/text-only.png";
 import { Carousel } from "react-responsive-carousel";

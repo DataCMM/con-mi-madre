@@ -3,7 +3,6 @@ import sanityClient from "../../../client"
 import imageUrlBuilder from "@sanity/image-url"
 
 import Logo from "../../../images/stacked/text-only.png";
-import "./community.css";
 
 const builder = imageUrlBuilder(sanityClient)
 
