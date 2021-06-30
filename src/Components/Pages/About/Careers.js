@@ -29,6 +29,7 @@ const Careers = () => {
     const data = await sanityClient
     .fetch(`*[_type == "currentOpenings"]{
       title,
+      id,
       location,
       description,
       "pdfLink" : pdf.asset->url
@@ -83,7 +84,9 @@ const Careers = () => {
       {/*  Openings */}
       <div className="text-center p-6 pb-10 pt-10 bg-gray-500">
         <h3 className="text-4xl font-semibold">Current Openings</h3>
-        { currentOpenings && currentOpenings.map((job, idx)=> (
+        { currentOpenings && currentOpenings
+          .sort((a, b) => a.id - b.id)
+          .map((job, idx)=> (
             <article key={idx}>
               <h3 className="text-2xl font-semibold pb-3">
                 {job.title} - ({job.location})

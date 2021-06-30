@@ -22,11 +22,12 @@ const OurTeam = () => {
     getCommittee();
     getBoard();
   }, []);
+
   async function getStaff() {
     const data = await sanityClient.fetch(`*[_type == "adminStaff"]{
       first_name,
       last_name,
-      title,
+      position,
       pronoun,
       id,
       email,
@@ -42,17 +43,22 @@ const OurTeam = () => {
 
   async function getCommittee() {
     const data = await sanityClient.fetch(`*[_type == "executiveCommittee"]{
-      name,
-      title,
+      first_name,
+      last_name,
+      id,
+      position,
       company_1,
-      company_2
+      company_2,
     }`);
     setCommittee(data);
   }
+
   async function getBoard() {
     const data = await sanityClient.fetch(`*[_type == "additionalBoardMembers"]{
-      name,
-      title
+      first_name,
+      last_name,
+      id,
+      position,
     }`);
     setBoard(data);
   }
@@ -100,9 +106,9 @@ const OurTeam = () => {
                 />
                 <div className="flex md:w-1/2 h-full flex-col text-center md:text-left md:justify-between md:pl-5">
                   <div>
-                    <h2 className="text-sm pt-4 md:pt-0">{member.title}</h2>
+                    <h2 className="text-sm pt-4 md:pt-0">{member.position}</h2>
                     <h3 className="font-semibold text-md">
-                      {member.first_name}{` `}{member.last_name}
+                      {member.first_name}{' '}{member.last_name}
                     </h3>
                     <p className="pb-4 text-sm font-light">{member.pronoun}</p>
                   </div>
@@ -119,6 +125,8 @@ const OurTeam = () => {
               </div>
             ))}
       </div>
+
+
       {/* Executive Committee Members */}
       <div className="bg-green-500 text-xl m-auto text-center p-3 pb-6">
         <div>
@@ -127,25 +135,30 @@ const OurTeam = () => {
         </div>
 
         {committee &&
-          committee.map((member, idx) => (
+          committee
+          .sort((a, b) => a.id - b.id)
+          .map((member, idx) => (
             <div key={idx} className="pb-2">
               <h2>
-                {member.name} - {member.title}
+                {member.first_name}{' '}{member.last_name} - {member.position}
               </h2>
               <h3>{member.company_1}</h3>
               {member.company_2 ? <h3>{member.company_2}</h3> : null}
             </div>
           ))}
-        {/* Additonal Board Members */}
+
+        {/* Additional Board Members */}
         <div className="pb-3">
           <h2 className="font-bold text-2xl pt-3 pb-2">
             Additional Board Members
           </h2>
           {board &&
-            board.map((member, idx) => (
+            board
+            .sort((a, b) => a.id - b.id)
+            .map((member, idx) => (
               <div key={idx} className="pb-2">
-                <h2>{member.name}</h2>
-                <h3>{member.title}</h3>
+                <h2>{member.first_name}{' '}{member.last_name}</h2>
+                <h3>{member.position}</h3>
               </div>
             ))}
         </div>

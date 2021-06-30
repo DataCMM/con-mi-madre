@@ -4,6 +4,11 @@ export default {
     type: 'document',
     fields: [
       {
+        name:'title',
+        title: 'Name and ID#',
+        type: 'string',
+      },
+      {
         name: 'first_name',
         title: 'First Name',
         type: 'string',
@@ -19,8 +24,8 @@ export default {
         type: 'number'
       },
       {
-        name: 'title',
-        title: 'Title',
+        name: 'position',
+        title: 'Position',
         type: 'string',
       },
       {
@@ -33,7 +38,7 @@ export default {
         title: 'Slug',
         type: 'slug',
         options: {
-          source: 'name',
+          source: 'title',
           maxLength: 96,
         },
       },
@@ -66,7 +71,7 @@ export default {
     ],
     preview: {
       select: {
-        title: 'name',
+        title: 'title',
         media: 'image',
       },
     },

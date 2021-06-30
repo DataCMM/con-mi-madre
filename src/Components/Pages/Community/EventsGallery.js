@@ -23,12 +23,12 @@ const EventsGallery = () => {
   async function getPhotos(){
     const data = await sanityClient.fetch(`*[_type == "awardsImages"]{
       id,
-      title,
+      event,
       image{
         asset->{
           url
         }
-      }
+      },
     }`);
     setPhotos(data)
   }
@@ -48,9 +48,9 @@ const EventsGallery = () => {
           <img
           src= {urlFor(pic.image).url()}
           className="gallery-img bg-cover bg-top bg-no-repeat"
-          alt={pic.title}
+          alt={pic.event}
           />
-          <p className="legend">{pic.title}</p>
+          <p className="legend">{pic.event}</p>
         </div>
       ))}
     </Carousel>

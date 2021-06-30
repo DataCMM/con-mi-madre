@@ -4,7 +4,12 @@ export default {
     type: 'document',
     fields: [
         {
-            name: 'title',
+            name:'title',
+            title: 'Name and ID#',
+            type: 'string',
+          },
+        {
+            name: 'event',
             title: 'Event Name',
             type: 'string'
         },
@@ -21,5 +26,10 @@ export default {
                 hotspot: true,
             }
         }
-    ]
+    ],
+        preview: {
+            select: {
+            title: 'title',
+            },
+        },
 }
