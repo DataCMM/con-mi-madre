@@ -4,6 +4,11 @@ export default {
     type: 'document',
     fields: [
         {
+            name:'display',
+            title: 'Name and ID#',
+            type: 'string',
+        },
+        {
             name: 'name',
             title: 'Company Name',
             type: 'string'
@@ -14,6 +19,11 @@ export default {
             type: 'url'
         },
         {
+            name: 'id',
+            title: 'ID',
+            type: 'number',
+        },
+        {
             name: 'image',
             title: 'Image',
             type: 'image',
@@ -21,5 +31,10 @@ export default {
                 hotspot: true,
             }
         }
-    ]
+    ],
+        preview: {
+            select: {
+            title: 'display',
+            },
+        },
 }

@@ -26,6 +26,7 @@ const Partners = () => {
         .fetch(`*[_type == "corporate_sponsors"]{
           name,
           url,
+          id,
           image{
             asset->{
               url
@@ -40,6 +41,7 @@ const Partners = () => {
       .fetch(`*[_type == "foundations"]{
         name,
         url,
+        id,
         image{
           asset->{
             url
@@ -54,6 +56,7 @@ const Partners = () => {
       .fetch(`*[_type == "school_partners"]{
         name,
         url,
+        id,
         image{
           asset->{
             url
@@ -88,12 +91,16 @@ const Partners = () => {
           </div>
         </div>
       </div>
+
+
       <div className="partner-content">
         <div className="text-center bg-green-500 text-4xl font-semibold">
           Corporate Partners
         </div>
         <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 md:gap-12 p-4 mb-8 lg:grid-cols-3 lg:p-8">
-          {corporate && corporate.map((partner, idx) => (
+          {corporate && corporate
+            .sort((a, b) => a.id - b.id)
+            .map((partner, idx) => (
             <a
             href={partner.url}
             target="_blank"
@@ -108,19 +115,16 @@ const Partners = () => {
             />
             </a>
           ))}
-            {/* <div
-              style={{
-                backgroundImage:
-                  "url(/images/corporate-partners/Acension-Seton.jpg)",
-              }}
-              className="w-full h-48 bg-center bg-no-repeat  bg-contain"
-            /> */}
         </div>
+
+
         <div className="text-center bg-green-500 text-4xl font-semibold">
           Foundations
         </div>
         <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 lg:grid-cols-3 lg:p-8">
-          {foundations && foundations.map((partner, idx) => (
+          {foundations && foundations
+            .sort((a, b) => a.id - b.id)
+            .map((partner, idx) => (
             <a
             href={partner.url}
             target="_blank"
@@ -134,19 +138,16 @@ const Partners = () => {
               />
               </a>
             ))}
-            {/* <div
-              style={{
-                backgroundImage:
-                  "url(/images/foundations/hispanic-impact-fund.png)",
-              }}
-              className="w-full h-48 bg-center bg-no-repeat bg-contain"
-            /> */}
         </div>
+
+
         <div className="text-center bg-green-500 text-4xl font-semibold">
           School Partnerships
         </div>
         <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 lg:grid-cols-3 lg:p-8">
-          {schools && schools.map((partner, idx) => (
+          {schools && schools
+            .sort((a, b) => a.id - b.id)
+            .map((partner, idx) => (
             <a
             href={partner.url}
             target="_blank"
@@ -160,14 +161,8 @@ const Partners = () => {
               />
               </a>
             ))}
-            {/*<div
-              style={{
-                backgroundImage:
-                  "url(/images/school-partners/TaylorISD-Logo.png)",
-              }}
-              className="w-full h-48 bg-center bg-no-repeat bg-contain"
-            />*/}
         </div>
+
       </div>
     </div>
   );

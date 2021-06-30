@@ -4,6 +4,11 @@ export default {
     type: 'document',
     fields: [
         {
+            name:'display',
+            title: 'Name and ID#',
+            type: 'string',
+        },
+        {
             name: 'title',
             title: 'Company Name',
             type: 'string'
@@ -31,5 +36,10 @@ export default {
                 }
             ]
         },
-    ]
+    ],
+        preview: {
+            select: {
+            title: 'display',
+            },
+        },
 }
