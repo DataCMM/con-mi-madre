@@ -39,6 +39,7 @@ const Awards = () => {
   async function getMedia() {
     const data = await sanityClient.fetch(`*[_type == "media"]{
       title,
+      id,
       url,
       "desc" : description[0].children[0].text
     }`);
@@ -120,7 +121,9 @@ const Awards = () => {
       {/* Green Box Content */}
       <div className="bg-green-500 p-6 text-center">
         <h3 className="text-3xl font-semibold pb-2">Media Mentions</h3>
-        {media && media.map((post, idx) => (
+        {media && media
+          .sort((a, b) => a.id - b.id)
+          .map((post, idx) => (
           <div key={idx}>
             <a
               href={post.url}

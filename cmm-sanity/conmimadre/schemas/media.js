@@ -4,9 +4,19 @@ export default {
     type: 'document',
     fields: [
         {
+            name:'display',
+            title: 'Name and ID#',
+            type: 'string',
+        },
+        {
             name: 'title',
             title: 'Award Title & Year',
             type: 'string'
+        },
+        {
+            name: 'id',
+            title: 'ID',
+            type: 'number',
         },
         {
             name: 'url',
@@ -26,5 +36,10 @@ export default {
                 }
             ]
         },
-    ]
+    ],
+        preview: {
+            select: {
+            title: 'display',
+            },
+        },
 }
