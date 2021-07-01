@@ -16,7 +16,7 @@ const Footer = () => {
           <h3>(512) 467-4483</h3>
         </a>
         <a
-          href="info@conmimadre.com"
+           href="mailto:info@conmimadre.org?subject=Mail%20from%20careers%20page"
           className="hover:text-pink-500 hover:underline"
         >
           <h3>info@conmimadre.org</h3>
