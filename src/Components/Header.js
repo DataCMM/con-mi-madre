@@ -130,7 +130,7 @@ const Header = () => {
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
                 to="/Resources"
-                className="block whitespace-no-wrap py-2 px-4 pr-4"
+                className="block whitespace-no-wrap py-2 px-4 pr-10"
               >
                 Resources
               </Link>
@@ -138,7 +138,7 @@ const Header = () => {
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
               <Link
                 to="/ProgramEvents"
-                className="block whitespace-no-wrap py-2 px-4 pr-4"
+                className="block whitespace-no-wrap py-2 px-4 pr-10"
               >
                 Program Events
               </Link>
