@@ -154,6 +154,12 @@ const Header = () => {
         >
           Donate
         </a>
+        {/* <Link
+          to="/Donate"
+          className="block bg-pink-500 text-white rounded whitespace-no-wrap py-2 px-4 pr-4"
+        >
+          Donate
+        </Link> */}
       </div>
       {/* Mobile Header */}
       <div className="md:hidden w-full flex justify-between items-center text-center">
@@ -173,6 +179,9 @@ const Header = () => {
             >
               Donate
             </a>
+            {/* <Link to="/Donate" className="hover:text-pink-500">
+              Donate
+            </Link> */}
           </div>
         </div>
       </div>
