@@ -125,9 +125,9 @@ const Purpose = () => {
           ))}
         </div>
         <div>
-          <h3 className="text-xl font-semibold">Statements:</h3>
-          {statements && statements.map((statement, idx) => (
+          {statements.length >= 1 ? statements.map((statement, idx) => (
             <div key={idx}>
+              <h3 className="text-xl font-semibold">Statements:</h3>
               <a
                 className="hover:text-pink-500 font-light"
                 href={`${statement.pdfLink}`}
@@ -138,7 +138,9 @@ const Purpose = () => {
               </a>
               <br />
             </div>
-          ))}
+          ))
+          : null
+          }
         </div>
       </div>
     </div>
