@@ -116,7 +116,8 @@ const OurTeam = () => {
                     <Modal member={member} />
                     <a
                       className="pt-2 font-semibold text-sm hover:text-pink-500 outline-none focus:outline-none ease-linear transition-all duration-150"
-                      href={member.email}
+                      // href={member.email}
+                      href={`mailto:${member.email}?subject=Mail from our site`}
                     >
                       Email {member.first_name}
                     </a>
