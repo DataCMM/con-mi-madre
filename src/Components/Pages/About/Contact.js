@@ -6,7 +6,7 @@ const Contact = () => {
       <form  
         className="w-full max-w-lg m-auto p-6 bg-blue-500" 
         name="contact" 
-        method="submit"
+        method="post"
         >
         <input type="hidden" name="form-name" value="contact" />
           <div className="flex flex-wrap -mx-3 mb-6">
