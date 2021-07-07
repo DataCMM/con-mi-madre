@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="bg-blue-500">
-      <form className="w-full max-w-lg m-auto p-6 bg-blue-500">
+      <form className="w-full max-w-lg m-auto p-6 bg-blue-500" netlify>
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
