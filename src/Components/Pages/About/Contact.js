@@ -73,7 +73,7 @@ const Contact = () => {
           <div className="md:w-1/3">
             <button
               className="shadow bg-pink-500 hover:bg-gray-500 hover:text-pink-500 focus:shadow-outline focus:outline-none text-gray-500 font-bold py-2 px-4 rounded"
-              type="button"
+              type="submit"
             >
               Send
             </button>
