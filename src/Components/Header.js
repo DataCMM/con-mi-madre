@@ -8,8 +8,8 @@ import "./Pages/pages.css";
 
 const Header = () => {
   return (
-    <div className="header z-40 h-16 pl-5 pr-5 w-full flex justify-between items-center text-blue-500 bg-gray-200 md:pl-10 md:pr-10">
-      <div className="hidden md:contents font-medium text-sm md:text-xs lg:text-sm lg:text-base">
+    <header className="header z-40 h-16 pl-5 pr-5 w-full flex justify-between items-center text-blue-500 bg-gray-200 md:pl-10 md:pr-10">
+      <nav className="hidden md:contents font-medium text-sm md:text-xs lg:text-sm lg:text-base">
         {/* ####copy#### <div className="h-16 w-full relative md:flex md:justify-between md:items-center md:navbar-expand-lg md:text-blue-500 bg-gray-200 font-medium pl-10 pr-10"> */}
         <div>
           <Link to="/" className="font-bold hover:text-pink-500">
@@ -160,9 +160,9 @@ const Header = () => {
         >
           Donate
         </Link> */}
-      </div>
+      </nav>
       {/* Mobile Header */}
-      <div className="md:hidden w-full flex justify-between items-center text-center">
+      <nav className="md:hidden w-full flex justify-between items-center text-center">
         <MobileNav />
         <div className="flex space-x-6">
           <div>
@@ -184,8 +184,8 @@ const Header = () => {
             </Link> */}
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 
