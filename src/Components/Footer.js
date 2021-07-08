@@ -3,7 +3,7 @@ import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-200 w-full flex flex-col text-center md:flex-row">
+    <footer className="bg-gray-200 w-full flex flex-col text-center md:flex-row">
       <div className="w-3/4 m-auto h-auto md:w-1/3">
         <img src="/images/horizontal/color.png" alt="Con Mi Madre Logo" />
       </div>
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </a>
       </div>
-    </div>
+    </footer>
   );
 };
 
