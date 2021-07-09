@@ -102,7 +102,7 @@ const Landing = () => {
             <div>
               <h3 className="text-3xl font-semibold">Our Mission</h3>
               <p className="content font-light">
-                Empower young Latinas and their mothers through the education and
+                To empower young Latinas and their mothers through the education and
                 support services that increase preparedness, participation, and
                 success in post-secondary education.
               </p>
@@ -151,8 +151,8 @@ const Landing = () => {
               At CMM, we equip mothers and daughters with the knowledge and
               advocacy skills to succeed in spite of systemic barriers.
             </p>
-            <h4 className="text-2xl">Community-Centered</h4>
-            <p className="font-light">
+            <h4 className="text-2xl font-semibold">Community-Centered</h4>
+            <p className="font-light ">
               We unite with local organizations and individuals to better meet the
               needs of the community.
             </p>
