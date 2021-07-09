@@ -67,9 +67,9 @@ const Partners = () => {
     }  
 
   return (
-    <div>
-      <div className="banner-image w-full h-full">
-        <div
+    <main>
+      <article className="banner-image w-full h-full">
+        <section
           style={{
             backgroundImage: "url(/images/careers/Careers-Banner.jpg)",
           }}
@@ -80,24 +80,24 @@ const Partners = () => {
             id="career-overlay"
           />
 
-          <div className="banner-text sticky flex flex-col justify-between">
+          <section className="banner-text sticky flex flex-col justify-between">
             <div className="sticky pt-4 pl-4 h-14 w-1/2">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
 
             <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
-              <div id="title1">Our Partners</div>
+              <h1 id="title1">Our Partners</h1>
             </div>
-          </div>
-        </div>
-      </div>
+          </section>
+        </section>
+      </article>
 
 
-      <div className="partner-content">
-        <div className="text-center bg-green-500 text-4xl font-semibold">
+      <article className="partner-content">
+        <h2 className="text-center bg-green-500 text-4xl font-semibold">
           Corporate Partners
-        </div>
-        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 md:gap-12 p-4 mb-8 md:grid-cols-4 lg:p-8">
+        </h2>
+        <section className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 md:gap-12 p-4 mb-8 md:grid-cols-4 lg:p-8">
           {corporate && corporate
             .sort((a, b) => a.id - b.id)
             .map((partner, idx) => (
@@ -115,13 +115,13 @@ const Partners = () => {
             />
             </a>
           ))}
-        </div>
+        </section>
 
 
-        <div className="text-center bg-green-500 text-4xl font-semibold">
+        <h2 className="text-center bg-green-500 text-4xl font-semibold">
           Foundations
-        </div>
-        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 md:grid-cols-4 lg:p-8">
+        </h2>
+        <section className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 md:grid-cols-4 lg:p-8">
           {foundations && foundations
             .sort((a, b) => a.id - b.id)
             .map((partner, idx) => (
@@ -138,13 +138,13 @@ const Partners = () => {
               />
               </a>
             ))}
-        </div>
+        </section>
 
 
-        <div className="text-center bg-green-500 text-4xl font-semibold">
+        <h2 className="text-center bg-green-500 text-4xl font-semibold">
           School Partnerships
-        </div>
-        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 md:grid-cols-4 lg:p-8">
+        </h2>
+        <section className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 md:grid-cols-4 lg:p-8">
           {schools && schools
             .sort((a, b) => a.id - b.id)
             .map((partner, idx) => (
@@ -161,10 +161,9 @@ const Partners = () => {
               />
               </a>
             ))}
-        </div>
-
-      </div>
-    </div>
+        </section>
+      </article>
+    </main>
   );
 };
 
