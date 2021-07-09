@@ -90,7 +90,7 @@ const OurTeam = () => {
         </div>
       </article>
       {/* Profiles with Images */}
-      <div className="grid xs:grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 bg-gray-500 p-4 md:p-12">
+      <div className="grid xs:grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 bg-gray-500 p-4 md:p-12">
         {staff &&
           staff
             .sort((a, b) => a.id - b.id)
@@ -115,7 +115,7 @@ const OurTeam = () => {
                   <section className="flex flex-col flex-wrap">
                     <Modal member={member} />
                     <a
-                      className="pt-2 font-semibold text-sm hover:text-pink-500 outline-none focus:outline-none ease-linear transition-all duration-150"
+                      className="pt-2 font-semibold text-sm md:text-xs lg:text-sm hover:text-pink-500 outline-none focus:outline-none ease-linear transition-all duration-150"
                       // href={member.email}
                       href={`mailto:${member.email}?subject=Mail from our site`}
                     >
