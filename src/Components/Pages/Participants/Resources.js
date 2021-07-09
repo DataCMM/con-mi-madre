@@ -30,9 +30,9 @@ const Resources = () => {
   }
 
   return (
-    <div>
-      <div className="banner-image w-full h-full">
-        <div
+    <main>
+      <article className="banner-image w-full h-full">
+        <section
           style={{
             backgroundImage: "url(/images/resources/ResourcesBanner.jpg)",
           }}
@@ -43,17 +43,17 @@ const Resources = () => {
             id="career-overlay"
           />
 
-          <div className="banner-text sticky flex flex-col justify-between">
+          <section className="banner-text sticky flex flex-col justify-between">
             <div className="sticky pt-4 pl-4 h-14 w-1/2">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
             <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
-              <div id="title1">Resources</div>
+              <h1 id="title1">Resources</h1>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="bg-blue-500 text-gray-500 p-12">
+          </section>
+        </section>
+      </article>
+      <article className="bg-blue-500 text-gray-500 p-12">
         <q className="text-lg lg:text-xl font-light">
           Cuando una madre e hija se unen a Con Mi MADRE, se unen a una
           comunidad que va más allá de metas educativas. Nos alegra ofrecerles
@@ -73,43 +73,43 @@ const Resources = () => {
         <cite className="text-xl lg:text-2xl">
           Dr. Johanna Moya Fábregas, Executive Director{" "}
         </cite>
-      </div>
+      </article>
 
-      <div className="bg-gray-500 p-12">
+      <article className="bg-gray-500 p-12">
         
         {/* Central Resources */}
         {centralPdfs && centralPdfs.map((pdf, idx) => (
-          <div key={idx} className="pb-6">
+          <section key={idx} className="pb-6">
           <a
             className="hover:text-pink-500"
             href={pdf.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h1 className="text-2xl font-semibold text-center">
+            <h3 className="text-2xl font-semibold text-center">
               {pdf.title}
-            </h1>
+            </h3>
           </a>
-          </div>
+          </section>
         ))}  
         
         {/* Forth Worth Resources */}
         {fortWorthPdfs && fortWorthPdfs.map((pdf, idx) => (
-          <div key={idx} className="pb-6">
+          <section key={idx} className="pb-6">
             <a
               className="hover:text-pink-500"
               href={pdf.url}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h1 className="text-2xl font-semibold text-center">
+              <h3 className="text-2xl font-semibold text-center">
                 {pdf.title}
-              </h1>
+              </h3>
             </a>
-          </div>
+          </section>
         ))}  
-      </div>
-    </div>
+      </article>
+    </main>
   );
 };
 
