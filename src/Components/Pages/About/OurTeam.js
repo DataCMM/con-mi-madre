@@ -119,7 +119,7 @@ const OurTeam = () => {
                       // href={member.email}
                       href={`mailto:${member.email}?subject=Mail from our site`}
                     >
-                      Email {member.first_name}
+                      {member.email}
                     </a>
                   </div>
                 </div>
