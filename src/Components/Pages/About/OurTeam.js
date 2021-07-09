@@ -64,8 +64,8 @@ const OurTeam = () => {
   }
 
   return (
-    <div>
-      <div className="banner-image w-full h-full">
+    <main>
+      <article className="banner-image w-full h-full">
         <div
           style={{
             backgroundImage:
@@ -84,18 +84,18 @@ const OurTeam = () => {
             </div>
 
             <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
-              <div id="title1">Our Team</div>
+              <h1 id="title1">Our Team</h1>
             </div>
           </div>
         </div>
-      </div>
+      </article>
       {/* Profiles with Images */}
       <div className="grid xs:grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 bg-gray-500 p-4 md:p-12">
         {staff &&
           staff
             .sort((a, b) => a.id - b.id)
             .map((member, idx) => (
-              <div
+              <article
                 key={idx}
                 className="rounded h-full flex flex-col items-center md:flex-row md:justify-start md:items-start p-4 bg-gray-500"
               >
@@ -105,14 +105,14 @@ const OurTeam = () => {
                   className="w-48 h-52 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
                 />
                 <div className="flex md:w-1/2 h-full flex-col text-center md:text-left md:justify-between md:pl-5">
-                  <div>
+                  <section>
                     <h2 className="text-sm pt-4 md:pt-0">{member.position}</h2>
                     <h3 className="font-semibold text-md">
                       {member.first_name}{' '}{member.last_name}
                     </h3>
                     <p className="pb-4 text-sm font-light">{member.pronoun}</p>
-                  </div>
-                  <div className="flex flex-col flex-wrap">
+                  </section>
+                  <section className="flex flex-col flex-wrap">
                     <Modal member={member} />
                     <a
                       className="pt-2 font-semibold text-sm hover:text-pink-500 outline-none focus:outline-none ease-linear transition-all duration-150"
@@ -121,35 +121,35 @@ const OurTeam = () => {
                     >
                       {member.email}
                     </a>
-                  </div>
+                  </section>
                 </div>
-              </div>
+              </article>
             ))}
       </div>
 
 
       {/* Executive Committee Members */}
-      <div className="bg-green-500 text-xl m-auto text-center p-3 pb-6">
-        <div>
+      <article className="bg-green-500 text-xl m-auto text-center p-3 pb-6">
+        <section>
           <h2 className="pt-3 font-extrabold text-4xl">Board Of Directors</h2>
           <h3 className="font-bold text-2xl pt-3 pb-2">Executive Committee</h3>
-        </div>
+        </section>
 
         {committee &&
           committee
           .sort((a, b) => a.id - b.id)
           .map((member, idx) => (
-            <div key={idx} className="pb-2">
+            <section key={idx} className="pb-2">
               <h2>
                 {member.first_name}{' '}{member.last_name} - {member.position}
               </h2>
               <h3>{member.company_1}</h3>
               {member.company_2 ? <h3>{member.company_2}</h3> : null}
-            </div>
+            </section>
           ))}
 
         {/* Additional Board Members */}
-        <div className="pb-3">
+        <article className="pb-3">
           <h2 className="font-bold text-2xl pt-3 pb-2">
             Additional Board Members
           </h2>
@@ -157,14 +157,14 @@ const OurTeam = () => {
             board
             .sort((a, b) => a.id - b.id)
             .map((member, idx) => (
-              <div key={idx} className="pb-2">
+              <section key={idx} className="pb-2">
                 <h2>{member.first_name}{' '}{member.last_name}</h2>
                 <h3>{member.position}</h3>
-              </div>
+              </section>
             ))}
-        </div>
-      </div>
-    </div>
+        </article>
+      </article>
+    </main>
   );
 };
 
