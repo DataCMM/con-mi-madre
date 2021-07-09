@@ -74,40 +74,40 @@ const ProgrammingEvents = () => {
             Calendario de Eventos Para Participantes
           </h2>
         </div>
-        <section>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 p-12 text-center">
-            <div>
-            <h2 className="text-2xl font-semibold pb-2">Fall/Otoño </h2>
-            { fall && fall
-              .sort((a, b) => a.id - b.id)
-              .map((event,idx)=>(
-                <div key={idx}>
-                  <ul className="list-none">
-                    <li className="p-1 font-light">
-                      {event.name} – {event.date}
-                    </li>
-                  </ul>
-                </div>
-              ))
-            }
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold pb-2">Spring/Primavera</h2>
+        <article>
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 p-12 text-center">
+            <section>
+              <h3 className="text-2xl font-semibold pb-2">Fall/Otoño </h3>
+                { fall && fall
+                  .sort((a, b) => a.id - b.id)
+                  .map((event,idx)=>(
+                    <section key={idx}>
+                      <ul className="list-none">
+                        <li className="p-1 font-light">
+                          {event.name} – {event.date}
+                        </li>
+                      </ul>
+                    </section>
+                  ))
+                }
+            </section>
+            <section>
+              <h3 className="text-2xl font-semibold pb-2">Spring/Primavera</h3>
               { spring && spring
               .sort((a, b) => a.id - b.id)
               .map((event,idx)=>(
-                <div key={idx}>
+                <section key={idx}>
                   <ul className="list-none">
                     <li className="p-1 font-light">
                       {event.name} – {event.date}
                     </li>
                   </ul>
-                </div>
+                </section>
               ))
             }
-            </div>
-          </div>
-          <div className="text-center pb-6">
+            </section>
+          </section>
+          <section className="text-center pb-6">
             { eventNotification && eventNotification.map((url, idx)=>(
               <>
                 <a
@@ -122,16 +122,16 @@ const ProgrammingEvents = () => {
               <br/>
               </>
             ))}
-          </div>
-        </section>
+          </section>
+        </article>
 
-        <article className="bg-blue-500">
+        <section className="bg-blue-500">
           <img
             src="/images/program-events/ProgramEventsImg.jpeg"
             alt="girls in the program jumping"
             className="h-auto w-full bg-cover bg-center"
           />
-        </article>
+        </section>
       </article>
     </main>
   );
