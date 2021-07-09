@@ -82,7 +82,6 @@ const Services = () => {
         </h3>
         <p className="current-awards text-center text-2xl font-light pb-6 pl-3 pr-3">
         { invitation && invitation.map((pdf, idx)=>(
-          <section>
             <a
               key={idx}
               href={pdf.url}
@@ -92,7 +91,6 @@ const Services = () => {
             >
               Click here
             </a>
-          </section>
         ))}
             &nbsp;for more details and to register for this year’s Corazón Awards.
           </p>
