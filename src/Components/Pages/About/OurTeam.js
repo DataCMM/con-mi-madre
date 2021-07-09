@@ -104,7 +104,7 @@ const OurTeam = () => {
                   alt={member.first_name.concat(member.last_name)}
                   className="w-48 h-52 mt-3 md:mt-0 bg-cover bg-top bg-no-repeat"
                 />
-                <div className="flex md:w-1/2 h-full flex-col text-center md:text-left md:justify-between md:pl-5">
+                <section className="flex md:w-1/2 h-full flex-col text-center md:text-left md:justify-between md:pl-5">
                   <section>
                     <h2 className="text-sm pt-4 md:pt-0">{member.position}</h2>
                     <h3 className="font-semibold text-md">
@@ -122,7 +122,7 @@ const OurTeam = () => {
                       {member.email}
                     </a>
                   </section>
-                </div>
+                </section>
               </article>
             ))}
       </div>
