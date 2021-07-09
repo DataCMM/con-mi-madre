@@ -106,7 +106,7 @@ const Header = () => {
                 to="/Events"
                 className="block whitespace-no-wrap py-2 px-4 pr-4"
               >
-                Events
+                Corazón Awards
               </Link>
             </li>
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">

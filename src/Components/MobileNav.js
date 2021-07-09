@@ -153,7 +153,7 @@ const MobileNav = () => {
                       className="block whitespace-no-wrap py-2 px-4 pr-4"
                       onClick={handleClick}
                     >
-                      Events
+                      Corazón Awards
                     </Link>
                   </li>
                   <li>
