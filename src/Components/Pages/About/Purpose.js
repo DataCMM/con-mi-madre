@@ -50,7 +50,7 @@ const Purpose = () => {
             </div>
 
             <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
-              <header id="title1">Our Purpose</header>
+              <h1 id="title1">Our Purpose</h1>
             </div>
           </div>
         </section>
