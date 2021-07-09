@@ -62,7 +62,7 @@ const Purpose = () => {
           <h3 className="text-4xl font-semibold pb-3">Latinas Are The Future</h3>
           <p className="font-light">
             In the next few years, the majority of all women in Texas will be
-            Latina.
+            Latina. This is why we must invest in their social emotional and academic wellbeing.
           </p>
           <p className="font-light">
             Latinas are the most at risk for suffering from mental health issues
@@ -110,7 +110,7 @@ const Purpose = () => {
 
         {/* Reports */}
         <section className="bg-blue-500 space-y-3 text-lg text-gray-500 shadow-xl h-auto w-full text-center p-6 pb-10 pt-6">
-          <h2 className="text-3xl pb-3 font-semibold">Con Mi Madre Reports</h2>
+          <h2 className="text-3xl pb-3 font-semibold">Con Mi MADRE Reports</h2>
           <div>
             <h3 className="text-xl font-semibold">Annual Reports:</h3>
             {annualReports && annualReports.map((report, idx) => (
