@@ -109,18 +109,17 @@ const ProgrammingEvents = () => {
           </section>
           <section className="text-center pb-6">
             { eventNotification && eventNotification.map((url, idx)=>(
-              <>
+              <section key={idx}>
                 <a
                   className="text-xl hover:text-pink-500 m-auto font-semibold"
                   href={url.url}
-                  key={idx}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {url.title}
                 </a>
               <br/>
-              </>
+              </section>
             ))}
           </section>
         </article>
