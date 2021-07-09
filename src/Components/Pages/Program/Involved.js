@@ -21,9 +21,9 @@ const Involved = () => {
   }
 
   return (
-    <>
-      <div className="banner-image w-full h-full">
-        <div
+    <main>
+      <article className="banner-image w-full h-full">
+        <section
           style={{
             backgroundImage: "url(/images/involved/Get-Involved-Banner.jpg)",
           }}
@@ -34,20 +34,20 @@ const Involved = () => {
             id="career-overlay"
           />
 
-          <div className="banner-text sticky flex flex-col justify-between">
+          <section className="banner-text sticky flex flex-col justify-between">
             <div className="sticky pt-4 pl-4 h-14 w-1/2">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
 
             <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
-              <div id="title1">Get Involved</div>
+              <h1 id="title1">Get Involved</h1>
             </div>
-          </div>
-        </div>
-      </div>
+          </section>
+        </section>
+      </article>
 
       {/* Academies Blue Content */}
-      <div className="bg-blue-500 text-gray-500 h-auto w-full text-center p-6 pb-10 pt-6">
+      <article className="bg-blue-500 text-gray-500 h-auto w-full text-center p-6 pb-10 pt-6">
         <h3 className="text-3xl font-semibold p-3">
           Interested in participating in Con Mi MADRE programs?
         </h3>
@@ -59,7 +59,7 @@ const Involved = () => {
           income, or parenting situation!
         </p>
         {pdfs && pdfs.map((pdf,idx)=>(
-          <div key={idx} className="flex flex-col space-y-12 pb-12">
+          <section key={idx} className="flex flex-col space-y-12 pb-12">
             <button className="p-2 lg:w-1/2 m-auto border-blue-500 rounded bg-gray-500 text-blue-500 shadow-2xl text-center hover:text-pink-500">
               <a
                 href={pdf.url}
@@ -69,11 +69,11 @@ const Involved = () => {
                 {pdf.title}
               </a>
             </button>
-          </div>  
+          </section>  
         ))}
         {/* https://form.jotform.com/211294879226161  Application for Undergraduate not working */}
-      </div>
-      <div className="bg-gray-500 p-6 flex flex-col text-center">
+      </article>
+      <article className="bg-gray-500 p-6 flex flex-col text-center">
         <h3 className="text-4xl font-semibold pb-6">
           Interested in Volunteering with Con Mi MADRE?
         </h3>
@@ -91,9 +91,9 @@ const Involved = () => {
           </a>{" "}
           for more details.
         </p>
-      </div>
-      <div className="flex lg:p-10 flex-col-reverse gap-6 p-6 bg-gray-500 lg:flex-row">
-        <div className="flex flex-col justify-center text-center lg:text-left pl-14 lg:w-1/2">
+      </article>
+      <article className="flex lg:p-10 flex-col-reverse gap-6 p-6 bg-gray-500 lg:flex-row">
+        <section className="flex flex-col justify-center text-center lg:text-left pl-14 lg:w-1/2">
           <h3 className="text-2xl font-semibold pb-3 pt-6 lg:pt-0">
             Guest Speakers
           </h3>
@@ -115,17 +115,17 @@ const Involved = () => {
           <p className="text-xl font-light pb-6">
           Help promote Con Mi MADRE events and opportunities among our participants.
           </p>
-        </div>
-        <div className="flex flex-col justify-center lg:items-end lg:w-1/2">
+        </section>
+        <section className="flex flex-col justify-center lg:items-end lg:w-1/2">
           <img
             id="participants"
             className="w-full h-full lg:pl-12 lg:pr-0"
             src="/images/involved/GetInvolvedImg.jpg"
             alt="Volunteer in school gym signing up participants"
           />
-        </div>
-      </div>
-    </>
+        </section>
+      </article>
+    </main>
   );
 };
 
