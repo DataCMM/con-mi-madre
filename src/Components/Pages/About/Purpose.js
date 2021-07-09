@@ -44,7 +44,7 @@ const Purpose = () => {
             id="career-overlay"
           />
 
-          <div className="banner-text sticky flex flex-col justify-between">
+          <section className="banner-text sticky flex flex-col justify-between">
             <div className="sticky pt-4 pl-4 h-14 w-1/2">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
@@ -52,7 +52,7 @@ const Purpose = () => {
             <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
               <h1 id="title1">Our Purpose</h1>
             </div>
-          </div>
+          </section>
         </section>
       </article>
 
