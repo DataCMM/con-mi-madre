@@ -109,26 +109,29 @@ const ProgrammingEvents = () => {
           </div>
           <div className="text-center pb-6">
             { eventNotification && eventNotification.map((url, idx)=>(
-              <a
-                className="text-xl hover:text-pink-500 m-auto font-semibold"
-                href={url.url}
-                key={idx}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Sign up to receive email alerts about upcoming events
-              </a>
+              <>
+                <a
+                  className="text-xl hover:text-pink-500 m-auto font-semibold"
+                  href={url.url}
+                  key={idx}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {url.title}
+                </a>
+              <br/>
+              </>
             ))}
           </div>
         </section>
 
-        <div className="bg-blue-500">
+        <article className="bg-blue-500">
           <img
             src="/images/program-events/ProgramEventsImg.jpeg"
             alt="girls in the program jumping"
             className="h-auto w-full bg-cover bg-center"
           />
-        </div>
+        </article>
       </div>
     </div>
   );
