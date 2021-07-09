@@ -97,7 +97,7 @@ const Partners = () => {
         <div className="text-center bg-green-500 text-4xl font-semibold">
           Corporate Partners
         </div>
-        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 md:gap-12 p-4 mb-8 lg:grid-cols-3 lg:p-8">
+        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 md:gap-12 p-4 mb-8 md:grid-cols-4 lg:p-8">
           {corporate && corporate
             .sort((a, b) => a.id - b.id)
             .map((partner, idx) => (
@@ -121,7 +121,7 @@ const Partners = () => {
         <div className="text-center bg-green-500 text-4xl font-semibold">
           Foundations
         </div>
-        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 lg:grid-cols-3 lg:p-8">
+        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 md:grid-cols-4 lg:p-8">
           {foundations && foundations
             .sort((a, b) => a.id - b.id)
             .map((partner, idx) => (
@@ -144,7 +144,7 @@ const Partners = () => {
         <div className="text-center bg-green-500 text-4xl font-semibold">
           School Partnerships
         </div>
-        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 lg:grid-cols-3 lg:p-8">
+        <div className="flex flex-col bg-white items-center grid grid-cols-2 gap-8 p-4 mb-8 md:gap-12 md:grid-cols-4 lg:p-8">
           {schools && schools
             .sort((a, b) => a.id - b.id)
             .map((partner, idx) => (
