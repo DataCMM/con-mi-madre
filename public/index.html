@@ -39,12 +39,11 @@
       <input type="email" name="email" />
       <textarea name="message"></textarea>
     </form>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
      <!-- Issue workaround for React v16. -->
+    <div id="root"></div>
      <script>
       // See https://github.com/facebook/react/issues/20829#issuecomment-802088260
       if (!crossOriginIsolated) SharedArrayBuffer = ArrayBuffer;
     </script>
-    <div id="root"></div>
   </body>
 </html>
