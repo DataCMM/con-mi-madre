@@ -23,7 +23,7 @@ const Program = () => {
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
             <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
-              <div id="title1">Program Structure</div>
+              <div id="title1">Program Journey</div>
             </div>
           </div>
         </div>
@@ -47,8 +47,8 @@ const Program = () => {
               We start early to prepare students for academic, social, and
               emotional success. We host various group meetings throughout the
               school year where our coordinators deliver our social-emotional
-              education curriculum to students at their campus. The preparedness
-              program aims to build the student’s social-emotional skills while
+              education curriculum to students at their campus. The Preparedness
+              Program aims to build the student’s social-emotional skills while
               guiding them in planning their college career.
             </p>
           </div>
@@ -69,8 +69,8 @@ const Program = () => {
             <p className="font-light text-lg pl-6 pr-6">
               Participants continue to receive social-emotional group meetings
               while also commencing the college application process with close
-              guidance from a Con Mi MADRE coordinator. The participation
-              program aims to make students college ready and emotionally
+              guidance from a Con Mi MADRE coordinator. The Participation
+              Program aims to make students college ready and emotionally
               intelligent.
             </p>
           </div>
@@ -91,7 +91,7 @@ const Program = () => {
               degree by offering students supportive guidance and academic
               advising services. The Success Program offers multiple workshops
               per year that cover career development, school belongingness, and
-              financial counseling. The success program aims to make students
+              financial counseling. The Success Program aims to make students
               career-ready and emotionally intelligent.
             </p>
           </div>
