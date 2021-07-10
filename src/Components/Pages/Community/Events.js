@@ -98,7 +98,7 @@ const Services = () => {
       <article className="past-awards bg-gray-500 text-center p-6 pb-12">
         <h3 className="text-4xl font-semibold  pb-6">Past Corazón Awards</h3>
         <EventsGallery />
-        <h3 className="text-4xl font-semibold pb-6">Past Honorees</h3>
+        <h3 className="text-4xl font-semibold pb-6 pt-6">Past Honorees</h3>
 
         <section className="con-mi-madre-award">
           <h3 className="text-3xl font-semibold pb-3 text-pink-500">
