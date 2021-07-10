@@ -110,16 +110,23 @@ const OurTeam = () => {
                     <h3 className="font-semibold text-md">
                       {member.first_name}{' '}{member.last_name}
                     </h3>
-                    <p className="pb-4 text-sm font-light">{member.pronoun}</p>
+                    <p className="pb-2 text-sm font-light">{member.pronoun}</p>
                   </section>
-                  <section className="flex flex-col flex-wrap">
+                  <section className="flex flex-col flex-wrap md:gap-4 ">
                     <Modal member={member} />
                     <a
-                      className="pt-2 font-semibold text-sm md:text-xs lg:text-sm hover:text-pink-500 outline-none focus:outline-none ease-linear transition-all duration-150"
-                      // href={member.email}
+                      className="md:hidden pt-2 font-semibold text-sm hover:text-pink-500 outline-none focus:outline-none ease-linear transition-all duration-150"
                       href={`mailto:${member.email}?subject=Mail from our site`}
                     >
                       {member.email}
+                    </a>
+                    <a
+                      className="hidden md:contents pt-8 font-semibold text-sm hover:text-pink-500 outline-none focus:outline-none ease-linear transition-all duration-150"
+                      href={`mailto:${member.email}?subject=Mail from our site`}
+                    >
+                      {member.first_name}
+                      <br />
+                      @conmimadre.org
                     </a>
                   </section>
                 </section>
