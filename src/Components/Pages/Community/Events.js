@@ -101,9 +101,9 @@ const Services = () => {
         <h3 className="text-4xl font-semibold pb-6">Past Honorees</h3>
 
         <section className="con-mi-madre-award">
-          <u className="text-3xl font-semibold pb-3 text-pink-500">
+          <h3 className="text-3xl font-semibold pb-3 text-pink-500">
             The Con Mi MADRE Award
-          </u>
+          </h3>
           <p className="text-2xl font-light pb-3">
             An educated successful Latina; an example of what we would like to
             see as a product of our program; someone who is living out our
@@ -117,15 +117,15 @@ const Services = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i>Click Here to View Past Honorees</i>
+              <u>Click Here to View Past Honorees</u>
             </a>
           ))}
         </section>
 
         <section className="corazon-award pt-6">
-          <u className="text-3xl font-semibold pb-3 text-blue-500">
+          <h3 className="text-3xl font-semibold pb-3 text-blue-500">
             The Corazón Award
-          </u>
+          </h3>
           <p className="text-2xl font-light pb-3">
             A leader in the community who has made significant contributions to
             the education and empowerment of Latinas; someone who has "poured
@@ -140,14 +140,14 @@ const Services = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i>Click Here to View Past Honorees</i>
+              <u>Click Here to View Past Honorees</u>
             </a>
           ))}
         </section>
         <section className="mariposa-award pt-6">
-          <u className="text-3xl font-semibold pb-3 text-purple-500">
+          <h3 className="text-3xl font-semibold pb-3 text-purple-500">
             The Mariposa Award
-          </u>
+          </h3>
           <p className="text-2xl font-light pb-3">
             Someone closely associated with Con Mi MADRE (e.g., alum, previous
             employee) who has made significant contributions in their field AND
@@ -163,7 +163,7 @@ const Services = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i>Click Here to View Past Honorees</i>
+              <u>Click Here to View Past Honorees</u>
             </a>
           ))}
         </section>
