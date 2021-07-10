@@ -12,12 +12,12 @@ const Header = () => {
       <nav className="hidden md:contents font-medium text-sm md:text-xs lg:text-sm lg:text-base">
         {/* ####copy#### <div className="h-16 w-full relative md:flex md:justify-between md:items-center md:navbar-expand-lg md:text-blue-500 bg-gray-200 font-medium pl-10 pr-10"> */}
         <div>
-          <Link to="/" className="font-bold hover:text-pink-500">
+          <Link to="/" className="hover:text-pink-500">
             Home
           </Link>
         </div>
         <div>
-          <Link to="/Contact" className="font-bold hover:text-pink-500">
+          <Link to="/Contact" className="hover:text-pink-500">
             Contact Us
           </Link>
         </div>
