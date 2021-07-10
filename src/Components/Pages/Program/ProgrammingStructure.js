@@ -28,9 +28,7 @@ const Program = () => {
           </section>
         </section>
       </article>
-      <h2 className="text-center font-semibold text-4xl lg:text-5xl pt-12 pl-6 pr-6 bg-gray-500">
-        Program Journey
-      </h2>
+    
       <article className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-gray-500 p-6 pt-12">
         <section className="flex flex-col bg-gray-500 items-center text-center">
           <img
