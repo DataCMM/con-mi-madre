@@ -117,7 +117,7 @@ const Services = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i>Past Honorees</i>
+              <i>Click Here to View Past Honorees</i>
             </a>
           ))}
         </section>
@@ -140,7 +140,7 @@ const Services = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i>Past Honorees</i>
+              <i>Click Here to View Past Honorees</i>
             </a>
           ))}
         </section>
@@ -163,7 +163,7 @@ const Services = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i>Past Honorees</i>
+              <i>Click Here to View Past Honorees</i>
             </a>
           ))}
         </section>
