@@ -76,7 +76,7 @@ const Resources = () => {
       </article>
 
       <article className="bg-gray-500 p-12">
-        
+        <h3 className="text-center pb-4 underline text-2xl ">Click on the resources below for your region</h3>
         {/* Central Resources */}
         {centralPdfs && centralPdfs.map((pdf, idx) => (
           <section key={idx} className="pb-6">
