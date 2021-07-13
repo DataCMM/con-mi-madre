@@ -107,19 +107,19 @@ const ProgrammingEvents = () => {
             }
             </section>
           </section>
-          <section className="text-center pb-6">
+          <section className="bg-blue-500 text-center pt-6">
             { eventNotification && eventNotification.map((url, idx)=>(
-              <section key={idx}>
+              <section key={idx} className="flex flex-col px-4 pb-6">
+              <button className="p-2 lg:w-1/2 m-auto border-blue-500 rounded bg-gray-500 text-blue-500 shadow-2xl text-center hover:text-pink-500">
                 <a
-                  className="text-xl hover:text-pink-500 m-auto font-semibold"
                   href={url.url}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {url.title}
                 </a>
-              <br/>
-              </section>
+              </button>
+            </section> 
             ))}
           </section>
         </article>
