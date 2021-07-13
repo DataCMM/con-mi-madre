@@ -11,7 +11,7 @@ const Resources = () => {
   useEffect(() => {
     getCentral()
     getFortWorth()
-  }, []);
+  }, []); 
   
   async function getCentral() {
     const data = await sanityClient.fetch(`*[_type == "centralResources"]{
@@ -75,38 +75,35 @@ const Resources = () => {
         </cite>
       </article>
 
-      <article className="bg-gray-500 p-12">
-        <h3 className="text-center pb-4 underline text-2xl ">Click on the resources below for your region</h3>
+      <article className="bg-blue-500 text-gray-500 p-12">
         {/* Central Resources */}
         {centralPdfs && centralPdfs.map((pdf, idx) => (
-          <section key={idx} className="pb-6">
-          <a
-            className="hover:text-pink-500"
-            href={pdf.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h3 className="text-2xl font-semibold text-center">
-              {pdf.title}
-            </h3>
-          </a>
-          </section>
-        ))}  
-        
-        {/* Forth Worth Resources */}
-        {fortWorthPdfs && fortWorthPdfs.map((pdf, idx) => (
-          <section key={idx} className="pb-6">
+          <section key={idx} className="flex flex-col space-y-12 pb-12">
+          <button className="p-2 lg:w-1/2 m-auto border-blue-500 rounded bg-gray-500 text-blue-500 shadow-2xl text-center hover:text-pink-500">
             <a
-              className="hover:text-pink-500"
               href={pdf.url}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3 className="text-2xl font-semibold text-center">
-                {pdf.title}
-              </h3>
+              {pdf.title}
             </a>
-          </section>
+          </button>
+        </section>  
+        ))}  
+        
+        {/* Forth Worth Resources */}
+        {fortWorthPdfs && fortWorthPdfs.map((pdf, idx) => (
+          <section key={idx} className="flex flex-col space-y-12 pb-12">
+            <button className="p-2 lg:w-1/2 m-auto border-blue-500 rounded bg-gray-500 text-blue-500 shadow-2xl text-center hover:text-pink-500">
+              <a
+                href={pdf.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {pdf.title}
+              </a>
+            </button>
+          </section>  
         ))}  
       </article>
     </main>
