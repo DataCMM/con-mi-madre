@@ -37,20 +37,20 @@ const Landing = () => {
                 className="flex flex-row justify-center items-center inline-block"
               >
                 <div className="hidden md:contents">
-                  <div>We&nbsp;</div>
-                  <div>Are&nbsp;</div>
+                  <h1>We&nbsp;</h1>
+                  <h1>Are&nbsp;</h1>
                 </div>
-                <div id="mothers">Mothers&nbsp;</div>
-                <div id="and">and&nbsp;</div>
-                <div id="daughters">Daughters</div>
+                <h1 id="mothers">Mothers&nbsp;</h1>
+                <h1 id="and">and&nbsp;</h1>
+                <h1 id="daughters">Daughters</h1>
               </div>
-              <h1
+              <div
                 className="pb-2 flex flex-row justify-center items-center inline-block"
                 id="title2"
               >
-                <div id="raising">Raising&nbsp;</div>
-                <div id="expectations">Expectations</div>
-              </h1>
+                <h1 id="raising">Raising&nbsp;</h1>
+                <h1 id="expectations">Expectations</h1>
+              </div>
               <button className="p-10 w-auto h-auto">
                 <a
                   className="text-white text-xl p-4 rounded font-black text-center bg-pink-500  md:text-xl lg:text-4xl hover:text-pink-500 hover:bg-gray-500"
