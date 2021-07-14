@@ -41,8 +41,6 @@ const OurTeam = () => {
     }`);
     setStaff(data);
   }
-
-  console.log(staff)
   
   async function getCommittee() {
     const data = await sanityClient.fetch(`*[_type == "executiveCommittee"]{
