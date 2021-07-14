@@ -22,7 +22,7 @@ const OurTeam = () => {
     getCommittee();
     getBoard();
   }, []);
-
+  
   async function getStaff() {
     const data = await sanityClient.fetch(`*[_type == "adminStaff"]{
       first_name,
@@ -31,6 +31,7 @@ const OurTeam = () => {
       pronoun,
       id,
       email,
+      email_name,
       "bio" : bio[0].children[0].text,
       image{
         asset->{
@@ -41,6 +42,8 @@ const OurTeam = () => {
     setStaff(data);
   }
 
+  console.log(staff)
+  
   async function getCommittee() {
     const data = await sanityClient.fetch(`*[_type == "executiveCommittee"]{
       first_name,
@@ -62,6 +65,7 @@ const OurTeam = () => {
     }`);
     setBoard(data);
   }
+
 
   return (
     <main>
@@ -124,7 +128,7 @@ const OurTeam = () => {
                       className="hidden md:contents pt-8 font-semibold text-sm hover:text-pink-500 outline-none focus:outline-none ease-linear transition-all duration-150"
                       href={`mailto:${member.email}?subject=Mail from our site`}
                     >
-                      {member.first_name}
+                      {member.email_name}
                       <br />
                       @conmimadre.org
                     </a>
