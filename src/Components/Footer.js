@@ -1,5 +1,10 @@
 import React from "react";
-import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaInstagram,
+  FaTwitterSquare,
+  FaYoutubeSquare,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -16,7 +21,7 @@ const Footer = () => {
           <h3>(512) 467-4483</h3>
         </a>
         <a
-           href="mailto:info@conmimadre.org?subject=Mail%20from%20careers%20page"
+          href="mailto:info@conmimadre.org?subject=Mail%20from%20careers%20page"
           className="hover:text-pink-500 hover:underline"
         >
           <h3>info@conmimadre.org</h3>
@@ -45,6 +50,14 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <FaTwitterSquare className="text-3xl" />
+          </a>
+          <a
+            className="hover:text-pink-500"
+            href="https://www.youtube.com/channel/UCNbQUm4xGUISl9afpnccq5w/videos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutubeSquare className="text-3xl" />
           </a>
         </div>
         <a
