@@ -103,7 +103,7 @@ const Donate = () => {
           </div>
         </div>
         <div className="pt-6 text-center text-xl font-semibold">
-          Checks delivered to our address are also acceptable
+          If preferring to donate by check it can be mailed to the address below
         </div>
       </div>
     </>

@@ -29,6 +29,11 @@ export default {
         type: 'string',
       },
       {
+        name: 'email_name',
+        title: 'Email Address Full Name',
+        type: 'string',
+      },
+      {
         name: 'email',
         title: 'Email',
         type: 'string',

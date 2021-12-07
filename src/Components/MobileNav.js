@@ -44,7 +44,7 @@ const MobileNav = () => {
     <div>
       <GiHamburgerMenu onClick={dropdown} className="relative z-20 w-5 h-5" />
       {showNav && (
-        <div className="z-20 inline-block absolute">
+        <nav className="z-20 inline-block absolute">
           <ul className="mobile-nav-list absolute bg-gray-200 rounded pr-2 mt-1 pt-4 pb-3">
             <li style={{ textAlign: "left" }}>
               <Link to="/" className="pl-2" onClick={handleClick}>
@@ -105,7 +105,7 @@ const MobileNav = () => {
                       className="block whitespace-no-wrap py-2 px-4 pr-4"
                       onClick={handleClick}
                     >
-                      Program Structure
+                      Program Journey
                     </Link>
                   </li>
                   <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
@@ -153,7 +153,7 @@ const MobileNav = () => {
                       className="block whitespace-no-wrap py-2 px-4 pr-4"
                       onClick={handleClick}
                     >
-                      Events
+                      Corazón Awards
                     </Link>
                   </li>
                   <li>
@@ -199,7 +199,7 @@ const MobileNav = () => {
               )}
             </li>
           </ul>
-        </div>
+        </nav>
       )}
     </div>
   );

@@ -51,9 +51,9 @@ const Services = () => {
   }
 
   return (
-    <div>
-      <div className="banner-image w-full h-full">
-        <div
+    <main>
+      <article className="banner-image w-full h-full">
+        <section
           style={{
             backgroundImage: "url(/images/events/EventsBanner.jpg)",
           }}
@@ -64,19 +64,19 @@ const Services = () => {
             id="career-overlay"
           />
 
-          <div className="banner-text sticky flex flex-col justify-between">
+          <section className="banner-text sticky flex flex-col justify-between">
             <div className="sticky pt-4 pl-4 h-14 w-1/2">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
 
             <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
-              <div id="title1">Events</div>
+              <h1 id="title1">Events</h1>
             </div>
-          </div>
-        </div>
-      </div>
+          </section>
+        </section>
+      </article>
 
-      <div className="bg-blue-500 text-gray-500 pt-6">
+      <article className="bg-blue-500 text-gray-500 pt-6">
         <h3 className="event-header text-4xl font-semibold text-center">
           Annual Corazón Awards
         </h3>
@@ -94,16 +94,16 @@ const Services = () => {
         ))}
             &nbsp;for more details and to register for this year’s Corazón Awards.
           </p>
-      </div>
-      <div className="past-awards bg-gray-500 text-center p-6 pb-12">
+      </article>
+      <article className="past-awards bg-gray-500 text-center p-6 pb-12">
         <h3 className="text-4xl font-semibold  pb-6">Past Corazón Awards</h3>
         <EventsGallery />
-        <h3 className="text-4xl font-semibold pb-6">Past Honorees</h3>
+        <h3 className="text-4xl font-semibold pb-6 pt-6">Past Honorees</h3>
 
-        <div className="con-mi-madre-award">
-          <u className="text-3xl font-semibold pb-3 text-pink-500">
+        <section className="con-mi-madre-award">
+          <h3 className="text-3xl font-semibold pb-3 text-pink-500">
             The Con Mi MADRE Award
-          </u>
+          </h3>
           <p className="text-2xl font-light pb-3">
             An educated successful Latina; an example of what we would like to
             see as a product of our program; someone who is living out our
@@ -117,15 +117,15 @@ const Services = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i>Past Honorees</i>
+              <u>Click Here to View Past Honorees</u>
             </a>
           ))}
-        </div>
+        </section>
 
-        <div className="corazon-award pt-6">
-          <u className="text-3xl font-semibold pb-3 text-blue-500">
+        <section className="corazon-award pt-6">
+          <h3 className="text-3xl font-semibold pb-3 text-blue-500">
             The Corazón Award
-          </u>
+          </h3>
           <p className="text-2xl font-light pb-3">
             A leader in the community who has made significant contributions to
             the education and empowerment of Latinas; someone who has "poured
@@ -140,14 +140,14 @@ const Services = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i>Past Honorees</i>
+              <u>Click Here to View Past Honorees</u>
             </a>
           ))}
-        </div>
-        <div className="mariposa-award pt-6">
-          <u className="text-3xl font-semibold pb-3 text-purple-500">
+        </section>
+        <section className="mariposa-award pt-6">
+          <h3 className="text-3xl font-semibold pb-3 text-purple-500">
             The Mariposa Award
-          </u>
+          </h3>
           <p className="text-2xl font-light pb-3">
             Someone closely associated with Con Mi MADRE (e.g., alum, previous
             employee) who has made significant contributions in their field AND
@@ -163,12 +163,12 @@ const Services = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i>Past Honorees</i>
+              <u>Click Here to View Past Honorees</u>
             </a>
           ))}
-        </div>
-      </div>
-    </div>
+        </section>
+      </article>
+    </main>
   );
 };
 

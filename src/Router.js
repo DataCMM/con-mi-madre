@@ -14,25 +14,28 @@ import Resources from "./Components/Pages/Participants/Resources";
 import Involved from "./Components/Pages/Program/Involved";
 import ProgrammingStructure from "./Components/Pages/Program/ProgrammingStructure";
 import Services from "./Components/Pages/Program/Services";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const Router = () => {
   return (
-    <Switch>
-      <Route exact path="/" component={Landing} />
-      <Route path="/Donate" component={Donate} />
-      <Route path="/Careers" component={Careers} />
-      <Route path="/Contact" component={Contact} />
-      <Route path="/OurTeam" component={OurTeam} />
-      <Route path="/Purpose" component={Purpose} />
-      <Route path="/Awards" component={Awards} />
-      <Route path="/Events" component={Events} />
-      <Route path="/Partners" component={Partners} />
-      <Route path="/ProgramEvents" component={ProgramEvents} />
-      <Route path="/Resources" component={Resources} />
-      <Route path="/Involved" component={Involved} />
-      <Route path="/ProgramStructure" component={ProgrammingStructure} />
-      <Route path="/Services" component={Services} />
-    </Switch>
+    <ScrollToTop>
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route path="/Donate" component={Donate} />
+        <Route path="/Careers" component={Careers} />
+        <Route path="/Contact" component={Contact} />
+        <Route path="/OurTeam" component={OurTeam} />
+        <Route path="/Purpose" component={Purpose} />
+        <Route path="/Awards" component={Awards} />
+        <Route path="/Events" component={Events} />
+        <Route path="/Partners" component={Partners} />    
+        <Route path="/ProgramEvents" component={ProgramEvents} />
+        <Route path="/Resources" component={Resources} />
+        <Route path="/Involved" component={Involved} />
+        <Route path="/ProgramStructure" component={ProgrammingStructure} />
+        <Route path="/Services" component={Services} />
+      </Switch>
+    </ScrollToTop>
   );
 };
 

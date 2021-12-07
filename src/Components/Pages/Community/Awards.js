@@ -47,8 +47,8 @@ const Awards = () => {
   }
 
   return (
-    <>
-      <div className="banner-image w-full h-full">
+    <main>
+      <section className="banner-image w-full h-full">
         <div
           style={{
             backgroundImage: "url(/images/awards/AwardsBanner.jpg)",
@@ -60,85 +60,85 @@ const Awards = () => {
             id="career-overlay"
           />
 
-          <div className="banner-text sticky flex flex-col justify-between">
+          <section className="banner-text sticky flex flex-col justify-between">
             <div className="sticky pt-4 pl-4 h-14 w-1/2">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
 
             <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
-              <div id="title1">Awards & Recognition</div>
+              <h1 id="title1">Awards & Recognition</h1>
             </div>
-          </div>
+          </section>
         </div>
-      </div>
+      </section>
 
       {/* Awards Content */}
-      <div className="flex flex-col gap-6 p-8  lg:p-12 bg-blue-500 text-gray-500 lg:flex-row">
-        <div className="flex flex-col justify-center lg:items-end lg:w-1/2">
+      <article className="flex flex-col gap-6 p-8  lg:p-12 bg-blue-500 text-gray-500 lg:flex-row">
+        <section className="flex flex-col justify-center lg:items-end lg:w-1/2">
           <img
             className="w-full h-auto"
             src="/images/awards/Awards-1.jpg"
             alt="Con Mi Madre receiving large check"
           />
-        </div>
+        </section>
 
         {/* Blue Box Content */}
-        <div className="flex flex-col justify-center text-center lg:text-left lg:pl-8 lg:w-1/2">
+        <section className="flex flex-col justify-center text-center lg:text-left lg:pl-8 lg:w-1/2">
         {blue && blue
           .sort((a, b) => a.id - b.id)
           .map((content,idx)=>(
-            <div key={idx}>
-              <h3 className="text-xl font-semibold pb-2">{content.title}</h3>
+            <section key={idx}>
+              <h2 className="text-xl font-semibold pb-2">{content.title}</h2>
               <h3 className="text-lg font-bold pb-2">{content.name}</h3>
               {content.desc ? <p className="text-md font-light pb-6">{content.desc}</p> : null}
-            </div>
+            </section>
         ))}
-          </div>
-      </div>
+          </section>
+      </article>
 
       {/* White Box Content */}
-      <div className="flex flex-col-reverse gap-6 p-8 lg:p-12 bg-gray-500 lg:flex-row">
-      <div className="flex flex-col justify-center text-center lg:text-left lg:pl-8 lg:w-1/2">
+      <article className="flex flex-col-reverse gap-6 p-8 lg:p-12 bg-gray-500 lg:flex-row">
+      <section className="flex flex-col justify-center text-center lg:text-left lg:pl-8 lg:w-1/2">
         {white && white
           .sort((a, b) => a.id - b.id)
           .map((content,idx)=>(
-            <div key={idx}>
-              <h3 className="text-xl font-semibold pb-2">{content.title}</h3>
+            <section key={idx}>
+              <h2 className="text-xl font-semibold pb-2">{content.title}</h2>
               <h3 className="text-lg font-bold pb-2">{content.name}</h3>
               {content.desc ? <p className="text-md font-light pb-6">{content.desc}</p> : null}
-            </div>
+            </section>
         ))}
-          </div>
-        <div className="flex flex-col justify-center lg:items-end lg:w-1/2">
+          </section>
+        <section className="flex flex-col justify-center lg:items-end lg:w-1/2">
           <img
             className="w-full h-auto"
             src="/images/awards/Awards-2.jpg"
             alt="Con Mi Madre on Univision"
           />
-        </div>
-      </div>
+        </section>
+      </article>
 
       {/* Green Box Content */}
-      <div className="bg-green-500 p-6 text-center">
-        <h3 className="text-3xl font-semibold pb-2">Media Mentions</h3>
+      <article className="bg-green-500 p-6 text-center">
+        <h2 className="text-3xl font-semibold pb-2">Media Mentions</h2>
         {media && media
           .sort((a, b) => a.id - b.id)
           .map((post, idx) => (
-          <div key={idx}>
+          <section key={idx}>
             <a
               href={post.url}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h2 className="text-2xl font-light hover:text-pink-500 pb-2">
+              <h3 className="text-2xl font-light hover:text-pink-500 pb-2">
                 {post.title}
-              </h2>
+              </h3>
             </a>
             {post.desc ? <p className="text-md font-light pb-6">{post.desc}</p> : null}  
-          </div>
+          </section>
         ))}
-      </div>
-    </>
+      </article>
+    </main>
   );
 };
 

@@ -30,6 +30,7 @@ import corazon from './corazon'
 import mariposa from './mariposa'
 import eventNotification from './eventNotification'
 import currentOpenings from './currentOpenings'
+import newsLetter from './newsLetter'
 
 export default createSchema({
   name: 'default',
@@ -59,5 +60,6 @@ export default createSchema({
     mariposa,
     eventNotification,
     currentOpenings,
+    newsLetter,
   ]),
 })

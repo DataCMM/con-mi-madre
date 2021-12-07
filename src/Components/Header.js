@@ -8,16 +8,16 @@ import "./Pages/pages.css";
 
 const Header = () => {
   return (
-    <div className="header z-40 h-16 pl-5 pr-5 w-full flex justify-between items-center text-blue-500 bg-gray-200 md:pl-10 md:pr-10">
-      <div className="hidden md:contents font-medium text-sm md:text-xs lg:text-sm lg:text-base">
+    <header className="header z-40 h-16 pl-5 pr-5 w-full flex justify-between items-center text-blue-500 bg-gray-200 md:pl-10 md:pr-10">
+      <nav className="hidden md:contents font-medium text-sm md:text-xs lg:text-sm lg:text-base">
         {/* ####copy#### <div className="h-16 w-full relative md:flex md:justify-between md:items-center md:navbar-expand-lg md:text-blue-500 bg-gray-200 font-medium pl-10 pr-10"> */}
         <div>
-          <Link to="/" className="font-bold hover:text-pink-500">
+          <Link to="/" className="hover:text-pink-500">
             Home
           </Link>
         </div>
         <div>
-          <Link to="/Contact" className="font-bold hover:text-pink-500">
+          <Link to="/Contact" className="hover:text-pink-500">
             Contact Us
           </Link>
         </div>
@@ -64,7 +64,7 @@ const Header = () => {
                 to="/ProgramStructure"
                 className="block whitespace-no-wrap py-2 px-4 pr-4"
               >
-                Program Structure
+                Program Journey
               </Link>
             </li>
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
@@ -106,7 +106,7 @@ const Header = () => {
                 to="/Events"
                 className="block whitespace-no-wrap py-2 px-4 pr-4"
               >
-                Events
+                Corazón Awards
               </Link>
             </li>
             <li className="hover:text-pink-500 bg-gray-200 hover:bg-gray-400 hover:bg-opacity-50">
@@ -154,9 +154,15 @@ const Header = () => {
         >
           Donate
         </a>
-      </div>
+        {/* <Link
+          to="/Donate"
+          className="block bg-pink-500 text-white rounded whitespace-no-wrap py-2 px-4 pr-4"
+        >
+          Donate
+        </Link> */}
+      </nav>
       {/* Mobile Header */}
-      <div className="md:hidden w-full flex justify-between items-center text-center">
+      <nav className="md:hidden w-full flex justify-between items-center text-center">
         <MobileNav />
         <div className="flex space-x-6">
           <div>
@@ -173,10 +179,13 @@ const Header = () => {
             >
               Donate
             </a>
+            {/* <Link to="/Donate" className="hover:text-pink-500">
+              Donate
+            </Link> */}
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 

@@ -23,9 +23,9 @@ const Services = () => {
   }
 
   return (
-    <>
-      <div className="banner-image w-full h-full">
-        <div
+    <main>
+      <article className="banner-image w-full h-full">
+        <section
           style={{
             backgroundImage:
               "url(/images/additional-services/Additional-Services-Banner.jpg)",
@@ -37,19 +37,19 @@ const Services = () => {
             id="career-overlay"
           />
 
-          <div className="banner-text sticky flex flex-col justify-between">
+          <section className="banner-text sticky flex flex-col justify-between">
             <div className="sticky pt-4 pl-4 h-14 w-1/2">
               <img src={Logo} alt="Con mi madre logo" className="z-10" />
             </div>
 
             <div className="career-title sticky z-10 flex self-end pr-4 pb-2 text-white text-4xl font-medium tracking-widest text-center">
-              <div id="title1">Additional Services</div>
+              <h1 id="title1">Additional Services</h1>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-gray-500 p-6 pt-12">
-        <div className="flex flex-col bg-gray-500 items-center text-center">
+          </section>
+        </section>
+      </article>
+      <article className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-gray-500 p-6 pt-12">
+        <section className="flex flex-col bg-gray-500 items-center text-center">
           <img
             src="/images/additional-services/services-5.JPG"
             alt="Daughter with mother and her wish to see her daughters in college"
@@ -65,8 +65,8 @@ const Services = () => {
               in their child’s educational journey.
             </p>
           </div>
-        </div>
-        <div className="flex flex-col bg-gray-500 items-center text-center">
+        </section>
+        <section className="flex flex-col bg-gray-500 items-center text-center">
           <img
             src="/images/additional-services/Services2.JPG"
             alt="Mentoring a participant"
@@ -84,8 +84,8 @@ const Services = () => {
               steps.
             </p>
           </div>
-        </div>
-        <div className="flex flex-col bg-gray-500 items-center text-center">
+        </section>
+        <section className="flex flex-col bg-gray-500 items-center text-center">
           <img
             src="/images/additional-services/ConHermano.jpg"
             alt="Con Mi Hermano logo"
@@ -101,10 +101,10 @@ const Services = () => {
               mentorship and meaningful interaction.
             </p>
           </div>
-        </div>
-      </div>
-      <div className="testimonial-carousel bg-blue-500 text-gray-500 pt-6 pr-6 pl-6 pb-3">
-        <h1 className="font-semibold text-4xl text-center">Testimonials</h1>
+        </section>
+      </article>
+      <article className="testimonial-carousel bg-blue-500 text-gray-500 pt-6 pr-6 pl-6 pb-3">
+        <h3 className="font-semibold text-4xl text-center">Testimonials</h3>
         <Carousel
           autoPlay
           autoFocus
@@ -120,82 +120,18 @@ const Services = () => {
           interval={6000}
         >
             {testimonials && testimonials.map((post,idx)=>(
-              <div key={idx} className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
+              <section key={idx} className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
                 <q className="font-light text-lg lg:text-2xl">{post.quote}</q>
                 <br />
                 <br />
                 <cite className="font-light text-md lg:text-lg">
                   {post.source}
                 </cite>    
-              </div>
+              </section>
             ))}
-            {/* <q className="font-light text-lg lg:text-2xl">
-              Con Mi MADRE has instilled within my mother and me a wonderful
-              sense of pride in our Latina culture. From campus visits and
-              Leadership Summits to workshops and scholarships, I not only
-              witnessed and received the powerful love and support of my Latinx
-              community, I learned the best ways to give back to it one day.
-            </q>
-            <br />
-            <br />
-            <cite className="font-light text-md lg:text-lg">
-              Con Mi MADRE Student, Class of 2020
-            </cite>
-          </div>
-          <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
-            <q className="font-light text-lg lg:text-2xl">
-              Being involved in Con Mi MADRE has helped my mother and I in so
-              many ways throughout the years. It created a closer bond between
-              us and helped me in my educational journey. It helped us be a part
-              of a beautiful community where women are empowering and supporting
-              each other.
-            </q>
-            <br />
-            <br />
-            <cite className="font-light text-md lg:text-lg">
-              Con Mi MADRE Student, Class of 2020
-            </cite>
-          </div>
-          <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
-            <q className="font-light text-lg lg:text-2xl">
-              Con Mi MADRE offers Hispanic and Latina women the confidence and
-              motivation and encouragement of 'si se puede': yes you can.
-            </q>
-            <br />
-            <br />
-            <cite className="font-light text-md lg:text-lg">
-              Con Mi MADRE Student
-            </cite>
-          </div>
-          <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
-            <q className="font-light text-lg lg:text-2xl">
-              I was in the program many years ago with my mother and now I get
-              to do it with my own daughter, these are memories I will cherish
-              forever.
-            </q>
-            <br />
-            <br />
-            <cite className="font-light text-md lg:text-lg">
-              Con Mi MADRE Parent
-            </cite>
-          </div>
-          <div className="bg-blue-500 text-gray-500 pt-6 pl-6 pr-6">
-            <q className="font-light text-lg lg:text-2xl">
-              As a mother, I really like that Con Mi MADRE works with our
-              daughters to ensure that they have a positive academic performance
-              and that they are already working with them for their future from
-              an early age. [Con Mi MADRE] instills the importance of attending
-              a University and achieving a career to be successful in life
-            </q>
-            <br />
-            <br />
-            <cite className="font-light text-md lg:text-lg">
-              Con Mi MADRE Parent
-            </cite> */}
-          {/* </div> */}
         </Carousel>
-      </div>
-    </>
+      </article>
+    </main>
   );
 };
 

@@ -6,9 +6,27 @@ import {
   FaYoutubeSquare,
 } from "react-icons/fa";
 
+
+import sanityClient from "../client";
+
 const Footer = () => {
+
+  const [ newsLetter, setNewsLetter ] = useState([])
+
+  useEffect(() => {
+    getNewsLetter()
+  }, []); 
+  
+  async function getNewsLetter() {
+    const data = await sanityClient.fetch(`*[_type == "newsLetter"]{
+      title,
+      url
+    }`);
+    setNewsLetter(data);
+  }
+  
   return (
-    <div className="bg-gray-200 w-full flex flex-col text-center md:flex-row">
+    <footer className="bg-gray-200 w-full flex flex-col text-center md:flex-row">
       <div className="w-3/4 m-auto h-auto md:w-1/3">
         <img src="/images/horizontal/color.png" alt="Con Mi Madre Logo" />
       </div>
@@ -60,17 +78,20 @@ const Footer = () => {
             <FaYoutubeSquare className="text-3xl" />
           </a>
         </div>
-        <a
-          href="https://form.jotform.com/211546193475156 "
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="text-xl hover:text-pink-500 font-semibold">
-            Sign Up To Receive Our Monthly Newsletter!
-          </div>
-        </a>
+        { newsLetter && newsLetter.map((pdf, idx)=>(
+          <a
+            key={idx}
+            href={pdf.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3 className="text-xl hover:text-pink-500 font-semibold">
+              {pdf.title}
+            </h3>
+          </a>
+          ))}
       </div>
-    </div>
+    </footer>
   );
 };
 
